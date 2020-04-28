@@ -1,6 +1,6 @@
 body {
   background: url(/assets/images/bg.png);
-  font-family: 'Manrope', sans-serif;
+  font-family: 'Rosario', sans-serif;
   color: #3e4444;
   margin: 0px;
   padding: 0px;
@@ -21,15 +21,48 @@ a:hover {
 .italicfont {
   font-style: italic;
 }
+/* Images */
+img {
+  max-width: 100%;
+}
+/* Wrap */
 #wrap {
   max-width: 600px;
   padding: 0px;
   margin: 0px auto 0px;
 }
-.site-title {
- margin: 0px;
- font-size: 20px;
+/* Navbar */
+nav {
+    background-color: #f6f4f4;
+    margin: 0;
+    overflow: hidden;
 }
+nav ul {
+    margin: 0;
+    padding: 30px 20px 20px 20px;
+}
+nav ul li:not(:first-child) {
+  float: right;
+  margin: 0px;
+  padding-left: 20px;
+  padding-top: 10px;
+}
+nav ul li {
+    display: inline-block;
+    list-style-type: none;
+}
+nav ul li a {
+    color: #3fa757;
+    display: block;
+    text-decoration: none;
+}
+nav ul li a:link {
+  text-decoration: underline;
+}
+nav ul li a.logo {
+
+}
+/* Content */
 .content {
   padding: 30px 20px 20px 20px;
   background-color: #ffffff;
@@ -42,20 +75,9 @@ a:hover {
   padding-bottom: 10px;
   margin-bottom: 10px;
 }
+/* Footer */
 .footer-text {
   border-top: 1px #eeeeee solid;
   padding-top: 10px;
   margin-top: 40px;
-}
-.row.no-gutter {
-  margin-left: 0;
-  margin-right: 0;
-}
-.row.no-gutter [class*='col-']:not(:first-child),
-.row.no-gutter [class*='col-']:not(:last-child) {
-  padding-right: 0;
-  padding-left: 0;
-}
-img {
-  max-width: 100%;
 }

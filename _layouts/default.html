@@ -2,18 +2,24 @@
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
   {%- include head.html -%}
 
-  <body>
-    <div id="wrap">
-      <img src="/assets/images/logo.png" height="40" alt="">
-        <a class="nav-item nav-link" href="{{ site.url }}">Home <span class="sr-only">(current)</span></a>
-        <a class="nav-item nav-link disabled" href="">About</a>
-        <a class="nav-item nav-link disabled" href="">Post Timeline</a>
+<body>
+<div id="wrap">
+    <nav>
+      <ul>
+          <li><a class="logo" href="{{ site.url }}"><img src="/assets/images/logo.png" height="40" alt="" /></a></li>
+          <li><a href="">Posts Timeline</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="{{ site.url }}">Home</a></li>
 
-      <div class="content">
-        {{ content }}
-        {%- include footer.html -%}
-      </div>
-      
+
+      </ul>
+    </nav>
+
+    <div class="content">
+      {{ content }}
+      {%- include footer.html -%}
     </div>
-  </body>
+
+</div>
+</body>
 </html>
