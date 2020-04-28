@@ -4,12 +4,7 @@
   {%- include head.html -%}
 
   <body>
-    <script>
-        $(document).ready(function() {
-        var bodyColor = $('body').css('color');
-        if(bodyColor != 'rgb(51, 51, 51)') {
-        $("head").prepend('<link rel="stylesheet" href="/assets/bootstrap/bootstrap.min.css">');}});
-    </script>
+    
   <div id="wrap">
     <div class="row no-gutter">
       <div class="col-md-4 order-md-1 mb-4">
@@ -28,5 +23,5 @@
     </div>
   </div>
   </body>
-
+{%- include custom_footer.html -%}
 </html>
