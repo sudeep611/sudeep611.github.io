@@ -22,23 +22,9 @@ a:hover {
   font-style: italic;
 }
 #wrap {
-  max-width: 960px;
+  max-width: 600px;
   padding: 0px;
   margin: 0px auto 0px;
-}
-.sidebar {
- padding: 30px 10px 20px 10px;
- text-align: right;
- margin: 0px;
- font-size: 14px;
-}
-.sidebar ul {
-  list-style: none;
-  margin-top: 20px;
-}
-.sidebar li:before {
-  content: '»';
-  margin-right: 6px;
 }
 .site-title {
  margin: 0px;
