@@ -27,7 +27,7 @@ a:hover {
   margin: 0px auto 0px;
 }
 .sidebar {
- padding: 30px 20px 20px 20px;
+ padding: 30px 10px 20px 10px;
  text-align: right;
  margin: 0px;
 }
@@ -41,6 +41,7 @@ a:hover {
   margin: 0px;
 }
 .page-title {
+  color: #000000;
   font-size: 22px;
   border-bottom: 1px #eeeeee solid;
   padding-bottom: 10px;
@@ -51,6 +52,14 @@ a:hover {
   padding-top: 10px;
   margin-top: 40px;
 }
-.row {
-  margin: 0px;
+
+.row.no-gutter {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.row.no-gutter [class*='col-']:not(:first-child),
+.row.no-gutter [class*='col-']:not(:last-child) {
+  padding-right: 0;
+  padding-left: 0;
 }
