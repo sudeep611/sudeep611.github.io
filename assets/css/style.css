@@ -2,6 +2,8 @@ body {
   background: url(/assets/images/bg.png);
   font-family: 'Manrope', sans-serif;
   color: #3e4444;
+  margin: 0px;
+  padding: 0px;
 }
 a:link {
   text-decoration: none;
@@ -27,7 +29,7 @@ a:hover {
 .sidebar {
  padding: 30px 20px 20px 20px;
  text-align: right;
- clear: both;
+ margin: 0px;
 }
 .site-title {
  margin: 0px;
@@ -36,6 +38,7 @@ a:hover {
 .content {
   padding: 30px 20px 20px 20px;
   background-color: #ffffff;
+  margin: 0px;
 }
 .page-title {
   font-size: 22px;
@@ -47,4 +50,7 @@ a:hover {
   border-top: 1px #eeeeee solid;
   padding-top: 10px;
   margin-top: 40px;
+}
+.row {
+  margin: 0px;
 }
