@@ -24,17 +24,16 @@ layout: default
         {% else %}
           {% assign categories = page.categories %}
         {% endif %}
-        {% for category in categories %}
-        <!-- <a href="{{site.baseurl}}/categories/#{{category|slugize}}"> -->
-        {{category}}
+        {% for cat in categories %}
+          <!-- <a href="#{{ cat | slugify }}"> -->
+          {{ cat }}
         <!-- </a>  -->
         {% unless forloop.last %}&nbsp;{% endunless %}
         {% endfor %}
       </span>
     </p>
-
   </div>
-  
+
   {%- include disqus_comments.html -%}
 
 </article>
