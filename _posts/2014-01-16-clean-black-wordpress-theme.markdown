@@ -7,7 +7,7 @@ categories: wordpress, my-project
 
 Clean Black is a free WordPress theme. It is black and responsive theme which is easy to customize.
 
-Tags : Responsive, 2 column, Right sidebar, Black, Clean Design. <!--more-->
+Tags : Responsive, 2 column, Right sidebar, Black, Clean Design. 
 
 ![](/assets/post-images/2014/cleanblack-wordpress-theme.png){:class="img-responsive"}
 
