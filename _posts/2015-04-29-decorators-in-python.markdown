@@ -2,7 +2,7 @@
 layout: post
 title:  "Understanding Decorators in Python"
 date:   2015-04-29 23:23:00 +1000
-categories: python, programming
+categories: python, programming 
 ---
 While learning Python in the beginning, i skipped the portion of the chapters on Decorators. After i worked on Flask and Django, I was introduced with the Decorators.
 
