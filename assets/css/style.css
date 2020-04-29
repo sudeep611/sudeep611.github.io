@@ -1,7 +1,8 @@
 body {
   background: url(/assets/images/bg.png);
-  font-family: 'Rosario', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   color: #3e4444;
+  font-size: 20px;
   margin: 0px;
   padding: 0px;
 }
@@ -16,7 +17,7 @@ a:hover {
   color: #3fa757;
 }
 .smallfontsize {
-  font-size: 12px;
+  font-size: 13px;
 }
 .italicfont {
   font-style: italic;
@@ -88,13 +89,13 @@ nav ul li a.logo {
 }
 .page-title {
   color: #000000;
-  font-size: 20px;
+  font-size: 22px;
   border-bottom: 1px #eeeeee solid;
   padding-bottom: 10px;
   margin-bottom: 10px;
 }
 .posts-list {
-  font-size: 18px;
+  font-size: 20px;
   line-height: 2.4;
 }
 /* Footer */
