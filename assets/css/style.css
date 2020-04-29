@@ -93,6 +93,10 @@ nav ul li a.logo {
   padding-bottom: 10px;
   margin-bottom: 10px;
 }
+.posts-list {
+  font-size: 18px;
+  line-height: 2.4;
+}
 /* Footer */
 .footer-text {
   border-top: 1px #eeeeee solid;

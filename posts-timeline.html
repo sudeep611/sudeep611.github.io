@@ -9,12 +9,12 @@ permalink: /post-timeline/
 
 {% if forloop.first %}
 <h2 id="{{ this_year }}-ref">{{this_year}}</h2>
-<ul style="list-style-type: none; line-height: 1.6;" class="posts">
+<ul class="posts-list" style="list-style-type: none;" class="posts">
 {% else %}
     {% if this_year != last_year %}
     </ul>
     <h2 id="{{ this_year }}-ref">{{this_year}}</h2>
-    <ul style="list-style-type: none; line-height: 1.6;" class="posts">
+    <ul class="posts-list" style="list-style-type: none;" class="posts">
     {% endif %}
 {% endif %}
 
