@@ -2,7 +2,7 @@
 layout: post
 title:  "C++ project – Encryption and Decryption"
 date:   2013-12-26 23:44:12 +1000
-categories: programming
+categories: [programming]
 ---
 
 As a project in C++ during my College, i choose Encryption and Decryption as my project. I am implemented very simple technique for Encryption and Decryption.
