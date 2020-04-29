@@ -22,6 +22,9 @@ a:hover {
 .italicfont {
   font-style: italic;
 }
+h2 {
+  font-size: 22px;
+}
 /* Images */
 img {
   max-width: 100%;
