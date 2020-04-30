@@ -101,7 +101,20 @@ nav ul li a.logo {
   font-size: 20px;
   padding-bottom: 16px;
 }
-
+table{
+    border-collapse: collapse;
+    border-spacing: 0;
+    border:1px solid #eeeeee;
+    font-size: 16px;
+}
+th{
+    border:1px solid #eeeeee;
+    font-weight: 400;
+}
+td{
+    border:1px solid #eeeeee;
+    padding: 6px;
+}
 /* Pagination */
 #pagination {
   height: 18px;
