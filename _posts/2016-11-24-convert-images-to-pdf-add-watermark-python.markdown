@@ -2,7 +2,8 @@
 layout: post
 title:  "Convert the list of images to PDF file and add watermark using python"
 date:   2016-11-24 22:48:00 +1000
-categories: python, programming
+categories: Programming
+tags: Python
 ---
 <strong>Converting list of images to PDF in Ubuntu</strong><br />
 Let's use ImageMagick tool. Normally it is installed in Ubuntu. If you need to install it then run:

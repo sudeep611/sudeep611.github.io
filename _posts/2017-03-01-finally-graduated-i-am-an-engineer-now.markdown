@@ -2,7 +2,7 @@
 layout: post
 title:  "Finally Graduated, I am an Engineer now"
 date:   2017-03-01 11:57:00 +1000
-categories: memories
+categories: Memories
 ---
 Hello all,
 

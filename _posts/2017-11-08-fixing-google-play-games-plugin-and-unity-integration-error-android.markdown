@@ -2,7 +2,8 @@
 layout: post
 title:  "Fixing Google Play Games plugin and Unity integration error - Android"
 date:   2017-11-08 20:17:00 +1000
-categories: csharp, programming, unity3d
+categories: Programming
+tags: Unity3D
 ---
 
 Recently i was having multiple issues with google play games plugin integration in Unity. It was not working at all. After spending the couple of hours in it, i was able to fix the issue. This is a note to myself as well for others who are having trouble with the integration.

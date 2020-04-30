@@ -2,8 +2,8 @@
 layout: post
 title:  "A Silly way to comment in your Code"
 date:   2020-01-08 03:48:00 +1000
-categories: programming
-tags: php
+categories: Programming
+tags: PHP
 ---
 During my beginners year of writing code, i used to comment unnecessarily. I realised this after i saw the code written by senior developers. The main purpose of the comment is to make your code understood by other developers who are working together in the same project or for other contributors.
 

@@ -2,7 +2,8 @@
 layout: post
 title:  "JavaScript code to display Multiplication table"
 date:   2014-02-02 03:42:00 +1000
-categories: programming, javascript
+categories: Programming
+tags: JavaScript
 ---
 
 Through JavaScript you can easily write the html code in html document using document.write(). Using document.write() and for loop it is easy to print the table of user input number.

@@ -2,7 +2,8 @@
 layout: post
 title:  "C# code to shuffle Array"
 date:   2017-07-09 23:39:00 +1000
-categories: csharp, programming
+categories: Programming
+tags: CSharp
 ---
 ```csharp
 private T[] ShuffleArray<T>(T[] array) {

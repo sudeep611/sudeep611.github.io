@@ -2,7 +2,8 @@
 layout: post
 title:  "How to delete the commit history in github"
 date:   2015-01-19 00:58:00 +1000
-categories: git, programming
+categories: Programming
+tags: Git
 ---
 Sometimes you may find deleting the commit history of your github project repository useful. You can easily delete the commit history by following the procedure below.
 

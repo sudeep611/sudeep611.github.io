@@ -2,8 +2,8 @@
 layout: post
 title:  "How to set up basic PHP Project structure with Composer"
 date:   2020-01-04 20:22:00 +1000
-categories: programming
-tags: php
+categories: Programming
+tags: PHP
 ---
 Most of the time beginners learning PHP are unaware of [Composer](https://getcomposer.org/), if you are among them, Composer is a dependency management tool for PHP.
 

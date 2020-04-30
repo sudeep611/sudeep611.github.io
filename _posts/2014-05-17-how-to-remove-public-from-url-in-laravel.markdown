@@ -2,7 +2,8 @@
 layout: post
 title:  "How to remove /public/ from URL in Laravel"
 date:   2014-05-17 17:08:00 +1000
-categories: programming, php
+categories: Programming
+tags: PHP
 ---
 
 By default in Laravel the URL to access your site is http://example.com/public/. It is not good to keep public in URL as it makes URL ugly and longer.

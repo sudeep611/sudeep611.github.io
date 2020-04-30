@@ -2,7 +2,8 @@
 layout: post
 title:  "Invisible Transparent Button in Unity3D"
 date:   2017-03-30 15:03:00 +1000
-categories: Unity3D
+categories: Programming
+tags: Unity3D
 ---
 Today i was working on a project where i required to add the invisible button. I tried different methods like making button transparent, adding the image in the button. But then i came to know about this solution. I think that this is probably the best solution.
 

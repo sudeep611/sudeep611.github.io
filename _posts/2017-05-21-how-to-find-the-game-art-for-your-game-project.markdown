@@ -2,7 +2,7 @@
 layout: post
 title:  "How to find the game art for your Game Project"
 date:   2017-05-21 17:21:00 +1000
-categories: gaming
+categories: Mobile-Game
 ---
 I am currently working on a game development, i do programming and in the game if i require graphics then i hire designer. I was curious about how other indie developers like me manage the game assets. I asked in a Facebook group about this topic. Hopefully i got reply from Dozens of people. In this post i will share how they manage the game assets being a Game Programmer.
 

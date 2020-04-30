@@ -2,7 +2,8 @@
 layout: post
 title:  "Starting Animation from random time frame Unity"
 date:   2017-07-11 17:25:00 +1000
-categories: csharp, programming, unity3d
+categories: Programming
+tags: CSharp, Unity3D
 ---
 Code snippet to start the animation at different time. Useful when there are many same animation running on screen and you want to make them random.
 

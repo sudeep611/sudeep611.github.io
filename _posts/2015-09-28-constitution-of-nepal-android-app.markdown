@@ -2,7 +2,8 @@
 layout: post
 title:  "'Constitution of Nepal' Android App"
 date:   2015-09-28 21:56:00 +1000
-categories: android, my-project
+categories: Programming
+tags: Android, My-Project
 ---
 It's been so great to feel that the Constitution of Nepal has finally arrived. Congratulations to all the Nepalese. May this Constitution brings peace, prosperity and rapid development in the country is the wish of all the Nepalese.
 

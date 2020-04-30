@@ -2,8 +2,8 @@
 layout: post
 title:  "Recursive directory traverse and append .png file to list"
 date:   2017-12-04 21:47:00 +1000
-categories: programming
-tags: python
+categories: Programming
+tags: Python
 ---
 Python Developer's Meetup Nepal #13 Question Solution
 

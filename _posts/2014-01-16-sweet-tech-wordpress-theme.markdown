@@ -2,7 +2,8 @@
 layout: post
 title:  "Sweet Tech WordPress Theme"
 date:   2014-01-16 10:33:00 +1000
-categories: wordpress, my-project
+categories: WordPress
+tags: My-Project, PHP
 ---
 Sweet Tech is a free WordPress theme. It is clean, white, blue theme. It is extremely easy to customize and maintain your site.
 

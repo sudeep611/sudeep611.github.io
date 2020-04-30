@@ -2,7 +2,8 @@
 layout: post
 title:  "Jhandi Munda (Langur Burja) - Mobile Game"
 date:   2014-09-28 10:28:00 +1000
-categories: Unity3D, mobile game, my project
+categories: Mobile-Game
+tags: Android, My-Project
 ---
 Khor Khore/ also known as "Langur Burja" and "Jhanda Burja" is one of the Gambling game most played during big festivals like Dashain and Tihar in Nepal.
 
