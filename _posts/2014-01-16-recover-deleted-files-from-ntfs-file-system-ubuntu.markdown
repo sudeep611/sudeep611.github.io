@@ -35,7 +35,7 @@ It will list all the drive in your computer as shown below and note the Device n
 Now its time to search for the deleted files in the drive. Enter following command in your terminal:
 
 ```bash
-sudo ntfsundelete /dev/sda4 -s -m '*.zip'
+$ sudo ntfsundelete /dev/sda4 -s -m '*.zip'
 ```
 
 In this above code /dev/sda4 is your device name and *.zip is the file extension(it means all the files with .zip extension). If you are searching for .jpg or something then change this file extension.
