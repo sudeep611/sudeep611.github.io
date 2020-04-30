@@ -101,9 +101,23 @@ nav ul li a.logo {
   font-size: 20px;
   padding-bottom: 16px;
 }
+
+/* Pagination */
+#pagination {
+  height: 18px;
+  font-size: 15px;
+  padding: 0px;
+  margin: 5px 0px 5px 5px;
+}
+.pagination-next {
+  float: right;
+}
+.pagination-prev {
+  float: left;
+}
 /* Footer */
-.footer-text {
+#footer-text {
   border-top: 1px #eeeeee solid;
   padding-top: 10px;
-  margin-top: 40px;
+  margin-top: 20px;
 }

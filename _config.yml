@@ -32,11 +32,16 @@ github_username:  sudeep611
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-paginate
 
 markdown: kramdown
 kramdown:
   input: GFM
   syntax_highlighter: rouge
+
+paginate: 10
+paginate_path: "/blog/page:num/"
+
 
 # Exclude from processing.
 # The following items will not be processed, by default.
