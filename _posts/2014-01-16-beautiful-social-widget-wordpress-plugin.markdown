@@ -7,7 +7,7 @@ tags: My-Project, PHP
 ---
 Beautiful Social Widget is WordPress plugins which is useful to link to your social media profiles. This plugins adds the widget in your blog. This plugin supports Facebook, Twitter, Google Plus, Linked In, Pinterest, YouTube, Instagram, Tumblr, Flickr, Rss and Email Me.
 
-![](/assets/post-images/2014/beautiful-social-widget-wordpress-plugin1.png){:class="img-responsive"}
+![Social Widget WordPress Plugin](/assets/post-images/2014/beautiful-social-widget-wordpress-plugin1.png){:class="img-responsive"}
 
 Download <a href="http://wordpress.org/plugins/beautiful-social-widget/">Beautiful Social Widget</a>.
 
