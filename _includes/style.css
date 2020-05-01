@@ -8,13 +8,14 @@ body {
 }
 a:link {
   text-decoration: none;
-  color: #268bd2;
+  color: #ac4142;
 }
 a {
   color: #ac4142;
 }
 a:hover {
-  color: #3fa757;
+  text-decoration: underline;
+  color: #ac4142;
 }
 .smallfontsize {
   font-size: 13px;
@@ -74,7 +75,6 @@ nav ul li {
     list-style-type: none;
 }
 nav ul li a {
-    color: #3fa757;
     display: block;
     text-decoration: none;
 }
