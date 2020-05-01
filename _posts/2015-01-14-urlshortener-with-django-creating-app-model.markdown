@@ -126,3 +126,10 @@ Open up Urlss and you can add Urls by clicking Add urls. You can see the fields 
 Alright, This is the end of the Part 3, and we have created app, models for our app and registered the model to see it in Django Admin.
 
 Till now we have just done the Back-end, In the next two tutorials we will be working on Front-end. We will build web app from where user can input the URLs and will get the short URL for his URL.
+
+Post Series: <br/>
+Part 1: [Create a virtual environment and install Django](https://sudeepacharya.com.np/blog/2015/01/11/urlshortener-with-django-create-virtual-environment-install-django/)<br/>
+Part 2: [Create a new project and make sure it works](https://sudeepacharya.com.np/blog/2015/01/12/urlshortener-with-django-creating-new-django-project/)<br/>
+Part 3: [Create Django App, Model for our App and work with Django Admin](https://sudeepacharya.com.np/blog/2015/01/13/urlshortener-with-django-creating-app-model/)<br/>
+Part 4: [Working with URLs and Views](https://sudeepacharya.com.np/blog/2015/01/14/urlshortener-with-django-urls-and-views/)<br/>
+Part 5: [Working on Templates, Static files and finishing up](https://sudeepacharya.com.np/blog/2015/01/15/urlshortener-with-django-working-with-templates/)<br/>
