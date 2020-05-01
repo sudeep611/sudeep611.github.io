@@ -1,6 +1,6 @@
 body {
   background: url(/assets/images/bg.png);
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Times New Roman', Times, serif;
   color: #3e4444;
   font-size: 20px;
   margin: 0px;
@@ -37,7 +37,6 @@ img {
 }
 /* Navbar */
 nav {
-    font-family: sans-serif;
     font-size: 18;
     text-decoration: underline;
     background-color: #f6f4f4;
