@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  "Invisible Transparent Button in Unity3D"
-date:   2017-03-30 15:03:00 +1000
 categories: Programming
 tags: Unity3D
 ---

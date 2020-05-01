@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  "How to set up basic PHP Project structure with Composer"
-date:   2020-01-04 20:22:00 +1000
 categories: Programming
 tags: PHP
 ---

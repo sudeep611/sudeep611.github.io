@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  "Learn Kotlin (Part 5) - Class"
-date:   2019-01-09 03:35:00 +1000
 categories: Programming
 tags: Kotlin
 ---

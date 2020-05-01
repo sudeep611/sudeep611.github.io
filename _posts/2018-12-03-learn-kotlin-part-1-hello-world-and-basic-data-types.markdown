@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  "Learn Kotlin (Part 1) - Hello world and Basic Data Types"
-date:   2018-12-03 08:18:00 +1000
 categories: Programming
 tags: Kotlin
 ---

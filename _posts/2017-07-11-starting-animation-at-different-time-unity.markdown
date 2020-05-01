@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  "Starting Animation from random time frame Unity"
-date:   2017-07-11 17:25:00 +1000
 categories: Programming
 tags: CSharp, Unity3D
 ---

@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  "URL Shortener with Django (Part 4) - Working with Urls and views"
-date:   2015-01-15 00:00:00 +1000
 categories: Programming
 tags: Python, Django
 ---

@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  "Hello World!"
-date:   2013-12-13 23:44:12 +1000
 categories: uncategorized
 comments: false
 ---

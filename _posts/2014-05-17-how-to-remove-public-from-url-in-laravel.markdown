@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  "How to remove /public/ from URL in Laravel"
-date:   2014-05-17 17:08:00 +1000
 categories: Programming
 tags: PHP
 ---

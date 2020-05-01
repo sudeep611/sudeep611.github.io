@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  "Beautiful Social Widget - WordPress Plugin"
-date:   2014-01-16 12:48:00 +1000
 categories: WordPress
 tags: My-Project, PHP
 ---

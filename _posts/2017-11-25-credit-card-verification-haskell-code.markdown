@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  "Credit card Verification Haskell Code"
-date:   2017-11-25 21:42:00 +1000
 categories: Programming
 tags: Haskell
 ---

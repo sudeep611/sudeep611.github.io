@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  "How to delete the commit history in github"
-date:   2015-01-19 00:58:00 +1000
 categories: Programming
 tags: Git
 ---

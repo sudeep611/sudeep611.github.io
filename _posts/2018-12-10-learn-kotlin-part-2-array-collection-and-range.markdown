@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  "Learn Kotlin (Part 2) - Array, Collection and Range"
-date:   2018-12-10 11:48:00 +1000
 categories: Programming
 tags: Kotlin
 ---

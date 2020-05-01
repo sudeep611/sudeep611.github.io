@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  "Learn Kotlin (Part 3) - Control Flow"
-date:   2018-12-17 08:05:00 +1000
 categories: Programming
 tags: Kotlin
 ---

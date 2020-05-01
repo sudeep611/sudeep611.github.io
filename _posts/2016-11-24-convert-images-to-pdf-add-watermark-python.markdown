@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  "Convert the list of images to PDF file and add watermark using python"
-date:   2016-11-24 22:48:00 +1000
 categories: Programming
 tags: Python
 ---

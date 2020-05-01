@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  "Recover deleted data from NTFS file system in Ubuntu"
-date:   2014-01-16 07:33:00 +1000
 categories: Linux
 tags: Ubuntu, Data-BackUp
 ---

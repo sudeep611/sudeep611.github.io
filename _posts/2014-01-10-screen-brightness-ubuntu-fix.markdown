@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  "Screen Brightness reset to maximum after each restart in Ubuntu"
-date:   2014-01-10 14:14:00 +1000
 categories: Linux
 tags: Ubuntu
 ---

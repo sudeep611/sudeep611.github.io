@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  "Understanding Decorators in Python"
-date:   2015-04-29 23:23:00 +1000
 categories: Programming
 tags: Python
 ---

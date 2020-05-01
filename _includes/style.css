@@ -75,10 +75,16 @@ nav ul li {
     list-style-type: none;
 }
 nav ul li a {
+    color: #268bd2;
     display: block;
     text-decoration: none;
 }
+nav ul li a:hover {
+  color: #268bd2;
+  text-decoration: none;
+}
 nav ul li a:link {
+  color: #268bd2;
   text-decoration: none;
 }
 nav ul li a.logo {

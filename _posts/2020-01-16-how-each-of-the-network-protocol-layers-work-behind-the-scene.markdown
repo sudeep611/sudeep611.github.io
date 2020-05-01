@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  "How each of the Network Protocol layers work behind the scene"
-date:   2020-01-16 07:17:00 +1000
 categories: Networking
 ---
 When we type google.com in our browser, we see the google home page. We are unaware of the back scene about how the each layer of the protocol works. In this post i will describe, how each of the protocol layer works.

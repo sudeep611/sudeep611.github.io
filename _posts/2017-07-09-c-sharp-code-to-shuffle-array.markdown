@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  "C# code to shuffle Array"
-date:   2017-07-09 23:39:00 +1000
 categories: Programming
 tags: CSharp
 ---

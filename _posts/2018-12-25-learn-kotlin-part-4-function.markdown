@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  "Learn Kotlin (Part 4) - Function"
-date:   2018-12-25 07:23:00 +1000
 categories: Programming
 tags: Kotlin
 ---

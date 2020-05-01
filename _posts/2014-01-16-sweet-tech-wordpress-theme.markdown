@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  "Sweet Tech WordPress Theme"
-date:   2014-01-16 10:33:00 +1000
 categories: WordPress
 tags: My-Project, PHP
 ---

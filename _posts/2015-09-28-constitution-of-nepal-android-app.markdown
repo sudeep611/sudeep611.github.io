@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  "'Constitution of Nepal' Android App"
-date:   2015-09-28 21:56:00 +1000
 categories: Programming
 tags: Android, My-Project
 ---

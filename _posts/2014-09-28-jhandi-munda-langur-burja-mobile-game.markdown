@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  "Jhandi Munda (Langur Burja) - Mobile Game"
-date:   2014-09-28 10:28:00 +1000
 categories: Mobile-Game
 tags: Android, My-Project
 ---

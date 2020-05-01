@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  "A Silly way to comment in your Code"
-date:   2020-01-08 03:48:00 +1000
 categories: Programming
 tags: PHP
 ---

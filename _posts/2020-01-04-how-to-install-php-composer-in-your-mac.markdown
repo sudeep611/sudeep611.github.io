@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  "How to Install PHP Composer in your Mac"
-date:   2020-01-04 18:20:00 +1000
 categories: Programming
 tags: PHP
 ---

@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  "URL Shortener with Django (Part 2) - Creating a new django project"
-date:   2015-01-13 00:00:00 +1000
 categories: Programming
 tags: Python, Django
 ---

@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  "Clean Black WordPress Theme"
-date:   2014-01-16 10:55:00 +1000
 categories: WordPress
 tags: My-Project, PHP
 ---

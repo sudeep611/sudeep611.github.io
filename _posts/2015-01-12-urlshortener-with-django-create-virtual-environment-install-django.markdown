@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  "URL Shortener with Django (Part 1) - Creating virtual environment and installing Django"
-date:   2015-01-12 00:00:00 +1000
 categories: Programming
 tags: Python, Django
 ---

@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  "JavaScript code to display Multiplication table"
-date:   2014-02-02 03:42:00 +1000
 categories: Programming
 tags: JavaScript
 ---

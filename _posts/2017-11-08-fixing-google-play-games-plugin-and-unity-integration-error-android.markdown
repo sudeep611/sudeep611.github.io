@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  "Fixing Google Play Games plugin and Unity integration error - Android"
-date:   2017-11-08 20:17:00 +1000
 categories: Programming
 tags: Unity3D
 ---
