@@ -51,7 +51,7 @@ nav ul li:not(:first-child) {
   float: right;
   margin: 0px;
   padding-left: 20px;
-  padding-top: 10px;
+  /* padding-top: 10px; */
 }
 nav ul li {
     display: inline-block;
@@ -74,13 +74,14 @@ nav ul li a.logo {
     float: left;
     clear: both;
     padding-right: 30px;
+    padding-bottom: 10px;
   }
   nav ul li:not(:first-child) {
     float: left;
     margin: 0px;
     padding-right: 20px;
     padding-left: 0px;
-    padding-top: 10px;
+    /* padding-top: 10px; */
     padding-bottom: 20px;
   }
 
