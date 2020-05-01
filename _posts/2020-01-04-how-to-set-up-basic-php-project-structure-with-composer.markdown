@@ -17,7 +17,7 @@ Alright, let's jump onto our subject, in this post i will write about setting up
 
 Before beginning, i will assume that you have PHP and Composer installed in your machine. Read my previous post:
 
-[How to install PHP Composer in MAC](https://hellocoding.wordpress.com/2020/01/04/how-to-install-php-composer-in-your-mac/)
+[How to install PHP Composer in MAC](https://sudeepacharya.com.np/blog/2020/01/04/how-to-install-php-composer-in-your-mac/)
 
 Setting up the basic PHP Project Skeleton code with Composer
 

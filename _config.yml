@@ -30,7 +30,7 @@ github_profile:  https://github.com/sudeep611
 linkedin_profile: https://www.linkedin.com/in/acharyasudeep/
 
 # Important for permalink
-timezone = "Europe/Amsterdam"
+# timezone = "Europe/Amsterdam"
 
 # Build settings
 theme: minima
