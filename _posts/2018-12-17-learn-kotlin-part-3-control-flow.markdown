@@ -5,6 +5,13 @@ date:   2018-12-17 08:05:00 +1000
 categories: Programming
 tags: Kotlin
 ---
+Post Series: <br />
+Part 1: [Hello world and Basic Data Types](https://sudeepacharya.com.np/blog/2018/12/02/learn-kotlin-part-1-hello-world-and-basic-data-types/)<br />
+Part 2: [Array, Collection and Range](https://sudeepacharya.com.np/blog/2018/12/10/learn-kotlin-part-2-array-collection-and-range/)<br />
+Part 3: [Control Flow](https://sudeepacharya.com.np/blog/2018/12/16/learn-kotlin-part-3-control-flow/)<br />
+Part 4: [Function](https://sudeepacharya.com.np/blog/2018/12/24/learn-kotlin-part-4-function/)<br />
+Part 5: [Class](https://sudeepacharya.com.np/blog/2019/01/08/learn-kotlin-part-5-class/)<br />
+
 In this post we are going to learn about the control flow in Kotlin. Let us learn about how to make a decision, how to perform a task multiple times by iterating and how to get out of the loop, how to continue to next iteration. So, today we will learn all about changing the control flow of Kotlin program.
 
 <h2>If..Else</h2>
