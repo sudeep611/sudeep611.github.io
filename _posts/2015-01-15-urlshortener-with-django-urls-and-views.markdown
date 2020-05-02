@@ -35,12 +35,12 @@ urlpatterns = patterns('shortenersite.views',
     url(r'^$', 'index', name='home'),
     # for our home/index page
 
-    url(r'^(?P&lt;short_id&gt;\w{6})$', 'redirect_original', name='redirectoriginal'),
+    url(r'^(?P<short_id>\w{6})$', 'redirect_original', name='redirectoriginal'),
     # when short URL is requested it redirects to original URL
 
     url(r'^makeshort/$', 'shorten_url', name='shortenurl'),
     # this will create a URL's short id and return the short URL
-    )
+)
 ```
 
 Now we are done with our URLs now let us create views. But before that add these lines to your settings.py file.
@@ -110,8 +110,8 @@ Let's talk about what the above views does.
 So, this is the end of the part 4. At this moment this app do not work so have a patience and move to next part. In the next part we will add our template and static files and finish up our project.
 
 Post Series: <br/>
-Part 1: [Create a virtual environment and install Django](https://sudeepacharya.com.np/blog/2015/01/11/urlshortener-with-django-create-virtual-environment-install-django/)<br/>
-Part 2: [Create a new project and make sure it works](https://sudeepacharya.com.np/blog/2015/01/12/urlshortener-with-django-creating-new-django-project/)<br/>
-Part 3: [Create Django App, Model for our App and work with Django Admin](https://sudeepacharya.com.np/blog/2015/01/13/urlshortener-with-django-creating-app-model/)<br/>
-Part 4: [Working with URLs and Views](https://sudeepacharya.com.np/blog/2015/01/14/urlshortener-with-django-urls-and-views/)<br/>
-Part 5: [Working on Templates, Static files and finishing up](https://sudeepacharya.com.np/blog/2015/01/15/urlshortener-with-django-working-with-templates/)<br/>
+Part 1: [Create a virtual environment and install Django](https://sudeepacharya.com.np/blog/2015/01/12/urlshortener-with-django-create-virtual-environment-install-django/)<br/>
+Part 2: [Create a new project and make sure it works](https://sudeepacharya.com.np/blog/2015/01/13/urlshortener-with-django-creating-new-django-project/)<br/>
+Part 3: [Create Django App, Model for our App and work with Django Admin](https://sudeepacharya.com.np/blog/2015/01/14/urlshortener-with-django-creating-app-model/)<br/>
+Part 4: [Working with URLs and Views](https://sudeepacharya.com.np/blog/2015/01/15/urlshortener-with-django-urls-and-views/)<br/>
+Part 5: [Working on Templates, Static files and finishing up](https://sudeepacharya.com.np/blog/2015/01/16/urlshortener-with-django-working-with-templates/)<br/>
