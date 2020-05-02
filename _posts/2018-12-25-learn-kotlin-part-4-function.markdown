@@ -5,11 +5,11 @@ categories: Programming
 tags: Kotlin
 ---
 Post Series: <br />
-Part 1: [Hello world and Basic Data Types](https://sudeepacharya.com.np/blog/2018/12/02/learn-kotlin-part-1-hello-world-and-basic-data-types/)<br />
+Part 1: [Hello world and Basic Data Types](https://sudeepacharya.com.np/blog/2018/12/03/learn-kotlin-part-1-hello-world-and-basic-data-types/)<br />
 Part 2: [Array, Collection and Range](https://sudeepacharya.com.np/blog/2018/12/10/learn-kotlin-part-2-array-collection-and-range/)<br />
-Part 3: [Control Flow](https://sudeepacharya.com.np/blog/2018/12/16/learn-kotlin-part-3-control-flow/)<br />
-Part 4: [Function](https://sudeepacharya.com.np/blog/2018/12/24/learn-kotlin-part-4-function/)<br />
-Part 5: [Class](https://sudeepacharya.com.np/blog/2019/01/08/learn-kotlin-part-5-class/)<br />
+Part 3: [Control Flow](https://sudeepacharya.com.np/blog/2018/12/17/learn-kotlin-part-3-control-flow/)<br />
+Part 4: [Function](https://sudeepacharya.com.np/blog/2018/12/25/learn-kotlin-part-4-function/)<br />
+Part 5: [Class](https://sudeepacharya.com.np/blog/2019/01/09/learn-kotlin-part-5-class/)<br />
 
 Merry Christmas Guys! The year 2018 is about to end. This have been a great year. Happy New Year 2019, May your new year be filled with Joy and Happiness. This will probably be the last post for this year 2018. Hope to see you all in the next year!
 
