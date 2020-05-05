@@ -114,6 +114,7 @@ nav ul li a.logo {
   padding: 10px 20px 20px 20px;
   background-color: #ffffff;
   margin: 0px;
+  text-align: justify;
 }
 .posts-list li {
   font-size: 20px;
@@ -124,10 +125,14 @@ table{
     border-spacing: 0;
     border:1px solid #eeeeee;
     font-size: 16px;
+    margin-top: 15px;
 }
 th{
+    padding-top: 10px;
+    padding-bottom: 10px;
     border:1px solid #eeeeee;
     font-weight: 400;
+    text-align: center;
 }
 td{
     border:1px solid #eeeeee;
