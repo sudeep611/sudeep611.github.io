@@ -114,11 +114,13 @@ nav ul li a.logo {
   padding: 10px 20px 20px 20px;
   background-color: #ffffff;
   margin: 0px;
-  text-align: justify;
 }
 .posts-list li {
   font-size: 20px;
   padding-bottom: 16px;
+}
+.post-content {
+  text-align: justify;
 }
 table{
     border-collapse: collapse;
