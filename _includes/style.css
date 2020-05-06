@@ -45,6 +45,7 @@ h3, h4, h5, h6 {
 /* Images */
 img {
   max-width: 100%;
+  border: #eeeeee 1px solid;
 }
 /* Wrap */
 #wrap {

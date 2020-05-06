@@ -29,7 +29,7 @@ Let us move it to usr/local/bin to make it globally accessible from your termina
 $ mv composer.phar usr/local/bin
 ```
 
-Next, create alias and add it to your bashrc file to load it everytime you restart your terminal or mac book.
+Next, create alias and add it to your bashrc file to load it every time you restart your terminal or mac book.
 
 ```bash
 $ echo 'alias composer="php /usr/local/bin/composer.phar"' >> ~/.bash_profile
