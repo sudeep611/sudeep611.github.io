@@ -11,7 +11,7 @@ Then I decided to move my blog to [Github Pages](https://pages.github.com/), whi
 
 ## Comparison of Github Pages with Jekyll over WordPress.com
 
-| WordPress.com                                                            	| GithubPages (With Jekyll)                                                              	|
+| WordPress.com                                                            	| Github Pages (With Jekyll)                                                              	|
 |--------------------------------------------------------------------------	|----------------------------------------------------------------------------------------	|
 | - Provides free domain example.wordpress.com                             	| - Provides free domain username.github.io<br>- Also provides free url to your projects 	|
 | - Can not host JavaScript                                                	| - <span style="color:green">Can host JavaScript</span>                                                                  	|
@@ -21,7 +21,7 @@ Then I decided to move my blog to [Github Pages](https://pages.github.com/), whi
 
 We have discussed pretty much about the advantages over one another. Next, I am gonna talk about moving to Github Pages.
 
-First of all, if you don't want to use Jekyll to generate your static website there are other alternatives available to Jekyll. Some are [Gatsby](https://www.gatsbyjs.org/), [11ty](https://www.11ty.dev/) and [Hugo](https://gohugo.io/). The reason I choose Jekyll is that the Github Pages have good support for it but you can go with any of them.
+First of all, if you don't want to use Jekyll to generate your static website then there are other alternatives available to Jekyll. Some are [Gatsby](https://www.gatsbyjs.org/), [11ty](https://www.11ty.dev/) and [Hugo](https://gohugo.io/). The reason I choose Jekyll is that the Github Pages have good support for it but you can go with any of them.
 
 ### What you should know about moving to Github Pages
 You cannot redirect your post URL to Github Pages site. It is because the WordPress.com does not allow us to redirect URL. It is one of the bad things for SEO because you gonna copy the same post from your WordPress.com blog to the new blog at Github Pages which might make the search engines thinks that you have duplicated the content and might hurt your SEO.
