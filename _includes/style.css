@@ -5,6 +5,8 @@ body {
   font-size: 20px;
   margin: 0px;
   padding: 0px;
+  text-align: left;
+  font-weight: normal;
 }
 a:link {
   text-decoration: none;
@@ -24,18 +26,18 @@ a:hover {
   font-style: italic;
 }
 h1 {
-  color: #000000;
-  font-size: 26px;
-  border-bottom: 1px #eeeeee solid;
   padding: 0px;
   margin: 0px;
+  font-weight: inherit;
+}
+.page-title {
+  color: #000000;
+  font-size: 26px;
+  margin-bottom: 10px;
+  border-bottom: 1px #eeeeee solid;
+  padding-top: 10px;
   padding-bottom: 4px;
   margin-bottom: 8px;
-  font-weight: normal;
-  text-align: left;
-}
-page-title {
-  margin-bottom: 10px;
 }
 h2 {
   color: #000000;
@@ -43,16 +45,14 @@ h2 {
   padding: 0px;
   margin-bottom: 0px;
   padding-top: 20px;
-  font-weight: normal;
-  text-align: left;
+  font-weight: inherit;
 }
 h3, h4, h5, h6 {
   color: #000000;
   font-size: 22px;
   margin-bottom: 6px;
   margin-top: 10px;
-  font-weight: normal;
-  text-align: left;
+  font-weight: inherit;
 }
 /* Images */
 img {
@@ -61,7 +61,7 @@ img {
 }
 /* Wrap */
 #wrap {
-  max-width: 800px;
+  max-width: 650px;
   padding: 0px;
   margin: 0px auto 0px;
 }
@@ -70,8 +70,8 @@ nav {
     font-size: 18px;
     text-decoration: underline;
     background-color: #f6f4f4;
-    margin: 0;
-    margin-bottom: 16px;
+    margin: 0px;
+    padding-bottom: 16px;
     overflow: hidden;
 }
 nav ul {
@@ -133,7 +133,6 @@ nav ul li a.logo {
   padding-bottom: 20px;
 }
 .post-content {
-  text-align: left;
 }
 table{
     border-collapse: collapse;
@@ -146,8 +145,8 @@ th{
     padding-top: 10px;
     padding-bottom: 10px;
     border:1px solid #eeeeee;
-    font-weight: 400;
     text-align: center;
+    font-weight: bold;
 }
 td{
     border:1px solid #eeeeee;
@@ -157,8 +156,8 @@ td{
 .comments-heading {
   color: #000000;
   font-size: 25px;
-  margin-top: 15px;
-  
+  margin-top: 25px;
+
 }
 /* Pagination */
 #pagination {
