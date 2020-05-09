@@ -2,7 +2,7 @@ body {
   background: url(/assets/images/bg.png);
   font-family: 'Times New Roman', Times, serif;
   color: #515151;
-  font-size: 17px;
+  font-size: 20px;
   margin: 0px;
   padding: 0px;
 }
@@ -24,13 +24,13 @@ a:hover {
   font-style: italic;
 }
 h1 {
-  color: #313131;
-  font-size: 25px;
+  color: #000000;
+  font-size: 26px;
   border-bottom: 1px #eeeeee solid;
   padding: 0px;
   margin: 0px;
-  padding-bottom: 10px;
-  margin-bottom: 10px;
+  padding-bottom: 4px;
+  margin-bottom: 8px;
   font-weight: normal;
   text-align: left;
 }
@@ -38,15 +38,16 @@ page-title {
   margin-bottom: 10px;
 }
 h2 {
-  color: #313131;
-  font-size: 23px;
-  margin-bottom: 6px;
-  margin-top: 10px;
+  color: #000000;
+  font-size: 24px;
+  padding: 0px;
+  margin-bottom: 0px;
+  padding-top: 20px;
   font-weight: normal;
   text-align: left;
 }
 h3, h4, h5, h6 {
-  color: #313131;
+  color: #000000;
   font-size: 22px;
   margin-bottom: 6px;
   margin-top: 10px;
@@ -60,7 +61,7 @@ img {
 }
 /* Wrap */
 #wrap {
-  max-width: 600px;
+  max-width: 800px;
   padding: 0px;
   margin: 0px auto 0px;
 }
@@ -151,6 +152,12 @@ th{
 td{
     border:1px solid #eeeeee;
     padding: 6px;
+}
+
+.comments-heading {
+  color: #000000;
+  font-size: 25px;
+  margin-top: 15px;
 }
 /* Pagination */
 #pagination {
