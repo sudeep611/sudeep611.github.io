@@ -132,7 +132,7 @@ nav ul li a.logo {
   padding-bottom: 20px;
 }
 .post-content {
-  text-align: justify;
+  text-align: left;
 }
 table{
     border-collapse: collapse;
