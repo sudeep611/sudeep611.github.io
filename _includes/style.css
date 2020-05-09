@@ -2,7 +2,7 @@ body {
   background: url(/assets/images/bg.png);
   font-family: 'Times New Roman', Times, serif;
   color: #515151;
-  font-size: 20px;
+  font-size: 17px;
   margin: 0px;
   padding: 0px;
 }
@@ -25,22 +25,33 @@ a:hover {
 }
 h1 {
   color: #313131;
-  font-size: 22px;
+  font-size: 25px;
   border-bottom: 1px #eeeeee solid;
+  padding: 0px;
+  margin: 0px;
   padding-bottom: 10px;
+  margin-bottom: 10px;
+  font-weight: normal;
+  text-align: left;
+}
+page-title {
   margin-bottom: 10px;
 }
 h2 {
   color: #313131;
-  font-size: 21px;
+  font-size: 23px;
   margin-bottom: 6px;
-  margin-top: 12px;
+  margin-top: 10px;
+  font-weight: normal;
+  text-align: left;
 }
 h3, h4, h5, h6 {
   color: #313131;
-  font-size: 20px;
+  font-size: 22px;
   margin-bottom: 6px;
-  margin-top: 12px;
+  margin-top: 10px;
+  font-weight: normal;
+  text-align: left;
 }
 /* Images */
 img {
@@ -55,10 +66,11 @@ img {
 }
 /* Navbar */
 nav {
-    font-size: 18;
+    font-size: 18px;
     text-decoration: underline;
     background-color: #f6f4f4;
     margin: 0;
+    margin-bottom: 16px;
     overflow: hidden;
 }
 nav ul {
@@ -117,7 +129,6 @@ nav ul li a.logo {
   margin: 0px;
 }
 .posts-list li {
-  font-size: 20px;
   padding-bottom: 20px;
 }
 .post-content {
