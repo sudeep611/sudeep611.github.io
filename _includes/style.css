@@ -51,6 +51,7 @@ h3, h4, h5, h6 {
   font-size: 22px;
   margin-bottom: 6px;
   margin-top: 10px;
+  padding-top: 10px;
   font-weight: inherit;
 }
 /* Images */
@@ -128,6 +129,10 @@ nav ul li a.logo {
   background-color: #ffffff;
   margin: 0px;
 }
+.content li {
+  padding-bottom: 10px;
+  font-size: 18px;
+}
 .posts-list li {
   padding-bottom: 20px;
 }
@@ -137,7 +142,7 @@ table{
     border-collapse: collapse;
     border-spacing: 0;
     border:1px solid #eeeeee;
-    font-size: 16px;
+    font-size: 15px;
     margin-top: 15px;
 }
 th{
