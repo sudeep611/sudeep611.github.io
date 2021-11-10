@@ -1,0 +1,38 @@
+<!doctype html><html lang=en-us>
+<title>How to Install PHP Composer in your Mac | Sudeep's Blog</title>
+<meta charset=utf-8>
+<meta name=generator content="Hugo 0.89.1">
+<meta name=viewport content="width=device-width,initial-scale=1">
+<link rel=stylesheet href=https://sudeepacharya.com.np/css/index.css>
+<link rel=canonical href=https://sudeepacharya.com.np/blog/2020/01/04/how-to-install-php-composer-in-your-mac/>
+<link rel=alternate type=application/rss+xml href title="Sudeep's Blog">
+<header>
+<a href=https://sudeepacharya.com.np/ class=title>Sudeep's Blog</a>
+<nav>
+<a href=/contact/>Contact</a>
+</nav>
+</header>
+<article>
+<header>
+<h1>How to Install PHP Composer in your Mac</h1>
+<time datetime=2020-01-04T00:00:00Z>January 04, 2020</time>
+</header>
+<p>Composer is the easiest way to manage dependencies to your small to large PHP projects.</p>
+<p>Use the following commands to install composer in your Mac</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>curl -sS https://getcomposer.org/installer | php
+</code></pre></div><p>Now the composer is installed in your current directory.</p>
+<p>Now, you can access it using the following command</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>php composer.phar <span style=color:#f92672>[</span>command<span style=color:#f92672>]</span>
+</code></pre></div><p>It works but you don&rsquo;t always want to use this directory path to access the composer, So in the next step we will make it accessible globally.</p>
+<p>Let us move it to usr/local/bin to make it globally accessible from your terminal.</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>mv composer.phar usr/local/bin
+</code></pre></div><p>Next, create alias and add it to your bashrc file to load it every time you restart your terminal or mac book.</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>echo <span style=color:#e6db74>&#39;alias composer=&#34;php /usr/local/bin/composer.phar&#34;&#39;</span> &gt;&gt; ~/.bash_profile
+</code></pre></div><p>That&rsquo;s all, Restart your terminal and now try using composer in your terminal and it works. Every time the terminal opens it autoloads this alias now.</p>
+<p>Bonus: If it is for other platform such as Ubuntu, you need to write to bashrc instead of bash_profile.</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>echo <span style=color:#e6db74>&#39;alias composer=&#34;php /usr/local/bin/composer.phar&#34;&#39;</span> &gt;&gt; ~/.bashrc
+</code></pre></div>
+</article>
+<footer><p>© 2021 Sudeep's Blog - Built With ❤️ using <a href=https://gohugo.io/>Hugo</a> and <a href=https://pages.github.com/>Github Pages</a></p>
+</footer>
+</html>

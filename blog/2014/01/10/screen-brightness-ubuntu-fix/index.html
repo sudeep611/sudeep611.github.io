@@ -1,0 +1,33 @@
+<!doctype html><html lang=en-us>
+<title>Screen Brightness reset to maximum after each restart in Ubuntu | Sudeep's Blog</title>
+<meta charset=utf-8>
+<meta name=generator content="Hugo 0.89.1">
+<meta name=viewport content="width=device-width,initial-scale=1">
+<link rel=stylesheet href=https://sudeepacharya.com.np/css/index.css>
+<link rel=canonical href=https://sudeepacharya.com.np/blog/2014/01/10/screen-brightness-ubuntu-fix/>
+<link rel=alternate type=application/rss+xml href title="Sudeep's Blog">
+<header>
+<a href=https://sudeepacharya.com.np/ class=title>Sudeep's Blog</a>
+<nav>
+<a href=/contact/>Contact</a>
+</nav>
+</header>
+<article>
+<header>
+<h1>Screen Brightness reset to maximum after each restart in Ubuntu</h1>
+<time datetime=2014-01-10T00:00:00Z>January 10, 2014</time>
+</header>
+<p>I just installed Ubuntu 13.10 in my Dell Inspiron 3421. Previously there was no problem with the screen brightness.</p>
+<p>But certainly i was having the problem with screen brightness. I normally work with low screen brightness.</p>
+<p>But whenever i restart my Laptop the Screen Brightness was set to maximum. If you are also having this same problem then i have found the fix for this. Let&rsquo;s see how i was able to fix the screen brightness issue.</p>
+<p>First open the Terminal and type</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>sudo gedit /etc/rc.local
+</code></pre></div><p><img src=/assets/post-images/2014/ubuntu13-10-terminal.png alt="Ubuntu 13.10 Screen"></p>
+<p>and it will open file(rc.local in gedit) then add the following code just above the line <strong>exit 0</strong></p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>echo <span style=color:#ae81ff>7</span> &gt; /sys/class/backlight/acpi_video0/brightness
+</code></pre></div><p>You can change the number 7 which is the brightness level value.</p>
+<p>Source: <a href=http://askubuntu.com/questions/79983/screen-brightness-reset-to-minimum-after-every-reboot>Ask Ubuntu</a></p>
+</article>
+<footer><p>© 2021 Sudeep's Blog - Built With ❤️ using <a href=https://gohugo.io/>Hugo</a> and <a href=https://pages.github.com/>Github Pages</a></p>
+</footer>
+</html>

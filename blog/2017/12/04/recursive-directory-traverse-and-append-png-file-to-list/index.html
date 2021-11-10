@@ -1,0 +1,52 @@
+<!doctype html><html lang=en-us>
+<title>Recursive directory traverse and append .png file to list | Sudeep's Blog</title>
+<meta charset=utf-8>
+<meta name=generator content="Hugo 0.89.1">
+<meta name=viewport content="width=device-width,initial-scale=1">
+<link rel=stylesheet href=https://sudeepacharya.com.np/css/index.css>
+<link rel=canonical href=https://sudeepacharya.com.np/blog/2017/12/04/recursive-directory-traverse-and-append-png-file-to-list/>
+<link rel=alternate type=application/rss+xml href title="Sudeep's Blog">
+<header>
+<a href=https://sudeepacharya.com.np/ class=title>Sudeep's Blog</a>
+<nav>
+<a href=/contact/>Contact</a>
+</nav>
+</header>
+<article>
+<header>
+<h1>Recursive directory traverse and append .png file to list</h1>
+<time datetime=2017-12-04T00:00:00Z>December 04, 2017</time>
+</header>
+<p>Python Developer&rsquo;s Meetup Nepal #13 Question Solution</p>
+<p>Q: Write a python script that recursively walks all sub-directories and searches all files with extension *.png or *.PNG and append them to the list.</p>
+<p>Solution:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#f92672>import</span> os
+
+<span style=color:#75715e># list variable to store the .png and .PNG file</span>
+png_file_list <span style=color:#f92672>=</span> []
+
+<span style=color:#75715e># Recursive function to traverse all the sub-dirctory and check for png files</span>
+<span style=color:#66d9ef>def</span> <span style=color:#a6e22e>traverse_directory</span>(dir_path):
+    <span style=color:#66d9ef>for</span> child <span style=color:#f92672>in</span> os<span style=color:#f92672>.</span>listdir(dir_path):
+        path <span style=color:#f92672>=</span> os<span style=color:#f92672>.</span>path<span style=color:#f92672>.</span>join(dir_path, child)
+        <span style=color:#66d9ef>if</span> os<span style=color:#f92672>.</span>path<span style=color:#f92672>.</span>isdir(path):
+            traverse_directory(path)
+        <span style=color:#66d9ef>else</span>:
+            <span style=color:#75715e># split the path and store file name only</span>
+            file_name <span style=color:#f92672>=</span> path<span style=color:#f92672>.</span>split(<span style=color:#e6db74>&#39;</span><span style=color:#ae81ff>\\</span><span style=color:#e6db74>&#39;</span>)[<span style=color:#f92672>-</span><span style=color:#ae81ff>1</span>]
+            <span style=color:#75715e># split the file name and store extension</span>
+            file_name_extension <span style=color:#f92672>=</span> file_name<span style=color:#f92672>.</span>split(<span style=color:#e6db74>&#39;.&#39;</span>)[<span style=color:#f92672>-</span><span style=color:#ae81ff>1</span>]
+            <span style=color:#75715e># check if the file name has extension .png or .PNG</span>
+            <span style=color:#66d9ef>if</span>(file_name_extension <span style=color:#f92672>==</span> <span style=color:#e6db74>&#39;png&#39;</span> <span style=color:#f92672>or</span> file_name_extension <span style=color:#f92672>==</span> <span style=color:#e6db74>&#39;PNG&#39;</span>):
+                png_file_list<span style=color:#f92672>.</span>append(file_name)
+
+<span style=color:#75715e># Traverse current directory for files and folders</span>
+traverse_directory(<span style=color:#e6db74>&#34;.&#34;</span>)
+
+<span style=color:#75715e># Print the final list</span>
+print(png_file_list)
+</code></pre></div>
+</article>
+<footer><p>© 2021 Sudeep's Blog - Built With ❤️ using <a href=https://gohugo.io/>Hugo</a> and <a href=https://pages.github.com/>Github Pages</a></p>
+</footer>
+</html>

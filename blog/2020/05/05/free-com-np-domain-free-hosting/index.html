@@ -1,0 +1,75 @@
+<!doctype html><html lang=en-us>
+<title>Get free domain .com.np and free hosting | Sudeep's Blog</title>
+<meta charset=utf-8>
+<meta name=generator content="Hugo 0.89.1">
+<meta name=viewport content="width=device-width,initial-scale=1">
+<link rel=stylesheet href=https://sudeepacharya.com.np/css/index.css>
+<link rel=canonical href=https://sudeepacharya.com.np/blog/2020/05/05/free-com-np-domain-free-hosting/>
+<link rel=alternate type=application/rss+xml href title="Sudeep's Blog">
+<header>
+<a href=https://sudeepacharya.com.np/ class=title>Sudeep's Blog</a>
+<nav>
+<a href=/contact/>Contact</a>
+</nav>
+</header>
+<article>
+<header>
+<h1>Get free domain .com.np and free hosting</h1>
+<time datetime=2020-05-05T00:00:00Z>May 05, 2020</time>
+</header>
+<p>For Nepali citizens, you can register free <strong>.com.np</strong> domain. In this post, I will teach you to point this domain to Github Pages using Cloudflare DNS for free.</p>
+<p>Mercantile Communications Pvt. Ltd. provides .com.np domain registration for free of cost and provides to use DNS service.</p>
+<h2 id=step-1-setup-github-account-and-upload-website>Step 1: Setup Github account and upload website</h2>
+<p>To upload your website into the github account you need to learn git. I am not covering the tutorial for using the git. You can refer to this site to learn git. <a href=https://try.github.io/>Learn Git</a></p>
+<p>Before starting, you need to know that you can only host the static webpages in the github. For example you can upload index.hml, javascript files and images. This means that you can&rsquo;t host the CMS such as WordPress that is built on PHP. So, to sum up you can only host html, js, images and other files such as pdf.</p>
+<p>First of all let us create a web site on Github. For this follow the steps below.</p>
+<ol>
+<li>
+<p>Sign Up on <a href=https://github.com/>Github</a>, with username, email and password.</p>
+</li>
+<li>
+<p>Login to your Github Account</p>
+</li>
+<li>
+<p>Create new repository with the name <em>username</em>.github.io
+Here, don&rsquo;t forget to change the username with your own github username that you used while signing up.</p>
+</li>
+<li>
+<p>This is the repository where you will upload your website.</p>
+</li>
+<li>
+<p>Have atleast index.html in this repository so, when you open <em>username</em>.github.io in your browser you will see your website running.</p>
+</li>
+</ol>
+<h2 id=step-2-register-your-domain-name>Step 2: Register your Domain Name</h2>
+<p>You can apply for new domain through the link below:</p>
+<p><a href=https://register.com.np/apply-new-domain.php>Register your free domain</a></p>
+<p>To apply the domain name, you need to enter the following details in the above web site:</p>
+<p><strong>Domain name</strong>: yourname.com.np, just enter the domain name you want to register based on your name.</p>
+<p><strong>Name Server</strong>:
+Enter the name servers as follows.</p>
+<p>Primary Name Server: <em>eva.ns.cloudflare.com</em></p>
+<p>Secondary Name Server: <em>hank.ns.cloudflare.com</em></p>
+<p>Since, we are using Github Pages to host our web site and Mercantile does not provide us to set up CNAME and A record for our domain.</p>
+<p><strong>You Details</strong>: Enter your Email and Personal details.</p>
+<p><strong>Documents</strong>: Scan and upload your citizenship document. Also write a cover letter mentioning that you want to register the domain.</p>
+<p>After submitting all these information you will get an email confirmation from Mercantile Communications. If you do not get reply from them within a week just send them email to <strong><a href=mailto:hostmaster@mercantile.com.np>hostmaster@mercantile.com.np</a></strong></p>
+<h2 id=step-3-point-your-domain-to-github-pages-through-cloudflare>Step 3: Point your domain to Github Pages through Cloudflare</h2>
+<p>Create a free account on Cloudflare. <a href=https://www.cloudflare.com/>Sign up for Cloudflare</a></p>
+<p>Add a site to Cloudflare. I am not writing each an every step. Refer to the following link.</p>
+<p><a href=https://support.cloudflare.com/hc/en-us/articles/201720164-Creating-a-Cloudflare-account-and-adding-a-website>Creating a Clouflare account and adding a Website</a></p>
+<p>Next, after adding the site to Cloudflare, navigate to DNS tab and following record.</p>
+<p>After adding all the records your settings will look something like this:
+<img src=/assets/post-images/2020/point-github-cname-from-clouflare.png alt="Create A record for domain in Clouflare"></p>
+<h2 id=step-4-create-cname-file-in-your-github-repository>Step 4: Create CNAME file in your Github repository</h2>
+<p>Till this step, we have point our domain to Githubpages and we have your website running in Github Pages with url <strong>username</strong>.github.io</p>
+<p>Now, we need to update our domain name in Github.</p>
+<p>In your repository in Github (created in the first Step) create a file name <strong>CNAME</strong></p>
+<p>In that file write the name of your domain (yourdomain.com.np) as shown in the image below.</p>
+<p><img src=/assets/post-images/2020/cname-file-custom-domain-githubpages.png alt="CNAME file for Custom domain in GithubPages"></p>
+<p>Now, you when you open &ldquo;yourname.com.np&rdquo;, You will see you website running.</p>
+<p>Note that it may take, upto 72 hours for the domain DNS to be updated throughout the web.</p>
+</article>
+<footer><p>© 2021 Sudeep's Blog - Built With ❤️ using <a href=https://gohugo.io/>Hugo</a> and <a href=https://pages.github.com/>Github Pages</a></p>
+</footer>
+</html>

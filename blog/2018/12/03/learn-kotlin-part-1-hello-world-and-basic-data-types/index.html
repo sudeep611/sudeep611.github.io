@@ -1,0 +1,91 @@
+<!doctype html><html lang=en-us>
+<title>Learn Kotlin (Part 1) - Hello world and Basic Data Types | Sudeep's Blog</title>
+<meta charset=utf-8>
+<meta name=generator content="Hugo 0.89.1">
+<meta name=viewport content="width=device-width,initial-scale=1">
+<link rel=stylesheet href=https://sudeepacharya.com.np/css/index.css>
+<link rel=canonical href=https://sudeepacharya.com.np/blog/2018/12/03/learn-kotlin-part-1-hello-world-and-basic-data-types/>
+<link rel=alternate type=application/rss+xml href title="Sudeep's Blog">
+<header>
+<a href=https://sudeepacharya.com.np/ class=title>Sudeep's Blog</a>
+<nav>
+<a href=/contact/>Contact</a>
+</nav>
+</header>
+<article>
+<header>
+<h1>Learn Kotlin (Part 1) - Hello world and Basic Data Types</h1>
+<time datetime=2018-12-03T00:00:00Z>December 03, 2018</time>
+</header>
+<p>Post Series:</p>
+<p>Part 1: <a href=https://sudeepacharya.com.np/blog/2018/12/03/learn-kotlin-part-1-hello-world-and-basic-data-types/>Hello world and Basic Data Types</a></p>
+<p>Part 2: <a href=https://sudeepacharya.com.np/blog/2018/12/10/learn-kotlin-part-2-array-collection-and-range/>Array, Collection and Range</a></p>
+<p>Part 3: <a href=https://sudeepacharya.com.np/blog/2018/12/17/learn-kotlin-part-3-control-flow/>Control Flow</a></p>
+<p>Part 4: <a href=https://sudeepacharya.com.np/blog/2018/12/25/learn-kotlin-part-4-function/>Function</a></p>
+<p>Part 5: <a href=https://sudeepacharya.com.np/blog/2019/01/09/learn-kotlin-part-5-class/>Class</a></p>
+<p>Since <a href=https://kotlinlang.org/>Kotlin</a> is already a official programming language for Android Apps development, I have been learning Kotlin lately. In this post, i will take you through basic hello world skeleton program to data types, variables in Kotlin.</p>
+<h2 id=hello-world-program-for-kotlin>Hello World Program for Kotlin</h2>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-kotlin data-lang=kotlin><span style=color:#66d9ef>fun</span> <span style=color:#a6e22e>main</span>(args: Array) {
+    println(<span style=color:#e6db74>&#34;Hello World!&#34;</span>)
+}
+</code></pre></div><p>main is the entry point in the kotlin program.</p>
+<h2 id=variablesvalues-in-kotlin>Variables/Values in Kotlin</h2>
+<p>We can define either <strong>val</strong>ue or <strong>var</strong>aible in kotlin. So, what is the difference between these two declarations?</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-kotlin data-lang=kotlin><span style=color:#66d9ef>var</span> a : Int = <span style=color:#ae81ff>3</span> vs <span style=color:#66d9ef>val</span> a : Int = <span style=color:#ae81ff>3</span>
+</code></pre></div><p>When you declare var then you can change the value later whereas if you declare val then you cannot change the value later. val makes the variable declaration immutable.</p>
+<h2 id=data-types>Data Types</h2>
+<p>kotlin provides data types like Java, but unlike the java data type starts with capital letter.</p>
+<h3 id=numbers>Numbers</h3>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-kotlin data-lang=kotlin><span style=color:#66d9ef>val</span> a : Int = <span style=color:#ae81ff>3</span>;
+<span style=color:#66d9ef>val</span> b : Float = <span style=color:#ae81ff>3.0f</span>;
+<span style=color:#66d9ef>val</span> d : Double = <span style=color:#ae81ff>4.9</span>;
+<span style=color:#66d9ef>val</span> l : Long = <span style=color:#ae81ff>3494949494949</span>
+</code></pre></div><p>Let us see what size of data can each type store.</p>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Size</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Byte</td>
+<td>8</td>
+</tr>
+<tr>
+<td>Short</td>
+<td>16</td>
+</tr>
+<tr>
+<td>Int</td>
+<td>32</td>
+</tr>
+<tr>
+<td>Long</td>
+<td>64</td>
+</tr>
+<tr>
+<td>Float</td>
+<td>32</td>
+</tr>
+<tr>
+<td>Double</td>
+<td>64</td>
+</tr>
+</tbody>
+</table>
+<h3 id=character-and-string>Character and String</h3>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-kotlin data-lang=kotlin><span style=color:#66d9ef>var</span> a : Char = <span style=color:#e6db74>&#39;d&#39;</span>
+<span style=color:#66d9ef>val</span> b : Char = <span style=color:#e6db74>&#39;e&#39;</span>
+<span style=color:#66d9ef>val</span> name : String = <span style=color:#e6db74>&#34;Sudeep&#34;</span>
+</code></pre></div><p>Char can store one character whereas a String can store group of character.</p>
+<h3 id=boolean>Boolean</h3>
+<p>Like other programming languages, kotlin provides boolean data type which can store either true or false.</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-kotlin data-lang=kotlin><span style=color:#66d9ef>var</span> isTrue : Boolean = <span style=color:#66d9ef>false</span>
+<span style=color:#66d9ef>var</span> isFalse : Boolean = <span style=color:#66d9ef>true</span>
+</code></pre></div><p>These are the basic data types in Kotlin, we have more complex data types such as Arrays, Collection and Ranges which we will discuss in future post.</p>
+</article>
+<footer><p>© 2021 Sudeep's Blog - Built With ❤️ using <a href=https://gohugo.io/>Hugo</a> and <a href=https://pages.github.com/>Github Pages</a></p>
+</footer>
+</html>

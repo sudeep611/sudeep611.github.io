@@ -1,0 +1,56 @@
+<!doctype html><html lang=en-us>
+<title>URL Shortener with Django (Part 1) - Creating virtual environment and installing Django | Sudeep's Blog</title>
+<meta charset=utf-8>
+<meta name=generator content="Hugo 0.89.1">
+<meta name=viewport content="width=device-width,initial-scale=1">
+<link rel=stylesheet href=https://sudeepacharya.com.np/css/index.css>
+<link rel=canonical href=https://sudeepacharya.com.np/blog/2015/01/12/urlshortener-with-django-create-virtual-environment-install-django/>
+<link rel=alternate type=application/rss+xml href title="Sudeep's Blog">
+<header>
+<a href=https://sudeepacharya.com.np/ class=title>Sudeep's Blog</a>
+<nav>
+<a href=/contact/>Contact</a>
+</nav>
+</header>
+<article>
+<header>
+<h1>URL Shortener with Django (Part 1) - Creating virtual environment and installing Django</h1>
+<time datetime=2015-01-12T00:00:00Z>January 12, 2015</time>
+</header>
+<p>I finally got the time to write a Django tutorial. In this tutorial we are building URL Shortener. If you are confused with what we are building then we are building something similar to (<a href=http://bit.ly>bit.ly</a>) or (<a href=http://goo.gl>goo.gl</a>).</p>
+<p>We are building the app that will make a shorter URL of a longer URL. (Example) Normally the shorter URL will be <strong>localhost:8000/4hh5kr</strong> for <em><a href=http://www.facebook.com>www.facebook.com</a></em></p>
+<p>I am using Django <em>1.7.1</em> with Python <em>3.3.2+</em>. Don&rsquo;t worry if you have different version of Django because we will set up our virtual environment and install latest version of Django. But be sure you do have Python 3+ because installing Python will not be covered in this tutorial.</p>
+<p>I assume that you have completed <a href=https://docs.djangoproject.com/en/1.7/intro/tutorial01/>Writing your first Django app</a>. It is not really essential to complete this tutorial but it is highly recommended that you complete this tutorial before we begin. It will give you a lot of knowledge that will be useful in this tutorial.</p>
+<p>You can also get the source code of this app in <a href=https://github.com/sudeep611/django_urlshortener>Github</a>(django_urlshortener).</p>
+<p>Well let&rsquo;s start to build our URL Shortener then.</p>
+<h2 id=create-a-virtual-environment-and-install-django>Create a virtual environment and install Django</h2>
+<p>Let us start by creating a virtual environment and installing Django. So, open up your Terminal and follow the instruction below.</p>
+<p>Create a new folder for our project.</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>mkdir tutorial
+</code></pre></div><p>Go inside the tutorial folder (folder we just created)</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>cd tutorial
+</code></pre></div><p>Create virtual environment with python 3.</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>virtualenv -p /usr/bin/python3 py3env
+</code></pre></div><p>Activate our virtual environment py3env.</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>source py3env/bin/activate
+</code></pre></div><p>(Note: To deactivate it you can just use &ldquo;deactivate&rdquo; but now don&rsquo;t deactivate it.)</p>
+<p>Run the following command to install Django:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>pip install Django<span style=color:#f92672>==</span>1.7.1
+</code></pre></div><p>Depending on your Internet speed, it may take some minute or less than a minute.</p>
+<p>After done, let us check that Django is really installed.</p>
+<p>To check the version of Django installed, enter the following command:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>python -c <span style=color:#e6db74>&#39;import django; print(django.get_version())&#39;</span>
+</code></pre></div><p>You must see something similar to the following:</p>
+<p><img src=/assets/post-images/2015/check_django_version.png alt="check Django version"></p>
+<p>So, this is the end of the first part. We set up our virtual environment and installed Django. Now you are ready to move to next part.</p>
+<p><em>Before moving to Part 2, from now whenever you follow this tutorial don&rsquo;t forget to activate virtual environment (py3env) or things may go little wired.</em></p>
+<p>Post Series:</p>
+<p>Part 1: <a href=https://sudeepacharya.com.np/blog/2015/01/12/urlshortener-with-django-create-virtual-environment-install-django/>Create a virtual environment and install Django</a></p>
+<p>Part 2: <a href=https://sudeepacharya.com.np/blog/2015/01/13/urlshortener-with-django-creating-new-django-project/>Create a new project and make sure it works</a></p>
+<p>Part 3: <a href=https://sudeepacharya.com.np/blog/2015/01/14/urlshortener-with-django-creating-app-model/>Create Django App, Model for our App and work with Django Admin</a></p>
+<p>Part 4: <a href=https://sudeepacharya.com.np/blog/2015/01/15/urlshortener-with-django-urls-and-views/>Working with URLs and Views</a></p>
+<p>Part 5: <a href=https://sudeepacharya.com.np/blog/2015/01/16/urlshortener-with-django-working-with-templates/>Working on Templates, Static files and finishing up</a></p>
+</article>
+<footer><p>© 2021 Sudeep's Blog - Built With ❤️ using <a href=https://gohugo.io/>Hugo</a> and <a href=https://pages.github.com/>Github Pages</a></p>
+</footer>
+</html>

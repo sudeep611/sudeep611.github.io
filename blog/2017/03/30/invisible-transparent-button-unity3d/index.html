@@ -1,0 +1,44 @@
+<!doctype html><html lang=en-us>
+<title>Invisible Transparent Button in Unity3D | Sudeep's Blog</title>
+<meta charset=utf-8>
+<meta name=generator content="Hugo 0.89.1">
+<meta name=viewport content="width=device-width,initial-scale=1">
+<link rel=stylesheet href=https://sudeepacharya.com.np/css/index.css>
+<link rel=canonical href=https://sudeepacharya.com.np/blog/2017/03/30/invisible-transparent-button-unity3d/>
+<link rel=alternate type=application/rss+xml href title="Sudeep's Blog">
+<header>
+<a href=https://sudeepacharya.com.np/ class=title>Sudeep's Blog</a>
+<nav>
+<a href=/contact/>Contact</a>
+</nav>
+</header>
+<article>
+<header>
+<h1>Invisible Transparent Button in Unity3D</h1>
+<time datetime=2017-03-30T00:00:00Z>March 30, 2017</time>
+</header>
+<p>Today i was working on a project where i required to add the invisible button. I tried different methods like making button transparent, adding the image in the button. But then i came to know about this solution. I think that this is probably the best solution.</p>
+<h2 id=steps-to-add-invisible-button-in-unity3d>Steps to add invisible button in Unity3D</h2>
+<p><strong>1.</strong> Add the Button. (UI -> Button)</p>
+<p><strong>2.</strong> Edit the height and width of the button according to your fit.</p>
+<p><strong>3.</strong> Delete the Image(Script) and the text from the button.</p>
+<p><strong>4.</strong> Create new C# script (Touchable.cs) and add the following code into it:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-csharp data-lang=csharp><span style=color:#75715e>// Touchable.cs
+</span><span style=color:#75715e></span><span style=color:#66d9ef>using</span> UnityEngine;
+<span style=color:#66d9ef>using</span> UnityEngine.UI;
+<span style=color:#75715e>#if UNITY_EDITOR
+</span><span style=color:#75715e></span><span style=color:#66d9ef>using</span> UnityEditor;
+<span style=color:#a6e22e>[CustomEditor(typeof(Touchable))]</span>
+<span style=color:#66d9ef>public</span> <span style=color:#66d9ef>class</span> <span style=color:#a6e22e>Touchable_Editor</span> : Editor
+{ <span style=color:#66d9ef>public</span> <span style=color:#66d9ef>override</span> <span style=color:#66d9ef>void</span> OnInspectorGUI(){} }
+<span style=color:#75715e>#endif
+</span><span style=color:#75715e></span><span style=color:#66d9ef>public</span> <span style=color:#66d9ef>class</span> <span style=color:#a6e22e>Touchable</span>:Text
+{ <span style=color:#66d9ef>protected</span> <span style=color:#66d9ef>override</span> <span style=color:#66d9ef>void</span> Awake() { <span style=color:#66d9ef>base</span>.Awake();} }
+</code></pre></div><p><strong>5.</strong> Add Touchable.cs script to the button.</p>
+<p>Done!</p>
+<p>Now you have the invisible button.</p>
+<p>Source: <a href=http://answers.unity3d.com/questions/801928/46-ui-making-a-button-transparent.html>UnityForum</a></p>
+</article>
+<footer><p>© 2021 Sudeep's Blog - Built With ❤️ using <a href=https://gohugo.io/>Hugo</a> and <a href=https://pages.github.com/>Github Pages</a></p>
+</footer>
+</html>

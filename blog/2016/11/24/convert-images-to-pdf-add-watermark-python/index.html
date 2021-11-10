@@ -1,0 +1,51 @@
+<!doctype html><html lang=en-us>
+<title>Convert the list of images to PDF file and add watermark using python | Sudeep's Blog</title>
+<meta charset=utf-8>
+<meta name=generator content="Hugo 0.89.1">
+<meta name=viewport content="width=device-width,initial-scale=1">
+<link rel=stylesheet href=https://sudeepacharya.com.np/css/index.css>
+<link rel=canonical href=https://sudeepacharya.com.np/blog/2016/11/24/convert-images-to-pdf-add-watermark-python/>
+<link rel=alternate type=application/rss+xml href title="Sudeep's Blog">
+<header>
+<a href=https://sudeepacharya.com.np/ class=title>Sudeep's Blog</a>
+<nav>
+<a href=/contact/>Contact</a>
+</nav>
+</header>
+<article>
+<header>
+<h1>Convert the list of images to PDF file and add watermark using python</h1>
+<time datetime=2016-11-24T00:00:00Z>November 24, 2016</time>
+</header>
+<h2 id=converting-list-of-images-to-pdf-in-ubuntu>Converting list of images to PDF in Ubuntu</h2>
+<p>Let&rsquo;s use ImageMagick tool. Normally it is installed in Ubuntu. If you need to install it then run:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>sudo apt-get install imagemagick
+</code></pre></div><p>Then you can convert it by using:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>convert image_1.jpg image_2.jpg output.pdf
+</code></pre></div><p>You can specify any numbers of images but the last argument must be a name of your PDF file along with extension (.pdf).</p>
+<h2 id=adding-the-watermark-in-the-pdf-file>Adding the watermark in the PDF file</h2>
+<p>We use Python script for adding watermark to each page in the PDF file. We will be using &ldquo;PyPDF2&rdquo; python library.</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>pip install PyPDF2
+</code></pre></div><p>Make your watermark ready, convert it to PDF file. Make sure that watermark file is of same page size as of your PDF file.</p>
+<p>Then run this code by modifying the file names:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#f92672>import</span> PyPDF2
+
+originalFile <span style=color:#f92672>=</span> open(<span style=color:#e6db74>&#39;inputfile_pdf&#39;</span>, <span style=color:#e6db74>&#39;rb&#39;</span>)
+pdfReader <span style=color:#f92672>=</span> PyPDF2<span style=color:#f92672>.</span>PdfFileReader(originalFile)
+pdfWriter <span style=color:#f92672>=</span> PyPDF2<span style=color:#f92672>.</span>PdfFileWriter()
+
+<span style=color:#66d9ef>for</span> i <span style=color:#f92672>in</span> range(<span style=color:#ae81ff>0</span>, pdfReader<span style=color:#f92672>.</span>numPages):
+    originalfile_page <span style=color:#f92672>=</span> pdfReader<span style=color:#f92672>.</span>getPage(i)
+    pdfWatermarkReader <span style=color:#f92672>=</span> PyPDF2<span style=color:#f92672>.</span>PdfFileReader(open(<span style=color:#e6db74>&#39;watermark.pdf&#39;</span>, <span style=color:#e6db74>&#39;rb&#39;</span>))
+    originalfile_page<span style=color:#f92672>.</span>mergePage(pdfWatermarkReader<span style=color:#f92672>.</span>getPage(<span style=color:#ae81ff>0</span>))
+    pdfWriter<span style=color:#f92672>.</span>addPage(originalfile_page)
+
+resultPdfFile <span style=color:#f92672>=</span> open(<span style=color:#e6db74>&#39;watermarked_outputfile.pdf&#39;</span>, <span style=color:#e6db74>&#39;wb&#39;</span>)
+pdfWriter<span style=color:#f92672>.</span>write(resultPdfFile)
+originalFile<span style=color:#f92672>.</span>close()
+resultPdfFile<span style=color:#f92672>.</span>close()
+</code></pre></div>
+</article>
+<footer><p>© 2021 Sudeep's Blog - Built With ❤️ using <a href=https://gohugo.io/>Hugo</a> and <a href=https://pages.github.com/>Github Pages</a></p>
+</footer>
+</html>

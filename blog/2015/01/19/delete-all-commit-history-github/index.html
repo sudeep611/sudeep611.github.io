@@ -1,0 +1,46 @@
+<!doctype html><html lang=en-us>
+<title>How to delete the commit history in github | Sudeep's Blog</title>
+<meta charset=utf-8>
+<meta name=generator content="Hugo 0.89.1">
+<meta name=viewport content="width=device-width,initial-scale=1">
+<link rel=stylesheet href=https://sudeepacharya.com.np/css/index.css>
+<link rel=canonical href=https://sudeepacharya.com.np/blog/2015/01/19/delete-all-commit-history-github/>
+<link rel=alternate type=application/rss+xml href title="Sudeep's Blog">
+<header>
+<a href=https://sudeepacharya.com.np/ class=title>Sudeep's Blog</a>
+<nav>
+<a href=/contact/>Contact</a>
+</nav>
+</header>
+<article>
+<header>
+<h1>How to delete the commit history in github</h1>
+<time datetime=2015-01-19T00:00:00Z>January 19, 2015</time>
+</header>
+<p>Sometimes you may find deleting the commit history of your github project repository useful. You can easily delete the commit history by following the procedure below.</p>
+<p>It is always useful to keep the backup of your repository in your computer before removing all the commit history.</p>
+<p>Let us start by cloning a github project. I am cloning &lsquo;myproject&rsquo;, you clone yours.</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>git clone https://github.com/acsudeep/myproject.git
+</code></pre></div><p>Since all the commit history are in the &ldquo;.git&rdquo; folder, we have to remove it. So, go inside your project folder. For me the project folder is &lsquo;myproject&rsquo;.</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>cd myproject
+</code></pre></div><p>And delete the &lsquo;.git folder&rsquo; with this command.</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>sudo rm -rf .git
+</code></pre></div><p>Now, let us re-initialize the repository.</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>$ git init
+
+$ git remote add origin https://github.com/acsudeep/myproject.git
+<span style=color:#75715e># add remote url</span>
+
+$ git remote -v
+<span style=color:#75715e># verify</span>
+</code></pre></div><p>Next, let us add all our files and commit the changes.</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>git add --all
+</code></pre></div><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>git commit -am <span style=color:#e6db74>&#39;initial commit&#39;</span>
+</code></pre></div><p>Now, since we just have one commit i.e &lsquo;initial commit&rsquo;. Let us force push update to our master branch of our project repository.</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>git push -f origin master
+</code></pre></div><p>You may need to provide the credentials for your account.</p>
+<p>Go and check your project repository in github, you should see only one commit.</p>
+</article>
+<footer><p>© 2021 Sudeep's Blog - Built With ❤️ using <a href=https://gohugo.io/>Hugo</a> and <a href=https://pages.github.com/>Github Pages</a></p>
+</footer>
+</html>

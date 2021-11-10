@@ -1,0 +1,84 @@
+<!doctype html><html lang=en-us>
+<title>Understanding Decorators in Python | Sudeep's Blog</title>
+<meta charset=utf-8>
+<meta name=generator content="Hugo 0.89.1">
+<meta name=viewport content="width=device-width,initial-scale=1">
+<link rel=stylesheet href=https://sudeepacharya.com.np/css/index.css>
+<link rel=canonical href=https://sudeepacharya.com.np/blog/2015/04/29/decorators-in-python/>
+<link rel=alternate type=application/rss+xml href title="Sudeep's Blog">
+<header>
+<a href=https://sudeepacharya.com.np/ class=title>Sudeep's Blog</a>
+<nav>
+<a href=/contact/>Contact</a>
+</nav>
+</header>
+<article>
+<header>
+<h1>Understanding Decorators in Python</h1>
+<time datetime=2015-04-29T00:00:00Z>April 29, 2015</time>
+</header>
+<p>While learning Python in the beginning, i skipped the portion of the chapters on Decorators. After i worked on Flask and Django, I was introduced with the Decorators.</p>
+<p>Let us consider a simple flask app example:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#a6e22e>@app</span><span style=color:#f92672>.</span>route(<span style=color:#e6db74>&#34;/&#34;</span>)
+<span style=color:#66d9ef>def</span> <span style=color:#a6e22e>hello</span>():
+    <span style=color:#66d9ef>return</span> <span style=color:#e6db74>&#34;Hello World!&#34;</span>
+</code></pre></div><p>In this code the line with @ symbol is decorators. Decorators is one of the important feature in Python that you must learn to master it. It is not that hard, so let us learn it.</p>
+<h2 id=first-let-us-see-closures>First let us see Closures</h2>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#f92672>&gt;&gt;&gt;</span> <span style=color:#66d9ef>def</span> <span style=color:#a6e22e>out_func</span>():
+<span style=color:#f92672>...</span>     <span style=color:#66d9ef>def</span> <span style=color:#a6e22e>in_func</span>():
+<span style=color:#f92672>...</span>             print(<span style=color:#e6db74>&#34;I am inner function&#34;</span>)
+<span style=color:#f92672>...</span>     <span style=color:#66d9ef>return</span> in_func
+<span style=color:#f92672>...</span>
+<span style=color:#f92672>&gt;&gt;&gt;</span> call <span style=color:#f92672>=</span> out_func()
+<span style=color:#f92672>&gt;&gt;&gt;</span> call
+<span style=color:#f92672>&lt;</span>function in_func at <span style=color:#ae81ff>0x7f0d6819a758</span><span style=color:#f92672>&gt;</span>
+<span style=color:#f92672>&gt;&gt;&gt;</span> call()
+I am inner function
+<span style=color:#f92672>&gt;&gt;&gt;</span>
+</code></pre></div><p>Also let us see by passing the parameter in the function.</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#f92672>&gt;&gt;&gt;</span> <span style=color:#66d9ef>def</span> <span style=color:#a6e22e>out_func</span>():
+<span style=color:#f92672>...</span>     <span style=color:#66d9ef>def</span> <span style=color:#a6e22e>in_func</span>(x):
+<span style=color:#f92672>...</span>             print(x)
+<span style=color:#f92672>...</span>     <span style=color:#66d9ef>return</span> in_func
+<span style=color:#f92672>...</span>
+<span style=color:#f92672>&gt;&gt;&gt;</span> call <span style=color:#f92672>=</span> out_func()
+<span style=color:#f92672>&gt;&gt;&gt;</span> call
+<span style=color:#f92672>&lt;</span>function in_func at <span style=color:#ae81ff>0x7f66ff93f5f0</span><span style=color:#f92672>&gt;</span>
+<span style=color:#f92672>&gt;&gt;&gt;</span> call(<span style=color:#ae81ff>3</span>)
+<span style=color:#ae81ff>3</span>
+<span style=color:#f92672>&gt;&gt;&gt;</span>
+</code></pre></div><p>We can also pass the function as the parameter in the function. Let us write a function wrap which takes a function. We write another function checkNumber inside the wrap. It&rsquo;s main task is to return same number if the number is greater than or equal to 100 otherwise return number by adding 100. It actually adds 100 using function that we pass to wrap.</p>
+<p>We also write function incrementHundered to add 100 to passed number.</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#66d9ef>def</span> <span style=color:#a6e22e>wrap</span>(func):
+   <span style=color:#66d9ef>def</span> <span style=color:#a6e22e>checkNumber</span>(a): <span style=color:#75715e># check</span>
+       <span style=color:#66d9ef>return</span> (a <span style=color:#66d9ef>if</span> a <span style=color:#f92672>&gt;=</span> <span style=color:#ae81ff>100</span> <span style=color:#66d9ef>else</span> func(a))
+   <span style=color:#66d9ef>return</span> checkNumber
+
+<span style=color:#66d9ef>def</span> <span style=color:#a6e22e>incrementHundered</span>(a):
+    <span style=color:#66d9ef>return</span> a<span style=color:#f92672>+</span><span style=color:#ae81ff>100</span>
+
+<span style=color:#75715e># We pass incrementHundered to wrap</span>
+incrementHundered <span style=color:#f92672>=</span> wrap (incrementHundered) <span style=color:#75715e># decorators</span>
+
+print (incrementHundered(<span style=color:#ae81ff>2</span>)) <span style=color:#75715e># 102</span>
+print (incrementHundered(<span style=color:#ae81ff>300</span>)) <span style=color:#75715e># 300</span>
+print (incrementHundered(<span style=color:#ae81ff>29</span>)) <span style=color:#75715e># 129</span>
+</code></pre></div><p>The above code can be re-written using @ symbol for decorators as follows:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#66d9ef>def</span> <span style=color:#a6e22e>wrap</span>(func):
+   <span style=color:#66d9ef>def</span> <span style=color:#a6e22e>checkNumber</span>(a): <span style=color:#75715e># check</span>
+       <span style=color:#66d9ef>return</span> (a <span style=color:#66d9ef>if</span> a <span style=color:#f92672>&gt;=</span> <span style=color:#ae81ff>100</span> <span style=color:#66d9ef>else</span> func(a))
+   <span style=color:#66d9ef>return</span> checkNumber
+
+<span style=color:#a6e22e>@wrap</span>
+<span style=color:#66d9ef>def</span> <span style=color:#a6e22e>incrementHundered</span>(a):
+    <span style=color:#66d9ef>return</span> a<span style=color:#f92672>+</span><span style=color:#ae81ff>100</span>
+
+print (incrementHundered(<span style=color:#ae81ff>2</span>)) <span style=color:#75715e># 102</span>
+print (incrementHundered(<span style=color:#ae81ff>300</span>)) <span style=color:#75715e># 300</span>
+print (incrementHundered(<span style=color:#ae81ff>29</span>)) <span style=color:#75715e># 129</span>
+</code></pre></div><p>By writing @wrap and function just below it, think as if we have passed whole function to wrap. And it works as usual. So that was the quick and easy introduction to Decorators.</p>
+<p>I hope you understood the Decorators.</p>
+</article>
+<footer><p>© 2021 Sudeep's Blog - Built With ❤️ using <a href=https://gohugo.io/>Hugo</a> and <a href=https://pages.github.com/>Github Pages</a></p>
+</footer>
+</html>

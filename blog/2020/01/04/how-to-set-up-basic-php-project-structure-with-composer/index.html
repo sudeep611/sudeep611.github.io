@@ -1,0 +1,124 @@
+<!doctype html><html lang=en-us>
+<title>How to set up basic PHP Project structure with Composer | Sudeep's Blog</title>
+<meta charset=utf-8>
+<meta name=generator content="Hugo 0.89.1">
+<meta name=viewport content="width=device-width,initial-scale=1">
+<link rel=stylesheet href=https://sudeepacharya.com.np/css/index.css>
+<link rel=canonical href=https://sudeepacharya.com.np/blog/2020/01/04/how-to-set-up-basic-php-project-structure-with-composer/>
+<link rel=alternate type=application/rss+xml href title="Sudeep's Blog">
+<header>
+<a href=https://sudeepacharya.com.np/ class=title>Sudeep's Blog</a>
+<nav>
+<a href=/contact/>Contact</a>
+</nav>
+</header>
+<article>
+<header>
+<h1>How to set up basic PHP Project structure with Composer</h1>
+<time datetime=2020-01-04T00:00:00Z>January 04, 2020</time>
+</header>
+<p>Most of the time beginners learning PHP are unaware of <a href=https://getcomposer.org/>Composer</a>, if you are among them, Composer is a dependency management tool for PHP.</p>
+<p>Let&rsquo;s take a simple example, rather than using include command in each of the PHP file, composer makes it easy by specifying that file as a dependency. Another example would be if you use some library then it makes easier to use and update it with a single command.</p>
+<p>Is it compulsory to use Composer for my PHP project?</p>
+<p>I wouldn&rsquo;t answer it in Yes or No format. I would say that you can write simple project with couple of file and classes without dependency management tools like Composer, but life will be much much easier by using Composer. Time will come where you will be unable to maintain the project on your own without it when your project grows larger.</p>
+<p>Alright, let&rsquo;s jump onto our subject, in this post i will write about setting up the basic PHP project with composer on it. The whole project files can be found on my <a href=https://github.com/sudeep611/PHP_Project_Getting_Started>Github Page</a>. You are welcome to contribute :)</p>
+<p>Before beginning, i will assume that you have PHP and Composer installed in your machine. Read my previous post:</p>
+<p><a href=https://sudeepacharya.com.np/blog/2020/01/04/how-to-install-php-composer-in-your-mac/>How to install PHP Composer in MAC</a></p>
+<p>Setting up the basic PHP Project Skeleton code with Composer</p>
+<p>Create a root folder with your project name, i will name it as &ldquo;MyPHPProject&rdquo;</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>mkdir MyPHPProject
+</code></pre></div><p>Navigate to this folder</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>cd MyPHPProject
+</code></pre></div><p>Create &lsquo;src&rsquo; folder where we will have our projects PHP Classes and files</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>mkdir src
+</code></pre></div><p>Navigate to &lsquo;src&rsquo; folder</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>cd src
+</code></pre></div><p>Inside it create folder &lsquo;HelloWorld&rsquo; and navigate to it</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>mkdir HelloWorld <span style=color:#f92672>||</span> cd HelloWorld
+</code></pre></div><p>Let&rsquo;s create HelloWorld.php and write some PHP code inside it.</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>touch HelloWorld.php
+</code></pre></div><p>Open &ldquo;HelloWorld.php&rdquo; and paste the following code</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-php data-lang=php><span style=color:#f92672>&lt;?</span><span style=color:#a6e22e>php</span>
+
+<span style=color:#66d9ef>namespace</span> <span style=color:#a6e22e>HelloWorld</span>;
+
+<span style=color:#66d9ef>class</span> <span style=color:#a6e22e>HelloWorld</span> {
+    <span style=color:#66d9ef>public</span> <span style=color:#66d9ef>function</span> <span style=color:#a6e22e>printHelloWorld</span>() {
+        <span style=color:#66d9ef>return</span> <span style=color:#e6db74>&#34;Hello World&#34;</span>;
+    }
+}
+</code></pre></div><p>Now, let&rsquo;s go back to &lsquo;src&rsquo; folder</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>cd ..
+</code></pre></div><p>Create folder named &lsquo;files&rsquo;</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>mkdir files
+</code></pre></div><p>If in future you need to keep any files such as JavaScript, Images then you can use this folder.</p>
+<p>Let&rsquo;s go back to our main project root folder.</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>cd ..
+</code></pre></div><p>Now let us create &lsquo;composer.json&rsquo; file</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>touch composer.json
+</code></pre></div><p>Paste the following in your composer.json file</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-json data-lang=json>{
+    <span style=color:#f92672>&#34;name&#34;</span>: <span style=color:#e6db74>&#34;sudeep/HelloWorld&#34;</span>,
+    <span style=color:#f92672>&#34;description&#34;</span>: <span style=color:#e6db74>&#34;This is the description of the project.&#34;</span>,
+    <span style=color:#f92672>&#34;license&#34;</span>: <span style=color:#e6db74>&#34;MIT&#34;</span>,
+    <span style=color:#f92672>&#34;minimum-stability&#34;</span>: <span style=color:#e6db74>&#34;dev&#34;</span>,
+    <span style=color:#f92672>&#34;require&#34;</span>: {
+        <span style=color:#f92672>&#34;php&#34;</span>: <span style=color:#e6db74>&#34;&gt;=7.0&#34;</span>
+    },
+    <span style=color:#f92672>&#34;autoload&#34;</span>: {
+        <span style=color:#f92672>&#34;psr-0&#34;</span>: {
+            <span style=color:#f92672>&#34;HelloWorld&#34;</span>: <span style=color:#e6db74>&#34;src/&#34;</span>
+        }
+    },
+    <span style=color:#f92672>&#34;require-dev&#34;</span>: {
+        <span style=color:#f92672>&#34;phpunit/phpunit&#34;</span>: <span style=color:#e6db74>&#34;^8&#34;</span>
+    }
+}
+</code></pre></div><p>In the above code edit as per your requirement, one new thing you might have noticed is <a href=https://phpunit.de/>phpunit</a>, we will use phpunit for writing test case to our project later.</p>
+<p>Next, install composer.</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>composer install
+</code></pre></div><p>This will install composer for your current project. It will install the library and dependencies mentioned in the composer.json file above.</p>
+<p>Now, you will notice some more files such as vendor folder added to your project, this is the file added by composer.</p>
+<p>Next, Let&rsquo;s create &lsquo;index.php&rsquo; which is the entry point for our PHP project.</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>touch index.php
+</code></pre></div><p>Paste the following code in index.php</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-php data-lang=php><span style=color:#f92672>&lt;?</span><span style=color:#a6e22e>php</span>
+
+<span style=color:#75715e>// Autoload files using the Composer autoloader.
+</span><span style=color:#75715e></span><span style=color:#66d9ef>require_once</span> <span style=color:#66d9ef>__DIR__</span> <span style=color:#f92672>.</span> <span style=color:#e6db74>&#39;/vendor/autoload.php&#39;</span>;
+
+<span style=color:#66d9ef>use</span> <span style=color:#a6e22e>HelloWorld\HelloWorld</span>;
+
+$entry <span style=color:#f92672>=</span> <span style=color:#66d9ef>new</span> <span style=color:#a6e22e>HelloWorld</span>();
+<span style=color:#66d9ef>echo</span>($entry<span style=color:#f92672>-&gt;</span><span style=color:#a6e22e>printHelloWorld</span>());
+</code></pre></div><p>Let&rsquo;s run the PHP project. Enter the following code in command line.</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>php -S localhost:4000
+</code></pre></div><p>Open the &lsquo;localhost:4000&rsquo; in your Browser and you will see Hello World printed.</p>
+<p>Next, let us add the tests folder where we will be writing our test cases. And navigate to it</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>mkdir tests <span style=color:#f92672>||</span> cd tests
+</code></pre></div><p>Let us create HelloWorldTest.php inside tests folder</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>touch TestHelloWorld.php
+</code></pre></div><p>And paste the following code inside it</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-php data-lang=php><span style=color:#f92672>&lt;?</span><span style=color:#a6e22e>php</span>
+
+<span style=color:#75715e>// Autoload files using the Composer autoloader.
+</span><span style=color:#75715e></span><span style=color:#66d9ef>require_once</span> <span style=color:#66d9ef>__DIR__</span> <span style=color:#f92672>.</span> <span style=color:#e6db74>&#39;/../vendor/autoload.php&#39;</span>;
+
+<span style=color:#66d9ef>use</span> <span style=color:#a6e22e>HelloWorld\HelloWorld</span>;
+<span style=color:#66d9ef>use</span> <span style=color:#a6e22e>PHPUnit\Framework\TestCase</span>;
+
+<span style=color:#66d9ef>final</span> <span style=color:#66d9ef>class</span> <span style=color:#a6e22e>HelloWorldTest</span> <span style=color:#66d9ef>extends</span> <span style=color:#a6e22e>TestCase</span>
+{
+    <span style=color:#66d9ef>public</span> <span style=color:#66d9ef>function</span> <span style=color:#a6e22e>testPrintHelloWorld</span>() {
+        $actualClass <span style=color:#f92672>=</span> <span style=color:#66d9ef>new</span> <span style=color:#a6e22e>HelloWorld</span>();
+        $this<span style=color:#f92672>-&gt;</span><span style=color:#a6e22e>assertEquals</span>(<span style=color:#e6db74>&#39;Hello World&#39;</span>, $actualClass<span style=color:#f92672>-&gt;</span><span style=color:#a6e22e>printHelloWorld</span>());
+    }
+}
+</code></pre></div><p>For running the test file you can use the following command.</p>
+<p>[To Make sure PHPUnit is installed in your machine.]</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>phpunit HelloWorldTest.php
+</code></pre></div><p>That&rsquo;s all!</p>
+</article>
+<footer><p>© 2021 Sudeep's Blog - Built With ❤️ using <a href=https://gohugo.io/>Hugo</a> and <a href=https://pages.github.com/>Github Pages</a></p>
+</footer>
+</html>

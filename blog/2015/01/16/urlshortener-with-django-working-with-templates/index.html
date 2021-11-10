@@ -1,0 +1,139 @@
+<!doctype html><html lang=en-us>
+<title>URL Shortener with Django (Part 5) - Working with Templates and finishing up | Sudeep's Blog</title>
+<meta charset=utf-8>
+<meta name=generator content="Hugo 0.89.1">
+<meta name=viewport content="width=device-width,initial-scale=1">
+<link rel=stylesheet href=https://sudeepacharya.com.np/css/index.css>
+<link rel=canonical href=https://sudeepacharya.com.np/blog/2015/01/16/urlshortener-with-django-working-with-templates/>
+<link rel=alternate type=application/rss+xml href title="Sudeep's Blog">
+<header>
+<a href=https://sudeepacharya.com.np/ class=title>Sudeep's Blog</a>
+<nav>
+<a href=/contact/>Contact</a>
+</nav>
+</header>
+<article>
+<header>
+<h1>URL Shortener with Django (Part 5) - Working with Templates and finishing up</h1>
+<time datetime=2015-01-16T00:00:00Z>January 16, 2015</time>
+</header>
+<p>Create folder &lsquo;templates&rsquo; inside &lsquo;shortenersite&rsquo; and then inside &lsquo;templates&rsquo; create folder &lsquo;shortenersite&rsquo;.</p>
+<p>Inside &ldquo;shortenersite/templates/shortenersite/&rdquo; create &lsquo;base.html&rsquo; and &lsquo;index.html&rsquo;. So now paste the following to them.</p>
+<p>[shortenersite/templates/shortenersite/base.html]</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html>{% raw %}
+<span style=color:#75715e>&lt;!DOCTYPE html&gt;</span>
+&lt;<span style=color:#f92672>html</span>&gt;
+&lt;<span style=color:#f92672>head</span>&gt;
+ &lt;<span style=color:#f92672>title</span>&gt;{% block title %}Welcome to mysite{% endblock %}&lt;/<span style=color:#f92672>title</span>&gt;
+ {% load staticfiles %}
+ &lt;<span style=color:#f92672>link</span> <span style=color:#a6e22e>rel</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;stylesheet&#34;</span> <span style=color:#a6e22e>href</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css&#34;</span>&gt;
+ &lt;<span style=color:#f92672>link</span> <span style=color:#a6e22e>rel</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;stylesheet&#34;</span> <span style=color:#a6e22e>type</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;text/css&#34;</span> <span style=color:#a6e22e>href</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;{% static &#39;shortenersite/css/custom.css&#39; %}&#34;</span> /&gt;
+ &lt;<span style=color:#f92672>script</span> <span style=color:#a6e22e>src</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js&#34;</span>&gt;&lt;/<span style=color:#f92672>script</span>&gt;
+ &lt;<span style=color:#f92672>meta</span> <span style=color:#a6e22e>name</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;viewport&#34;</span> <span style=color:#a6e22e>content</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;width=device-width, initial-scale=1&#34;</span>&gt;
+&lt;/<span style=color:#f92672>head</span>&gt;
+&lt;<span style=color:#f92672>script</span> <span style=color:#a6e22e>type</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;text/javascript&#34;</span>&gt;
+ <span style=color:#a6e22e>$</span>(<span style=color:#66d9ef>function</span>() {
+ <span style=color:#a6e22e>$</span>(<span style=color:#e6db74>&#39;#submitButton&#39;</span>).<span style=color:#a6e22e>click</span>(<span style=color:#66d9ef>function</span>() {
+ <span style=color:#a6e22e>$</span>.<span style=color:#a6e22e>ajax</span>({
+ <span style=color:#a6e22e>type</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#34;POST&#34;</span>,
+ <span style=color:#a6e22e>url</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#34;/makeshort/&#34;</span>,
+ <span style=color:#a6e22e>data</span><span style=color:#f92672>:</span> {
+ <span style=color:#e6db74>&#39;url&#39;</span> <span style=color:#f92672>:</span> <span style=color:#a6e22e>$</span>(<span style=color:#e6db74>&#39;#url&#39;</span>).<span style=color:#a6e22e>val</span>(),
+ <span style=color:#e6db74>&#39;csrfmiddlewaretoken&#39;</span> <span style=color:#f92672>:</span> <span style=color:#a6e22e>$</span>(<span style=color:#e6db74>&#34;input[name=csrfmiddlewaretoken]&#34;</span>).<span style=color:#a6e22e>val</span>()
+ },
+ <span style=color:#a6e22e>success</span><span style=color:#f92672>:</span> <span style=color:#a6e22e>returnSuccess</span>,
+ <span style=color:#a6e22e>dataType</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#39;json&#39;</span>
+ });
+ });
+});
+
+<span style=color:#66d9ef>function</span> <span style=color:#a6e22e>returnSuccess</span>(<span style=color:#a6e22e>data</span>, <span style=color:#a6e22e>textStatus</span>, <span style=color:#a6e22e>jqXHR</span>) {
+ <span style=color:#66d9ef>if</span>(<span style=color:#a6e22e>data</span>.<span style=color:#a6e22e>url</span>) {
+ <span style=color:#a6e22e>$</span>(<span style=color:#e6db74>&#39;#url-result&#39;</span>).<span style=color:#a6e22e>text</span>(<span style=color:#a6e22e>data</span>.<span style=color:#a6e22e>url</span>);
+ <span style=color:#a6e22e>$</span>(<span style=color:#e6db74>&#39;#url&#39;</span>).<span style=color:#a6e22e>val</span>(<span style=color:#e6db74>&#34;&#34;</span>);
+ } <span style=color:#66d9ef>else</span> {
+ <span style=color:#a6e22e>$</span>(<span style=color:#e6db74>&#39;#url-result&#39;</span>).<span style=color:#a6e22e>text</span>(<span style=color:#e6db74>&#34;Do not submit blank.&#34;</span>);
+ }
+
+}
+&lt;/<span style=color:#f92672>script</span>&gt;
+&lt;<span style=color:#f92672>body</span>&gt;
+&lt;<span style=color:#f92672>div</span> <span style=color:#a6e22e>id</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;wrap&#34;</span>&gt;
+&lt;<span style=color:#f92672>header</span>&gt;
+ &lt;<span style=color:#f92672>h1</span>&gt;&lt;<span style=color:#f92672>a</span> <span style=color:#a6e22e>href</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;{% url &#39;shortenersite:home&#39; %}&#34;</span>&gt;URL Shortner&lt;/<span style=color:#f92672>a</span>&gt;&lt;<span style=color:#f92672>small</span>&gt;Shorten the URL&lt;/<span style=color:#f92672>small</span>&gt;&lt;/<span style=color:#f92672>h1</span>&gt;
+&lt;/<span style=color:#f92672>header</span>&gt;
+
+&lt;<span style=color:#f92672>div</span> <span style=color:#a6e22e>id</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;content&#34;</span>&gt;
+{% block content %}
+
+{% endblock %}
+&lt;/<span style=color:#f92672>div</span>&gt;
+&lt;/<span style=color:#f92672>div</span>&gt;
+&lt;/<span style=color:#f92672>body</span>&gt;
+&lt;/<span style=color:#f92672>html</span>&gt;
+{% endraw %}
+</code></pre></div><p>We are using twitter bootstrap for making our site beautiful and jQuery for making POST request.</p>
+<p>[shortenersite/templates/shortenersite/index.html]</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html>{% raw %}
+{% extends &#34;shortenersite/base.html&#34; %}
+
+{% block title %}URL Shortner - Make your URL shorter!{% endblock %}
+
+{% block content %}
+
+&lt;<span style=color:#f92672>div</span> <span style=color:#a6e22e>class</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;panel panel-default&#34;</span>&gt;
+ &lt;<span style=color:#f92672>div</span> <span style=color:#a6e22e>class</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;panel-body&#34;</span>&gt;
+ &lt;<span style=color:#f92672>div</span> <span style=color:#a6e22e>class</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;col-sm-9&#34;</span>&gt;
+ &lt;<span style=color:#f92672>input</span> <span style=color:#a6e22e>type</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;text&#34;</span> <span style=color:#a6e22e>name</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;url&#34;</span> <span style=color:#a6e22e>id</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;url&#34;</span> <span style=color:#a6e22e>class</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;form-control input-sm&#34;</span> <span style=color:#a6e22e>placeholder</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;http://www.facebook.com&#34;</span> /&gt;
+ &lt;/<span style=color:#f92672>div</span>&gt;
+ &lt;<span style=color:#f92672>div</span> <span style=color:#a6e22e>class</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;col-sm-3&#34;</span>&gt;
+ {% csrf_token %}
+ &lt;<span style=color:#f92672>button</span> <span style=color:#a6e22e>id</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;submitButton&#34;</span> <span style=color:#a6e22e>class</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;btn btn-primary&#34;</span>&gt;Submit&lt;/<span style=color:#f92672>button</span>&gt;&lt;/<span style=color:#f92672>p</span>&gt;
+ &lt;/<span style=color:#f92672>div</span>&gt;
+ &lt;/<span style=color:#f92672>div</span>&gt;
+ &lt;<span style=color:#f92672>div</span> <span style=color:#a6e22e>class</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;panel-footer&#34;</span>&gt;&lt;<span style=color:#f92672>span</span> <span style=color:#a6e22e>id</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;url-result&#34;</span>&gt;Enter the URL above and click submit!&lt;/<span style=color:#f92672>span</span>&gt;&lt;/<span style=color:#f92672>div</span>&gt;
+&lt;/<span style=color:#f92672>div</span>&gt;
+{% endblock %}
+{% endraw %}
+</code></pre></div><p>Now let us add static files. Similarly as above create &lsquo;static&rsquo; folder inside &lsquo;shortenersite&rsquo; and inside &lsquo;static&rsquo; create &lsquo;shortenersite&rsquo; and inside it create folder &lsquo;css&rsquo;. Now create &lsquo;custom.css&rsquo; inside &lsquo;static/shortenersite/css/&rsquo; and add the following code to it:</p>
+<p>[shortenersite/static/shortenersite/css/custom.css]</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-css data-lang=css>#content {
+<span style=color:#66d9ef>margin-top</span>: <span style=color:#ae81ff>20</span><span style=color:#66d9ef>px</span>;
+<span style=color:#66d9ef>margin-bottom</span>: <span style=color:#ae81ff>60</span><span style=color:#66d9ef>px</span>;
+}
+
+<span style=color:#f92672>a</span>:<span style=color:#a6e22e>hover</span>{
+<span style=color:#66d9ef>text-decoration</span>: <span style=color:#66d9ef>none</span>;
+}
+
+<span style=color:#f92672>header</span> {
+<span style=color:#66d9ef>border-bottom</span>: <span style=color:#ae81ff>1</span><span style=color:#66d9ef>px</span> <span style=color:#66d9ef>solid</span> <span style=color:#ae81ff>#eeeeee</span>;
+<span style=color:#66d9ef>margin-bottom</span>: <span style=color:#ae81ff>30</span><span style=color:#66d9ef>px</span>;
+<span style=color:#66d9ef>padding-bottom</span>: <span style=color:#ae81ff>10</span><span style=color:#66d9ef>px</span>;
+<span style=color:#66d9ef>clear</span>: <span style=color:#66d9ef>both</span>;
+}
+
+#wrap {
+<span style=color:#66d9ef>max-width</span>: <span style=color:#ae81ff>700</span><span style=color:#66d9ef>px</span>;
+<span style=color:#66d9ef>margin</span>: <span style=color:#ae81ff>5</span><span style=color:#66d9ef>px</span> <span style=color:#ae81ff>10</span><span style=color:#66d9ef>px</span> <span style=color:#ae81ff>10</span><span style=color:#66d9ef>px</span> <span style=color:#ae81ff>10</span><span style=color:#66d9ef>px</span>;
+<span style=color:#66d9ef>padding</span>: <span style=color:#ae81ff>10</span><span style=color:#66d9ef>px</span>;
+<span style=color:#66d9ef>text-align</span>: <span style=color:#66d9ef>left</span>;
+}
+#url-result {
+<span style=color:#66d9ef>color</span>: <span style=color:#ae81ff>#00e000</span>;
+<span style=color:#66d9ef>display</span>: <span style=color:#66d9ef>hidden</span>;
+}
+</code></pre></div><p>So now we are done creating our URL Shortener with django. Run the django app and visit localhost:8000/ in browser then the final result will look something like this:</p>
+<p><img src=/assets/post-images/2015/final-url-shortener.png alt="final url shortener built with django"></p>
+<p>Now you can enter some URLs and click submit and then it should return the short URL. You can visit the short URL and it will redirect to your original URL. Go and see the admin panel, select the URLss and you will see the URLs are added there and also the count will increase if you visit the short URL.</p>
+<p>That&rsquo;s all for this tutorial. Hope everything works fine here.</p>
+<p>Post Series:</p>
+<p>Part 1: <a href=https://sudeepacharya.com.np/blog/2015/01/12/urlshortener-with-django-create-virtual-environment-install-django/>Create a virtual environment and install Django</a></p>
+<p>Part 2: <a href=https://sudeepacharya.com.np/blog/2015/01/13/urlshortener-with-django-creating-new-django-project/>Create a new project and make sure it works</a></p>
+<p>Part 3: <a href=https://sudeepacharya.com.np/blog/2015/01/14/urlshortener-with-django-creating-app-model/>Create Django App, Model for our App and work with Django Admin</a></p>
+<p>Part 4: <a href=https://sudeepacharya.com.np/blog/2015/01/15/urlshortener-with-django-urls-and-views/>Working with URLs and Views</a></p>
+<p>Part 5: <a href=https://sudeepacharya.com.np/blog/2015/01/16/urlshortener-with-django-working-with-templates/>Working on Templates, Static files and finishing up</a></p>
+</article>
+<footer><p>© 2021 Sudeep's Blog - Built With ❤️ using <a href=https://gohugo.io/>Hugo</a> and <a href=https://pages.github.com/>Github Pages</a></p>
+</footer>
+</html>

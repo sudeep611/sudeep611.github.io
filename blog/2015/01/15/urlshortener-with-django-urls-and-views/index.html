@@ -1,0 +1,109 @@
+<!doctype html><html lang=en-us>
+<title>URL Shortener with Django (Part 4) - Working with Urls and views | Sudeep's Blog</title>
+<meta charset=utf-8>
+<meta name=generator content="Hugo 0.89.1">
+<meta name=viewport content="width=device-width,initial-scale=1">
+<link rel=stylesheet href=https://sudeepacharya.com.np/css/index.css>
+<link rel=canonical href=https://sudeepacharya.com.np/blog/2015/01/15/urlshortener-with-django-urls-and-views/>
+<link rel=alternate type=application/rss+xml href title="Sudeep's Blog">
+<header>
+<a href=https://sudeepacharya.com.np/ class=title>Sudeep's Blog</a>
+<nav>
+<a href=/contact/>Contact</a>
+</nav>
+</header>
+<article>
+<header>
+<h1>URL Shortener with Django (Part 4) - Working with Urls and views</h1>
+<time datetime=2015-01-15T00:00:00Z>January 15, 2015</time>
+</header>
+<p>Now we will be working with our actual URLs and Views of our site.</p>
+<p>Open up your &ldquo;urlshortener/urls.py&rdquo; and add the following code to it:</p>
+<p>[urlshortener/urls.py]</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#f92672>from</span> django.conf.urls <span style=color:#f92672>import</span> patterns, include, url
+<span style=color:#f92672>from</span> django.contrib <span style=color:#f92672>import</span> admin
+
+urlpatterns <span style=color:#f92672>=</span> patterns(<span style=color:#e6db74>&#39;&#39;</span>,
+    url(<span style=color:#e6db74>r</span><span style=color:#e6db74>&#39;^admin/&#39;</span>, include(admin<span style=color:#f92672>.</span>site<span style=color:#f92672>.</span>urls)),
+    <span style=color:#75715e># if the URL pattern match /admin/ then open up admin panel</span>
+
+    url(<span style=color:#e6db74>r</span><span style=color:#e6db74>&#39;&#39;</span>, include(<span style=color:#e6db74>&#39;shortenersite.urls&#39;</span>,
+ namespace<span style=color:#f92672>=</span><span style=color:#e6db74>&#39;shortenersite&#39;</span>)),
+    <span style=color:#75715e># if anything rather then /admin/ then it will look for shortenersite/urls</span>
+    )
+</code></pre></div><p>Next, create a new file &lsquo;urls.py&rsquo; inside shortenersite. And add the following code.</p>
+<p>[shortenersite/urls.py]</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#f92672>from</span> django.conf.urls <span style=color:#f92672>import</span> patterns, include, url
+
+urlpatterns <span style=color:#f92672>=</span> patterns(<span style=color:#e6db74>&#39;shortenersite.views&#39;</span>,
+    url(<span style=color:#e6db74>r</span><span style=color:#e6db74>&#39;^$&#39;</span>, <span style=color:#e6db74>&#39;index&#39;</span>, name<span style=color:#f92672>=</span><span style=color:#e6db74>&#39;home&#39;</span>),
+    <span style=color:#75715e># for our home/index page</span>
+
+    url(<span style=color:#e6db74>r</span><span style=color:#e6db74>&#39;^(?P&lt;short_id&gt;\w</span><span style=color:#e6db74>{6}</span><span style=color:#e6db74>)$&#39;</span>, <span style=color:#e6db74>&#39;redirect_original&#39;</span>, name<span style=color:#f92672>=</span><span style=color:#e6db74>&#39;redirectoriginal&#39;</span>),
+    <span style=color:#75715e># when short URL is requested it redirects to original URL</span>
+
+    url(<span style=color:#e6db74>r</span><span style=color:#e6db74>&#39;^makeshort/$&#39;</span>, <span style=color:#e6db74>&#39;shorten_url&#39;</span>, name<span style=color:#f92672>=</span><span style=color:#e6db74>&#39;shortenurl&#39;</span>),
+    <span style=color:#75715e># this will create a URL&#39;s short id and return the short URL</span>
+)
+</code></pre></div><p>Now we are done with our URLs now let us create views. But before that add these lines to your settings.py file.</p>
+<p>[urlshortener/settings.py]</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>SITE_URL <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;http://localhost:8000&#34;</span>
+</code></pre></div><p>We will need this because while generating the short URL which looks like <a href=http://localhost.com:8000/A34js2>http://localhost.com:8000/A34js2</a>. SITE_URL can be different in different cases. Normally it is the URL of the website where this project is hosted on.</p>
+<p>Now open up your &ldquo;shortenersite/views.py&rdquo; and add the following code.</p>
+<p>[shortenersite/views.py]</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#f92672>from</span> django.shortcuts <span style=color:#f92672>import</span> render_to_response, get_object_or_404
+<span style=color:#f92672>import</span> random<span style=color:#f92672>,</span> string<span style=color:#f92672>,</span> json
+<span style=color:#f92672>from</span> shortenersite.models <span style=color:#f92672>import</span> Urls
+<span style=color:#f92672>from</span> django.http <span style=color:#f92672>import</span> HttpResponseRedirect, HttpResponse
+<span style=color:#f92672>from</span> django.conf <span style=color:#f92672>import</span> settings
+<span style=color:#f92672>from</span> django.core.context_processors <span style=color:#f92672>import</span> csrf
+
+<span style=color:#66d9ef>def</span> <span style=color:#a6e22e>index</span>(request):
+    c <span style=color:#f92672>=</span> {}
+    c<span style=color:#f92672>.</span>update(csrf(request))
+    <span style=color:#66d9ef>return</span> render_to_response(<span style=color:#e6db74>&#39;shortenersite/index.html&#39;</span>, c)
+
+<span style=color:#66d9ef>def</span> <span style=color:#a6e22e>redirect_original</span>(request, short_id):
+    url <span style=color:#f92672>=</span> get_object_or_404(Urls, pk<span style=color:#f92672>=</span>short_id) <span style=color:#75715e># get object, if not        found return 404 error</span>
+    url<span style=color:#f92672>.</span>count <span style=color:#f92672>+=</span> <span style=color:#ae81ff>1</span>
+    url<span style=color:#f92672>.</span>save()
+    <span style=color:#66d9ef>return</span> HttpResponseRedirect(url<span style=color:#f92672>.</span>httpurl)
+
+<span style=color:#66d9ef>def</span> <span style=color:#a6e22e>shorten_url</span>(request):
+    url <span style=color:#f92672>=</span> request<span style=color:#f92672>.</span>POST<span style=color:#f92672>.</span>get(<span style=color:#e6db74>&#34;url&#34;</span>, <span style=color:#e6db74>&#39;&#39;</span>)
+    <span style=color:#66d9ef>if</span> <span style=color:#f92672>not</span> (url <span style=color:#f92672>==</span> <span style=color:#e6db74>&#39;&#39;</span>):
+        short_id <span style=color:#f92672>=</span> get_short_code()
+        b <span style=color:#f92672>=</span> Urls(httpurl<span style=color:#f92672>=</span>url, short_id<span style=color:#f92672>=</span>short_id)
+        b<span style=color:#f92672>.</span>save()
+
+        response_data <span style=color:#f92672>=</span> {}
+        response_data[<span style=color:#e6db74>&#39;url&#39;</span>] <span style=color:#f92672>=</span> settings<span style=color:#f92672>.</span>SITE_URL <span style=color:#f92672>+</span> <span style=color:#e6db74>&#34;/&#34;</span> <span style=color:#f92672>+</span> short_id
+        <span style=color:#66d9ef>return</span> HttpResponse(json<span style=color:#f92672>.</span>dumps(response_data),  content_type<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;application/json&#34;</span>)
+    <span style=color:#66d9ef>return</span> HttpResponse(json<span style=color:#f92672>.</span>dumps({<span style=color:#e6db74>&#34;error&#34;</span>: <span style=color:#e6db74>&#34;error occurs&#34;</span>}), content_type<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;application/json&#34;</span>)
+
+<span style=color:#66d9ef>def</span> <span style=color:#a6e22e>get_short_code</span>():
+    length <span style=color:#f92672>=</span> <span style=color:#ae81ff>6</span>
+    char <span style=color:#f92672>=</span> string<span style=color:#f92672>.</span>ascii_uppercase <span style=color:#f92672>+</span> string<span style=color:#f92672>.</span>digits <span style=color:#f92672>+</span> string<span style=color:#f92672>.</span>ascii_lowercase
+    <span style=color:#75715e># if the randomly generated short_id is used then generate next</span>
+    <span style=color:#66d9ef>while</span> <span style=color:#66d9ef>True</span>:
+        short_id <span style=color:#f92672>=</span> <span style=color:#e6db74>&#39;&#39;</span><span style=color:#f92672>.</span>join(random<span style=color:#f92672>.</span>choice(char) <span style=color:#66d9ef>for</span> x <span style=color:#f92672>in</span> range(length))
+        <span style=color:#66d9ef>try</span>:
+            temp <span style=color:#f92672>=</span> Urls<span style=color:#f92672>.</span>objects<span style=color:#f92672>.</span>get(pk<span style=color:#f92672>=</span>short_id)
+        <span style=color:#66d9ef>except</span>:
+            <span style=color:#66d9ef>return</span> short_id
+</code></pre></div><p>Let&rsquo;s talk about what the above views does.</p>
+<p><em>index</em> : It opens the index page by rendering the template.</p>
+<p><em>redirect_original</em> : It redirects short URL to it&rsquo;s original URL.</p>
+<p><em>shorten_url</em> : We will make a request to this view to create and return us the short URL.</p>
+<p><em>get_short_code</em> : This will generate the unique short code/id for URLs.</p>
+<p>So, this is the end of the part 4. At this moment this app do not work so have a patience and move to next part. In the next part we will add our template and static files and finish up our project.</p>
+<p>Post Series:</p>
+<p>Part 1: <a href=https://sudeepacharya.com.np/blog/2015/01/12/urlshortener-with-django-create-virtual-environment-install-django/>Create a virtual environment and install Django</a></p>
+<p>Part 2: <a href=https://sudeepacharya.com.np/blog/2015/01/13/urlshortener-with-django-creating-new-django-project/>Create a new project and make sure it works</a></p>
+<p>Part 3: <a href=https://sudeepacharya.com.np/blog/2015/01/14/urlshortener-with-django-creating-app-model/>Create Django App, Model for our App and work with Django Admin</a></p>
+<p>Part 4: <a href=https://sudeepacharya.com.np/blog/2015/01/15/urlshortener-with-django-urls-and-views/>Working with URLs and Views</a></p>
+<p>Part 5: <a href=https://sudeepacharya.com.np/blog/2015/01/16/urlshortener-with-django-working-with-templates/>Working on Templates, Static files and finishing up</a></p>
+</article>
+<footer><p>© 2021 Sudeep's Blog - Built With ❤️ using <a href=https://gohugo.io/>Hugo</a> and <a href=https://pages.github.com/>Github Pages</a></p>
+</footer>
+</html>

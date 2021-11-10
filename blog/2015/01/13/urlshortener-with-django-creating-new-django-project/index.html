@@ -1,0 +1,73 @@
+<!doctype html><html lang=en-us>
+<title>URL Shortener with Django (Part 2) - Creating a new django project | Sudeep's Blog</title>
+<meta charset=utf-8>
+<meta name=generator content="Hugo 0.89.1">
+<meta name=viewport content="width=device-width,initial-scale=1">
+<link rel=stylesheet href=https://sudeepacharya.com.np/css/index.css>
+<link rel=canonical href=https://sudeepacharya.com.np/blog/2015/01/13/urlshortener-with-django-creating-new-django-project/>
+<link rel=alternate type=application/rss+xml href title="Sudeep's Blog">
+<header>
+<a href=https://sudeepacharya.com.np/ class=title>Sudeep's Blog</a>
+<nav>
+<a href=/contact/>Contact</a>
+</nav>
+</header>
+<article>
+<header>
+<h1>URL Shortener with Django (Part 2) - Creating a new django project</h1>
+<time datetime=2015-01-13T00:00:00Z>January 13, 2015</time>
+</header>
+<p>Creating a Django project</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>django-admin startproject urlshortener
+</code></pre></div><p>Now you will see new directory &ldquo;urlshortener&rdquo;. Now our folder structure looks something like:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>tutorial/
+    - py3env
+    - urlshortener
+        - urlshortener
+            <span style=color:#f92672>=</span> __init__.py
+            <span style=color:#f92672>=</span> settings.py
+            <span style=color:#f92672>=</span> urls.py
+            <span style=color:#f92672>=</span> wsgi.py
+        <span style=color:#f92672>=</span> manage.py
+</code></pre></div><p>(Folder is denoted as - and file is denoted by =)</p>
+<p><em>The folder &ldquo;urlshortener&rdquo; just inside &ldquo;tutorial&rdquo; is our root directory. And we will work inside this root directory from now on wards.</em></p>
+<p>Let us review what are these files. &ldquo;urlshortener&rdquo; inside tutorial folder is Django project directory, you can rename it to whatever you like or leave it as it is. From now on wards we will be working inside this directory.</p>
+<p>And inside &ldquo;urlshortener&rdquo; folder you will see &ldquo;urlshortener&rdquo; folder which contains our project files and we have &ldquo;manage.py&rdquo;.</p>
+<p>For now let us leave &ldquo;manage.py&rdquo; and look into the &ldquo;urlshortener/urlshortener&rdquo; folder. You can see there are following files:</p>
+<ol>
+<li>
+<p><strong>init</strong>.py - It is the file used to make python treat that this is a directory containing packages.</p>
+</li>
+<li>
+<p>settings.py - Contains the settings for our Django project.</p>
+</li>
+<li>
+<p>urls.py - Use to handle url routing.</p>
+</li>
+<li>
+<p>wsgi - WSGI config for our project</p>
+</li>
+</ol>
+<p>You must be in hurry to see your app running. So, let us run it now.</p>
+<p>Type the following command from your root directory (i.e the &ldquo;urlshortner&rdquo; where manage.py is located)</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>python manage.py syncdb
+</code></pre></div><p>You will be asked to create superuser, create it because we gonna need it after some time.</p>
+<p><img src=/assets/post-images/2015/python_django_syncdb.png alt="python django syncdb"></p>
+<p>Now enter the following command:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>python manage.py runserver
+</code></pre></div><p>Open your favorite Browser(mine is Google Chrome) and navigate to</p>
+<p><strong>http://localhost:8000</strong> - 8000 port is default for django, you can also run it in another port by using</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>python manage.py runserver <span style=color:#ae81ff>5000</span>
+</code></pre></div><p>So now our URL will be <strong>http://localhost:5000</strong></p>
+<p>If you can see web page telling you &ldquo;It worked!, Congratulations&rdquo; then everything up to now is working fine.</p>
+<p>Alright, This is the end of the Part 2. In this part you created Django project and ran it and it worked.</p>
+<p>Post Series:</p>
+<p>Part 1: <a href=https://sudeepacharya.com.np/blog/2015/01/12/urlshortener-with-django-create-virtual-environment-install-django/>Create a virtual environment and install Django</a></p>
+<p>Part 2: <a href=https://sudeepacharya.com.np/blog/2015/01/13/urlshortener-with-django-creating-new-django-project/>Create a new project and make sure it works</a></p>
+<p>Part 3: <a href=https://sudeepacharya.com.np/blog/2015/01/14/urlshortener-with-django-creating-app-model/>Create Django App, Model for our App and work with Django Admin</a></p>
+<p>Part 4: <a href=https://sudeepacharya.com.np/blog/2015/01/15/urlshortener-with-django-urls-and-views/>Working with URLs and Views</a></p>
+<p>Part 5: <a href=https://sudeepacharya.com.np/blog/2015/01/16/urlshortener-with-django-working-with-templates/>Working on Templates, Static files and finishing up</a></p>
+</article>
+<footer><p>© 2021 Sudeep's Blog - Built With ❤️ using <a href=https://gohugo.io/>Hugo</a> and <a href=https://pages.github.com/>Github Pages</a></p>
+</footer>
+</html>

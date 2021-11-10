@@ -1,0 +1,121 @@
+<!doctype html><html lang=en-us>
+<title>URL Shortener with Django (Part 3) - Creating django app and model | Sudeep's Blog</title>
+<meta charset=utf-8>
+<meta name=generator content="Hugo 0.89.1">
+<meta name=viewport content="width=device-width,initial-scale=1">
+<link rel=stylesheet href=https://sudeepacharya.com.np/css/index.css>
+<link rel=canonical href=https://sudeepacharya.com.np/blog/2015/01/14/urlshortener-with-django-creating-app-model/>
+<link rel=alternate type=application/rss+xml href title="Sudeep's Blog">
+<header>
+<a href=https://sudeepacharya.com.np/ class=title>Sudeep's Blog</a>
+<nav>
+<a href=/contact/>Contact</a>
+</nav>
+</header>
+<article>
+<header>
+<h1>URL Shortener with Django (Part 3) - Creating django app and model</h1>
+<time datetime=2015-01-14T00:00:00Z>January 14, 2015</time>
+</header>
+<p>Now, Let us create a Django app. From your project&rsquo;s root directory run this command</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>django-admin startapp shortenersite
+</code></pre></div><p>This will create a new folder &lsquo;shortenersite&rsquo; inside our root directory which is actually a Django app. You can see the following files and folder inside shortenersite:</p>
+<ol>
+<li>
+<p>migrations - Contains database migration file.</p>
+</li>
+<li>
+<p>admin.py - We will use this file to configure Django Admin settings for this app.</p>
+</li>
+<li>
+<p>models.py - Contains the model (generally model.py deals with database.)</p>
+</li>
+<li>
+<p>view.py - Used to create views.</p>
+</li>
+<li>
+<p>tests.py - Contains the test suite for our app but we will not be using this file in our tutorial.</p>
+</li>
+</ol>
+<p>Now add this app to our project. Open up &ldquo;urlshortener/settings.py&rdquo; file and add &lsquo;shortenersite&rsquo; to INSTALLED_APPS. So now the INSTALLED_APPS will look something like this.</p>
+<p>[urlshortener/settings.py]</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#75715e># Application definition</span>
+
+INSTALLED_APPS <span style=color:#f92672>=</span> (
+    <span style=color:#e6db74>&#39;django.contrib.admin&#39;</span>,
+    <span style=color:#e6db74>&#39;django.contrib.auth&#39;</span>,
+    <span style=color:#e6db74>&#39;django.contrib.contenttypes&#39;</span>,
+    <span style=color:#e6db74>&#39;django.contrib.sessions&#39;</span>,
+    <span style=color:#e6db74>&#39;django.contrib.messages&#39;</span>,
+    <span style=color:#e6db74>&#39;django.contrib.staticfiles&#39;</span>,
+    <span style=color:#e6db74>&#39;shortenersite&#39;</span>,
+)
+</code></pre></div><p>Now let us work in our models.py. Open up &ldquo;shortenersite/models.py&rdquo; and add the following code to it.</p>
+<p>[shortenersite/models.py]</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#f92672>from</span> django.db <span style=color:#f92672>import</span> models
+
+<span style=color:#75715e># Create your models here.</span>
+<span style=color:#66d9ef>class</span> <span style=color:#a6e22e>Urls</span>(models<span style=color:#f92672>.</span>Model):
+    short_id <span style=color:#f92672>=</span> models<span style=color:#f92672>.</span>SlugField(max_length<span style=color:#f92672>=</span><span style=color:#ae81ff>6</span>,primary_key<span style=color:#f92672>=</span><span style=color:#66d9ef>True</span>)
+    httpurl <span style=color:#f92672>=</span> models<span style=color:#f92672>.</span>URLField(max_length<span style=color:#f92672>=</span><span style=color:#ae81ff>200</span>)
+    pub_date <span style=color:#f92672>=</span> models<span style=color:#f92672>.</span>DateTimeField(auto_now<span style=color:#f92672>=</span><span style=color:#66d9ef>True</span>)
+    count <span style=color:#f92672>=</span> models<span style=color:#f92672>.</span>IntegerField(default<span style=color:#f92672>=</span><span style=color:#ae81ff>0</span>)
+
+<span style=color:#66d9ef>def</span> __str__(self):
+    <span style=color:#66d9ef>return</span> self<span style=color:#f92672>.</span>httpurl
+</code></pre></div><p><strong>What we just did?</strong></p>
+<p>We created table named &lsquo;Urls&rsquo; in our database with the following field:</p>
+<ol>
+<li>
+<p>short_id (it will store short URL id), (It is of max_length 6 and it is a primary key)</p>
+</li>
+<li>
+<p>httpurl (it will store URL), (It is of max_length 200)</p>
+</li>
+<li>
+<p>pub_date (It will store the date and time)</p>
+</li>
+<li>
+<p>count (It will store the number of times the URL is visited)</p>
+</li>
+</ol>
+<p>Run this command to make changes to database.</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>python manage.py makemigrations
+</code></pre></div><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>python manage.py migrate
+</code></pre></div><p>We just updated our database. We are using sqlite3 which is set up by default for us. So, we do not need to configure anything regarding database settings for now, but if you want to use other database rather then sqlite3 then you can change DATABASES option in &ldquo;urlshortener/settings.py&rdquo;.</p>
+<p>Now let us add this model to Django admin.</p>
+<p>But before that let us be sure that you do not have comment in the following line in &ldquo;urlshortener/urls.py&rdquo;.</p>
+<p>[urlshortener/urls.py]</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>url(<span style=color:#e6db74>r</span><span style=color:#e6db74>&#39;^admin/&#39;</span>, include(admin<span style=color:#f92672>.</span>site<span style=color:#f92672>.</span>urls)),
+</code></pre></div><p>Open your &ldquo;shortenersite/admin.py&rdquo; And add the following:</p>
+<p>[shortenersite/admin.py]</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#f92672>from</span> django.contrib <span style=color:#f92672>import</span> admin
+<span style=color:#f92672>from</span> shortenersite.models <span style=color:#f92672>import</span> Urls
+<span style=color:#75715e># Register your models here.</span>
+
+<span style=color:#66d9ef>class</span> <span style=color:#a6e22e>UrlsAdmin</span>(admin<span style=color:#f92672>.</span>ModelAdmin):
+    list_display <span style=color:#f92672>=</span> (<span style=color:#e6db74>&#39;short_id&#39;</span>,<span style=color:#e6db74>&#39;httpurl&#39;</span>,<span style=color:#e6db74>&#39;pub_date&#39;</span>, <span style=color:#e6db74>&#39;count&#39;</span>)
+    ordering <span style=color:#f92672>=</span> (<span style=color:#e6db74>&#39;-pub_date&#39;</span>,)
+
+admin<span style=color:#f92672>.</span>site<span style=color:#f92672>.</span>register(Urls, UrlsAdmin) <span style=color:#75715e># Register the Urls model with UrlsAdmin options</span>
+</code></pre></div><p>Simply the above code registers the Urls model we created above to Django Admin.</p>
+<p>Run the Django project with</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>python manage.py runserver
+</code></pre></div><p>and Open up</p>
+<pre tabindex=0><code>http://localhost:8000/admin/
+</code></pre><p>Enter your Login details i.e the credentials of superuser that you have created before. Now you should see something like this.</p>
+<p><img src=/assets/post-images/2015/django_admin.png alt="django admin"></p>
+<p>We have Urlss(Model name in plural form) under Shortenersite(App Name). I hope you understand this. Django admin is one of the beautiful feature i like most about Django. And i am sure you will also feel same about Django admin.</p>
+<p>Open up Urlss and you can add Urls by clicking Add urls. You can see the fields like Short id, Httpurl and count that we have created. DateTime is added automatically so, you do not have to worry about it.</p>
+<p>Alright, This is the end of the Part 3, and we have created app, models for our app and registered the model to see it in Django Admin.</p>
+<p>Till now we have just done the Back-end, In the next two tutorials we will be working on Front-end. We will build web app from where user can input the URLs and will get the short URL for his URL.</p>
+<p>Post Series:</p>
+<p>Part 1: <a href=https://sudeepacharya.com.np/blog/2015/01/12/urlshortener-with-django-create-virtual-environment-install-django/>Create a virtual environment and install Django</a></p>
+<p>Part 2: <a href=https://sudeepacharya.com.np/blog/2015/01/13/urlshortener-with-django-creating-new-django-project/>Create a new project and make sure it works</a></p>
+<p>Part 3: <a href=https://sudeepacharya.com.np/blog/2015/01/14/urlshortener-with-django-creating-app-model/>Create Django App, Model for our App and work with Django Admin</a></p>
+<p>Part 4: <a href=https://sudeepacharya.com.np/blog/2015/01/15/urlshortener-with-django-urls-and-views/>Working with URLs and Views</a></p>
+<p>Part 5: <a href=https://sudeepacharya.com.np/blog/2015/01/16/urlshortener-with-django-working-with-templates/>Working on Templates, Static files and finishing up</a></p>
+</article>
+<footer><p>© 2021 Sudeep's Blog - Built With ❤️ using <a href=https://gohugo.io/>Hugo</a> and <a href=https://pages.github.com/>Github Pages</a></p>
+</footer>
+</html>

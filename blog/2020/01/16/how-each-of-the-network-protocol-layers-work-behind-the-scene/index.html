@@ -1,0 +1,92 @@
+<!doctype html><html lang=en-us>
+<title>How each of the Network Protocol layers work behind the scene | Sudeep's Blog</title>
+<meta charset=utf-8>
+<meta name=generator content="Hugo 0.89.1">
+<meta name=viewport content="width=device-width,initial-scale=1">
+<link rel=stylesheet href=https://sudeepacharya.com.np/css/index.css>
+<link rel=canonical href=https://sudeepacharya.com.np/blog/2020/01/16/how-each-of-the-network-protocol-layers-work-behind-the-scene/>
+<link rel=alternate type=application/rss+xml href title="Sudeep's Blog">
+<header>
+<a href=https://sudeepacharya.com.np/ class=title>Sudeep's Blog</a>
+<nav>
+<a href=/contact/>Contact</a>
+</nav>
+</header>
+<article>
+<header>
+<h1>How each of the Network Protocol layers work behind the scene</h1>
+<time datetime=2020-01-16T00:00:00Z>January 16, 2020</time>
+</header>
+<p>When we type google.com in our browser, we see the google home page. We are unaware of the back scene about how the each layer of the protocol works. In this post i will describe, how each of the protocol layer works.</p>
+<p>First of all let&rsquo;s see what are the layers involved in OSI and TCP/IP protocols.</p>
+<p><img src=/assets/post-images/2020/tcpip_vs_osi_layer.png alt="TCP/IP and OSI Layers"></p>
+<h3 id=layers-and-their-functions-of-osi-model>Layers and their functions of OSI model</h3>
+<table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Task At Layer</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Application Layer</td>
+<td>Web browser that the user interacts with. (Google Chrome)</td>
+</tr>
+<tr>
+<td>Presentation Layer</td>
+<td>It takes care of syntax and semantics of the information that is exchanged between two systems. (Encryption and Decryption, Data Compression)</td>
+</tr>
+<tr>
+<td>Session Layer</td>
+<td>It establishes, manages and terminates the communication session. (Response Time)</td>
+</tr>
+<tr>
+<td>Transport Layer</td>
+<td>Segments and Reassemble the message, Adds port address, Connection control (TCP or UPD), Flow Control, Error control</td>
+</tr>
+<tr>
+<td>Network Layer</td>
+<td>Moving the packets from source to destination through routing. (Add IP Address to header)</td>
+</tr>
+<tr>
+<td>Data Link Layer</td>
+<td>- Defines the format of the data in the network, - Responsible for uniquely identify devices on the network, - (Adds MAC address and Logic link control LLC)</td>
+</tr>
+<tr>
+<td>Physical Layer</td>
+<td>- Transmit the bits from one node to another., - It establishes, maintains and terminates the physical connection., - It specifies what sort of media is used for transmission, this may includes cable type, radio frequency</td>
+</tr>
+</tbody>
+</table>
+<h3 id=layers-and-their-functions-of-tcpip-model>Layers and their functions of TCP/IP model</h3>
+<table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Task At Layer</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Application Layer</td>
+<td>- User interact with the application, - Uses HTTP, FTP, Telnet</td>
+</tr>
+<tr>
+<td>Transport Layer</td>
+<td>- Responsible for reliable, flow control and error correction, - Uses either TCP or UDP</td>
+</tr>
+<tr>
+<td>Network Layer or Internet Layer</td>
+<td>- Transmission of packets, - IP, ARP and ICMP</td>
+</tr>
+<tr>
+<td>Network Interface Layer</td>
+<td>- How the data is to be send from the physical layer</td>
+</tr>
+</tbody>
+</table>
+</article>
+<footer><p>© 2021 Sudeep's Blog - Built With ❤️ using <a href=https://gohugo.io/>Hugo</a> and <a href=https://pages.github.com/>Github Pages</a></p>
+</footer>
+</html>

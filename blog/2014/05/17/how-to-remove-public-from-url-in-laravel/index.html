@@ -1,0 +1,55 @@
+<!doctype html><html lang=en-us>
+<title>How to remove /public/ from URL in Laravel | Sudeep's Blog</title>
+<meta charset=utf-8>
+<meta name=generator content="Hugo 0.89.1">
+<meta name=viewport content="width=device-width,initial-scale=1">
+<link rel=stylesheet href=https://sudeepacharya.com.np/css/index.css>
+<link rel=canonical href=https://sudeepacharya.com.np/blog/2014/05/17/how-to-remove-public-from-url-in-laravel/>
+<link rel=alternate type=application/rss+xml href title="Sudeep's Blog">
+<header>
+<a href=https://sudeepacharya.com.np/ class=title>Sudeep's Blog</a>
+<nav>
+<a href=/contact/>Contact</a>
+</nav>
+</header>
+<article>
+<header>
+<h1>How to remove /public/ from URL in Laravel</h1>
+<time datetime=2014-05-17T00:00:00Z>May 17, 2014</time>
+</header>
+<p>By default in Laravel the URL to access your site is <a href=http://example.com/public/>http://example.com/public/</a>. It is not good to keep public in URL as it makes URL ugly and longer.</p>
+<p>So, let&rsquo;s talk about the solution to remove /public/ from the URL.</p>
+<h2 id=method-i--using-htaccess>Method I : Using .htaccess</h2>
+<p>Create a .htaccess file your Laravel root directory if it does not exists already. (Normally it is under your <em>public_html</em> folder)</p>
+<p>And add the following code to it:</p>
+<pre tabindex=0><code>&lt;IfModule mod_rewrite.c&gt;
+    RewriteEngine On
+
+    RewriteRule ^(.*)$ public/$1 [L]
+&lt;/IfModule&gt;
+</code></pre><p>Now you can access your site via <a href=http://example.com>http://example.com</a>.</p>
+<h2 id=method-ii--moving-the-contents-of-public-folder-to-root-directory>Method II : Moving the contents of public folder to root directory</h2>
+<p>Actually i prefer this method because the above method is not so good to use in production environment.</p>
+<p>So now lets make a new folder <strong>laravelfiles</strong> in your root directory and move all the files and folder except public directory to laravelfiles.</p>
+<p>And move everything of public directory to root folder. Now your root directory will look something like this:</p>
+<p><img src=/assets/post-images/2014/laravel-remove-public.png alt="Remove Public Laravel"></p>
+<p>Now we have to change the paths in laravelfiles/bootstrap/paths.php file and index.php.</p>
+<p>Find these lines in <strong>laravelfiles/bootstrap/paths.php</strong></p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-php data-lang=php>    <span style=color:#e6db74>&#39;app&#39;</span> <span style=color:#f92672>=&gt;</span> <span style=color:#66d9ef>__DIR__</span><span style=color:#f92672>.</span><span style=color:#e6db74>&#39;/../app&#39;</span>,
+    <span style=color:#e6db74>&#39;public&#39;</span> <span style=color:#f92672>=&gt;</span> <span style=color:#66d9ef>__DIR__</span><span style=color:#f92672>.</span><span style=color:#e6db74>&#39;/../public&#39;</span>,
+</code></pre></div><p>Change these two lines to:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-php data-lang=php>    <span style=color:#e6db74>&#39;app&#39;</span> <span style=color:#f92672>=&gt;</span> <span style=color:#66d9ef>__DIR__</span><span style=color:#f92672>.</span><span style=color:#e6db74>&#39;/../app&#39;</span>,
+    <span style=color:#e6db74>&#39;public&#39;</span> <span style=color:#f92672>=&gt;</span> <span style=color:#66d9ef>__DIR__</span><span style=color:#f92672>.</span><span style=color:#e6db74>&#39;/../../&#39;</span>,
+</code></pre></div><p>Find these lines in <strong>index.php</strong></p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-php data-lang=php>    <span style=color:#66d9ef>require</span> <span style=color:#66d9ef>__DIR__</span><span style=color:#f92672>.</span><span style=color:#e6db74>&#39;/../bootstrap/autoload.php&#39;</span>;
+
+    $app <span style=color:#f92672>=</span> <span style=color:#66d9ef>require_once</span> <span style=color:#66d9ef>__DIR__</span><span style=color:#f92672>.</span><span style=color:#e6db74>&#39;/../bootstrap/start.php&#39;</span>;
+</code></pre></div><p>And change to:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-php data-lang=php>    <span style=color:#66d9ef>require</span> <span style=color:#66d9ef>__DIR__</span><span style=color:#f92672>.</span><span style=color:#e6db74>&#39;/laravelfiles/bootstrap/autoload.php&#39;</span>;
+
+    $app <span style=color:#f92672>=</span> <span style=color:#66d9ef>require_once</span> <span style=color:#66d9ef>__DIR__</span><span style=color:#f92672>.</span><span style=color:#e6db74>&#39;/laravelfiles/bootstrap/start.php&#39;</span>;
+</code></pre></div>
+</article>
+<footer><p>© 2021 Sudeep's Blog - Built With ❤️ using <a href=https://gohugo.io/>Hugo</a> and <a href=https://pages.github.com/>Github Pages</a></p>
+</footer>
+</html>
