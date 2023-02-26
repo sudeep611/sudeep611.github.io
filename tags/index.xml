@@ -1,1 +1,209 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tags on Sudeep's Blog</title><link>https://sudeepacharya.com.np/tags/</link><description>Recent content in Tags on Sudeep's Blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Wed, 08 Jan 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://sudeepacharya.com.np/tags/index.xml" rel="self" type="application/rss+xml"/><item><title>PHP</title><link>https://sudeepacharya.com.np/tags/PHP/</link><pubDate>Wed, 08 Jan 2020 00:00:00 +0000</pubDate><guid>https://sudeepacharya.com.np/tags/PHP/</guid><description/></item><item><title>Kotlin</title><link>https://sudeepacharya.com.np/tags/Kotlin/</link><pubDate>Wed, 09 Jan 2019 00:00:00 +0000</pubDate><guid>https://sudeepacharya.com.np/tags/Kotlin/</guid><description/></item><item><title>Python</title><link>https://sudeepacharya.com.np/tags/Python/</link><pubDate>Mon, 04 Dec 2017 00:00:00 +0000</pubDate><guid>https://sudeepacharya.com.np/tags/Python/</guid><description/></item><item><title>Haskell</title><link>https://sudeepacharya.com.np/tags/Haskell/</link><pubDate>Sat, 25 Nov 2017 00:00:00 +0000</pubDate><guid>https://sudeepacharya.com.np/tags/Haskell/</guid><description/></item><item><title>Unity3D</title><link>https://sudeepacharya.com.np/tags/Unity3D/</link><pubDate>Wed, 08 Nov 2017 00:00:00 +0000</pubDate><guid>https://sudeepacharya.com.np/tags/Unity3D/</guid><description/></item><item><title>CSharp, Unity3D</title><link>https://sudeepacharya.com.np/tags/CSharp-Unity3D/</link><pubDate>Tue, 11 Jul 2017 00:00:00 +0000</pubDate><guid>https://sudeepacharya.com.np/tags/CSharp-Unity3D/</guid><description/></item><item><title>CSharp</title><link>https://sudeepacharya.com.np/tags/CSharp/</link><pubDate>Sun, 09 Jul 2017 00:00:00 +0000</pubDate><guid>https://sudeepacharya.com.np/tags/CSharp/</guid><description/></item><item><title>explore nepal</title><link>https://sudeepacharya.com.np/tags/explore-nepal/</link><pubDate>Wed, 08 Feb 2017 00:00:00 +0000</pubDate><guid>https://sudeepacharya.com.np/tags/explore-nepal/</guid><description/></item><item><title>blog</title><link>https://sudeepacharya.com.np/tags/blog/</link><pubDate>Wed, 03 Feb 2016 00:00:00 +0000</pubDate><guid>https://sudeepacharya.com.np/tags/blog/</guid><description/></item><item><title>Android, My-Project</title><link>https://sudeepacharya.com.np/tags/Android-My-Project/</link><pubDate>Mon, 28 Sep 2015 00:00:00 +0000</pubDate><guid>https://sudeepacharya.com.np/tags/Android-My-Project/</guid><description/></item><item><title>Git</title><link>https://sudeepacharya.com.np/tags/Git/</link><pubDate>Mon, 19 Jan 2015 00:00:00 +0000</pubDate><guid>https://sudeepacharya.com.np/tags/Git/</guid><description/></item><item><title>Python, Django</title><link>https://sudeepacharya.com.np/tags/Python-Django/</link><pubDate>Fri, 16 Jan 2015 00:00:00 +0000</pubDate><guid>https://sudeepacharya.com.np/tags/Python-Django/</guid><description/></item><item><title>JavaScript</title><link>https://sudeepacharya.com.np/tags/JavaScript/</link><pubDate>Sun, 02 Feb 2014 00:00:00 +0000</pubDate><guid>https://sudeepacharya.com.np/tags/JavaScript/</guid><description/></item><item><title>My-Project, PHP</title><link>https://sudeepacharya.com.np/tags/My-Project-PHP/</link><pubDate>Thu, 16 Jan 2014 00:00:00 +0000</pubDate><guid>https://sudeepacharya.com.np/tags/My-Project-PHP/</guid><description/></item><item><title>Ubuntu, Data-BackUp</title><link>https://sudeepacharya.com.np/tags/Ubuntu-Data-BackUp/</link><pubDate>Thu, 16 Jan 2014 00:00:00 +0000</pubDate><guid>https://sudeepacharya.com.np/tags/Ubuntu-Data-BackUp/</guid><description/></item><item><title>Ubuntu</title><link>https://sudeepacharya.com.np/tags/Ubuntu/</link><pubDate>Fri, 10 Jan 2014 00:00:00 +0000</pubDate><guid>https://sudeepacharya.com.np/tags/Ubuntu/</guid><description/></item><item><title>C++</title><link>https://sudeepacharya.com.np/tags/C++/</link><pubDate>Thu, 26 Dec 2013 00:00:00 +0000</pubDate><guid>https://sudeepacharya.com.np/tags/C++/</guid><description/></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Sudeep&#39;s Blog</title>
+    <link>https://sudeepacharya.com.np/tags/</link>
+    <description>Recent content in Tags on Sudeep&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 23 May 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://sudeepacharya.com.np/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Networking</title>
+      <link>https://sudeepacharya.com.np/tags/Networking/</link>
+      <pubDate>Sat, 23 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://sudeepacharya.com.np/tags/Networking/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Free Stuff</title>
+      <link>https://sudeepacharya.com.np/tags/Free-Stuff/</link>
+      <pubDate>Tue, 05 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://sudeepacharya.com.np/tags/Free-Stuff/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>PHP</title>
+      <link>https://sudeepacharya.com.np/tags/PHP/</link>
+      <pubDate>Wed, 08 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://sudeepacharya.com.np/tags/PHP/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Kotlin</title>
+      <link>https://sudeepacharya.com.np/tags/Kotlin/</link>
+      <pubDate>Wed, 09 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://sudeepacharya.com.np/tags/Kotlin/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Python</title>
+      <link>https://sudeepacharya.com.np/tags/Python/</link>
+      <pubDate>Mon, 04 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://sudeepacharya.com.np/tags/Python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Haskell</title>
+      <link>https://sudeepacharya.com.np/tags/Haskell/</link>
+      <pubDate>Sat, 25 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://sudeepacharya.com.np/tags/Haskell/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Unity3D</title>
+      <link>https://sudeepacharya.com.np/tags/Unity3D/</link>
+      <pubDate>Wed, 08 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://sudeepacharya.com.np/tags/Unity3D/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CSharp</title>
+      <link>https://sudeepacharya.com.np/tags/CSharp/</link>
+      <pubDate>Tue, 11 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://sudeepacharya.com.np/tags/CSharp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>explore nepal</title>
+      <link>https://sudeepacharya.com.np/tags/explore-nepal/</link>
+      <pubDate>Wed, 08 Feb 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://sudeepacharya.com.np/tags/explore-nepal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>blog</title>
+      <link>https://sudeepacharya.com.np/tags/blog/</link>
+      <pubDate>Wed, 03 Feb 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://sudeepacharya.com.np/tags/blog/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Android</title>
+      <link>https://sudeepacharya.com.np/tags/Android/</link>
+      <pubDate>Mon, 28 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://sudeepacharya.com.np/tags/Android/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>My-Project</title>
+      <link>https://sudeepacharya.com.np/tags/My-Project/</link>
+      <pubDate>Mon, 28 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://sudeepacharya.com.np/tags/My-Project/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Git</title>
+      <link>https://sudeepacharya.com.np/tags/Git/</link>
+      <pubDate>Mon, 19 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://sudeepacharya.com.np/tags/Git/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Django</title>
+      <link>https://sudeepacharya.com.np/tags/Django/</link>
+      <pubDate>Fri, 16 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://sudeepacharya.com.np/tags/Django/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>JavaScript</title>
+      <link>https://sudeepacharya.com.np/tags/JavaScript/</link>
+      <pubDate>Sun, 02 Feb 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://sudeepacharya.com.np/tags/JavaScript/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Data-BackUp</title>
+      <link>https://sudeepacharya.com.np/tags/Data-BackUp/</link>
+      <pubDate>Thu, 16 Jan 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://sudeepacharya.com.np/tags/Data-BackUp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Linux</title>
+      <link>https://sudeepacharya.com.np/tags/Linux/</link>
+      <pubDate>Thu, 16 Jan 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://sudeepacharya.com.np/tags/Linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ubuntu</title>
+      <link>https://sudeepacharya.com.np/tags/Ubuntu/</link>
+      <pubDate>Thu, 16 Jan 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://sudeepacharya.com.np/tags/Ubuntu/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>WordPress</title>
+      <link>https://sudeepacharya.com.np/tags/WordPress/</link>
+      <pubDate>Thu, 16 Jan 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://sudeepacharya.com.np/tags/WordPress/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>C&#43;&#43;</title>
+      <link>https://sudeepacharya.com.np/tags/C&#43;&#43;/</link>
+      <pubDate>Thu, 26 Dec 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://sudeepacharya.com.np/tags/C&#43;&#43;/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Programming</title>
+      <link>https://sudeepacharya.com.np/tags/Programming/</link>
+      <pubDate>Thu, 26 Dec 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://sudeepacharya.com.np/tags/Programming/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Uncategorized</title>
+      <link>https://sudeepacharya.com.np/tags/Uncategorized/</link>
+      <pubDate>Fri, 13 Dec 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://sudeepacharya.com.np/tags/Uncategorized/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

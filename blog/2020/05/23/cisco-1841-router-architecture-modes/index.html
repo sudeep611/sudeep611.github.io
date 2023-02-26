@@ -1,28 +1,48 @@
-<!doctype html><html lang=en-us>
+<!DOCTYPE html>
+<html lang="en-us">
 <title>Architecture and Modes of Cisco 1841 Router</title>
-<meta charset=utf-8>
-<meta name=generator content="Hugo 0.89.1">
-<meta name=viewport content="width=device-width,initial-scale=1">
-<link rel=stylesheet href=https://sudeepacharya.com.np/css/index.css>
-<link rel=canonical href=https://sudeepacharya.com.np/blog/2020/05/23/cisco-1841-router-architecture-modes/>
-<link rel=alternate type=application/rss+xml href title="Sudeep's Blog">
-<link rel="shortcut icon" type=image/x-icon href=/favicon.ico>
+<meta charset="utf-8">
+<meta name="generator" content="Hugo 0.110.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://sudeepacharya.com.np/css/index.css">
+<link rel="canonical" href="https://sudeepacharya.com.np/blog/2020/05/23/cisco-1841-router-architecture-modes/">
+<link rel="alternate" type="application/rss+xml" href="" title="Sudeep&#39;s Blog">
+<link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' />
+
+
+
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-32671323-1"></script>
-<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','UA-32671323-1')</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-32671323-1');
+</script>
+
+
 <header>
-<a href=https://sudeepacharya.com.np/ class=title>Sudeep's Blog</a>
-<nav>
-<a href=/contact/>Contact</a>
-</nav>
+  
+    <a href="https://sudeepacharya.com.np/" class="title">Sudeep&#39;s Blog</a>
+  
+  
+    <nav>
+    
+      <a href="/contact/">Contact</a>
+    
+    </nav>
+  
+
 </header>
+
 <article>
-<header>
-<h1>Architecture and Modes of Cisco 1841 Router</h1>
-<time datetime=2020-05-23T00:00:00Z>May 23, 2020</time>
-</header>
-<p>Understand the external components of Cisco 1841 Router and learn three different modes User EXEC, Previleged and Global Configuration modes.</p>
-<h3 id=the-front-view-of-the-router>The front view of the router</h3>
-<p><img src=/assets/post-images/2020/cisco-1841-router-front-view.png alt="Frontview of Cisco 1841 Router"></p>
+  <header>
+    <h1>Architecture and Modes of Cisco 1841 Router</h1>
+    <time datetime="2020-05-23T00:00:00Z">May 23, 2020</time>
+  </header>
+  <p>Understand the external components of Cisco 1841 Router and learn three different modes User EXEC, Previleged and Global Configuration modes.</p>
+<h3 id="the-front-view-of-the-router">The front view of the router</h3>
+<p><img src="/assets/post-images/2020/cisco-1841-router-front-view.png" alt="Frontview of Cisco 1841 Router"></p>
 <p>The above is the front view of the Cisco router. We have the logo in the left side and Router model number on the right side which is Cisco 1841. Next, we have two system LED 1 and 2 as follows:</p>
 <ol>
 <li>
@@ -32,8 +52,8 @@
 <p><strong>System Activity (SYS ACT) LED</strong> - Off means there is no traffic is flowing through the router and blinking green indicated that router is currently moving traffic from one of the port.</p>
 </li>
 </ol>
-<h3 id=the-back-side-of-the-router>The back side of the router</h3>
-<p><img src=/assets/post-images/2020/cisco-1841-back-view.png alt="Back side of Cisco 1841 Router"></p>
+<h3 id="the-back-side-of-the-router">The back side of the router</h3>
+<p><img src="/assets/post-images/2020/cisco-1841-back-view.png" alt="Back side of Cisco 1841 Router"></p>
 <p>Let us see the different components and their meaning.</p>
 <ol>
 <li>
@@ -43,7 +63,7 @@
 <p><strong>Kensington Security Slot</strong> - Secure the router physically from being stolen using the lock.</p>
 </li>
 <li>
-<p><strong>Fast Ethernet ports and LEDs</strong> - They have capacity to transmit data at the rate of 100 Mbps. There are three LEDs, FDX (When it is on, it indicated full duplex and when off indicates half duplex operation), 100 (When it is on, it shows 100Mbps and when off indicates 10Mbps) and Link(When it is on, it means that the router is being connected to LAN).</p>
+<p><strong>Fast Ethernet ports and LEDs</strong> - They have capacity to transmit data at the rate of 100 Mbps. There are three LEDs,  FDX (When it is on, it indicated full duplex and when off indicates half duplex operation), 100 (When it is on, it shows 100Mbps and when off indicates 10Mbps) and Link(When it is on, it means that the router is being connected to LAN).</p>
 </li>
 <li>
 <p><strong>Console port</strong> - (Management Port) Connecting directly with the computer using console cable for the purpose of configuring the router.</p>
@@ -71,12 +91,12 @@
 </li>
 </ol>
 <p>In addition to these, as shown in the image above, there is a ground port between on/off swich and Input power connection which allows the router to be grounded.</p>
-<h4 id=methods-of-accessing-the-router>Methods of accessing the Router</h4>
+<h4 id="methods-of-accessing-the-router">Methods of accessing the Router</h4>
 <ol>
 <li><strong>In-band access</strong>: Used when the router is accessible through network when ip address is configured.</li>
 <li><strong>Out-of-band access</strong>: Physical access via console port.</li>
 </ol>
-<h4 id=modes-of-accessing-the-router>Modes of accessing the Router</h4>
+<h4 id="modes-of-accessing-the-router">Modes of accessing the Router</h4>
 <table>
 <thead>
 <tr>
@@ -88,7 +108,7 @@
 <tbody>
 <tr>
 <td>User EXEC mode</td>
-<td>Router></td>
+<td>Router&gt;</td>
 <td>1. First Level of Access, 2. Only supports basic commands.</td>
 </tr>
 <tr>
@@ -118,7 +138,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id=commands-for-navigating-to-different-modes>Commands for navigating to different modes</h3>
+<h3 id="commands-for-navigating-to-different-modes">Commands for navigating to different modes</h3>
 <table>
 <thead>
 <tr>
@@ -137,10 +157,14 @@
 </tr>
 </tbody>
 </table>
-<h3 id=using-the-built-in-help>Using the built-in help</h3>
+<h3 id="using-the-built-in-help">Using the built-in help</h3>
 <p>To access the help we can type <strong>?</strong>* (question mark). Using ? sign on terminal will display all the particular available commands at that point in the router.</p>
-<p><a href=https://www.linkedin.com/learning/learning-cisco-cli-router-configuration/>From LinkedIn Learning</a></p>
+<p><a href="https://www.linkedin.com/learning/learning-cisco-cli-router-configuration/">From LinkedIn Learning</a></p>
+
 </article>
-<footer><p>© 2021 Sudeep's Blog - Built With ❤️ using <a href=https://gohugo.io/>Hugo</a> and <a href=https://pages.github.com/>Github Pages</a></p>
+
+
+
+<footer><p>© 2021 Sudeep's Blog - Built With ❤️ using <a href="https://gohugo.io/">Hugo</a> and <a href="https://pages.github.com/">Github Pages</a></p>
 </footer>
 </html>

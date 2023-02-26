@@ -1,46 +1,70 @@
-<!doctype html><html lang=en-us>
+<!DOCTYPE html>
+<html lang="en-us">
 <title>Fixing Google Play Games plugin and Unity integration error - Android</title>
-<meta charset=utf-8>
-<meta name=generator content="Hugo 0.89.1">
-<meta name=viewport content="width=device-width,initial-scale=1">
-<link rel=stylesheet href=https://sudeepacharya.com.np/css/index.css>
-<link rel=canonical href=https://sudeepacharya.com.np/blog/2017/11/08/fixing-google-play-games-plugin-and-unity-integration-error-android/>
-<link rel=alternate type=application/rss+xml href title="Sudeep's Blog">
-<link rel="shortcut icon" type=image/x-icon href=/favicon.ico>
+<meta charset="utf-8">
+<meta name="generator" content="Hugo 0.110.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://sudeepacharya.com.np/css/index.css">
+<link rel="canonical" href="https://sudeepacharya.com.np/blog/2017/11/08/fixing-google-play-games-plugin-and-unity-integration-error-android/">
+<link rel="alternate" type="application/rss+xml" href="" title="Sudeep&#39;s Blog">
+<link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' />
+
+
+
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-32671323-1"></script>
-<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','UA-32671323-1')</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-32671323-1');
+</script>
+
+
 <header>
-<a href=https://sudeepacharya.com.np/ class=title>Sudeep's Blog</a>
-<nav>
-<a href=/contact/>Contact</a>
-</nav>
+  
+    <a href="https://sudeepacharya.com.np/" class="title">Sudeep&#39;s Blog</a>
+  
+  
+    <nav>
+    
+      <a href="/contact/">Contact</a>
+    
+    </nav>
+  
+
 </header>
+
 <article>
-<header>
-<h1>Fixing Google Play Games plugin and Unity integration error - Android</h1>
-<time datetime=2017-11-08T00:00:00Z>November 08, 2017</time>
-</header>
-<p>Recently i was having multiple issues with google play games plugin integration in Unity. It was not working at all. After spending the couple of hours in it, i was able to fix the issue. This is a note to myself as well for others who are having trouble with the integration.</p>
-<p>I was using <a href=https://github.com/googleads/googleads-mobile-unity/releases>Admob plugin</a> along with Google <a href=https://github.com/playgameservices/play-games-plugin-for-unity/tree/master/current-build>Play Games plugin</a>. In the process of fixing the error i got different kinds of error. Some error was due to the import while some was due to the Authentication issues from the play game service. I will discuss about these both.</p>
+  <header>
+    <h1>Fixing Google Play Games plugin and Unity integration error - Android</h1>
+    <time datetime="2017-11-08T00:00:00Z">November 08, 2017</time>
+  </header>
+  <p>Recently i was having multiple issues with google play games plugin integration in Unity. It was not working at all. After spending the couple of hours in it, i was able to fix the issue. This is a note to myself as well for others who are having trouble with the integration.</p>
+<p>I was using <a href="https://github.com/googleads/googleads-mobile-unity/releases">Admob plugin</a> along with Google <a href="https://github.com/playgameservices/play-games-plugin-for-unity/tree/master/current-build">Play Games plugin</a>. In the process of fixing the error i got different kinds of error. Some error was due to the import while some was due to the Authentication issues from the play game service. I will discuss about these both.</p>
 <p>First of all we have to be sure that the plugin is well integrated in our project. This means that the plugin is working well and there is no error in integration.</p>
 <p>First of all, I would recommend you to use the latest version of Unity and all the plugins you use in your project. This will fix the errors that arise due to different version of SDK issues. For instance i was having the following issue and when i deleted the plugins and re-imported the latest version, the error was fixed.</p>
-<pre tabindex=0><code>11-06 14:28:17.000 22817-4757/? W/GamesServiceBroker: Client connected with SDK 11411000, Services 11745448, and Games 52250048
+<pre tabindex="0"><code>11-06 14:28:17.000 22817-4757/? W/GamesServiceBroker: Client connected with SDK 11411000, Services 11745448, and Games 52250048
 </code></pre><p>Secondly, always give a closer look to the error message</p>
-<pre tabindex=0><code>Error building Player: CommandInvokationFailure: Failed to re-package resources. See the Console for details.
+<pre tabindex="0"><code>Error building Player: CommandInvokationFailure: Failed to re-package resources. See the Console for details.
 </code></pre><p>It takes me more time than usual to fix the error if i do not read the error message well. Read it until you understand it. There is always the solution in this error. For example: There might be colliding with the two files of different version if you are using multiple plugins in single project along with the Google Play Game plugin.</p>
 <p>Finally if you are able to build and run the project without any error and still it is not working then we need to see the &ldquo;logcat&rdquo;. For example you have a button and when the button is clicked you want to open the Leaderboard, but the leaderboard is not working then in this case we have to see the logcat for the error. Logcat is very handy tool to observe the error message thrown during the runtime.</p>
 <p>First of all open your app and then click on the leaderboard button or achievement whichever you are having issue with and then extract the logcat of your android device</p>
-<p>Visit to <a href=https://developer.android.com/studio/command-line/logcat.html>Logcat Command-Line tool</a> page or alternatively you can watch the error in real-time from the <a href=https://developer.android.com/studio/debug/am-logcat.html>Android Studio</a>.</p>
+<p>Visit to <a href="https://developer.android.com/studio/command-line/logcat.html">Logcat Command-Line tool</a> page or alternatively you can watch the error in real-time from the <a href="https://developer.android.com/studio/debug/am-logcat.html">Android Studio</a>.</p>
 <p>The logcat will have a error message which will lead you to the solution.</p>
-<h3 id=error-due-to-authentication-issue>Error due to Authentication issue</h3>
+<h3 id="error-due-to-authentication-issue">Error due to Authentication issue</h3>
 <p>Let us talk about the error occurring due to the Authentication issue. This issue normally occur due to the SHA-1 hash code not matching that of your app and the one you&rsquo;ve authorized in the developer console.</p>
-<p>First of all visit <a href=https://play.google.com/apps/publish/>Google Play Developers</a>, select the App and goto <strong>Release Management</strong> >> <em>App signing</em> and note the SHA-1 certificate for both the App Signing and Upload certificate. The app signing certificate works while you build and run app on your mobile device and the upload certificate works for the apk which is downloaded from the playstore. So, you need to create OAuth 2.0 client ID for both.</p>
-<p>Next, visit <a href=https://console.developers.google.com/>Developer Console</a>. Select the app and click on <em>Create credentials</em> >> <em>OAuth client ID</em> and select <em>Android</em>.</p>
+<p>First of all visit <a href="https://play.google.com/apps/publish/">Google Play Developers</a>, select the App and goto <strong>Release Management</strong> &gt;&gt; <em>App signing</em> and note the SHA-1 certificate for both the App Signing and Upload certificate. The app signing certificate works while you build and run app on your mobile device and the upload certificate works for the apk which is downloaded from the playstore. So, you need to create OAuth 2.0 client ID for both.</p>
+<p>Next, visit <a href="https://console.developers.google.com/">Developer Console</a>. Select the app and click on <em>Create credentials</em> &gt;&gt; <em>OAuth client ID</em> and select <em>Android</em>.</p>
 <p>Give any name to it and paste the SHA-1 Signing certificate from the Google Play Console and enter the package name. Similarly repeat this step for SHA-1 upload certificate. We are providing both certificate because we need to test the app before uploading to Google Play. Also note that if you are provided with the &ldquo;Duplicate Fingerprint&rdquo; message then you have already set up, you can skip that certificate.</p>
-<p>Lastly, you have to Link the app to Google Play Console. Goto <a href=https://console.developers.google.com/>Developer Console</a>, Click <em>Game services</em>. Select the app and click on <em>Linked apps</em>. Next click on <em>Link another app</em> and select <em>Android</em>, enter the details and click on <em>Save and continue</em>.</p>
+<p>Lastly, you have to Link the app to Google Play Console. Goto <a href="https://console.developers.google.com/">Developer Console</a>, Click <em>Game services</em>. Select the app and click on <em>Linked apps</em>. Next click on <em>Link another app</em> and select <em>Android</em>, enter the details and click on <em>Save and continue</em>.</p>
 <p>You may repeat this steps in some cases. But if it says already authorized then no need to authorize/link your app again.</p>
 <p>So, i hope reading this post have helped you to fix the google play game service plugin integration issue in Unity for your android app.</p>
+
 </article>
-<footer><p>© 2021 Sudeep's Blog - Built With ❤️ using <a href=https://gohugo.io/>Hugo</a> and <a href=https://pages.github.com/>Github Pages</a></p>
+
+
+
+<footer><p>© 2021 Sudeep's Blog - Built With ❤️ using <a href="https://gohugo.io/">Hugo</a> and <a href="https://pages.github.com/">Github Pages</a></p>
 </footer>
 </html>
