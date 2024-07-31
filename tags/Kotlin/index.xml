@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Kotlin on Sudeep&#39;s Blog</title>
+    <link>https://sudeepacharya.com.np/tags/Kotlin/</link>
+    <description>Recent content in Kotlin on Sudeep&#39;s Blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 09 Jan 2019 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://sudeepacharya.com.np/tags/Kotlin/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Learn Kotlin (Part 5) - Class</title>
+      <link>https://sudeepacharya.com.np/blog/2019/01/09/learn-kotlin-part-5-class/</link>
+      <pubDate>Wed, 09 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>https://sudeepacharya.com.np/blog/2019/01/09/learn-kotlin-part-5-class/</guid>
+      <description>Post Series:&#xA;Part 1: Hello world and Basic Data Types&#xA;Part 2: Array, Collection and Range&#xA;Part 3: Control Flow&#xA;Part 4: Function&#xA;Part 5: Class&#xA;Although Kotlin is statically typed language, it supports object-oriented programming like Java. Before explaining further let us dive into the basic syntax of the Kotlin class.&#xA;class Vehicle { // class definition // class body } So, defining a basic class is as simple as this and similar to Java.</description>
+    </item>
+    <item>
+      <title>Learn Kotlin (Part 4) - Function</title>
+      <link>https://sudeepacharya.com.np/blog/2018/12/25/learn-kotlin-part-4-function/</link>
+      <pubDate>Tue, 25 Dec 2018 00:00:00 +0000</pubDate>
+      <guid>https://sudeepacharya.com.np/blog/2018/12/25/learn-kotlin-part-4-function/</guid>
+      <description>Post Series: Part 1: Hello world and Basic Data Types&#xA;Part 2: Array, Collection and Range&#xA;Part 3: Control Flow&#xA;Part 4: Function&#xA;Part 5: Class&#xA;Merry Christmas Guys! The year 2018 is about to end. This have been a great year. Happy New Year 2019, May your new year be filled with Joy and Happiness. This will probably be the last post for this year 2018. Hope to see you all in the next year!</description>
+    </item>
+    <item>
+      <title>Learn Kotlin (Part 3) - Control Flow</title>
+      <link>https://sudeepacharya.com.np/blog/2018/12/17/learn-kotlin-part-3-control-flow/</link>
+      <pubDate>Mon, 17 Dec 2018 00:00:00 +0000</pubDate>
+      <guid>https://sudeepacharya.com.np/blog/2018/12/17/learn-kotlin-part-3-control-flow/</guid>
+      <description>Post Series:&#xA;Part 1: Hello world and Basic Data Types&#xA;Part 2: Array, Collection and Range&#xA;Part 3: Control Flow&#xA;Part 4: Function&#xA;Part 5: Class&#xA;In this post we are going to learn about the control flow in Kotlin. Let us learn about how to make a decision, how to perform a task multiple times by iterating and how to get out of the loop, how to continue to next iteration.</description>
+    </item>
+    <item>
+      <title>Learn Kotlin (Part 2) - Array, Collection and Range</title>
+      <link>https://sudeepacharya.com.np/blog/2018/12/10/learn-kotlin-part-2-array-collection-and-range/</link>
+      <pubDate>Mon, 10 Dec 2018 00:00:00 +0000</pubDate>
+      <guid>https://sudeepacharya.com.np/blog/2018/12/10/learn-kotlin-part-2-array-collection-and-range/</guid>
+      <description>Post Series:&#xA;Part 1: Hello world and Basic Data Types&#xA;Part 2: Array, Collection and Range&#xA;Part 3: Control Flow&#xA;Part 4: Function&#xA;Part 5: Class&#xA;In this post we will discuss about the Array, Collection and Range in Kotlin.&#xA;Array In Kotlin, we can create array using two different ways. First one is by using arrayOf() function and next one is by using Array() constructor.&#xA;Using arrayOf() function val accountInfo = arrayOf(&amp;#34;Sudeep&amp;#34;, 34000) The accountInfo array is of type Array&amp;lt;Any&amp;gt;.</description>
+    </item>
+    <item>
+      <title>Learn Kotlin (Part 1) - Hello world and Basic Data Types</title>
+      <link>https://sudeepacharya.com.np/blog/2018/12/03/learn-kotlin-part-1-hello-world-and-basic-data-types/</link>
+      <pubDate>Mon, 03 Dec 2018 00:00:00 +0000</pubDate>
+      <guid>https://sudeepacharya.com.np/blog/2018/12/03/learn-kotlin-part-1-hello-world-and-basic-data-types/</guid>
+      <description>Post Series:&#xA;Part 1: Hello world and Basic Data Types&#xA;Part 2: Array, Collection and Range&#xA;Part 3: Control Flow&#xA;Part 4: Function&#xA;Part 5: Class&#xA;Since Kotlin is already a official programming language for Android Apps development, I have been learning Kotlin lately. In this post, i will take you through basic hello world skeleton program to data types, variables in Kotlin.&#xA;Hello World Program for Kotlin fun main(args: Array) { println(&amp;#34;Hello World!</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CSharp on Sudeep&#39;s Blog</title>
+    <link>https://sudeepacharya.com.np/tags/CSharp/</link>
+    <description>Recent content in CSharp on Sudeep&#39;s Blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 11 Jul 2017 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://sudeepacharya.com.np/tags/CSharp/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Starting Animation from random time frame Unity</title>
+      <link>https://sudeepacharya.com.np/blog/2017/07/11/starting-animation-at-different-time-unity/</link>
+      <pubDate>Tue, 11 Jul 2017 00:00:00 +0000</pubDate>
+      <guid>https://sudeepacharya.com.np/blog/2017/07/11/starting-animation-at-different-time-unity/</guid>
+      <description>Code snippet to start the animation at different time. Useful when there are many same animation running on screen and you want to make them random.&#xA;Animator anim = GetComponent&amp;lt;Animator&amp;gt; (); AnimatorStateInfo state = anim.GetCurrentAnimatorStateInfo (0); anim.Play (state.fullPathHash, -1, Random.Range(0f,1f)); You can add this code in Start or Awake function and add to the GameObject with the Animator component.</description>
+    </item>
+    <item>
+      <title>C# code to shuffle Array</title>
+      <link>https://sudeepacharya.com.np/blog/2017/07/09/c-sharp-code-to-shuffle-array/</link>
+      <pubDate>Sun, 09 Jul 2017 00:00:00 +0000</pubDate>
+      <guid>https://sudeepacharya.com.np/blog/2017/07/09/c-sharp-code-to-shuffle-array/</guid>
+      <description>private T[] ShuffleArray&amp;lt;T&amp;gt;(T[] array) { System.Random r = new System.Random (); for(int i = array.Length; i &amp;gt; 0; i--) { int j = r.Next (i); T k = array [j]; array [j] = array [i - 1]; array [i - 1] = k; } return array; } Example:&#xA;Int Array int[] intArray = new int[] {1,2,3,4}; intArray = ShuffleArray(intArray); Float Array float[] floatArray = new float[] {1.0f,2.0f,3.0f,4.0f}; floatArray = ShuffleArray(floatArray); </description>
+    </item>
+  </channel>
+</rss>

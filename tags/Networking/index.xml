@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Networking on Sudeep&#39;s Blog</title>
+    <link>https://sudeepacharya.com.np/tags/Networking/</link>
+    <description>Recent content in Networking on Sudeep&#39;s Blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 23 May 2020 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://sudeepacharya.com.np/tags/Networking/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Architecture and Modes of Cisco 1841 Router</title>
+      <link>https://sudeepacharya.com.np/blog/2020/05/23/cisco-1841-router-architecture-modes/</link>
+      <pubDate>Sat, 23 May 2020 00:00:00 +0000</pubDate>
+      <guid>https://sudeepacharya.com.np/blog/2020/05/23/cisco-1841-router-architecture-modes/</guid>
+      <description>Understand the external components of Cisco 1841 Router and learn three different modes User EXEC, Previleged and Global Configuration modes.&#xA;The front view of the router The above is the front view of the Cisco router. We have the logo in the left side and Router model number on the right side which is Cisco 1841. Next, we have two system LED 1 and 2 as follows:&#xA;System Power (SYS PWR) LED - No power means off and blinking green means that the router is booting.</description>
+    </item>
+  </channel>
+</rss>

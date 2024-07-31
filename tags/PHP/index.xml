@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PHP on Sudeep&#39;s Blog</title>
+    <link>https://sudeepacharya.com.np/tags/PHP/</link>
+    <description>Recent content in PHP on Sudeep&#39;s Blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 08 Jan 2020 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://sudeepacharya.com.np/tags/PHP/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A Silly way to comment in your Code</title>
+      <link>https://sudeepacharya.com.np/blog/2020/01/08/a-silly-way-to-comment-in-your-code/</link>
+      <pubDate>Wed, 08 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>https://sudeepacharya.com.np/blog/2020/01/08/a-silly-way-to-comment-in-your-code/</guid>
+      <description>During my beginners year of writing code, i used to comment unnecessarily. I realised this after i saw the code written by senior developers. The main purpose of the comment is to make your code understood by other developers who are working together in the same project or for other contributors.&#xA;Let us take an example of the silly code:&#xA;&amp;lt;?php // Assigning the value to firstNumber firstNumber = 9 // Assigning the value to secondNumber secondNumber = 12 // Creating variable to store the sum of firstNumber and secondNumber sumOfNumbers = 0; // Adding both firstNumber and secondNumber and storing it to sumOfNumbers sumOfNumbers = firstNumber + secondNumber // Displaying the result echo sumOfNumbers; ?</description>
+    </item>
+    <item>
+      <title>How to Install PHP Composer in your Mac</title>
+      <link>https://sudeepacharya.com.np/blog/2020/01/04/how-to-install-php-composer-in-your-mac/</link>
+      <pubDate>Sat, 04 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>https://sudeepacharya.com.np/blog/2020/01/04/how-to-install-php-composer-in-your-mac/</guid>
+      <description>Composer is the easiest way to manage dependencies to your small to large PHP projects.&#xA;Use the following commands to install composer in your Mac&#xA;curl -sS https://getcomposer.org/installer | php Now the composer is installed in your current directory.&#xA;Now, you can access it using the following command&#xA;php composer.phar [command] It works but you don&amp;rsquo;t always want to use this directory path to access the composer, So in the next step we will make it accessible globally.</description>
+    </item>
+    <item>
+      <title>How to set up basic PHP Project structure with Composer</title>
+      <link>https://sudeepacharya.com.np/blog/2020/01/04/how-to-set-up-basic-php-project-structure-with-composer/</link>
+      <pubDate>Sat, 04 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>https://sudeepacharya.com.np/blog/2020/01/04/how-to-set-up-basic-php-project-structure-with-composer/</guid>
+      <description>Most of the time beginners learning PHP are unaware of Composer, if you are among them, Composer is a dependency management tool for PHP.&#xA;Let&amp;rsquo;s take a simple example, rather than using include command in each of the PHP file, composer makes it easy by specifying that file as a dependency. Another example would be if you use some library then it makes easier to use and update it with a single command.</description>
+    </item>
+    <item>
+      <title>How to remove /public/ from URL in Laravel</title>
+      <link>https://sudeepacharya.com.np/blog/2014/05/17/how-to-remove-public-from-url-in-laravel/</link>
+      <pubDate>Sat, 17 May 2014 00:00:00 +0000</pubDate>
+      <guid>https://sudeepacharya.com.np/blog/2014/05/17/how-to-remove-public-from-url-in-laravel/</guid>
+      <description>By default in Laravel the URL to access your site is http://example.com/public/. It is not good to keep public in URL as it makes URL ugly and longer.&#xA;So, let&amp;rsquo;s talk about the solution to remove /public/ from the URL.&#xA;Method I : Using .htaccess Create a .htaccess file your Laravel root directory if it does not exists already. (Normally it is under your public_html folder)&#xA;And add the following code to it:</description>
+    </item>
+    <item>
+      <title>Beautiful Social Widget - WordPress Plugin</title>
+      <link>https://sudeepacharya.com.np/blog/2014/01/16/beautiful-social-widget-wordpress-plugin/</link>
+      <pubDate>Thu, 16 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>https://sudeepacharya.com.np/blog/2014/01/16/beautiful-social-widget-wordpress-plugin/</guid>
+      <description>Beautiful Social Widget is WordPress plugins which is useful to link to your social media profiles. This plugins adds the widget in your blog. This plugin supports Facebook, Twitter, Google Plus, Linked In, Pinterest, YouTube, Instagram, Tumblr, Flickr, Rss and Email Me.&#xA;Download Beautiful Social Widget.&#xA;How to use this plugins ? Well this is very easy to use. First of all install this plugins and then activate it. Then navigate to your Widgets section which is in Appearance tab.</description>
+    </item>
+    <item>
+      <title>Clean Black WordPress Theme</title>
+      <link>https://sudeepacharya.com.np/blog/2014/01/16/clean-black-wordpress-theme/</link>
+      <pubDate>Thu, 16 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>https://sudeepacharya.com.np/blog/2014/01/16/clean-black-wordpress-theme/</guid>
+      <description>Clean Black is a free WordPress theme. It is black and responsive theme which is easy to customize.&#xA;Tags : Responsive, 2 column, Right sidebar, Black, Clean Design.&#xA;Download: Clean Black WordPress theme&#xA;Theme Update: (22, Jan 2014) From version 1.4 you can show either full post or summary in your Home page and Archive pages.&#xA;Customizing Theme Header You can show Blog title and description in the header also you can show the image in the header(size 960*150).</description>
+    </item>
+    <item>
+      <title>Sweet Tech WordPress Theme</title>
+      <link>https://sudeepacharya.com.np/blog/2014/01/16/sweet-tech-wordpress-theme/</link>
+      <pubDate>Thu, 16 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>https://sudeepacharya.com.np/blog/2014/01/16/sweet-tech-wordpress-theme/</guid>
+      <description>Sweet Tech is a free WordPress theme. It is clean, white, blue theme. It is extremely easy to customize and maintain your site.&#xA;Features: Two Column, Right Sidebar&#xA;Fully Responsive clean Design&#xA;Blue and white color theme&#xA;Fastest loading theme&#xA;Social Media Icons and Search box built-in&#xA;Download Sweet Tech WordPress theme.&#xA;Using Sweet Tech theme As mentioned earlier this theme is very easy to use and customize. Let&amp;rsquo;s discuss about customizing each part of the theme here.</description>
+    </item>
+  </channel>
+</rss>

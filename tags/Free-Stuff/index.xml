@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Free Stuff on Sudeep&#39;s Blog</title>
+    <link>https://sudeepacharya.com.np/tags/Free-Stuff/</link>
+    <description>Recent content in Free Stuff on Sudeep&#39;s Blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 05 May 2020 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://sudeepacharya.com.np/tags/Free-Stuff/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Get free domain .com.np and free hosting</title>
+      <link>https://sudeepacharya.com.np/blog/2020/05/05/free-com-np-domain-free-hosting/</link>
+      <pubDate>Tue, 05 May 2020 00:00:00 +0000</pubDate>
+      <guid>https://sudeepacharya.com.np/blog/2020/05/05/free-com-np-domain-free-hosting/</guid>
+      <description>For Nepali citizens, you can register free .com.np domain. In this post, I will teach you to point this domain to Github Pages using Cloudflare DNS for free.&#xA;Mercantile Communications Pvt. Ltd. provides .com.np domain registration for free of cost and provides to use DNS service.&#xA;Step 1: Setup Github account and upload website To upload your website into the github account you need to learn git. I am not covering the tutorial for using the git.</description>
+    </item>
+  </channel>
+</rss>
