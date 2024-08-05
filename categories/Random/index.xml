@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Random on Sudeep&#39;s Blog</title>
+    <link>https://sudeepacharya.com.np/categories/Random/</link>
+    <description>Recent content in Random on Sudeep&#39;s Blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 21 May 2017 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://sudeepacharya.com.np/categories/Random/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to find the game art for your Game Project</title>
+      <link>https://sudeepacharya.com.np/blog/2017/05/21/how-to-find-the-game-art-for-your-game-project/</link>
+      <pubDate>Sun, 21 May 2017 00:00:00 +0000</pubDate>
+      <guid>https://sudeepacharya.com.np/blog/2017/05/21/how-to-find-the-game-art-for-your-game-project/</guid>
+      <description>I am currently working on a game development, i do programming and in the game if i require graphics then i hire designer. I was curious about how other indie developers like me manage the game assets. I asked in a Facebook group about this topic. Hopefully i got reply from Dozens of people. In this post i will share how they manage the game assets being a Game Programmer.</description>
+    </item>
+  </channel>
+</rss>

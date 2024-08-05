@@ -20,19 +20,19 @@
     <loc>https://sudeepacharya.com.np/blog/2024/08/05/useful-run-win-r-commands/</loc>
     <lastmod>2024-08-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sudeepacharya.com.np/tags/Windows-10/</loc>
-    <lastmod>2024-08-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://sudeepacharya.com.np/tags/Windows-11/</loc>
-    <lastmod>2024-08-05T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://sudeepacharya.com.np/categories/Windows-Tips-and-Tricks/</loc>
     <lastmod>2024-08-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sudeepacharya.com.np/categories/Microsoft/</loc>
+    <loc>https://sudeepacharya.com.np/tags/Windows10/</loc>
+    <lastmod>2024-08-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sudeepacharya.com.np/tags/Windows11/</loc>
+    <lastmod>2024-08-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sudeepacharya.com.np/tags/Excel/</loc>
     <lastmod>2024-07-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sudeepacharya.com.np/tags/Microsoft-Excel/</loc>
+    <loc>https://sudeepacharya.com.np/categories/Microsoft/</loc>
     <lastmod>2024-07-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://sudeepacharya.com.np/blog/2024/07/20/useful-excel-formulas-and-tricks/</loc>
@@ -62,7 +62,7 @@
     <loc>https://sudeepacharya.com.np/tags/Tutorial/</loc>
     <lastmod>2020-05-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sudeepacharya.com.np/tags/Free-Stuff/</loc>
+    <loc>https://sudeepacharya.com.np/tags/FreeStuff/</loc>
     <lastmod>2020-05-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://sudeepacharya.com.np/blog/2020/05/05/free-com-np-domain-free-hosting/</loc>
@@ -170,7 +170,7 @@
     <loc>https://sudeepacharya.com.np/blog/2017/11/08/fixing-google-play-games-plugin-and-unity-integration-error-android/</loc>
     <lastmod>2017-11-08T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sudeepacharya.com.np/tags/Mobile-Game/</loc>
+    <loc>https://sudeepacharya.com.np/tags/MobileGame/</loc>
     <lastmod>2017-11-08T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://sudeepacharya.com.np/tags/Unity3d/</loc>
@@ -186,6 +186,9 @@
     <lastmod>2017-07-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://sudeepacharya.com.np/blog/2017/05/21/how-to-find-the-game-art-for-your-game-project/</loc>
+    <lastmod>2017-05-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sudeepacharya.com.np/categories/Random/</loc>
     <lastmod>2017-05-21T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://sudeepacharya.com.np/blog/2017/05/15/local-election-nepal-2074/</loc>
@@ -206,7 +209,7 @@
     <loc>https://sudeepacharya.com.np/blog/2017/02/26/convocation-ceremony-pokhara-university-2017/</loc>
     <lastmod>2017-02-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sudeepacharya.com.np/tags/Explore-Nepal/</loc>
+    <loc>https://sudeepacharya.com.np/tags/ExploreNepal/</loc>
     <lastmod>2017-02-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://sudeepacharya.com.np/tags/Hiking/</loc>
@@ -287,7 +290,7 @@
     <loc>https://sudeepacharya.com.np/blog/2014/01/16/clean-black-wordpress-theme/</loc>
     <lastmod>2014-01-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sudeepacharya.com.np/tags/Data-Backup/</loc>
+    <loc>https://sudeepacharya.com.np/tags/DataBackup/</loc>
     <lastmod>2014-01-16T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://sudeepacharya.com.np/tags/Linux/</loc>

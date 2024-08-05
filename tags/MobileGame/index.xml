@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>MobileGame on Sudeep&#39;s Blog</title>
+    <link>https://sudeepacharya.com.np/tags/MobileGame/</link>
+    <description>Recent content in MobileGame on Sudeep&#39;s Blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 08 Nov 2017 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://sudeepacharya.com.np/tags/MobileGame/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Fixing Google Play Games plugin and Unity integration error - Android</title>
+      <link>https://sudeepacharya.com.np/blog/2017/11/08/fixing-google-play-games-plugin-and-unity-integration-error-android/</link>
+      <pubDate>Wed, 08 Nov 2017 00:00:00 +0000</pubDate>
+      <guid>https://sudeepacharya.com.np/blog/2017/11/08/fixing-google-play-games-plugin-and-unity-integration-error-android/</guid>
+      <description>Recently i was having multiple issues with google play games plugin integration in Unity. It was not working at all. After spending the couple of hours in it, i was able to fix the issue. This is a note to myself as well for others who are having trouble with the integration.&#xA;I was using Admob plugin along with Google Play Games plugin. In the process of fixing the error i got different kinds of error.</description>
+    </item>
+    <item>
+      <title>How to find the game art for your Game Project</title>
+      <link>https://sudeepacharya.com.np/blog/2017/05/21/how-to-find-the-game-art-for-your-game-project/</link>
+      <pubDate>Sun, 21 May 2017 00:00:00 +0000</pubDate>
+      <guid>https://sudeepacharya.com.np/blog/2017/05/21/how-to-find-the-game-art-for-your-game-project/</guid>
+      <description>I am currently working on a game development, i do programming and in the game if i require graphics then i hire designer. I was curious about how other indie developers like me manage the game assets. I asked in a Facebook group about this topic. Hopefully i got reply from Dozens of people. In this post i will share how they manage the game assets being a Game Programmer.</description>
+    </item>
+    <item>
+      <title>Jhandi Munda (Langur Burja) - Mobile Game</title>
+      <link>https://sudeepacharya.com.np/blog/2014/09/28/jhandi-munda-langur-burja-mobile-game/</link>
+      <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
+      <guid>https://sudeepacharya.com.np/blog/2014/09/28/jhandi-munda-langur-burja-mobile-game/</guid>
+      <description>Jhandi Munda is a gambling game played mostly in South Asian countries including Nepal, India, Bangladesh and Myanmar. It is also known with a different name in different regions such as &amp;ldquo;Langur Burja&amp;rdquo;, &amp;ldquo;Jhanda Burja” and “Khor Khore” or “Khod khode”. I have developed a Mobile game based on this.&#xA;Jhandi Munda is mostly played during Hindu’s big festivals like Dussehra(Dashain) and Deepawali(Tihar). We have 6 dices with 6 faces in each die.</description>
+    </item>
+  </channel>
+</rss>
