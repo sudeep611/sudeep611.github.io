@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Data-BackUp on Sudeep&#39;s Blog</title>
-    <link>https://sudeepacharya.com.np/tags/Data-BackUp/</link>
-    <description>Recent content in Data-BackUp on Sudeep&#39;s Blog</description>
+    <title>Data Backup on Sudeep&#39;s Blog</title>
+    <link>https://sudeepacharya.com.np/tags/Data-Backup/</link>
+    <description>Recent content in Data Backup on Sudeep&#39;s Blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 16 Jan 2014 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://sudeepacharya.com.np/tags/Data-BackUp/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://sudeepacharya.com.np/tags/Data-Backup/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Recover deleted data from NTFS file system in Ubuntu</title>
       <link>https://sudeepacharya.com.np/blog/2014/01/16/recover-deleted-files-from-ntfs-file-system-ubuntu/</link>

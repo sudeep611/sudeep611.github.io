@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tutorials on Sudeep&#39;s Blog</title>
+    <link>http://localhost:1313/tags/tutorials/</link>
+    <description>Recent content in Tutorials on Sudeep&#39;s Blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 12 Jan 2015 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/tutorials/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>URL Shortener with Django (Part 1) - Creating virtual environment and installing Django</title>
+      <link>http://localhost:1313/blog/2015/01/12/urlshortener-with-django-create-virtual-environment-install-django/</link>
+      <pubDate>Mon, 12 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/2015/01/12/urlshortener-with-django-create-virtual-environment-install-django/</guid>
+      <description>I finally got the time to write a Django tutorial. In this tutorial we are building URL Shortener. If you are confused with what we are building then we are building something similar to (bit.ly) or (goo.gl).&#xA;We are building the app that will make a shorter URL of a longer URL. (Example) Normally the shorter URL will be localhost:8000/4hh5kr for www.facebook.com&#xA;I am using Django 1.7.1 with Python 3.3.2+. Don&amp;rsquo;t worry if you have different version of Django because we will set up our virtual environment and install latest version of Django.</description>
+    </item>
+  </channel>
+</rss>

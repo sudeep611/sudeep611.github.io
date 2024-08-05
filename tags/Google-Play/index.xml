@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Google Play on Sudeep&#39;s Blog</title>
+    <link>http://localhost:1313/tags/Google-Play/</link>
+    <description>Recent content in Google Play on Sudeep&#39;s Blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 08 Nov 2017 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/Google-Play/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Fixing Google Play Games plugin and Unity integration error - Android</title>
+      <link>http://localhost:1313/blog/2017/11/08/fixing-google-play-games-plugin-and-unity-integration-error-android/</link>
+      <pubDate>Wed, 08 Nov 2017 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/2017/11/08/fixing-google-play-games-plugin-and-unity-integration-error-android/</guid>
+      <description>Recently i was having multiple issues with google play games plugin integration in Unity. It was not working at all. After spending the couple of hours in it, i was able to fix the issue. This is a note to myself as well for others who are having trouble with the integration.&#xA;I was using Admob plugin along with Google Play Games plugin. In the process of fixing the error i got different kinds of error.</description>
+    </item>
+  </channel>
+</rss>

@@ -10,23 +10,51 @@
     <atom:link href="https://sudeepacharya.com.np/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Commands</title>
-      <link>https://sudeepacharya.com.np/tags/commands/</link>
+      <link>https://sudeepacharya.com.np/tags/Commands/</link>
       <pubDate>Mon, 05 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://sudeepacharya.com.np/tags/commands/</guid>
+      <guid>https://sudeepacharya.com.np/tags/Commands/</guid>
       <description></description>
     </item>
     <item>
-      <title>Excel</title>
-      <link>https://sudeepacharya.com.np/tags/Excel/</link>
+      <title>Windows 10</title>
+      <link>https://sudeepacharya.com.np/tags/Windows-10/</link>
+      <pubDate>Mon, 05 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://sudeepacharya.com.np/tags/Windows-10/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Windows 11</title>
+      <link>https://sudeepacharya.com.np/tags/Windows-11/</link>
+      <pubDate>Mon, 05 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://sudeepacharya.com.np/tags/Windows-11/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Microsoft Excel</title>
+      <link>https://sudeepacharya.com.np/tags/Microsoft-Excel/</link>
       <pubDate>Sat, 20 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>https://sudeepacharya.com.np/tags/Excel/</guid>
+      <guid>https://sudeepacharya.com.np/tags/Microsoft-Excel/</guid>
       <description></description>
     </item>
     <item>
-      <title>Networking</title>
-      <link>https://sudeepacharya.com.np/tags/Networking/</link>
+      <title>Blog</title>
+      <link>https://sudeepacharya.com.np/tags/Blog/</link>
+      <pubDate>Sat, 11 Feb 2023 00:00:00 +0000</pubDate>
+      <guid>https://sudeepacharya.com.np/tags/Blog/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Hacking</title>
+      <link>https://sudeepacharya.com.np/tags/Hacking/</link>
+      <pubDate>Sat, 11 Feb 2023 00:00:00 +0000</pubDate>
+      <guid>https://sudeepacharya.com.np/tags/Hacking/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tutorial</title>
+      <link>https://sudeepacharya.com.np/tags/Tutorial/</link>
       <pubDate>Sat, 23 May 2020 00:00:00 +0000</pubDate>
-      <guid>https://sudeepacharya.com.np/tags/Networking/</guid>
+      <guid>https://sudeepacharya.com.np/tags/Tutorial/</guid>
       <description></description>
     </item>
     <item>
@@ -34,6 +62,13 @@
       <link>https://sudeepacharya.com.np/tags/Free-Stuff/</link>
       <pubDate>Tue, 05 May 2020 00:00:00 +0000</pubDate>
       <guid>https://sudeepacharya.com.np/tags/Free-Stuff/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Jekyll</title>
+      <link>https://sudeepacharya.com.np/tags/Jekyll/</link>
+      <pubDate>Sat, 02 May 2020 00:00:00 +0000</pubDate>
+      <guid>https://sudeepacharya.com.np/tags/Jekyll/</guid>
       <description></description>
     </item>
     <item>
@@ -51,10 +86,24 @@
       <description></description>
     </item>
     <item>
+      <title>Meditation</title>
+      <link>https://sudeepacharya.com.np/tags/Meditation/</link>
+      <pubDate>Mon, 04 Dec 2017 00:00:00 +0000</pubDate>
+      <guid>https://sudeepacharya.com.np/tags/Meditation/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Python</title>
       <link>https://sudeepacharya.com.np/tags/Python/</link>
       <pubDate>Mon, 04 Dec 2017 00:00:00 +0000</pubDate>
       <guid>https://sudeepacharya.com.np/tags/Python/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Sprituality</title>
+      <link>https://sudeepacharya.com.np/tags/Sprituality/</link>
+      <pubDate>Mon, 04 Dec 2017 00:00:00 +0000</pubDate>
+      <guid>https://sudeepacharya.com.np/tags/Sprituality/</guid>
       <description></description>
     </item>
     <item>
@@ -65,10 +114,17 @@
       <description></description>
     </item>
     <item>
-      <title>Unity3D</title>
-      <link>https://sudeepacharya.com.np/tags/Unity3D/</link>
+      <title>Mobile Game</title>
+      <link>https://sudeepacharya.com.np/tags/Mobile-Game/</link>
       <pubDate>Wed, 08 Nov 2017 00:00:00 +0000</pubDate>
-      <guid>https://sudeepacharya.com.np/tags/Unity3D/</guid>
+      <guid>https://sudeepacharya.com.np/tags/Mobile-Game/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Unity3D</title>
+      <link>https://sudeepacharya.com.np/tags/Unity3d/</link>
+      <pubDate>Wed, 08 Nov 2017 00:00:00 +0000</pubDate>
+      <guid>https://sudeepacharya.com.np/tags/Unity3d/</guid>
       <description></description>
     </item>
     <item>
@@ -79,17 +135,31 @@
       <description></description>
     </item>
     <item>
-      <title>Explore Nepal</title>
-      <link>https://sudeepacharya.com.np/tags/explore-nepal/</link>
-      <pubDate>Wed, 08 Feb 2017 00:00:00 +0000</pubDate>
-      <guid>https://sudeepacharya.com.np/tags/explore-nepal/</guid>
+      <title>Life</title>
+      <link>https://sudeepacharya.com.np/tags/Life/</link>
+      <pubDate>Wed, 01 Mar 2017 00:00:00 +0000</pubDate>
+      <guid>https://sudeepacharya.com.np/tags/Life/</guid>
       <description></description>
     </item>
     <item>
-      <title>Blog</title>
-      <link>https://sudeepacharya.com.np/tags/blog/</link>
-      <pubDate>Wed, 03 Feb 2016 00:00:00 +0000</pubDate>
-      <guid>https://sudeepacharya.com.np/tags/blog/</guid>
+      <title>Explore Nepal</title>
+      <link>https://sudeepacharya.com.np/tags/Explore-Nepal/</link>
+      <pubDate>Sun, 26 Feb 2017 00:00:00 +0000</pubDate>
+      <guid>https://sudeepacharya.com.np/tags/Explore-Nepal/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Hiking</title>
+      <link>https://sudeepacharya.com.np/tags/Hiking/</link>
+      <pubDate>Sun, 26 Feb 2017 00:00:00 +0000</pubDate>
+      <guid>https://sudeepacharya.com.np/tags/Hiking/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Travel</title>
+      <link>https://sudeepacharya.com.np/tags/Travel/</link>
+      <pubDate>Sun, 26 Feb 2017 00:00:00 +0000</pubDate>
+      <guid>https://sudeepacharya.com.np/tags/Travel/</guid>
       <description></description>
     </item>
     <item>
@@ -97,13 +167,6 @@
       <link>https://sudeepacharya.com.np/tags/Android/</link>
       <pubDate>Mon, 28 Sep 2015 00:00:00 +0000</pubDate>
       <guid>https://sudeepacharya.com.np/tags/Android/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>My-Project</title>
-      <link>https://sudeepacharya.com.np/tags/My-Project/</link>
-      <pubDate>Mon, 28 Sep 2015 00:00:00 +0000</pubDate>
-      <guid>https://sudeepacharya.com.np/tags/My-Project/</guid>
       <description></description>
     </item>
     <item>
@@ -128,10 +191,10 @@
       <description></description>
     </item>
     <item>
-      <title>Data-BackUp</title>
-      <link>https://sudeepacharya.com.np/tags/Data-BackUp/</link>
+      <title>Data Backup</title>
+      <link>https://sudeepacharya.com.np/tags/Data-Backup/</link>
       <pubDate>Thu, 16 Jan 2014 00:00:00 +0000</pubDate>
-      <guid>https://sudeepacharya.com.np/tags/Data-BackUp/</guid>
+      <guid>https://sudeepacharya.com.np/tags/Data-Backup/</guid>
       <description></description>
     </item>
     <item>

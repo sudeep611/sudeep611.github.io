@@ -5,7 +5,7 @@
     <loc>https://sudeepacharya.com.np/categories/</loc>
     <lastmod>2024-08-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sudeepacharya.com.np/tags/commands/</loc>
+    <loc>https://sudeepacharya.com.np/tags/Commands/</loc>
     <lastmod>2024-08-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://sudeepacharya.com.np/posts/</loc>
@@ -20,25 +20,34 @@
     <loc>https://sudeepacharya.com.np/blog/2024/08/05/useful-run-win-r-commands/</loc>
     <lastmod>2024-08-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sudeepacharya.com.np/categories/Windows/</loc>
+    <loc>https://sudeepacharya.com.np/tags/Windows-10/</loc>
     <lastmod>2024-08-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sudeepacharya.com.np/tags/Excel/</loc>
+    <loc>https://sudeepacharya.com.np/tags/Windows-11/</loc>
+    <lastmod>2024-08-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sudeepacharya.com.np/categories/Windows-Tips-and-Tricks/</loc>
+    <lastmod>2024-08-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sudeepacharya.com.np/categories/Microsoft/</loc>
     <lastmod>2024-07-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sudeepacharya.com.np/categories/Excel/</loc>
+    <loc>https://sudeepacharya.com.np/tags/Microsoft-Excel/</loc>
     <lastmod>2024-07-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://sudeepacharya.com.np/blog/2024/07/20/useful-excel-formulas-and-tricks/</loc>
     <lastmod>2024-07-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sudeepacharya.com.np/categories/Hacked/</loc>
+    <loc>https://sudeepacharya.com.np/tags/Blog/</loc>
+    <lastmod>2023-02-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sudeepacharya.com.np/categories/Google/</loc>
+    <lastmod>2023-02-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sudeepacharya.com.np/tags/Hacking/</loc>
     <lastmod>2023-02-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://sudeepacharya.com.np/blog/2023/02/12/recover-hijacked-gmail-account/</loc>
-    <lastmod>2023-02-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://sudeepacharya.com.np/categories/Life/</loc>
     <lastmod>2023-02-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://sudeepacharya.com.np/contact/</loc>
@@ -47,25 +56,28 @@
     <loc>https://sudeepacharya.com.np/blog/2020/05/23/cisco-1841-router-architecture-modes/</loc>
     <lastmod>2020-05-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sudeepacharya.com.np/tags/Networking/</loc>
+    <loc>https://sudeepacharya.com.np/categories/Networking/</loc>
     <lastmod>2020-05-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sudeepacharya.com.np/categories/Networking/</loc>
+    <loc>https://sudeepacharya.com.np/tags/Tutorial/</loc>
     <lastmod>2020-05-23T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://sudeepacharya.com.np/tags/Free-Stuff/</loc>
     <lastmod>2020-05-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sudeepacharya.com.np/categories/Free-Stuff/</loc>
-    <lastmod>2020-05-05T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://sudeepacharya.com.np/blog/2020/05/05/free-com-np-domain-free-hosting/</loc>
     <lastmod>2020-05-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sudeepacharya.com.np/categories/Jekyll/</loc>
+    <loc>https://sudeepacharya.com.np/categories/Nepal/</loc>
+    <lastmod>2020-05-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sudeepacharya.com.np/tags/Jekyll/</loc>
     <lastmod>2020-05-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://sudeepacharya.com.np/blog/2020/05/02/moving-wordpress.com-blog-jekyll-github/</loc>
+    <lastmod>2020-05-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sudeepacharya.com.np/categories/Programming/</loc>
     <lastmod>2020-05-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://sudeepacharya.com.np/blog/2020/01/16/how-each-of-the-network-protocol-layers-work-behind-the-scene/</loc>
@@ -77,16 +89,13 @@
     <loc>https://sudeepacharya.com.np/tags/PHP/</loc>
     <lastmod>2020-01-08T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sudeepacharya.com.np/categories/Programming/</loc>
-    <lastmod>2020-01-08T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://sudeepacharya.com.np/blog/2020/01/04/how-to-install-php-composer-in-your-mac/</loc>
     <lastmod>2020-01-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://sudeepacharya.com.np/blog/2020/01/04/how-to-set-up-basic-php-project-structure-with-composer/</loc>
     <lastmod>2020-01-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sudeepacharya.com.np/categories/knowledge/</loc>
+    <loc>https://sudeepacharya.com.np/categories/Life/</loc>
     <lastmod>2019-12-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://sudeepacharya.com.np/blog/2019/12/14/what-is-philosophy/</loc>
@@ -125,13 +134,16 @@
     <loc>https://sudeepacharya.com.np/blog/2018/09/01/when-wind-blows-through-window/</loc>
     <lastmod>2018-09-01T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://sudeepacharya.com.np/tags/Meditation/</loc>
+    <lastmod>2017-12-04T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://sudeepacharya.com.np/tags/Python/</loc>
     <lastmod>2017-12-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://sudeepacharya.com.np/blog/2017/12/04/recursive-directory-traverse-and-append-png-file-to-list/</loc>
     <lastmod>2017-12-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sudeepacharya.com.np/categories/sprituality/</loc>
+    <loc>https://sudeepacharya.com.np/tags/Sprituality/</loc>
     <lastmod>2017-12-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://sudeepacharya.com.np/blog/2017/12/04/me-society-sprituality/</loc>
@@ -158,7 +170,10 @@
     <loc>https://sudeepacharya.com.np/blog/2017/11/08/fixing-google-play-games-plugin-and-unity-integration-error-android/</loc>
     <lastmod>2017-11-08T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sudeepacharya.com.np/tags/Unity3D/</loc>
+    <loc>https://sudeepacharya.com.np/tags/Mobile-Game/</loc>
+    <lastmod>2017-11-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sudeepacharya.com.np/tags/Unity3d/</loc>
     <lastmod>2017-11-08T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://sudeepacharya.com.np/tags/CSharp/</loc>
@@ -173,22 +188,10 @@
     <loc>https://sudeepacharya.com.np/blog/2017/05/21/how-to-find-the-game-art-for-your-game-project/</loc>
     <lastmod>2017-05-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sudeepacharya.com.np/categories/Mobile-Game/</loc>
-    <lastmod>2017-05-21T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://sudeepacharya.com.np/categories/election/</loc>
-    <lastmod>2017-05-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://sudeepacharya.com.np/categories/Nepal/</loc>
-    <lastmod>2017-05-15T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://sudeepacharya.com.np/blog/2017/05/15/local-election-nepal-2074/</loc>
     <lastmod>2017-05-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://sudeepacharya.com.np/blog/2017/04/20/vipassana-meditation-dhamma-pokhara/</loc>
-    <lastmod>2017-04-22T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://sudeepacharya.com.np/categories/meditation/</loc>
     <lastmod>2017-04-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://sudeepacharya.com.np/blog/2017/03/30/invisible-transparent-button-unity3d/</loc>
@@ -197,32 +200,29 @@
     <loc>https://sudeepacharya.com.np/blog/2017/03/01/finally-graduated-i-am-an-engineer-now/</loc>
     <lastmod>2017-03-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sudeepacharya.com.np/categories/Memories/</loc>
+    <loc>https://sudeepacharya.com.np/tags/Life/</loc>
     <lastmod>2017-03-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://sudeepacharya.com.np/blog/2017/02/26/convocation-ceremony-pokhara-university-2017/</loc>
     <lastmod>2017-02-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sudeepacharya.com.np/categories/hiking/</loc>
+    <loc>https://sudeepacharya.com.np/tags/Explore-Nepal/</loc>
+    <lastmod>2017-02-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sudeepacharya.com.np/tags/Hiking/</loc>
     <lastmod>2017-02-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://sudeepacharya.com.np/blog/2017/03/23/hiking-to-pumdikot-view-tower/</loc>
     <lastmod>2017-02-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sudeepacharya.com.np/categories/travel/</loc>
+    <loc>https://sudeepacharya.com.np/tags/Travel/</loc>
     <lastmod>2017-02-26T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://sudeepacharya.com.np/tags/explore-nepal/</loc>
-    <lastmod>2017-02-08T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://sudeepacharya.com.np/blog/2017/02/08/hiking-to-kaskikot-durbar/</loc>
     <lastmod>2017-02-08T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://sudeepacharya.com.np/blog/2016/11/24/convert-images-to-pdf-add-watermark-python/</loc>
     <lastmod>2016-11-24T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://sudeepacharya.com.np/tags/blog/</loc>
-    <lastmod>2016-02-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://sudeepacharya.com.np/blog/2016/02/03/what-is-life/</loc>
     <lastmod>2016-02-03T00:00:00+00:00</lastmod>
@@ -239,7 +239,7 @@
     <loc>https://sudeepacharya.com.np/tags/Android/</loc>
     <lastmod>2015-09-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sudeepacharya.com.np/tags/My-Project/</loc>
+    <loc>https://sudeepacharya.com.np/categories/My-Projects/</loc>
     <lastmod>2015-09-28T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://sudeepacharya.com.np/blog/2015/04/29/decorators-in-python/</loc>
@@ -287,10 +287,13 @@
     <loc>https://sudeepacharya.com.np/blog/2014/01/16/clean-black-wordpress-theme/</loc>
     <lastmod>2014-01-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sudeepacharya.com.np/tags/Data-BackUp/</loc>
+    <loc>https://sudeepacharya.com.np/tags/Data-Backup/</loc>
     <lastmod>2014-01-16T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://sudeepacharya.com.np/tags/Linux/</loc>
+    <lastmod>2014-01-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sudeepacharya.com.np/categories/Linux-Tips-and-Tricks/</loc>
     <lastmod>2014-01-16T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://sudeepacharya.com.np/blog/2014/01/16/recover-deleted-files-from-ntfs-file-system-ubuntu/</loc>
@@ -303,9 +306,6 @@
     <lastmod>2014-01-16T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://sudeepacharya.com.np/tags/WordPress/</loc>
-    <lastmod>2014-01-16T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://sudeepacharya.com.np/categories/WordPress/</loc>
     <lastmod>2014-01-16T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://sudeepacharya.com.np/blog/2014/01/10/screen-brightness-ubuntu-fix/</loc>
@@ -324,6 +324,9 @@
     <lastmod>2013-12-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://sudeepacharya.com.np/tags/Uncategorized/</loc>
+    <lastmod>2013-12-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sudeepacharya.com.np/categories/Uncategorized/</loc>
     <lastmod>2013-12-13T00:00:00+00:00</lastmod>
   </url>
 </urlset>

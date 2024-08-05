@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Microsoft on Sudeep&#39;s Blog</title>
+    <link>https://sudeepacharya.com.np/categories/Microsoft/</link>
+    <description>Recent content in Microsoft on Sudeep&#39;s Blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 20 Jul 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://sudeepacharya.com.np/categories/Microsoft/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Useful Excel formulas and tricks</title>
+      <link>https://sudeepacharya.com.np/blog/2024/07/20/useful-excel-formulas-and-tricks/</link>
+      <pubDate>Sat, 20 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>https://sudeepacharya.com.np/blog/2024/07/20/useful-excel-formulas-and-tricks/</guid>
+      <description>In this post, i will be sharing some commonly used excel formulas to make your life easier while creating report.&#xA;Find cost in Table 2 by matching Serial Number in Table 1 If you have to find the corresponding value of some data in a table from another table then you can combine the INDEX and MATCH as follows:&#xA;=INDEX(Table1[Cost],MATCH([@[Serial Number]],Table1[Serial Number],0),0) Check if serial number in Table B exists in Table A Using combination of ISNA and VLOOKUP to check if the serial number in table b exists in table A.</description>
+    </item>
+  </channel>
+</rss>

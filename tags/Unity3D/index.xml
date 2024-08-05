@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Unity3D on Sudeep&#39;s Blog</title>
-    <link>https://sudeepacharya.com.np/tags/Unity3D/</link>
+    <link>https://sudeepacharya.com.np/tags/Unity3d/</link>
     <description>Recent content in Unity3D on Sudeep&#39;s Blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 08 Nov 2017 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://sudeepacharya.com.np/tags/Unity3D/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://sudeepacharya.com.np/tags/Unity3d/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Fixing Google Play Games plugin and Unity integration error - Android</title>
       <link>https://sudeepacharya.com.np/blog/2017/11/08/fixing-google-play-games-plugin-and-unity-integration-error-android/</link>
@@ -28,6 +28,13 @@
       <pubDate>Thu, 30 Mar 2017 00:00:00 +0000</pubDate>
       <guid>https://sudeepacharya.com.np/blog/2017/03/30/invisible-transparent-button-unity3d/</guid>
       <description>Today i was working on a project where i required to add the invisible button. I tried different methods like making button transparent, adding the image in the button. But then i came to know about this solution. I think that this is probably the best solution.&#xA;Steps to add invisible button in Unity3D 1. Add the Button. (UI -&amp;gt; Button)&#xA;2. Edit the height and width of the button according to your fit.</description>
+    </item>
+    <item>
+      <title>Jhandi Munda (Langur Burja) - Mobile Game</title>
+      <link>https://sudeepacharya.com.np/blog/2014/09/28/jhandi-munda-langur-burja-mobile-game/</link>
+      <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
+      <guid>https://sudeepacharya.com.np/blog/2014/09/28/jhandi-munda-langur-burja-mobile-game/</guid>
+      <description>Jhandi Munda is a gambling game played mostly in South Asian countries including Nepal, India, Bangladesh and Myanmar. It is also known with a different name in different regions such as &amp;ldquo;Langur Burja&amp;rdquo;, &amp;ldquo;Jhanda Burja” and “Khor Khore” or “Khod khode”. I have developed a Mobile game based on this.&#xA;Jhandi Munda is mostly played during Hindu’s big festivals like Dussehra(Dashain) and Deepawali(Tihar). We have 6 dices with 6 faces in each die.</description>
     </item>
   </channel>
 </rss>

@@ -6,8 +6,15 @@
     <description>Recent content in Programming on Sudeep&#39;s Blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 08 Jan 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 02 May 2020 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://sudeepacharya.com.np/categories/Programming/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Moving to Github Pages using Jekyll  from WordPress.com</title>
+      <link>https://sudeepacharya.com.np/blog/2020/05/02/moving-wordpress.com-blog-jekyll-github/</link>
+      <pubDate>Sat, 02 May 2020 00:00:00 +0000</pubDate>
+      <guid>https://sudeepacharya.com.np/blog/2020/05/02/moving-wordpress.com-blog-jekyll-github/</guid>
+      <description>I started my blog &amp;ldquo;hellocoding.wordpress.com&amp;rdquo; in 2013. WordPress.com provides the basic functionality of posting the post for free. It does not give the way to embed JavaScript and does not offer much control over your blog.&#xA;After a few years of blogging in WordPress.com, I realised that I want more control over my site so that I can improve my SEO, make a page redirection and make my site how I want in every possible way.</description>
+    </item>
     <item>
       <title>A Silly way to comment in your Code</title>
       <link>https://sudeepacharya.com.np/blog/2020/01/08/a-silly-way-to-comment-in-your-code/</link>
@@ -79,13 +86,6 @@
       <description>{- Convert positive integer to list of digit -} {- Input : 12345 o/p : [1, 2, 3, 4, 5 -} toList :: Integer -&amp;gt; [Integer] toList 0 = [] toList x = toList (x `div` 10) ++ [x `mod` 10] {- Reverse the integer after converting it to list -} -- toDigitsRev :: Integer -&amp;gt; [Integer] toListReverse :: Integer -&amp;gt; [Integer] toListReverse xs = (reverse . toList) xs {- Double every second number -} doubleSecondEach :: [Integer] -&amp;gt; [Integer] doubleSecondEach [] = [] doubleSecondEach (x:[]) = [x] doubleSecondEach (x:y:xs) = x : (2*y) : doubleSecondEach xs {- Sum the digit in the number we are sure there is one digit number or two digit number -} sum&amp;#39; :: Integer -&amp;gt; Integer sum&amp;#39; x = (x `mod` 10) + (x `div` 10) {- sum all the element in list -} {- when a element is [13,5,6] we have to add like this: 1 + 3 + 5 + 6 -} sumDigits :: [Integer] -&amp;gt; Integer sumDigits [] = 0 sumDigits [x] = sum&amp;#39; x sumDigits (x:xs) = sum&amp;#39; x + sumDigits xs {- Validate the credit card number -} validate :: Integer -&amp;gt; Bool validate x = if (sumDigits $ doubleSecondEach $ toListReverse x ) `mod` 10 == 0 then True else False </description>
     </item>
     <item>
-      <title>Fixing Google Play Games plugin and Unity integration error - Android</title>
-      <link>https://sudeepacharya.com.np/blog/2017/11/08/fixing-google-play-games-plugin-and-unity-integration-error-android/</link>
-      <pubDate>Wed, 08 Nov 2017 00:00:00 +0000</pubDate>
-      <guid>https://sudeepacharya.com.np/blog/2017/11/08/fixing-google-play-games-plugin-and-unity-integration-error-android/</guid>
-      <description>Recently i was having multiple issues with google play games plugin integration in Unity. It was not working at all. After spending the couple of hours in it, i was able to fix the issue. This is a note to myself as well for others who are having trouble with the integration.&#xA;I was using Admob plugin along with Google Play Games plugin. In the process of fixing the error i got different kinds of error.</description>
-    </item>
-    <item>
       <title>Starting Animation from random time frame Unity</title>
       <link>https://sudeepacharya.com.np/blog/2017/07/11/starting-animation-at-different-time-unity/</link>
       <pubDate>Tue, 11 Jul 2017 00:00:00 +0000</pubDate>
@@ -112,13 +112,6 @@
       <pubDate>Thu, 24 Nov 2016 00:00:00 +0000</pubDate>
       <guid>https://sudeepacharya.com.np/blog/2016/11/24/convert-images-to-pdf-add-watermark-python/</guid>
       <description>Converting list of images to PDF in Ubuntu Let&amp;rsquo;s use ImageMagick tool. Normally it is installed in Ubuntu. If you need to install it then run:&#xA;sudo apt-get install imagemagick Then you can convert it by using:&#xA;convert image_1.jpg image_2.jpg output.pdf You can specify any numbers of images but the last argument must be a name of your PDF file along with extension (.pdf).&#xA;Adding the watermark in the PDF file We use Python script for adding watermark to each page in the PDF file.</description>
-    </item>
-    <item>
-      <title>&#39;Constitution of Nepal&#39; Android App</title>
-      <link>https://sudeepacharya.com.np/blog/2015/09/28/constitution-of-nepal-android-app/</link>
-      <pubDate>Mon, 28 Sep 2015 00:00:00 +0000</pubDate>
-      <guid>https://sudeepacharya.com.np/blog/2015/09/28/constitution-of-nepal-android-app/</guid>
-      <description>It&amp;rsquo;s been so great to feel that the Constitution of Nepal has finally arrived. Congratulations to all the Nepalese. May this Constitution brings peace, prosperity and rapid development in the country is the wish of all the Nepalese.&#xA;On this occasion with the intention of easy distribution of Constitution and making available of Constitution in the hand of all the people, I have developed an Android app to read the Constitution.</description>
     </item>
     <item>
       <title>Understanding Decorators in Python</title>
@@ -182,6 +175,13 @@
       <pubDate>Sun, 02 Feb 2014 00:00:00 +0000</pubDate>
       <guid>https://sudeepacharya.com.np/blog/2014/02/02/javascript-code-multiplication-table/</guid>
       <description>Through JavaScript you can easily write the html code in html document using document.write(). Using document.write() and for loop it is easy to print the table of user input number.&#xA;First of all &amp;ldquo;prompt&amp;rdquo; box will appear and then this value will be parse to integer and the multiplication table is displayed.&#xA;The source code for JavaScript is as follows:&#xA;&amp;lt;script type=&amp;#39;text/javascript&amp;#39;&amp;gt; var num = prompt(&amp;#34;Enter Number&amp;#34;, &amp;#34;0&amp;#34;) //prompt user to enter the number var num = parseInt(num); //parse the num to number var i = 0; document.</description>
+    </item>
+    <item>
+      <title>C&#43;&#43; project – Encryption and Decryption</title>
+      <link>https://sudeepacharya.com.np/blog/2013/12/26/Cplus-project-Encryption-and-Decryption/</link>
+      <pubDate>Thu, 26 Dec 2013 00:00:00 +0000</pubDate>
+      <guid>https://sudeepacharya.com.np/blog/2013/12/26/Cplus-project-Encryption-and-Decryption/</guid>
+      <description>As a project in C++ during my College, i choose Encryption and Decryption as my project. I am implemented very simple technique for Encryption and Decryption.&#xA;The encryption and decryption is done on the basis of letter shifting method.&#xA;For example if the encryption key is 5 then for the word A the value of A after will be F.&#xA;If you are unclear about what i am talking then seeing my source code will make you understand what i am talking about.</description>
     </item>
   </channel>
 </rss>
