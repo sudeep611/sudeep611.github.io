@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Uncategorized on Sudeep&#39;s Blog</title>
+    <link>https://sudeepacharya.com.np/categories/Uncategorized/</link>
+    <description>Recent content in Uncategorized on Sudeep&#39;s Blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 13 Dec 2013 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://sudeepacharya.com.np/categories/Uncategorized/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hello World!</title>
+      <link>https://sudeepacharya.com.np/blog/2013/12/13/hello-world/</link>
+      <pubDate>Fri, 13 Dec 2013 00:00:00 +0000</pubDate>
+      <guid>https://sudeepacharya.com.np/blog/2013/12/13/hello-world/</guid>
+      <description>This is just my first post here with no useful and interesting information for you. This post is just to make sure that i have started blogging in this blog.</description>
+    </item>
+  </channel>
+</rss>

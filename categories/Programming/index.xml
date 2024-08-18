@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Programming on Sudeep&#39;s Blog</title>
+    <link>https://sudeepacharya.com.np/categories/Programming/</link>
+    <description>Recent content in Programming on Sudeep&#39;s Blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 02 May 2020 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://sudeepacharya.com.np/categories/Programming/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Moving to Github Pages using Jekyll  from WordPress.com</title>
+      <link>https://sudeepacharya.com.np/blog/2020/05/02/moving-wordpress.com-blog-jekyll-github/</link>
+      <pubDate>Sat, 02 May 2020 00:00:00 +0000</pubDate>
+      <guid>https://sudeepacharya.com.np/blog/2020/05/02/moving-wordpress.com-blog-jekyll-github/</guid>
+      <description>I started my blog &amp;ldquo;hellocoding.wordpress.com&amp;rdquo; in 2013. WordPress.com provides the basic functionality of posting the post for free. It does not give the way to embed JavaScript and does not offer much control over your blog.&#xA;After a few years of blogging in WordPress.com, I realised that I want more control over my site so that I can improve my SEO, make a page redirection and make my site how I want in every possible way.</description>
+    </item>
+    <item>
+      <title>A Silly way to comment in your Code</title>
+      <link>https://sudeepacharya.com.np/blog/2020/01/08/a-silly-way-to-comment-in-your-code/</link>
+      <pubDate>Wed, 08 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>https://sudeepacharya.com.np/blog/2020/01/08/a-silly-way-to-comment-in-your-code/</guid>
+      <description>During my beginners year of writing code, i used to comment unnecessarily. I realised this after i saw the code written by senior developers. The main purpose of the comment is to make your code understood by other developers who are working together in the same project or for other contributors.&#xA;Let us take an example of the silly code:&#xA;&amp;lt;?php // Assigning the value to firstNumber firstNumber = 9 // Assigning the value to secondNumber secondNumber = 12 // Creating variable to store the sum of firstNumber and secondNumber sumOfNumbers = 0; // Adding both firstNumber and secondNumber and storing it to sumOfNumbers sumOfNumbers = firstNumber + secondNumber // Displaying the result echo sumOfNumbers; ?</description>
+    </item>
+    <item>
+      <title>How to Install PHP Composer in your Mac</title>
+      <link>https://sudeepacharya.com.np/blog/2020/01/04/how-to-install-php-composer-in-your-mac/</link>
+      <pubDate>Sat, 04 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>https://sudeepacharya.com.np/blog/2020/01/04/how-to-install-php-composer-in-your-mac/</guid>
+      <description>Composer is the easiest way to manage dependencies to your small to large PHP projects.&#xA;Use the following commands to install composer in your Mac&#xA;curl -sS https://getcomposer.org/installer | php Now the composer is installed in your current directory.&#xA;Now, you can access it using the following command&#xA;php composer.phar [command] It works but you don&amp;rsquo;t always want to use this directory path to access the composer, So in the next step we will make it accessible globally.</description>
+    </item>
+    <item>
+      <title>How to set up basic PHP Project structure with Composer</title>
+      <link>https://sudeepacharya.com.np/blog/2020/01/04/how-to-set-up-basic-php-project-structure-with-composer/</link>
+      <pubDate>Sat, 04 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>https://sudeepacharya.com.np/blog/2020/01/04/how-to-set-up-basic-php-project-structure-with-composer/</guid>
+      <description>Most of the time beginners learning PHP are unaware of Composer, if you are among them, Composer is a dependency management tool for PHP.&#xA;Let&amp;rsquo;s take a simple example, rather than using include command in each of the PHP file, composer makes it easy by specifying that file as a dependency. Another example would be if you use some library then it makes easier to use and update it with a single command.</description>
+    </item>
+    <item>
+      <title>Learn Kotlin (Part 5) - Class</title>
+      <link>https://sudeepacharya.com.np/blog/2019/01/09/learn-kotlin-part-5-class/</link>
+      <pubDate>Wed, 09 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>https://sudeepacharya.com.np/blog/2019/01/09/learn-kotlin-part-5-class/</guid>
+      <description>Post Series:&#xA;Part 1: Hello world and Basic Data Types&#xA;Part 2: Array, Collection and Range&#xA;Part 3: Control Flow&#xA;Part 4: Function&#xA;Part 5: Class&#xA;Although Kotlin is statically typed language, it supports object-oriented programming like Java. Before explaining further let us dive into the basic syntax of the Kotlin class.&#xA;class Vehicle { // class definition // class body } So, defining a basic class is as simple as this and similar to Java.</description>
+    </item>
+    <item>
+      <title>Learn Kotlin (Part 4) - Function</title>
+      <link>https://sudeepacharya.com.np/blog/2018/12/25/learn-kotlin-part-4-function/</link>
+      <pubDate>Tue, 25 Dec 2018 00:00:00 +0000</pubDate>
+      <guid>https://sudeepacharya.com.np/blog/2018/12/25/learn-kotlin-part-4-function/</guid>
+      <description>Post Series: Part 1: Hello world and Basic Data Types&#xA;Part 2: Array, Collection and Range&#xA;Part 3: Control Flow&#xA;Part 4: Function&#xA;Part 5: Class&#xA;Merry Christmas Guys! The year 2018 is about to end. This have been a great year. Happy New Year 2019, May your new year be filled with Joy and Happiness. This will probably be the last post for this year 2018. Hope to see you all in the next year!</description>
+    </item>
+    <item>
+      <title>Learn Kotlin (Part 3) - Control Flow</title>
+      <link>https://sudeepacharya.com.np/blog/2018/12/17/learn-kotlin-part-3-control-flow/</link>
+      <pubDate>Mon, 17 Dec 2018 00:00:00 +0000</pubDate>
+      <guid>https://sudeepacharya.com.np/blog/2018/12/17/learn-kotlin-part-3-control-flow/</guid>
+      <description>Post Series:&#xA;Part 1: Hello world and Basic Data Types&#xA;Part 2: Array, Collection and Range&#xA;Part 3: Control Flow&#xA;Part 4: Function&#xA;Part 5: Class&#xA;In this post we are going to learn about the control flow in Kotlin. Let us learn about how to make a decision, how to perform a task multiple times by iterating and how to get out of the loop, how to continue to next iteration.</description>
+    </item>
+    <item>
+      <title>Learn Kotlin (Part 2) - Array, Collection and Range</title>
+      <link>https://sudeepacharya.com.np/blog/2018/12/10/learn-kotlin-part-2-array-collection-and-range/</link>
+      <pubDate>Mon, 10 Dec 2018 00:00:00 +0000</pubDate>
+      <guid>https://sudeepacharya.com.np/blog/2018/12/10/learn-kotlin-part-2-array-collection-and-range/</guid>
+      <description>Post Series:&#xA;Part 1: Hello world and Basic Data Types&#xA;Part 2: Array, Collection and Range&#xA;Part 3: Control Flow&#xA;Part 4: Function&#xA;Part 5: Class&#xA;In this post we will discuss about the Array, Collection and Range in Kotlin.&#xA;Array In Kotlin, we can create array using two different ways. First one is by using arrayOf() function and next one is by using Array() constructor.&#xA;Using arrayOf() function val accountInfo = arrayOf(&amp;#34;Sudeep&amp;#34;, 34000) The accountInfo array is of type Array&amp;lt;Any&amp;gt;.</description>
+    </item>
+    <item>
+      <title>Learn Kotlin (Part 1) - Hello world and Basic Data Types</title>
+      <link>https://sudeepacharya.com.np/blog/2018/12/03/learn-kotlin-part-1-hello-world-and-basic-data-types/</link>
+      <pubDate>Mon, 03 Dec 2018 00:00:00 +0000</pubDate>
+      <guid>https://sudeepacharya.com.np/blog/2018/12/03/learn-kotlin-part-1-hello-world-and-basic-data-types/</guid>
+      <description>Post Series:&#xA;Part 1: Hello world and Basic Data Types&#xA;Part 2: Array, Collection and Range&#xA;Part 3: Control Flow&#xA;Part 4: Function&#xA;Part 5: Class&#xA;Since Kotlin is already a official programming language for Android Apps development, I have been learning Kotlin lately. In this post, i will take you through basic hello world skeleton program to data types, variables in Kotlin.&#xA;Hello World Program for Kotlin fun main(args: Array) { println(&amp;#34;Hello World!</description>
+    </item>
+    <item>
+      <title>Recursive directory traverse and append .png file to list</title>
+      <link>https://sudeepacharya.com.np/blog/2017/12/04/recursive-directory-traverse-and-append-png-file-to-list/</link>
+      <pubDate>Mon, 04 Dec 2017 00:00:00 +0000</pubDate>
+      <guid>https://sudeepacharya.com.np/blog/2017/12/04/recursive-directory-traverse-and-append-png-file-to-list/</guid>
+      <description>Python Developer&amp;rsquo;s Meetup Nepal #13 Question Solution&#xA;Q: Write a python script that recursively walks all sub-directories and searches all files with extension *.png or *.PNG and append them to the list.&#xA;Solution:&#xA;import os # list variable to store the .png and .PNG file png_file_list = [] # Recursive function to traverse all the sub-dirctory and check for png files def traverse_directory(dir_path): for child in os.listdir(dir_path): path = os.path.join(dir_path, child) if os.</description>
+    </item>
+    <item>
+      <title>Credit card Verification Haskell Code</title>
+      <link>https://sudeepacharya.com.np/blog/2017/11/25/credit-card-verification-haskell-code/</link>
+      <pubDate>Sat, 25 Nov 2017 00:00:00 +0000</pubDate>
+      <guid>https://sudeepacharya.com.np/blog/2017/11/25/credit-card-verification-haskell-code/</guid>
+      <description>{- Convert positive integer to list of digit -} {- Input : 12345 o/p : [1, 2, 3, 4, 5 -} toList :: Integer -&amp;gt; [Integer] toList 0 = [] toList x = toList (x `div` 10) ++ [x `mod` 10] {- Reverse the integer after converting it to list -} -- toDigitsRev :: Integer -&amp;gt; [Integer] toListReverse :: Integer -&amp;gt; [Integer] toListReverse xs = (reverse . toList) xs {- Double every second number -} doubleSecondEach :: [Integer] -&amp;gt; [Integer] doubleSecondEach [] = [] doubleSecondEach (x:[]) = [x] doubleSecondEach (x:y:xs) = x : (2*y) : doubleSecondEach xs {- Sum the digit in the number we are sure there is one digit number or two digit number -} sum&amp;#39; :: Integer -&amp;gt; Integer sum&amp;#39; x = (x `mod` 10) + (x `div` 10) {- sum all the element in list -} {- when a element is [13,5,6] we have to add like this: 1 + 3 + 5 + 6 -} sumDigits :: [Integer] -&amp;gt; Integer sumDigits [] = 0 sumDigits [x] = sum&amp;#39; x sumDigits (x:xs) = sum&amp;#39; x + sumDigits xs {- Validate the credit card number -} validate :: Integer -&amp;gt; Bool validate x = if (sumDigits $ doubleSecondEach $ toListReverse x ) `mod` 10 == 0 then True else False </description>
+    </item>
+    <item>
+      <title>Starting Animation from random time frame Unity</title>
+      <link>https://sudeepacharya.com.np/blog/2017/07/11/starting-animation-at-different-time-unity/</link>
+      <pubDate>Tue, 11 Jul 2017 00:00:00 +0000</pubDate>
+      <guid>https://sudeepacharya.com.np/blog/2017/07/11/starting-animation-at-different-time-unity/</guid>
+      <description>Code snippet to start the animation at different time. Useful when there are many same animation running on screen and you want to make them random.&#xA;Animator anim = GetComponent&amp;lt;Animator&amp;gt; (); AnimatorStateInfo state = anim.GetCurrentAnimatorStateInfo (0); anim.Play (state.fullPathHash, -1, Random.Range(0f,1f)); You can add this code in Start or Awake function and add to the GameObject with the Animator component.</description>
+    </item>
+    <item>
+      <title>C# code to shuffle Array</title>
+      <link>https://sudeepacharya.com.np/blog/2017/07/09/c-sharp-code-to-shuffle-array/</link>
+      <pubDate>Sun, 09 Jul 2017 00:00:00 +0000</pubDate>
+      <guid>https://sudeepacharya.com.np/blog/2017/07/09/c-sharp-code-to-shuffle-array/</guid>
+      <description>private T[] ShuffleArray&amp;lt;T&amp;gt;(T[] array) { System.Random r = new System.Random (); for(int i = array.Length; i &amp;gt; 0; i--) { int j = r.Next (i); T k = array [j]; array [j] = array [i - 1]; array [i - 1] = k; } return array; } Example:&#xA;Int Array int[] intArray = new int[] {1,2,3,4}; intArray = ShuffleArray(intArray); Float Array float[] floatArray = new float[] {1.0f,2.0f,3.0f,4.0f}; floatArray = ShuffleArray(floatArray); </description>
+    </item>
+    <item>
+      <title>Invisible Transparent Button in Unity3D</title>
+      <link>https://sudeepacharya.com.np/blog/2017/03/30/invisible-transparent-button-unity3d/</link>
+      <pubDate>Thu, 30 Mar 2017 00:00:00 +0000</pubDate>
+      <guid>https://sudeepacharya.com.np/blog/2017/03/30/invisible-transparent-button-unity3d/</guid>
+      <description>Today i was working on a project where i required to add the invisible button. I tried different methods like making button transparent, adding the image in the button. But then i came to know about this solution. I think that this is probably the best solution.&#xA;Steps to add invisible button in Unity3D 1. Add the Button. (UI -&amp;gt; Button)&#xA;2. Edit the height and width of the button according to your fit.</description>
+    </item>
+    <item>
+      <title>Convert the list of images to PDF file and add watermark using python</title>
+      <link>https://sudeepacharya.com.np/blog/2016/11/24/convert-images-to-pdf-add-watermark-python/</link>
+      <pubDate>Thu, 24 Nov 2016 00:00:00 +0000</pubDate>
+      <guid>https://sudeepacharya.com.np/blog/2016/11/24/convert-images-to-pdf-add-watermark-python/</guid>
+      <description>Converting list of images to PDF in Ubuntu Let&amp;rsquo;s use ImageMagick tool. Normally it is installed in Ubuntu. If you need to install it then run:&#xA;sudo apt-get install imagemagick Then you can convert it by using:&#xA;convert image_1.jpg image_2.jpg output.pdf You can specify any numbers of images but the last argument must be a name of your PDF file along with extension (.pdf).&#xA;Adding the watermark in the PDF file We use Python script for adding watermark to each page in the PDF file.</description>
+    </item>
+    <item>
+      <title>Understanding Decorators in Python</title>
+      <link>https://sudeepacharya.com.np/blog/2015/04/29/decorators-in-python/</link>
+      <pubDate>Wed, 29 Apr 2015 00:00:00 +0000</pubDate>
+      <guid>https://sudeepacharya.com.np/blog/2015/04/29/decorators-in-python/</guid>
+      <description>While learning Python in the beginning, i skipped the portion of the chapters on Decorators. After i worked on Flask and Django, I was introduced with the Decorators.&#xA;Let us consider a simple flask app example:&#xA;@app.route(&amp;#34;/&amp;#34;) def hello(): return &amp;#34;Hello World!&amp;#34; In this code the line with @ symbol is decorators. Decorators is one of the important feature in Python that you must learn to master it. It is not that hard, so let us learn it.</description>
+    </item>
+    <item>
+      <title>How to delete the commit history in github</title>
+      <link>https://sudeepacharya.com.np/blog/2015/01/19/delete-all-commit-history-github/</link>
+      <pubDate>Mon, 19 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>https://sudeepacharya.com.np/blog/2015/01/19/delete-all-commit-history-github/</guid>
+      <description>Sometimes you may find deleting the commit history of your github project repository useful. You can easily delete the commit history by following the procedure below.&#xA;It is always useful to keep the backup of your repository in your computer before removing all the commit history.&#xA;Let us start by cloning a github project. I am cloning &amp;lsquo;myproject&amp;rsquo;, you clone yours.&#xA;git clone https://github.com/acsudeep/myproject.git Since all the commit history are in the &amp;ldquo;.</description>
+    </item>
+    <item>
+      <title>URL Shortener with Django (Part 5) - Working with Templates and finishing up</title>
+      <link>https://sudeepacharya.com.np/blog/2015/01/16/urlshortener-with-django-working-with-templates/</link>
+      <pubDate>Fri, 16 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>https://sudeepacharya.com.np/blog/2015/01/16/urlshortener-with-django-working-with-templates/</guid>
+      <description>Create folder &amp;rsquo;templates&amp;rsquo; inside &amp;lsquo;shortenersite&amp;rsquo; and then inside &amp;rsquo;templates&amp;rsquo; create folder &amp;lsquo;shortenersite&amp;rsquo;.&#xA;Inside &amp;ldquo;shortenersite/templates/shortenersite/&amp;rdquo; create &amp;lsquo;base.html&amp;rsquo; and &amp;lsquo;index.html&amp;rsquo;. So now paste the following to them.&#xA;[shortenersite/templates/shortenersite/base.html]&#xA;{% raw %} &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;title&amp;gt;{% block title %}Welcome to mysite{% endblock %}&amp;lt;/title&amp;gt; {% load staticfiles %} &amp;lt;link rel=&amp;#34;stylesheet&amp;#34; href=&amp;#34;https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css&amp;#34;&amp;gt; &amp;lt;link rel=&amp;#34;stylesheet&amp;#34; type=&amp;#34;text/css&amp;#34; href=&amp;#34;{% static &amp;#39;shortenersite/css/custom.css&amp;#39; %}&amp;#34; /&amp;gt; &amp;lt;script src=&amp;#34;//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;meta name=&amp;#34;viewport&amp;#34; content=&amp;#34;width=device-width, initial-scale=1&amp;#34;&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;script type=&amp;#34;text/javascript&amp;#34;&amp;gt; $(function() { $(&amp;#39;#submitButton&amp;#39;).click(function() { $.ajax({ type: &amp;#34;POST&amp;#34;, url: &amp;#34;/makeshort/&amp;#34;, data: { &amp;#39;url&amp;#39; : $(&amp;#39;#url&amp;#39;).</description>
+    </item>
+    <item>
+      <title>URL Shortener with Django (Part 4) - Working with Urls and views</title>
+      <link>https://sudeepacharya.com.np/blog/2015/01/15/urlshortener-with-django-urls-and-views/</link>
+      <pubDate>Thu, 15 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>https://sudeepacharya.com.np/blog/2015/01/15/urlshortener-with-django-urls-and-views/</guid>
+      <description>Now we will be working with our actual URLs and Views of our site.&#xA;Open up your &amp;ldquo;urlshortener/urls.py&amp;rdquo; and add the following code to it:&#xA;[urlshortener/urls.py]&#xA;from django.conf.urls import patterns, include, url from django.contrib import admin urlpatterns = patterns(&amp;#39;&amp;#39;, url(r&amp;#39;^admin/&amp;#39;, include(admin.site.urls)), # if the URL pattern match /admin/ then open up admin panel url(r&amp;#39;&amp;#39;, include(&amp;#39;shortenersite.urls&amp;#39;, namespace=&amp;#39;shortenersite&amp;#39;)), # if anything rather then /admin/ then it will look for shortenersite/urls ) Next, create a new file &amp;lsquo;urls.</description>
+    </item>
+    <item>
+      <title>URL Shortener with Django (Part 3) - Creating django app and model</title>
+      <link>https://sudeepacharya.com.np/blog/2015/01/14/urlshortener-with-django-creating-app-model/</link>
+      <pubDate>Wed, 14 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>https://sudeepacharya.com.np/blog/2015/01/14/urlshortener-with-django-creating-app-model/</guid>
+      <description>Now, Let us create a Django app. From your project&amp;rsquo;s root directory run this command&#xA;django-admin startapp shortenersite This will create a new folder &amp;lsquo;shortenersite&amp;rsquo; inside our root directory which is actually a Django app. You can see the following files and folder inside shortenersite:&#xA;migrations - Contains database migration file.&#xA;admin.py - We will use this file to configure Django Admin settings for this app.&#xA;models.py - Contains the model (generally model.</description>
+    </item>
+    <item>
+      <title>URL Shortener with Django (Part 2) - Creating a new django project</title>
+      <link>https://sudeepacharya.com.np/blog/2015/01/13/urlshortener-with-django-creating-new-django-project/</link>
+      <pubDate>Tue, 13 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>https://sudeepacharya.com.np/blog/2015/01/13/urlshortener-with-django-creating-new-django-project/</guid>
+      <description>Creating a Django project&#xA;django-admin startproject urlshortener Now you will see new directory &amp;ldquo;urlshortener&amp;rdquo;. Now our folder structure looks something like:&#xA;tutorial/ - py3env - urlshortener - urlshortener = __init__.py = settings.py = urls.py = wsgi.py = manage.py (Folder is denoted as - and file is denoted by =)&#xA;The folder &amp;ldquo;urlshortener&amp;rdquo; just inside &amp;ldquo;tutorial&amp;rdquo; is our root directory. And we will work inside this root directory from now on wards.</description>
+    </item>
+    <item>
+      <title>URL Shortener with Django (Part 1) - Creating virtual environment and installing Django</title>
+      <link>https://sudeepacharya.com.np/blog/2015/01/12/urlshortener-with-django-create-virtual-environment-install-django/</link>
+      <pubDate>Mon, 12 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>https://sudeepacharya.com.np/blog/2015/01/12/urlshortener-with-django-create-virtual-environment-install-django/</guid>
+      <description>I finally got the time to write a Django tutorial. In this tutorial we are building URL Shortener. If you are confused with what we are building then we are building something similar to (bit.ly) or (goo.gl).&#xA;We are building the app that will make a shorter URL of a longer URL. (Example) Normally the shorter URL will be localhost:8000/4hh5kr for www.facebook.com&#xA;I am using Django 1.7.1 with Python 3.3.2+. Don&amp;rsquo;t worry if you have different version of Django because we will set up our virtual environment and install latest version of Django.</description>
+    </item>
+    <item>
+      <title>How to remove /public/ from URL in Laravel</title>
+      <link>https://sudeepacharya.com.np/blog/2014/05/17/how-to-remove-public-from-url-in-laravel/</link>
+      <pubDate>Sat, 17 May 2014 00:00:00 +0000</pubDate>
+      <guid>https://sudeepacharya.com.np/blog/2014/05/17/how-to-remove-public-from-url-in-laravel/</guid>
+      <description>By default in Laravel the URL to access your site is http://example.com/public/. It is not good to keep public in URL as it makes URL ugly and longer.&#xA;So, let&amp;rsquo;s talk about the solution to remove /public/ from the URL.&#xA;Method I : Using .htaccess Create a .htaccess file your Laravel root directory if it does not exists already. (Normally it is under your public_html folder)&#xA;And add the following code to it:</description>
+    </item>
+    <item>
+      <title>JavaScript code to display Multiplication table</title>
+      <link>https://sudeepacharya.com.np/blog/2014/02/02/javascript-code-multiplication-table/</link>
+      <pubDate>Sun, 02 Feb 2014 00:00:00 +0000</pubDate>
+      <guid>https://sudeepacharya.com.np/blog/2014/02/02/javascript-code-multiplication-table/</guid>
+      <description>Through JavaScript you can easily write the html code in html document using document.write(). Using document.write() and for loop it is easy to print the table of user input number.&#xA;First of all &amp;ldquo;prompt&amp;rdquo; box will appear and then this value will be parse to integer and the multiplication table is displayed.&#xA;The source code for JavaScript is as follows:&#xA;&amp;lt;script type=&amp;#39;text/javascript&amp;#39;&amp;gt; var num = prompt(&amp;#34;Enter Number&amp;#34;, &amp;#34;0&amp;#34;) //prompt user to enter the number var num = parseInt(num); //parse the num to number var i = 0; document.</description>
+    </item>
+    <item>
+      <title>C&#43;&#43; project – Encryption and Decryption</title>
+      <link>https://sudeepacharya.com.np/blog/2013/12/26/Cplus-project-Encryption-and-Decryption/</link>
+      <pubDate>Thu, 26 Dec 2013 00:00:00 +0000</pubDate>
+      <guid>https://sudeepacharya.com.np/blog/2013/12/26/Cplus-project-Encryption-and-Decryption/</guid>
+      <description>As a project in C++ during my College, i choose Encryption and Decryption as my project. I am implemented very simple technique for Encryption and Decryption.&#xA;The encryption and decryption is done on the basis of letter shifting method.&#xA;For example if the encryption key is 5 then for the word A the value of A after will be F.&#xA;If you are unclear about what i am talking then seeing my source code will make you understand what i am talking about.</description>
+    </item>
+  </channel>
+</rss>

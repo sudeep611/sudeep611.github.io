@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hacking on Sudeep&#39;s Blog</title>
+    <link>https://sudeepacharya.com.np/tags/Hacking/</link>
+    <description>Recent content in Hacking on Sudeep&#39;s Blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 11 Feb 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://sudeepacharya.com.np/tags/Hacking/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How i RECOVERED my hijacked GOOGLE account [in 6 days]</title>
+      <link>https://sudeepacharya.com.np/blog/2023/02/12/recover-hijacked-gmail-account/</link>
+      <pubDate>Sat, 11 Feb 2023 00:00:00 +0000</pubDate>
+      <guid>https://sudeepacharya.com.np/blog/2023/02/12/recover-hijacked-gmail-account/</guid>
+      <description>When i slept on 6th of December 2022 everything was fine until i woke up at around 7:30 next morning on 7th and found that i have been logged out of google my account from my phone.&#xA;Day 1 - (7 December 2022) For a second i couldn&amp;rsquo;t think of anything, i thought the session was expired and tried logging in i was shocked to see my password was changed 5 hours ago.</description>
+    </item>
+  </channel>
+</rss>

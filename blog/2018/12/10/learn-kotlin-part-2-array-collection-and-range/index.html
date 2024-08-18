@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Learn Kotlin (Part 2) - Array, Collection and Range - Sudeep&#39;s Blog</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/custom.css">
+
+	<link rel="shortcut icon" href="/favicon.ico">
+	
+		
+  
+
+
+	
+
+	
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-32671323-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-32671323-1');
+	</script>
+
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container header__container">
+		
+	<div class="logo logo--mixed">
+		<a class="logo__link" href="/" title="Sudeep&#39;s Blog" rel="home">
+			<div class="logo__item logo__imagebox">
+					<img class="logo__img" src="/favicon.ico">
+				</div><div class="logo__item logo__text">
+					<div class="logo__title">Sudeep&#39;s Blog</div>
+					
+				</div>
+		</a>
+	</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Menu</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="/contact/">
+				
+				<span class="menu__text">Contact</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/tags/Excel/">
+				
+				<span class="menu__text">Excel</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/categories/Networking/">
+				
+				<span class="menu__text">Networking</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/categories/Programming/">
+				
+				<span class="menu__text">Programming</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/categories/Windows-Tips-and-Tricks/">
+				
+				<span class="menu__text">Windows Tips and Tricks</span>
+				
+			</a>
+		</li>
+	</ul>
+</nav>
+
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">Learn Kotlin (Part 2) - Array, Collection and Range</h1>
+			<div class="post__meta meta"><div class="meta__item-author meta__item">
+	<svg class="meta__icon icon icon-author" width="16" height="16" viewBox="0 0 16 16"><path d="M8 1c2 0 3.5 2 3.5 4.5S10 9 10 9c3 1 4 2 4 6H2c0-4 1-5 4-6 0 0-1.5-1-1.5-3.5S6 1 8 1"/></svg><span class="meta__text">Sudeep Acharya</span>
+</div>
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0a14 14 0 1 1 0 28 1 1 0 0 1 0-28m0 3a3 3 0 1 0 0 22 3 3 0 0 0 0-22m1 4h-2v8.4l6.8 4.4L22 18l-6-3.8z"/></svg><time class="meta__text" datetime="2018-12-10T00:00:00Z">10 December, 2018</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/Programming/" rel="category">Programming</a>
+	</span>
+</div></div>
+		</header>
+		<div class="content post__content clearfix">
+			<p>Post Series:</p>
+<p>Part 1: <a href="https://sudeepacharya.com.np/blog/2018/12/03/learn-kotlin-part-1-hello-world-and-basic-data-types/">Hello world and Basic Data Types</a></p>
+<p>Part 2: <a href="https://sudeepacharya.com.np/blog/2018/12/10/learn-kotlin-part-2-array-collection-and-range/">Array, Collection and Range</a></p>
+<p>Part 3: <a href="https://sudeepacharya.com.np/blog/2018/12/17/learn-kotlin-part-3-control-flow/">Control Flow</a></p>
+<p>Part 4: <a href="https://sudeepacharya.com.np/blog/2018/12/25/learn-kotlin-part-4-function/">Function</a></p>
+<p>Part 5: <a href="https://sudeepacharya.com.np/blog/2019/01/09/learn-kotlin-part-5-class/">Class</a></p>
+<p>In this post we will discuss about the Array, Collection and Range in Kotlin.</p>
+<h2 id="array">Array</h2>
+<p>In Kotlin, we can create array using two different ways. First one is by using <strong>arrayOf()</strong> function and next one is by using <strong>Array()</strong> constructor.</p>
+<h2 id="using-arrayof-function">Using arrayOf() function</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#66d9ef">val</span> accountInfo = arrayOf(<span style="color:#e6db74">&#34;Sudeep&#34;</span>, <span style="color:#ae81ff">34000</span>)
+</span></span></code></pre></div><p>The accountInfo array is of type Array&lt;Any&gt;. It holds array with two different types of element String and Int, next there are functions like intArrayOf(), charArrayOf(), booleanArrayOf(), longArrayOf(), shortArrayOf(), byteArrayOf().</p>
+<p>The two different types of element String and Int, next there are functions like intArrayOf(), charArrayOf(), booleanArrayOf(), longArrayOf(), shortArrayOf(), byteArrayOf().</p>
+<p>For example using intArrayOf(3,4,5,6) make an array of type integer with the given numbers. If you try of push some other types of data into the int array then it will throw compile error.</p>
+<p>Alternatively you can use arrayOf&lt;Int&gt; instead of intArrayOf.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#66d9ef">val</span> num1 = arrayOf&lt;Int&gt;(<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">4</span>,<span style="color:#ae81ff">5</span>,<span style="color:#ae81ff">6</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">val</span> num2 = intArrayOf(<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">4</span>,<span style="color:#ae81ff">5</span>,<span style="color:#ae81ff">6</span>)
+</span></span></code></pre></div><h2 id="using-array-constructor">Using Array() constructor</h2>
+<p>Another way of making array is by using Array() constructor. This function takes two parameter, first one is the size of the array and next one is the lambda function to create the values.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#66d9ef">val</span> numbersArray = Array(<span style="color:#ae81ff">5</span>, { i <span style="color:#f92672">-&gt;</span> i * <span style="color:#ae81ff">3</span> })
+</span></span></code></pre></div><h2 id="collections--list-set-map">Collections : List, Set, Map</h2>
+<p>In kotlin, you can either create mutable or immutable collections. Collections include list, set and map in kotlin.</p>
+<h2 id="list">List</h2>
+<p>To create immutable list we use the following syntax:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#66d9ef">val</span> iMutNumbers: List&lt;Int&gt; = listOf(<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">4</span>,<span style="color:#ae81ff">5</span>,<span style="color:#ae81ff">6</span>)
+</span></span></code></pre></div><p>You cannot edit this list afterwards, if you want to make the list which you can edit later then you should create the mutable list. We use the following syntax to create mutable list:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#66d9ef">val</span> mutNumbers: MutableList&lt;Int&gt; = mutableListOf(<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">4</span>,<span style="color:#ae81ff">5</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// You can add item to this list by using add function
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>mutNumbers.add(<span style="color:#ae81ff">9</span>)
+</span></span></code></pre></div><p>Similarly, we can create list of String, Boolean, long and so on.</p>
+<p>We can use <strong>emptyList()</strong> function to create immutable list:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#66d9ef">val</span> emptyList: List&lt;String&gt; = emptyList&lt;String&gt;()
+</span></span></code></pre></div><p>Next we have <strong>listOfNotNull()</strong> function to create list with non-null element.</p>
+<p><strong>arrayListOf()</strong> creates a mutable list.</p>
+<h2 id="sets">Sets</h2>
+<p>It is an unordered collections of unique element. One of the way to create set is by using setOf() function.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#66d9ef">val</span> mixedTypeSet = setOf(<span style="color:#ae81ff">4</span>,<span style="color:#ae81ff">5</span>,<span style="color:#e6db74">&#34;Pokhara&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">val</span> intOnlySet: Set&lt;Int&gt; = setOf(<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">4</span>,<span style="color:#ae81ff">5</span>,<span style="color:#ae81ff">6</span>)
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// This creates immutable set
+</span></span></span></code></pre></div><p>Another way to create set which is mutable is using hashSetOf() function.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#66d9ef">val</span> intsHashSet: java.util.HashSet&lt;Int&gt; = hashSetOf(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">6</span>, <span style="color:#ae81ff">3</span>) intsHashSet.add(<span style="color:#ae81ff">5</span>)
+</span></span><span style="display:flex;"><span>intsHashSet.remove(<span style="color:#ae81ff">1</span>)
+</span></span></code></pre></div><p><strong>sortedSetOf()</strong> creates mutable set which is sorted by using operator.</p>
+<p><strong>linkedSetOf()</strong> maintains the order in which the items are inserted in the set. It is also mutable.</p>
+<p><strong>mutableSetOf()</strong> creates the mutable set which is equivalent to Java LinkedHashSet.</p>
+<h2 id="map">Map</h2>
+<p>Map is the data type which store keys and value pair. All the keys are unique for each of the value.  mapOf creates immutable map.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#66d9ef">val</span> countryCallingCode: Map&lt;Int, String&gt; = mapOf(<span style="color:#ae81ff">977</span> to <span style="color:#e6db74">&#34;Nepal&#34;</span>, <span style="color:#ae81ff">1</span> to <span style="color:#e6db74">&#34;United States&#34;</span>, <span style="color:#ae81ff">61</span> to <span style="color:#e6db74">&#34;Australia&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> ((key, <span style="color:#66d9ef">value</span>) <span style="color:#66d9ef">in</span> countryCallingCode) {
+</span></span><span style="display:flex;"><span>    println(<span style="color:#e6db74">&#34;The calling code of </span><span style="color:#e6db74">$value</span><span style="color:#e6db74"> is </span><span style="color:#e6db74">$key</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// It can also be accessed like array
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>println(countryCallingCode[<span style="color:#ae81ff">977</span>])
+</span></span></code></pre></div><p>we can use <strong>mutableMapOf()</strong> function in order to create the mutable map.</p>
+<p><strong>hashMapOf()</strong> creates mutable hash map. Hash map class uses a hash table to implement the Java map.</p>
+<p><strong>linkedHashMap()</strong> stores the data in the order in which they were inserted.</p>
+<p><strong>sortedMapOf()</strong> stores the data in sorted order.</p>
+<h2 id="range">Range</h2>
+<p>Range is special data type in kotlin. For example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#66d9ef">var</span> numOneToFive = <span style="color:#ae81ff">1.</span>.<span style="color:#ae81ff">5</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span>(i <span style="color:#66d9ef">in</span> numOneToFive) {
+</span></span><span style="display:flex;"><span>    print(i)
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Similarly works for character.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#66d9ef">var</span> alphabets = <span style="color:#e6db74">&#39;a&#39;</span><span style="color:#f92672">..</span><span style="color:#e6db74">&#39;g&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span>(i <span style="color:#66d9ef">in</span> alphabets) {
+</span></span><span style="display:flex;"><span>    print(i)
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>In the range the starting and the ending values are inclusive. We can use <strong>rangeTo()</strong> function instead of <strong>..</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#66d9ef">val</span> oneToFive: IntRange = <span style="color:#ae81ff">1.</span>rangeTo(<span style="color:#ae81ff">5</span>)
+</span></span></code></pre></div><p>Next we can use <strong>downTo()</strong> function to make list of numbers starting from higher to lower range.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#66d9ef">val</span> tenToOne = <span style="color:#ae81ff">10.</span>downTo(<span style="color:#ae81ff">1</span>)
+</span></span></code></pre></div><p>We can also make a range using some gap. For example to create the range of numbers 1,3,5,7,9 we can use <strong>step</strong> keyword.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#66d9ef">val</span> oneToTenStep = <span style="color:#ae81ff">1.</span>.<span style="color:#ae81ff">10</span> step <span style="color:#ae81ff">2</span>
+</span></span></code></pre></div><p>Lastly, if we want to check if a element in inside the range we can use <strong>in</strong> keyword.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#66d9ef">if</span>(<span style="color:#ae81ff">4</span> <span style="color:#66d9ef">in</span> tenToOne) {
+</span></span><span style="display:flex;"><span> print(<span style="color:#e6db74">&#34;4 exists in the range.&#34;</span>)
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>So, this is all for this post. We learned about Arrays, collection and range in kotlin. We will dive more into Kotlin in the further post.</p>
+
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M4 0h8s2 0 4 2l15 15s2 2 0 4L21 31s-2 2-4 0L2 16s-2-2-2-4V3s0-3 4-3m3 10a3 3 0 0 0 0-6 3 3 0 0 0 0 6"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/Kotlin/" rel="tag">Kotlin</a>
+		</li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
+
+
+<nav class="pager flex">
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="/blog/2018/12/03/learn-kotlin-part-1-hello-world-and-basic-data-types/" rel="prev">
+			<span class="pager__subtitle">«&thinsp;Previous</span>
+			<p class="pager__title">Learn Kotlin (Part 1) - Hello world and Basic Data Types</p>
+		</a>
+	</div>
+	<div class="pager__item pager__item--next">
+		<a class="pager__link" href="/blog/2018/12/17/learn-kotlin-part-3-control-flow/" rel="next">
+			<span class="pager__subtitle">Next&thinsp;»</span>
+			<p class="pager__title">Learn Kotlin (Part 3) - Control Flow</p>
+		</a>
+	</div>
+</nav>
+
+
+			</div>
+			<aside class="sidebar"><div class="widget-search widget">
+	<form class="widget-search__form" role="search" method="get" action="https://google.com/search">
+		<input class="widget-search__field" type="search" placeholder="Search…" value="" name="q" aria-label="Search…">
+		<input class="widget-search__submit" type="submit" value="Search">
+		<input type="hidden" name="sitesearch" value="https://sudeepacharya.com.np/">
+	</form>
+</div><div class="widget-recent widget">
+	<h4 class="widget__title">Popular Posts</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="http://sudeepacharya.com.np/blog/2024/07/20/useful-excel-formulas-and-tricks/">Useful Excel formulas and tricks</a></li>
+			<li class="widget__item"><a class="widget__link" href="http://sudeepacharya.com.np/blog/2023/02/12/recover-hijacked-gmail-account/">How i RECOVERED my hijacked GOOGLE account [in 6 days]</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://sudeepacharya.com.np/blog/2017/11/08/fixing-google-play-games-plugin-and-unity-integration-error-android/">Fixing Google Play Games plugin and Unity integration error - Android</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://sudeepacharya.com.np/blog/2017/04/20/vipassana-meditation-dhamma-pokhara/">10 days of Vipassana Meditation at Dhamma Pokhara - Before you go</a></li>
+		</ul>
+	</div>
+</div>
+<div class="widget-recent widget">
+	<h4 class="widget__title">Recent Posts</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/blog/2024/08/14/pte-vocabulary-meaning-nepali/">PTE vocabulary with meaning in Nepali - Most Common</a></li>
+			<li class="widget__item"><a class="widget__link" href="/blog/2024/08/05/useful-run-win-r-commands/">Useful Run (win &#43; R) commands in Windows</a></li>
+			<li class="widget__item"><a class="widget__link" href="/blog/2024/07/20/useful-excel-formulas-and-tricks/">Useful Excel formulas and tricks</a></li>
+			<li class="widget__item"><a class="widget__link" href="/blog/2023/02/12/recover-hijacked-gmail-account/">How i RECOVERED my hijacked GOOGLE account [in 6 days]</a></li>
+			<li class="widget__item"><a class="widget__link" href="/blog/2020/05/23/cisco-1841-router-architecture-modes/">Architecture and Modes of Cisco 1841 Router</a></li>
+		</ul>
+	</div>
+</div>
+<div class="widget-taglist widget">
+	<h4 class="widget__title">Tags</h4>
+	<div class="widget__content">
+
+		<ul class="cloud" role="navigation" aria-label="Webdev word cloud">
+		<li><a data-weight="2" href="/tags/Android/" title="Android">Android</a></li>
+		<li><a data-weight="15" href="/tags/Blog/" title="Blog">Blog</a></li>
+		<li><a data-weight="1" href="/tags/C&#43;&#43;/" title="C&#43;&#43;">C&#43;&#43;</a></li>
+		<li><a data-weight="1" href="/tags/Commands/" title="Commands">Commands</a></li>
+		<li><a data-weight="2" href="/tags/CSharp/" title="CSharp">CSharp</a></li>
+		<li><a data-weight="1" href="/tags/DataBackup/" title="DataBackup">DataBackup</a></li>
+		<li><a data-weight="5" href="/tags/Django/" title="Django">Django</a></li>
+		<li><a data-weight="1" href="/tags/Excel/" title="Excel">Excel</a></li>
+		<li><a data-weight="2" href="/tags/ExploreNepal/" title="ExploreNepal">ExploreNepal</a></li>
+		<li><a data-weight="2" href="/tags/FreeStuff/" title="FreeStuff">FreeStuff</a></li>
+		<li><a data-weight="1" href="/tags/Git/" title="Git">Git</a></li>
+		<li><a data-weight="1" href="/tags/Hacking/" title="Hacking">Hacking</a></li>
+		<li><a data-weight="1" href="/tags/Haskell/" title="Haskell">Haskell</a></li>
+		<li><a data-weight="2" href="/tags/Hiking/" title="Hiking">Hiking</a></li>
+		<li><a data-weight="1" href="/tags/JavaScript/" title="JavaScript">JavaScript</a></li>
+		<li><a data-weight="1" href="/tags/Jekyll/" title="Jekyll">Jekyll</a></li>
+		<li><a data-weight="5" href="/tags/Kotlin/" title="Kotlin">Kotlin</a></li>
+		<li><a data-weight="2" href="/tags/Life/" title="Life">Life</a></li>
+		<li><a data-weight="2" href="/tags/Linux/" title="Linux">Linux</a></li>
+		<li><a data-weight="2" href="/tags/Meditation/" title="Meditation">Meditation</a></li>
+		<li><a data-weight="3" href="/tags/MobileGame/" title="MobileGame">MobileGame</a></li>
+		<li><a data-weight="7" href="/tags/PHP/" title="PHP">PHP</a></li>
+		<li><a data-weight="1" href="/tags/Programming/" title="Programming">Programming</a></li>
+		<li><a data-weight="1" href="/tags/PTE/" title="PTE">PTE</a></li>
+		<li><a data-weight="8" href="/tags/Python/" title="Python">Python</a></li>
+		<li><a data-weight="3" href="/tags/Sprituality/" title="Sprituality">Sprituality</a></li>
+		<li><a data-weight="2" href="/tags/Travel/" title="Travel">Travel</a></li>
+		<li><a data-weight="12" href="/tags/Tutorial/" title="Tutorial">Tutorial</a></li>
+		<li><a data-weight="2" href="/tags/Ubuntu/" title="Ubuntu">Ubuntu</a></li>
+		<li><a data-weight="1" href="/tags/Uncategorized/" title="Uncategorized">Uncategorized</a></li>
+		<li><a data-weight="4" href="/tags/Unity3D/" title="Unity3D">Unity3D</a></li>
+		<li><a data-weight="1" href="/tags/Windows10/" title="Windows10">Windows10</a></li>
+		<li><a data-weight="1" href="/tags/Windows11/" title="Windows11">Windows11</a></li>
+		<li><a data-weight="3" href="/tags/WordPress/" title="WordPress">WordPress</a></li>
+	</ul>
+	</div>
+</div>
+<div class="widget-categories widget">
+	<h4 class="widget__title">Categories</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/Google/">Google</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/Life/">Life</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/Linux-Tips-and-Tricks/">Linux Tips and Tricks</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/Microsoft/">Microsoft</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/My-Projects/">My Projects</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/Nepal/">Nepal</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/Networking/">Networking</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/Programming/">Programming</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/Random/">Random</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/Uncategorized/">Uncategorized</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/Windows-Tips-and-Tricks/">Windows Tips and Tricks</a></li>
+		</ul>
+	</div>
+</div>
+</aside>
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2024 Sudeep&#39;s Blog.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+</body>
+</html>

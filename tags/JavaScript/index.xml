@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>JavaScript on Sudeep&#39;s Blog</title>
+    <link>https://sudeepacharya.com.np/tags/JavaScript/</link>
+    <description>Recent content in JavaScript on Sudeep&#39;s Blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 02 Feb 2014 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://sudeepacharya.com.np/tags/JavaScript/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>JavaScript code to display Multiplication table</title>
+      <link>https://sudeepacharya.com.np/blog/2014/02/02/javascript-code-multiplication-table/</link>
+      <pubDate>Sun, 02 Feb 2014 00:00:00 +0000</pubDate>
+      <guid>https://sudeepacharya.com.np/blog/2014/02/02/javascript-code-multiplication-table/</guid>
+      <description>Through JavaScript you can easily write the html code in html document using document.write(). Using document.write() and for loop it is easy to print the table of user input number.&#xA;First of all &amp;ldquo;prompt&amp;rdquo; box will appear and then this value will be parse to integer and the multiplication table is displayed.&#xA;The source code for JavaScript is as follows:&#xA;&amp;lt;script type=&amp;#39;text/javascript&amp;#39;&amp;gt; var num = prompt(&amp;#34;Enter Number&amp;#34;, &amp;#34;0&amp;#34;) //prompt user to enter the number var num = parseInt(num); //parse the num to number var i = 0; document.</description>
+    </item>
+  </channel>
+</rss>

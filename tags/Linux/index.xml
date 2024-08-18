@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Linux on Sudeep&#39;s Blog</title>
+    <link>https://sudeepacharya.com.np/tags/Linux/</link>
+    <description>Recent content in Linux on Sudeep&#39;s Blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 16 Jan 2014 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://sudeepacharya.com.np/tags/Linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Recover deleted data from NTFS file system in Ubuntu</title>
+      <link>https://sudeepacharya.com.np/blog/2014/01/16/recover-deleted-files-from-ntfs-file-system-ubuntu/</link>
+      <pubDate>Thu, 16 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>https://sudeepacharya.com.np/blog/2014/01/16/recover-deleted-files-from-ntfs-file-system-ubuntu/</guid>
+      <description>I deleted the archive file which contains important images. And i thought it was gone forever, i did not had any backup too. But i was able to restore the deleted archive file using NtfsUndelete.&#xA;It was good that i had archived the photos so it was easy to restore. I was using Ubuntu and i deleted the files that was from another drive which is using Ntfs file system. So, i will explain how i was able to recover my files.</description>
+    </item>
+    <item>
+      <title>Screen Brightness reset to maximum after each restart in Ubuntu</title>
+      <link>https://sudeepacharya.com.np/blog/2014/01/10/screen-brightness-ubuntu-fix/</link>
+      <pubDate>Fri, 10 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>https://sudeepacharya.com.np/blog/2014/01/10/screen-brightness-ubuntu-fix/</guid>
+      <description>I just installed Ubuntu 13.10 in my Dell Inspiron 3421. Previously there was no problem with the screen brightness.&#xA;But certainly i was having the problem with screen brightness. I normally work with low screen brightness.&#xA;But whenever i restart my Laptop the Screen Brightness was set to maximum. If you are also having this same problem then i have found the fix for this. Let&amp;rsquo;s see how i was able to fix the screen brightness issue.</description>
+    </item>
+  </channel>
+</rss>

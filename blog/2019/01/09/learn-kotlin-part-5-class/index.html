@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Learn Kotlin (Part 5) - Class - Sudeep&#39;s Blog</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/custom.css">
+
+	<link rel="shortcut icon" href="/favicon.ico">
+	
+		
+  
+
+
+	
+
+	
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-32671323-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-32671323-1');
+	</script>
+
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container header__container">
+		
+	<div class="logo logo--mixed">
+		<a class="logo__link" href="/" title="Sudeep&#39;s Blog" rel="home">
+			<div class="logo__item logo__imagebox">
+					<img class="logo__img" src="/favicon.ico">
+				</div><div class="logo__item logo__text">
+					<div class="logo__title">Sudeep&#39;s Blog</div>
+					
+				</div>
+		</a>
+	</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Menu</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="/contact/">
+				
+				<span class="menu__text">Contact</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/tags/Excel/">
+				
+				<span class="menu__text">Excel</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/categories/Networking/">
+				
+				<span class="menu__text">Networking</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/categories/Programming/">
+				
+				<span class="menu__text">Programming</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/categories/Windows-Tips-and-Tricks/">
+				
+				<span class="menu__text">Windows Tips and Tricks</span>
+				
+			</a>
+		</li>
+	</ul>
+</nav>
+
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">Learn Kotlin (Part 5) - Class</h1>
+			<div class="post__meta meta"><div class="meta__item-author meta__item">
+	<svg class="meta__icon icon icon-author" width="16" height="16" viewBox="0 0 16 16"><path d="M8 1c2 0 3.5 2 3.5 4.5S10 9 10 9c3 1 4 2 4 6H2c0-4 1-5 4-6 0 0-1.5-1-1.5-3.5S6 1 8 1"/></svg><span class="meta__text">Sudeep Acharya</span>
+</div>
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0a14 14 0 1 1 0 28 1 1 0 0 1 0-28m0 3a3 3 0 1 0 0 22 3 3 0 0 0 0-22m1 4h-2v8.4l6.8 4.4L22 18l-6-3.8z"/></svg><time class="meta__text" datetime="2019-01-09T00:00:00Z">9 January, 2019</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/Programming/" rel="category">Programming</a>
+	</span>
+</div></div>
+		</header>
+		<div class="content post__content clearfix">
+			<p>Post Series:</p>
+<p>Part 1: <a href="https://sudeepacharya.com.np/blog/2018/12/03/learn-kotlin-part-1-hello-world-and-basic-data-types/">Hello world and Basic Data Types</a></p>
+<p>Part 2: <a href="https://sudeepacharya.com.np/blog/2018/12/10/learn-kotlin-part-2-array-collection-and-range/">Array, Collection and Range</a></p>
+<p>Part 3: <a href="https://sudeepacharya.com.np/blog/2018/12/17/learn-kotlin-part-3-control-flow/">Control Flow</a></p>
+<p>Part 4: <a href="https://sudeepacharya.com.np/blog/2018/12/25/learn-kotlin-part-4-function/">Function</a></p>
+<p>Part 5: <a href="https://sudeepacharya.com.np/blog/2019/01/09/learn-kotlin-part-5-class/">Class</a></p>
+<p>Although Kotlin is statically typed language, it supports object-oriented programming like Java. Before explaining further let us dive into the basic syntax of the Kotlin class.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Vehicle</span> { <span style="color:#75715e">// class definition
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75715e">// class body
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>}
+</span></span></code></pre></div><p>So, defining a basic class is as simple as this and similar to Java.</p>
+<p>Before diving further into the class syntax let us first discuss about the four access modifier available in Kotlin.</p>
+<h2 id="access-modifier">Access Modifier</h2>
+<p><strong>Public :</strong> A publicly defined entity is accessible from anywhere in or outside the class. It is similar to what public access modifier was like in Java. If no access modifier is define then by default it is public.</p>
+<p><strong>Private :</strong> If something is private then it can be accessed within the enclosing scope. For example if class in private then only the same file can access it. Next, if variable within class is private then it can be accessed only from the class.</p>
+<p><strong>Protected :</strong> If something is protected in the main class then it can be accessed by the sub-classes as well.</p>
+<p><strong>Internal :</strong> This is newly introduced in Kotlin which is not available in Java. If anything is define Internal then it limits the visibility within the same module. So, this creates the visibility in the package/module level.</p>
+<h2 id="more-on-kotlin-class">More on Kotlin Class</h2>
+<p>Let us start by seeing more complete class with a function/method and attribute.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Dog</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">var</span> numberOfLegs = <span style="color:#ae81ff">4</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">fun</span> <span style="color:#a6e22e">startBarking</span>() {
+</span></span><span style="display:flex;"><span>        println(<span style="color:#e6db74">&#34;Barking!&#34;</span>)
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">fun</span> <span style="color:#a6e22e">main</span>(args : Array&lt;String&gt;) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">val</span> d = Dog() <span style="color:#75715e">// Creating an object
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    d.startBarking() <span style="color:#75715e">// calling the class function
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>}
+</span></span></code></pre></div><h2 id="nested-class">Nested Class</h2>
+<p>The class in the kotlin can be written inside the class, which is called the nested class. This is similar to what we had done in functions like defining the function inside the function. Let us see one example of nested class:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#66d9ef">fun</span> <span style="color:#a6e22e">main</span>(args: Array&lt;String&gt;) {
+</span></span><span style="display:flex;"><span>   <span style="color:#a6e22e">OuterClass</span>.NestedClass().sayHello()
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">OuterClass</span> {
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">var</span> name: String = <span style="color:#e6db74">&#34;Sudeep&#34;</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">NestedClass</span> {
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">fun</span> <span style="color:#a6e22e">sayHello</span>() {
+</span></span><span style="display:flex;"><span>          print(<span style="color:#e6db74">&#34;Hello! Sudeep&#34;</span>)
+</span></span><span style="display:flex;"><span>      }
+</span></span><span style="display:flex;"><span>   }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Here, if you try to access the variable name from the NestedClass then it will throw the error. Next, we have inner class where you can access the variables of Outer Class inside it.</p>
+<h2 id="inner-class">Inner Class</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#66d9ef">fun</span> <span style="color:#a6e22e">main</span>(args: Array&lt;String&gt;) {
+</span></span><span style="display:flex;"><span>   OuterClass().NestedClass().sayHello()
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">OuterClass</span> {
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">var</span> name: String = <span style="color:#e6db74">&#34;Sudeep&#34;</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">inner</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">NestedClass</span> {
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">fun</span> <span style="color:#a6e22e">sayHello</span>() {
+</span></span><span style="display:flex;"><span>          print(<span style="color:#e6db74">&#34;Hello! &#34;</span> + name)
+</span></span><span style="display:flex;"><span>      }
+</span></span><span style="display:flex;"><span>   }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>So, we can now access the variable of the outer class inside the inner class as well and notice the difference in the calling the Nested Class function in line 2.</p>
+<h2 id="anonymous-inner-class">Anonymous Inner Class</h2>
+<p>Anonymous inner class are useful while creating and instantiating the object. For example let us see one example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#66d9ef">fun</span> <span style="color:#a6e22e">main</span>(args: Array&lt;String&gt;) {
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">var</span> animal : Dog = <span style="color:#66d9ef">object</span>: Dog { <span style="color:#75715e">// creating an instance of the interface Dog
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>      <span style="color:#66d9ef">override</span> <span style="color:#66d9ef">fun</span> <span style="color:#a6e22e">bark</span>() { <span style="color:#75715e">// overriding the bark method
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>         print(<span style="color:#e6db74">&#34;Bark! Bark! bark!&#34;</span>)
+</span></span><span style="display:flex;"><span>      }
+</span></span><span style="display:flex;"><span>   }
+</span></span><span style="display:flex;"><span>   animal.bark()
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">interface</span> <span style="color:#a6e22e">Dog</span> {
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">fun</span> <span style="color:#a6e22e">bark</span>()
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Here we can create the object of interface by overriding the function at the same time.</p>
+<p>That’s all for this post! Cheers!</p>
+
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M4 0h8s2 0 4 2l15 15s2 2 0 4L21 31s-2 2-4 0L2 16s-2-2-2-4V3s0-3 4-3m3 10a3 3 0 0 0 0-6 3 3 0 0 0 0 6"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/Kotlin/" rel="tag">Kotlin</a>
+		</li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
+
+
+<nav class="pager flex">
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="/blog/2018/12/31/ready-for-2019/" rel="prev">
+			<span class="pager__subtitle">«&thinsp;Previous</span>
+			<p class="pager__title">Are you ready for 2019?</p>
+		</a>
+	</div>
+	<div class="pager__item pager__item--next">
+		<a class="pager__link" href="/blog/2019/01/25/rich-getting-richer/" rel="next">
+			<span class="pager__subtitle">Next&thinsp;»</span>
+			<p class="pager__title">Why the rich are getting richer - Robert Kiyosaki</p>
+		</a>
+	</div>
+</nav>
+
+
+			</div>
+			<aside class="sidebar"><div class="widget-search widget">
+	<form class="widget-search__form" role="search" method="get" action="https://google.com/search">
+		<input class="widget-search__field" type="search" placeholder="Search…" value="" name="q" aria-label="Search…">
+		<input class="widget-search__submit" type="submit" value="Search">
+		<input type="hidden" name="sitesearch" value="https://sudeepacharya.com.np/">
+	</form>
+</div><div class="widget-recent widget">
+	<h4 class="widget__title">Popular Posts</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="http://sudeepacharya.com.np/blog/2024/07/20/useful-excel-formulas-and-tricks/">Useful Excel formulas and tricks</a></li>
+			<li class="widget__item"><a class="widget__link" href="http://sudeepacharya.com.np/blog/2023/02/12/recover-hijacked-gmail-account/">How i RECOVERED my hijacked GOOGLE account [in 6 days]</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://sudeepacharya.com.np/blog/2017/11/08/fixing-google-play-games-plugin-and-unity-integration-error-android/">Fixing Google Play Games plugin and Unity integration error - Android</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://sudeepacharya.com.np/blog/2017/04/20/vipassana-meditation-dhamma-pokhara/">10 days of Vipassana Meditation at Dhamma Pokhara - Before you go</a></li>
+		</ul>
+	</div>
+</div>
+<div class="widget-recent widget">
+	<h4 class="widget__title">Recent Posts</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/blog/2024/08/14/pte-vocabulary-meaning-nepali/">PTE vocabulary with meaning in Nepali - Most Common</a></li>
+			<li class="widget__item"><a class="widget__link" href="/blog/2024/08/05/useful-run-win-r-commands/">Useful Run (win &#43; R) commands in Windows</a></li>
+			<li class="widget__item"><a class="widget__link" href="/blog/2024/07/20/useful-excel-formulas-and-tricks/">Useful Excel formulas and tricks</a></li>
+			<li class="widget__item"><a class="widget__link" href="/blog/2023/02/12/recover-hijacked-gmail-account/">How i RECOVERED my hijacked GOOGLE account [in 6 days]</a></li>
+			<li class="widget__item"><a class="widget__link" href="/blog/2020/05/23/cisco-1841-router-architecture-modes/">Architecture and Modes of Cisco 1841 Router</a></li>
+		</ul>
+	</div>
+</div>
+<div class="widget-taglist widget">
+	<h4 class="widget__title">Tags</h4>
+	<div class="widget__content">
+
+		<ul class="cloud" role="navigation" aria-label="Webdev word cloud">
+		<li><a data-weight="2" href="/tags/Android/" title="Android">Android</a></li>
+		<li><a data-weight="15" href="/tags/Blog/" title="Blog">Blog</a></li>
+		<li><a data-weight="1" href="/tags/C&#43;&#43;/" title="C&#43;&#43;">C&#43;&#43;</a></li>
+		<li><a data-weight="1" href="/tags/Commands/" title="Commands">Commands</a></li>
+		<li><a data-weight="2" href="/tags/CSharp/" title="CSharp">CSharp</a></li>
+		<li><a data-weight="1" href="/tags/DataBackup/" title="DataBackup">DataBackup</a></li>
+		<li><a data-weight="5" href="/tags/Django/" title="Django">Django</a></li>
+		<li><a data-weight="1" href="/tags/Excel/" title="Excel">Excel</a></li>
+		<li><a data-weight="2" href="/tags/ExploreNepal/" title="ExploreNepal">ExploreNepal</a></li>
+		<li><a data-weight="2" href="/tags/FreeStuff/" title="FreeStuff">FreeStuff</a></li>
+		<li><a data-weight="1" href="/tags/Git/" title="Git">Git</a></li>
+		<li><a data-weight="1" href="/tags/Hacking/" title="Hacking">Hacking</a></li>
+		<li><a data-weight="1" href="/tags/Haskell/" title="Haskell">Haskell</a></li>
+		<li><a data-weight="2" href="/tags/Hiking/" title="Hiking">Hiking</a></li>
+		<li><a data-weight="1" href="/tags/JavaScript/" title="JavaScript">JavaScript</a></li>
+		<li><a data-weight="1" href="/tags/Jekyll/" title="Jekyll">Jekyll</a></li>
+		<li><a data-weight="5" href="/tags/Kotlin/" title="Kotlin">Kotlin</a></li>
+		<li><a data-weight="2" href="/tags/Life/" title="Life">Life</a></li>
+		<li><a data-weight="2" href="/tags/Linux/" title="Linux">Linux</a></li>
+		<li><a data-weight="2" href="/tags/Meditation/" title="Meditation">Meditation</a></li>
+		<li><a data-weight="3" href="/tags/MobileGame/" title="MobileGame">MobileGame</a></li>
+		<li><a data-weight="7" href="/tags/PHP/" title="PHP">PHP</a></li>
+		<li><a data-weight="1" href="/tags/Programming/" title="Programming">Programming</a></li>
+		<li><a data-weight="1" href="/tags/PTE/" title="PTE">PTE</a></li>
+		<li><a data-weight="8" href="/tags/Python/" title="Python">Python</a></li>
+		<li><a data-weight="3" href="/tags/Sprituality/" title="Sprituality">Sprituality</a></li>
+		<li><a data-weight="2" href="/tags/Travel/" title="Travel">Travel</a></li>
+		<li><a data-weight="12" href="/tags/Tutorial/" title="Tutorial">Tutorial</a></li>
+		<li><a data-weight="2" href="/tags/Ubuntu/" title="Ubuntu">Ubuntu</a></li>
+		<li><a data-weight="1" href="/tags/Uncategorized/" title="Uncategorized">Uncategorized</a></li>
+		<li><a data-weight="4" href="/tags/Unity3D/" title="Unity3D">Unity3D</a></li>
+		<li><a data-weight="1" href="/tags/Windows10/" title="Windows10">Windows10</a></li>
+		<li><a data-weight="1" href="/tags/Windows11/" title="Windows11">Windows11</a></li>
+		<li><a data-weight="3" href="/tags/WordPress/" title="WordPress">WordPress</a></li>
+	</ul>
+	</div>
+</div>
+<div class="widget-categories widget">
+	<h4 class="widget__title">Categories</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/Google/">Google</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/Life/">Life</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/Linux-Tips-and-Tricks/">Linux Tips and Tricks</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/Microsoft/">Microsoft</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/My-Projects/">My Projects</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/Nepal/">Nepal</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/Networking/">Networking</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/Programming/">Programming</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/Random/">Random</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/Uncategorized/">Uncategorized</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/Windows-Tips-and-Tricks/">Windows Tips and Tricks</a></li>
+		</ul>
+	</div>
+</div>
+</aside>
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2024 Sudeep&#39;s Blog.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+</body>
+</html>

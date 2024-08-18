@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Git on Sudeep&#39;s Blog</title>
+    <link>https://sudeepacharya.com.np/tags/Git/</link>
+    <description>Recent content in Git on Sudeep&#39;s Blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 19 Jan 2015 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://sudeepacharya.com.np/tags/Git/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to delete the commit history in github</title>
+      <link>https://sudeepacharya.com.np/blog/2015/01/19/delete-all-commit-history-github/</link>
+      <pubDate>Mon, 19 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>https://sudeepacharya.com.np/blog/2015/01/19/delete-all-commit-history-github/</guid>
+      <description>Sometimes you may find deleting the commit history of your github project repository useful. You can easily delete the commit history by following the procedure below.&#xA;It is always useful to keep the backup of your repository in your computer before removing all the commit history.&#xA;Let us start by cloning a github project. I am cloning &amp;lsquo;myproject&amp;rsquo;, you clone yours.&#xA;git clone https://github.com/acsudeep/myproject.git Since all the commit history are in the &amp;ldquo;.</description>
+    </item>
+  </channel>
+</rss>

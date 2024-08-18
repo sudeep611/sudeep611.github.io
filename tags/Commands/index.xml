@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Commands on Sudeep&#39;s Blog</title>
+    <link>https://sudeepacharya.com.np/tags/Commands/</link>
+    <description>Recent content in Commands on Sudeep&#39;s Blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 05 Aug 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://sudeepacharya.com.np/tags/Commands/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Useful Run (win &#43; R) commands in Windows</title>
+      <link>https://sudeepacharya.com.np/blog/2024/08/05/useful-run-win-r-commands/</link>
+      <pubDate>Mon, 05 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://sudeepacharya.com.np/blog/2024/08/05/useful-run-win-r-commands/</guid>
+      <description>Run command in windows are useful for instantly running the tools and softwares in Windows such as Task Manager and control panel. In this post i will be sharing some of the most frequently ones that are used on a daily basis. Also, these commands will work from command prompt.&#xA;Command Description control Opens up the control panel appwiz.cpl Open up Add/Remove programs winver Shows up the windows version msinfo32 Shows up the system information perfom Performance monitor eventvwr Event viewer regedit Registry editor lusrmgr.</description>
+    </item>
+  </channel>
+</rss>

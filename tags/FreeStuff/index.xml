@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>FreeStuff on Sudeep&#39;s Blog</title>
+    <link>https://sudeepacharya.com.np/tags/FreeStuff/</link>
+    <description>Recent content in FreeStuff on Sudeep&#39;s Blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 05 May 2020 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://sudeepacharya.com.np/tags/FreeStuff/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Get free domain .com.np and free hosting</title>
+      <link>https://sudeepacharya.com.np/blog/2020/05/05/free-com-np-domain-free-hosting/</link>
+      <pubDate>Tue, 05 May 2020 00:00:00 +0000</pubDate>
+      <guid>https://sudeepacharya.com.np/blog/2020/05/05/free-com-np-domain-free-hosting/</guid>
+      <description>For Nepali citizens, you can register free .com.np domain. In this post, I will teach you to point this domain to Github Pages using Cloudflare DNS for free.&#xA;Mercantile Communications Pvt. Ltd. provides .com.np domain registration for free of cost and provides to use DNS service.&#xA;Step 1: Setup Github account and upload website To upload your website into the github account you need to learn git. I am not covering the tutorial for using the git.</description>
+    </item>
+    <item>
+      <title>How to find the game art for your Game Project</title>
+      <link>https://sudeepacharya.com.np/blog/2017/05/21/how-to-find-the-game-art-for-your-game-project/</link>
+      <pubDate>Sun, 21 May 2017 00:00:00 +0000</pubDate>
+      <guid>https://sudeepacharya.com.np/blog/2017/05/21/how-to-find-the-game-art-for-your-game-project/</guid>
+      <description>I am currently working on a game development, i do programming and in the game if i require graphics then i hire designer. I was curious about how other indie developers like me manage the game assets. I asked in a Facebook group about this topic. Hopefully i got reply from Dozens of people. In this post i will share how they manage the game assets being a Game Programmer.</description>
+    </item>
+  </channel>
+</rss>

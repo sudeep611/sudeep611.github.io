@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>How to set up basic PHP Project structure with Composer - Sudeep&#39;s Blog</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/custom.css">
+
+	<link rel="shortcut icon" href="/favicon.ico">
+	
+		
+  
+
+
+	
+
+	
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-32671323-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-32671323-1');
+	</script>
+
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container header__container">
+		
+	<div class="logo logo--mixed">
+		<a class="logo__link" href="/" title="Sudeep&#39;s Blog" rel="home">
+			<div class="logo__item logo__imagebox">
+					<img class="logo__img" src="/favicon.ico">
+				</div><div class="logo__item logo__text">
+					<div class="logo__title">Sudeep&#39;s Blog</div>
+					
+				</div>
+		</a>
+	</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Menu</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="/contact/">
+				
+				<span class="menu__text">Contact</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/tags/Excel/">
+				
+				<span class="menu__text">Excel</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/categories/Networking/">
+				
+				<span class="menu__text">Networking</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/categories/Programming/">
+				
+				<span class="menu__text">Programming</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/categories/Windows-Tips-and-Tricks/">
+				
+				<span class="menu__text">Windows Tips and Tricks</span>
+				
+			</a>
+		</li>
+	</ul>
+</nav>
+
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">How to set up basic PHP Project structure with Composer</h1>
+			<div class="post__meta meta"><div class="meta__item-author meta__item">
+	<svg class="meta__icon icon icon-author" width="16" height="16" viewBox="0 0 16 16"><path d="M8 1c2 0 3.5 2 3.5 4.5S10 9 10 9c3 1 4 2 4 6H2c0-4 1-5 4-6 0 0-1.5-1-1.5-3.5S6 1 8 1"/></svg><span class="meta__text">Sudeep Acharya</span>
+</div>
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0a14 14 0 1 1 0 28 1 1 0 0 1 0-28m0 3a3 3 0 1 0 0 22 3 3 0 0 0 0-22m1 4h-2v8.4l6.8 4.4L22 18l-6-3.8z"/></svg><time class="meta__text" datetime="2020-01-04T00:00:00Z">4 January, 2020</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/Programming/" rel="category">Programming</a>
+	</span>
+</div></div>
+		</header>
+		<div class="content post__content clearfix">
+			<p>Most of the time beginners learning PHP are unaware of <a href="https://getcomposer.org/">Composer</a>, if you are among them, Composer is a dependency management tool for PHP.</p>
+<p>Let&rsquo;s take a simple example, rather than using include command in each of the PHP file, composer makes it easy by specifying that file as a dependency. Another example would be if you use some library then it makes easier to use and update it with a single command.</p>
+<p>Is it compulsory to use Composer for my PHP project?</p>
+<p>I wouldn&rsquo;t answer it in Yes or No format. I would say that you can write simple project with couple of file and classes without dependency management tools like Composer, but life will be much much easier by using Composer. Time will come where you will be unable to maintain the project on your own without it when your project grows larger.</p>
+<p>Alright, let&rsquo;s jump onto our subject, in this post i will write about setting up the basic PHP project with composer on it. The whole project files can be found on my <a href="https://github.com/sudeep611/PHP_Project_Getting_Started">Github Page</a>. You are welcome to contribute :)</p>
+<p>Before beginning, i will assume that you have PHP and Composer installed in your machine. Read my previous post:</p>
+<p><a href="https://sudeepacharya.com.np/blog/2020/01/04/how-to-install-php-composer-in-your-mac/">How to install PHP Composer in MAC</a></p>
+<p>Setting up the basic PHP Project Skeleton code with Composer</p>
+<p>Create a root folder with your project name, i will name it as &ldquo;MyPHPProject&rdquo;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mkdir MyPHPProject
+</span></span></code></pre></div><p>Navigate to this folder</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cd MyPHPProject
+</span></span></code></pre></div><p>Create &lsquo;src&rsquo; folder where we will have our projects PHP Classes and files</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mkdir src
+</span></span></code></pre></div><p>Navigate to &lsquo;src&rsquo; folder</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cd src
+</span></span></code></pre></div><p>Inside it create folder &lsquo;HelloWorld&rsquo; and navigate to it</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mkdir HelloWorld <span style="color:#f92672">||</span> cd HelloWorld
+</span></span></code></pre></div><p>Let&rsquo;s create HelloWorld.php and write some PHP code inside it.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>touch HelloWorld.php
+</span></span></code></pre></div><p>Open &ldquo;HelloWorld.php&rdquo; and paste the following code</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">namespace</span> <span style="color:#a6e22e">HelloWorld</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">HelloWorld</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">printHelloWorld</span>() {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;Hello World&#34;</span>;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Now, let&rsquo;s go back to &lsquo;src&rsquo; folder</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cd ..
+</span></span></code></pre></div><p>Create folder named &lsquo;files&rsquo;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mkdir files
+</span></span></code></pre></div><p>If in future you need to keep any files such as JavaScript, Images then you can use this folder.</p>
+<p>Let&rsquo;s go back to our main project root folder.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cd ..
+</span></span></code></pre></div><p>Now let us create &lsquo;composer.json&rsquo; file</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>touch composer.json
+</span></span></code></pre></div><p>Paste the following in your composer.json file</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;sudeep/HelloWorld&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;description&#34;</span>: <span style="color:#e6db74">&#34;This is the description of the project.&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;license&#34;</span>: <span style="color:#e6db74">&#34;MIT&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;minimum-stability&#34;</span>: <span style="color:#e6db74">&#34;dev&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;require&#34;</span>: {
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;php&#34;</span>: <span style="color:#e6db74">&#34;&gt;=7.0&#34;</span>
+</span></span><span style="display:flex;"><span>    },
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;autoload&#34;</span>: {
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;psr-0&#34;</span>: {
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;HelloWorld&#34;</span>: <span style="color:#e6db74">&#34;src/&#34;</span>
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    },
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;require-dev&#34;</span>: {
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;phpunit/phpunit&#34;</span>: <span style="color:#e6db74">&#34;^8&#34;</span>
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>In the above code edit as per your requirement, one new thing you might have noticed is <a href="https://phpunit.de/">phpunit</a>, we will use phpunit for writing test case to our project later.</p>
+<p>Next, install composer.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>composer install
+</span></span></code></pre></div><p>This will install composer for your current project. It will install the library and dependencies mentioned in the composer.json file above.</p>
+<p>Now, you will notice some more files such as vendor folder added to your project, this is the file added by composer.</p>
+<p>Next, Let&rsquo;s create &lsquo;index.php&rsquo; which is the entry point for our PHP project.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>touch index.php
+</span></span></code></pre></div><p>Paste the following code in index.php</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Autoload files using the Composer autoloader.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">require_once</span> <span style="color:#66d9ef">__DIR__</span> <span style="color:#f92672">.</span> <span style="color:#e6db74">&#39;/vendor/autoload.php&#39;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">use</span> <span style="color:#a6e22e">HelloWorld\HelloWorld</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>$entry <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">HelloWorld</span>();
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">echo</span>($entry<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">printHelloWorld</span>());
+</span></span></code></pre></div><p>Let&rsquo;s run the PHP project. Enter the following code in command line.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>php -S localhost:4000
+</span></span></code></pre></div><p>Open the &rsquo;localhost:4000&rsquo; in your Browser and you will see Hello World printed.</p>
+<p>Next, let us add the tests folder where we will be writing our test cases. And navigate to it</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mkdir tests <span style="color:#f92672">||</span> cd tests
+</span></span></code></pre></div><p>Let us create HelloWorldTest.php inside tests folder</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>touch TestHelloWorld.php
+</span></span></code></pre></div><p>And paste the following code inside it</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Autoload files using the Composer autoloader.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">require_once</span> <span style="color:#66d9ef">__DIR__</span> <span style="color:#f92672">.</span> <span style="color:#e6db74">&#39;/../vendor/autoload.php&#39;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">use</span> <span style="color:#a6e22e">HelloWorld\HelloWorld</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">use</span> <span style="color:#a6e22e">PHPUnit\Framework\TestCase</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">final</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">HelloWorldTest</span> <span style="color:#66d9ef">extends</span> <span style="color:#a6e22e">TestCase</span>
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">testPrintHelloWorld</span>() {
+</span></span><span style="display:flex;"><span>        $actualClass <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">HelloWorld</span>();
+</span></span><span style="display:flex;"><span>        $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">assertEquals</span>(<span style="color:#e6db74">&#39;Hello World&#39;</span>, $actualClass<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">printHelloWorld</span>());
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>For running the test file you can use the following command.</p>
+<p>[To Make sure PHPUnit is installed in your machine.]</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>phpunit HelloWorldTest.php
+</span></span></code></pre></div><p>That&rsquo;s all!</p>
+
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M4 0h8s2 0 4 2l15 15s2 2 0 4L21 31s-2 2-4 0L2 16s-2-2-2-4V3s0-3 4-3m3 10a3 3 0 0 0 0-6 3 3 0 0 0 0 6"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/PHP/" rel="tag">PHP</a>
+		</li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
+
+
+<nav class="pager flex">
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="/blog/2019/12/14/what-is-philosophy/" rel="prev">
+			<span class="pager__subtitle">«&thinsp;Previous</span>
+			<p class="pager__title">What is Philosophy?</p>
+		</a>
+	</div>
+	<div class="pager__item pager__item--next">
+		<a class="pager__link" href="/blog/2020/01/04/how-to-install-php-composer-in-your-mac/" rel="next">
+			<span class="pager__subtitle">Next&thinsp;»</span>
+			<p class="pager__title">How to Install PHP Composer in your Mac</p>
+		</a>
+	</div>
+</nav>
+
+
+			</div>
+			<aside class="sidebar"><div class="widget-search widget">
+	<form class="widget-search__form" role="search" method="get" action="https://google.com/search">
+		<input class="widget-search__field" type="search" placeholder="Search…" value="" name="q" aria-label="Search…">
+		<input class="widget-search__submit" type="submit" value="Search">
+		<input type="hidden" name="sitesearch" value="https://sudeepacharya.com.np/">
+	</form>
+</div><div class="widget-recent widget">
+	<h4 class="widget__title">Popular Posts</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="http://sudeepacharya.com.np/blog/2024/07/20/useful-excel-formulas-and-tricks/">Useful Excel formulas and tricks</a></li>
+			<li class="widget__item"><a class="widget__link" href="http://sudeepacharya.com.np/blog/2023/02/12/recover-hijacked-gmail-account/">How i RECOVERED my hijacked GOOGLE account [in 6 days]</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://sudeepacharya.com.np/blog/2017/11/08/fixing-google-play-games-plugin-and-unity-integration-error-android/">Fixing Google Play Games plugin and Unity integration error - Android</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://sudeepacharya.com.np/blog/2017/04/20/vipassana-meditation-dhamma-pokhara/">10 days of Vipassana Meditation at Dhamma Pokhara - Before you go</a></li>
+		</ul>
+	</div>
+</div>
+<div class="widget-recent widget">
+	<h4 class="widget__title">Recent Posts</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/blog/2024/08/14/pte-vocabulary-meaning-nepali/">PTE vocabulary with meaning in Nepali - Most Common</a></li>
+			<li class="widget__item"><a class="widget__link" href="/blog/2024/08/05/useful-run-win-r-commands/">Useful Run (win &#43; R) commands in Windows</a></li>
+			<li class="widget__item"><a class="widget__link" href="/blog/2024/07/20/useful-excel-formulas-and-tricks/">Useful Excel formulas and tricks</a></li>
+			<li class="widget__item"><a class="widget__link" href="/blog/2023/02/12/recover-hijacked-gmail-account/">How i RECOVERED my hijacked GOOGLE account [in 6 days]</a></li>
+			<li class="widget__item"><a class="widget__link" href="/blog/2020/05/23/cisco-1841-router-architecture-modes/">Architecture and Modes of Cisco 1841 Router</a></li>
+		</ul>
+	</div>
+</div>
+<div class="widget-taglist widget">
+	<h4 class="widget__title">Tags</h4>
+	<div class="widget__content">
+
+		<ul class="cloud" role="navigation" aria-label="Webdev word cloud">
+		<li><a data-weight="2" href="/tags/Android/" title="Android">Android</a></li>
+		<li><a data-weight="15" href="/tags/Blog/" title="Blog">Blog</a></li>
+		<li><a data-weight="1" href="/tags/C&#43;&#43;/" title="C&#43;&#43;">C&#43;&#43;</a></li>
+		<li><a data-weight="1" href="/tags/Commands/" title="Commands">Commands</a></li>
+		<li><a data-weight="2" href="/tags/CSharp/" title="CSharp">CSharp</a></li>
+		<li><a data-weight="1" href="/tags/DataBackup/" title="DataBackup">DataBackup</a></li>
+		<li><a data-weight="5" href="/tags/Django/" title="Django">Django</a></li>
+		<li><a data-weight="1" href="/tags/Excel/" title="Excel">Excel</a></li>
+		<li><a data-weight="2" href="/tags/ExploreNepal/" title="ExploreNepal">ExploreNepal</a></li>
+		<li><a data-weight="2" href="/tags/FreeStuff/" title="FreeStuff">FreeStuff</a></li>
+		<li><a data-weight="1" href="/tags/Git/" title="Git">Git</a></li>
+		<li><a data-weight="1" href="/tags/Hacking/" title="Hacking">Hacking</a></li>
+		<li><a data-weight="1" href="/tags/Haskell/" title="Haskell">Haskell</a></li>
+		<li><a data-weight="2" href="/tags/Hiking/" title="Hiking">Hiking</a></li>
+		<li><a data-weight="1" href="/tags/JavaScript/" title="JavaScript">JavaScript</a></li>
+		<li><a data-weight="1" href="/tags/Jekyll/" title="Jekyll">Jekyll</a></li>
+		<li><a data-weight="5" href="/tags/Kotlin/" title="Kotlin">Kotlin</a></li>
+		<li><a data-weight="2" href="/tags/Life/" title="Life">Life</a></li>
+		<li><a data-weight="2" href="/tags/Linux/" title="Linux">Linux</a></li>
+		<li><a data-weight="2" href="/tags/Meditation/" title="Meditation">Meditation</a></li>
+		<li><a data-weight="3" href="/tags/MobileGame/" title="MobileGame">MobileGame</a></li>
+		<li><a data-weight="7" href="/tags/PHP/" title="PHP">PHP</a></li>
+		<li><a data-weight="1" href="/tags/Programming/" title="Programming">Programming</a></li>
+		<li><a data-weight="1" href="/tags/PTE/" title="PTE">PTE</a></li>
+		<li><a data-weight="8" href="/tags/Python/" title="Python">Python</a></li>
+		<li><a data-weight="3" href="/tags/Sprituality/" title="Sprituality">Sprituality</a></li>
+		<li><a data-weight="2" href="/tags/Travel/" title="Travel">Travel</a></li>
+		<li><a data-weight="12" href="/tags/Tutorial/" title="Tutorial">Tutorial</a></li>
+		<li><a data-weight="2" href="/tags/Ubuntu/" title="Ubuntu">Ubuntu</a></li>
+		<li><a data-weight="1" href="/tags/Uncategorized/" title="Uncategorized">Uncategorized</a></li>
+		<li><a data-weight="4" href="/tags/Unity3D/" title="Unity3D">Unity3D</a></li>
+		<li><a data-weight="1" href="/tags/Windows10/" title="Windows10">Windows10</a></li>
+		<li><a data-weight="1" href="/tags/Windows11/" title="Windows11">Windows11</a></li>
+		<li><a data-weight="3" href="/tags/WordPress/" title="WordPress">WordPress</a></li>
+	</ul>
+	</div>
+</div>
+<div class="widget-categories widget">
+	<h4 class="widget__title">Categories</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/Google/">Google</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/Life/">Life</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/Linux-Tips-and-Tricks/">Linux Tips and Tricks</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/Microsoft/">Microsoft</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/My-Projects/">My Projects</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/Nepal/">Nepal</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/Networking/">Networking</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/Programming/">Programming</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/Random/">Random</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/Uncategorized/">Uncategorized</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/Windows-Tips-and-Tricks/">Windows Tips and Tricks</a></li>
+		</ul>
+	</div>
+</div>
+</aside>
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2024 Sudeep&#39;s Blog.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+</body>
+</html>

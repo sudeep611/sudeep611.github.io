@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sudeep&#39;s Blog</title>
+    <link>https://sudeepacharya.com.np/</link>
+    <description>Recent content on Sudeep&#39;s Blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 14 Aug 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://sudeepacharya.com.np/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PTE vocabulary with meaning in Nepali - Most Common</title>
+      <link>https://sudeepacharya.com.np/blog/2024/08/14/pte-vocabulary-meaning-nepali/</link>
+      <pubDate>Wed, 14 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://sudeepacharya.com.np/blog/2024/08/14/pte-vocabulary-meaning-nepali/</guid>
+      <description>In this post, i will share most commonly repeated words and their meaning in Nepali as well as in English. Knowing the meaning of these words will help you a lot in scoring good marks in PTE.&#xA;Word Meaning in Nepali Meaning in English abjure प्रतिषेध, परम्परा to withdraw one&amp;rsquo;s word or professed belief Abruptly अचानक in a sudden, unexpected, and sometimes unpleasant way abstract सार a summary of the contents of a book, article, or speech abundant प्रचुर मात्रामा present in great quantity accretion वृद्धि growth or increase by the gradual accumulation of additional layers or matter.</description>
+    </item>
+    <item>
+      <title>Useful Run (win &#43; R) commands in Windows</title>
+      <link>https://sudeepacharya.com.np/blog/2024/08/05/useful-run-win-r-commands/</link>
+      <pubDate>Mon, 05 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://sudeepacharya.com.np/blog/2024/08/05/useful-run-win-r-commands/</guid>
+      <description>Run command in windows are useful for instantly running the tools and softwares in Windows such as Task Manager and control panel. In this post i will be sharing some of the most frequently ones that are used on a daily basis. Also, these commands will work from command prompt.&#xA;Command Description control Opens up the control panel appwiz.cpl Open up Add/Remove programs winver Shows up the windows version msinfo32 Shows up the system information perfom Performance monitor eventvwr Event viewer regedit Registry editor lusrmgr.</description>
+    </item>
+    <item>
+      <title>Useful Excel formulas and tricks</title>
+      <link>https://sudeepacharya.com.np/blog/2024/07/20/useful-excel-formulas-and-tricks/</link>
+      <pubDate>Sat, 20 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>https://sudeepacharya.com.np/blog/2024/07/20/useful-excel-formulas-and-tricks/</guid>
+      <description>In this post, i will be sharing some commonly used excel formulas to make your life easier while creating report.&#xA;Find cost in Table 2 by matching Serial Number in Table 1 If you have to find the corresponding value of some data in a table from another table then you can combine the INDEX and MATCH as follows:&#xA;=INDEX(Table1[Cost],MATCH([@[Serial Number]],Table1[Serial Number],0),0) Check if serial number in Table B exists in Table A Using combination of ISNA and VLOOKUP to check if the serial number in table b exists in table A.</description>
+    </item>
+    <item>
+      <title>How i RECOVERED my hijacked GOOGLE account [in 6 days]</title>
+      <link>https://sudeepacharya.com.np/blog/2023/02/12/recover-hijacked-gmail-account/</link>
+      <pubDate>Sat, 11 Feb 2023 00:00:00 +0000</pubDate>
+      <guid>https://sudeepacharya.com.np/blog/2023/02/12/recover-hijacked-gmail-account/</guid>
+      <description>When i slept on 6th of December 2022 everything was fine until i woke up at around 7:30 next morning on 7th and found that i have been logged out of google my account from my phone.&#xA;Day 1 - (7 December 2022) For a second i couldn&amp;rsquo;t think of anything, i thought the session was expired and tried logging in i was shocked to see my password was changed 5 hours ago.</description>
+    </item>
+    <item>
+      <title>Architecture and Modes of Cisco 1841 Router</title>
+      <link>https://sudeepacharya.com.np/blog/2020/05/23/cisco-1841-router-architecture-modes/</link>
+      <pubDate>Sat, 23 May 2020 00:00:00 +0000</pubDate>
+      <guid>https://sudeepacharya.com.np/blog/2020/05/23/cisco-1841-router-architecture-modes/</guid>
+      <description>Understand the external components of Cisco 1841 Router and learn three different modes User EXEC, Previleged and Global Configuration modes.&#xA;The front view of the router The above is the front view of the Cisco router. We have the logo in the left side and Router model number on the right side which is Cisco 1841. Next, we have two system LED 1 and 2 as follows:&#xA;System Power (SYS PWR) LED - No power means off and blinking green means that the router is booting.</description>
+    </item>
+    <item>
+      <title>Get free domain .com.np and free hosting</title>
+      <link>https://sudeepacharya.com.np/blog/2020/05/05/free-com-np-domain-free-hosting/</link>
+      <pubDate>Tue, 05 May 2020 00:00:00 +0000</pubDate>
+      <guid>https://sudeepacharya.com.np/blog/2020/05/05/free-com-np-domain-free-hosting/</guid>
+      <description>For Nepali citizens, you can register free .com.np domain. In this post, I will teach you to point this domain to Github Pages using Cloudflare DNS for free.&#xA;Mercantile Communications Pvt. Ltd. provides .com.np domain registration for free of cost and provides to use DNS service.&#xA;Step 1: Setup Github account and upload website To upload your website into the github account you need to learn git. I am not covering the tutorial for using the git.</description>
+    </item>
+    <item>
+      <title>Moving to Github Pages using Jekyll  from WordPress.com</title>
+      <link>https://sudeepacharya.com.np/blog/2020/05/02/moving-wordpress.com-blog-jekyll-github/</link>
+      <pubDate>Sat, 02 May 2020 00:00:00 +0000</pubDate>
+      <guid>https://sudeepacharya.com.np/blog/2020/05/02/moving-wordpress.com-blog-jekyll-github/</guid>
+      <description>I started my blog &amp;ldquo;hellocoding.wordpress.com&amp;rdquo; in 2013. WordPress.com provides the basic functionality of posting the post for free. It does not give the way to embed JavaScript and does not offer much control over your blog.&#xA;After a few years of blogging in WordPress.com, I realised that I want more control over my site so that I can improve my SEO, make a page redirection and make my site how I want in every possible way.</description>
+    </item>
+    <item>
+      <title>How each of the Network Protocol layers work behind the scene</title>
+      <link>https://sudeepacharya.com.np/blog/2020/01/16/how-each-of-the-network-protocol-layers-work-behind-the-scene/</link>
+      <pubDate>Thu, 16 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>https://sudeepacharya.com.np/blog/2020/01/16/how-each-of-the-network-protocol-layers-work-behind-the-scene/</guid>
+      <description>When we type google.com in our browser, we see the google home page. We are unaware of the back scene about how the each layer of the protocol works. In this post i will describe, how each of the protocol layer works.&#xA;First of all let&amp;rsquo;s see what are the layers involved in OSI and TCP/IP protocols.&#xA;Layers and their functions of OSI model Layer Task At Layer Application Layer Web browser that the user interacts with.</description>
+    </item>
+    <item>
+      <title>A Silly way to comment in your Code</title>
+      <link>https://sudeepacharya.com.np/blog/2020/01/08/a-silly-way-to-comment-in-your-code/</link>
+      <pubDate>Wed, 08 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>https://sudeepacharya.com.np/blog/2020/01/08/a-silly-way-to-comment-in-your-code/</guid>
+      <description>During my beginners year of writing code, i used to comment unnecessarily. I realised this after i saw the code written by senior developers. The main purpose of the comment is to make your code understood by other developers who are working together in the same project or for other contributors.&#xA;Let us take an example of the silly code:&#xA;&amp;lt;?php // Assigning the value to firstNumber firstNumber = 9 // Assigning the value to secondNumber secondNumber = 12 // Creating variable to store the sum of firstNumber and secondNumber sumOfNumbers = 0; // Adding both firstNumber and secondNumber and storing it to sumOfNumbers sumOfNumbers = firstNumber + secondNumber // Displaying the result echo sumOfNumbers; ?</description>
+    </item>
+    <item>
+      <title>How to Install PHP Composer in your Mac</title>
+      <link>https://sudeepacharya.com.np/blog/2020/01/04/how-to-install-php-composer-in-your-mac/</link>
+      <pubDate>Sat, 04 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>https://sudeepacharya.com.np/blog/2020/01/04/how-to-install-php-composer-in-your-mac/</guid>
+      <description>Composer is the easiest way to manage dependencies to your small to large PHP projects.&#xA;Use the following commands to install composer in your Mac&#xA;curl -sS https://getcomposer.org/installer | php Now the composer is installed in your current directory.&#xA;Now, you can access it using the following command&#xA;php composer.phar [command] It works but you don&amp;rsquo;t always want to use this directory path to access the composer, So in the next step we will make it accessible globally.</description>
+    </item>
+    <item>
+      <title>How to set up basic PHP Project structure with Composer</title>
+      <link>https://sudeepacharya.com.np/blog/2020/01/04/how-to-set-up-basic-php-project-structure-with-composer/</link>
+      <pubDate>Sat, 04 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>https://sudeepacharya.com.np/blog/2020/01/04/how-to-set-up-basic-php-project-structure-with-composer/</guid>
+      <description>Most of the time beginners learning PHP are unaware of Composer, if you are among them, Composer is a dependency management tool for PHP.&#xA;Let&amp;rsquo;s take a simple example, rather than using include command in each of the PHP file, composer makes it easy by specifying that file as a dependency. Another example would be if you use some library then it makes easier to use and update it with a single command.</description>
+    </item>
+    <item>
+      <title>What is Philosophy?</title>
+      <link>https://sudeepacharya.com.np/blog/2019/12/14/what-is-philosophy/</link>
+      <pubDate>Sun, 15 Dec 2019 00:00:00 +0000</pubDate>
+      <guid>https://sudeepacharya.com.np/blog/2019/12/14/what-is-philosophy/</guid>
+      <description>Philosophy is Working out the right way to think about things. (Rather than best) It is a way to stepping back and working right way of thinking about things. It is an activity. Philosophy is learning specific tools and techniques to reason, argue and express yourself. All subjects, not just philosophy, try and think about things in right way. For examples:&#xA;While doing physics, we investigate physical reality construction experiments, measuring and formulating theories.</description>
+    </item>
+    <item>
+      <title>Graduated from Charles Sturt University - Master of Information Technology</title>
+      <link>https://sudeepacharya.com.np/blog/2019/12/14/graduated-from-charles-sturt-university/</link>
+      <pubDate>Sat, 14 Dec 2019 00:00:00 +0000</pubDate>
+      <guid>https://sudeepacharya.com.np/blog/2019/12/14/graduated-from-charles-sturt-university/</guid>
+      <description>Event Information, Location - Rosehill Gardens, NSW, Australia, Time: 10th of December, 2019 at 2pm&#xA;I am very happy to announce that i have now graduated in Master of Information Technology from Charles Sturt University Australia after i had graduated in Bachelor of Software Engineering in 2017.&#xA;Charles Sturt University Graduation Ceremony, 10th of December, 2019&#xA;We have also captured the video of hat throwing.&#xA;See Video on YouTube&#xA;About Graduation Day: I woke up, shaved, had my hair cut and had a bath.</description>
+    </item>
+    <item>
+      <title>Why the rich are getting richer - Robert Kiyosaki</title>
+      <link>https://sudeepacharya.com.np/blog/2019/01/25/rich-getting-richer/</link>
+      <pubDate>Fri, 25 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>https://sudeepacharya.com.np/blog/2019/01/25/rich-getting-richer/</guid>
+      <description>This is a quick note from the lesson of this book for my further reference.&#xA;&amp;ldquo;The issue of wealth and income inequality is the great moral issue of our time.&amp;rdquo; Go to School, get a job, save money, get out of debt and invest for the long-term in the stock market is obsolete advise&amp;quot;. because &amp;ldquo;Viruses can erase customer accounts without trace. Used offensively, these 3.viruses can create and uncontrolled flood of sell orders on widely held stocks such as Apple or Amazon.</description>
+    </item>
+    <item>
+      <title>Learn Kotlin (Part 5) - Class</title>
+      <link>https://sudeepacharya.com.np/blog/2019/01/09/learn-kotlin-part-5-class/</link>
+      <pubDate>Wed, 09 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>https://sudeepacharya.com.np/blog/2019/01/09/learn-kotlin-part-5-class/</guid>
+      <description>Post Series:&#xA;Part 1: Hello world and Basic Data Types&#xA;Part 2: Array, Collection and Range&#xA;Part 3: Control Flow&#xA;Part 4: Function&#xA;Part 5: Class&#xA;Although Kotlin is statically typed language, it supports object-oriented programming like Java. Before explaining further let us dive into the basic syntax of the Kotlin class.&#xA;class Vehicle { // class definition // class body } So, defining a basic class is as simple as this and similar to Java.</description>
+    </item>
+    <item>
+      <title>Are you ready for 2019?</title>
+      <link>https://sudeepacharya.com.np/blog/2018/12/31/ready-for-2019/</link>
+      <pubDate>Mon, 31 Dec 2018 00:00:00 +0000</pubDate>
+      <guid>https://sudeepacharya.com.np/blog/2018/12/31/ready-for-2019/</guid>
+      <description>A young girl getting pregnant for the first time, doctor asks her &amp;ldquo;Are you ready to be a mother?&amp;rdquo;, she touch her belly and stands silent.&#xA;A young teenager soldier going to the war for the first time, sergant asks him &amp;ldquo;Are you ready to die for the country?&amp;rdquo; looking at his mother&amp;rsquo;s eye, he stands still.&#xA;A last bencher student who have not touched the book even one time having final exams tomorrow, teacher knowingly asks him &amp;ldquo;Are you ready for the exams tomorrow?</description>
+    </item>
+    <item>
+      <title>Happy New Year 2019!</title>
+      <link>https://sudeepacharya.com.np/blog/2018/12/31/happy-new-year-2019/</link>
+      <pubDate>Mon, 31 Dec 2018 00:00:00 +0000</pubDate>
+      <guid>https://sudeepacharya.com.np/blog/2018/12/31/happy-new-year-2019/</guid>
+      <description>Hello guys!&#xA;It&amp;rsquo;s been so long that i haven&amp;rsquo;t posted in this blog. I have posted just one post in this year 2018. In this year a lot of good things happened to me.&#xA;I came to Australia in February 15, 2018 for studying Masters in Information Technology at Charles Sturt University in Sydney. At the time of writing this post, i just completed my two semesters and i am now on summer break which ends in March 4, 2019.</description>
+    </item>
+    <item>
+      <title>Learn Kotlin (Part 4) - Function</title>
+      <link>https://sudeepacharya.com.np/blog/2018/12/25/learn-kotlin-part-4-function/</link>
+      <pubDate>Tue, 25 Dec 2018 00:00:00 +0000</pubDate>
+      <guid>https://sudeepacharya.com.np/blog/2018/12/25/learn-kotlin-part-4-function/</guid>
+      <description>Post Series: Part 1: Hello world and Basic Data Types&#xA;Part 2: Array, Collection and Range&#xA;Part 3: Control Flow&#xA;Part 4: Function&#xA;Part 5: Class&#xA;Merry Christmas Guys! The year 2018 is about to end. This have been a great year. Happy New Year 2019, May your new year be filled with Joy and Happiness. This will probably be the last post for this year 2018. Hope to see you all in the next year!</description>
+    </item>
+    <item>
+      <title>Learn Kotlin (Part 3) - Control Flow</title>
+      <link>https://sudeepacharya.com.np/blog/2018/12/17/learn-kotlin-part-3-control-flow/</link>
+      <pubDate>Mon, 17 Dec 2018 00:00:00 +0000</pubDate>
+      <guid>https://sudeepacharya.com.np/blog/2018/12/17/learn-kotlin-part-3-control-flow/</guid>
+      <description>Post Series:&#xA;Part 1: Hello world and Basic Data Types&#xA;Part 2: Array, Collection and Range&#xA;Part 3: Control Flow&#xA;Part 4: Function&#xA;Part 5: Class&#xA;In this post we are going to learn about the control flow in Kotlin. Let us learn about how to make a decision, how to perform a task multiple times by iterating and how to get out of the loop, how to continue to next iteration.</description>
+    </item>
+    <item>
+      <title>Learn Kotlin (Part 2) - Array, Collection and Range</title>
+      <link>https://sudeepacharya.com.np/blog/2018/12/10/learn-kotlin-part-2-array-collection-and-range/</link>
+      <pubDate>Mon, 10 Dec 2018 00:00:00 +0000</pubDate>
+      <guid>https://sudeepacharya.com.np/blog/2018/12/10/learn-kotlin-part-2-array-collection-and-range/</guid>
+      <description>Post Series:&#xA;Part 1: Hello world and Basic Data Types&#xA;Part 2: Array, Collection and Range&#xA;Part 3: Control Flow&#xA;Part 4: Function&#xA;Part 5: Class&#xA;In this post we will discuss about the Array, Collection and Range in Kotlin.&#xA;Array In Kotlin, we can create array using two different ways. First one is by using arrayOf() function and next one is by using Array() constructor.&#xA;Using arrayOf() function val accountInfo = arrayOf(&amp;#34;Sudeep&amp;#34;, 34000) The accountInfo array is of type Array&amp;lt;Any&amp;gt;.</description>
+    </item>
+    <item>
+      <title>Learn Kotlin (Part 1) - Hello world and Basic Data Types</title>
+      <link>https://sudeepacharya.com.np/blog/2018/12/03/learn-kotlin-part-1-hello-world-and-basic-data-types/</link>
+      <pubDate>Mon, 03 Dec 2018 00:00:00 +0000</pubDate>
+      <guid>https://sudeepacharya.com.np/blog/2018/12/03/learn-kotlin-part-1-hello-world-and-basic-data-types/</guid>
+      <description>Post Series:&#xA;Part 1: Hello world and Basic Data Types&#xA;Part 2: Array, Collection and Range&#xA;Part 3: Control Flow&#xA;Part 4: Function&#xA;Part 5: Class&#xA;Since Kotlin is already a official programming language for Android Apps development, I have been learning Kotlin lately. In this post, i will take you through basic hello world skeleton program to data types, variables in Kotlin.&#xA;Hello World Program for Kotlin fun main(args: Array) { println(&amp;#34;Hello World!</description>
+    </item>
+    <item>
+      <title>When the wind blows through my window!</title>
+      <link>https://sudeepacharya.com.np/blog/2018/09/01/when-wind-blows-through-window/</link>
+      <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
+      <guid>https://sudeepacharya.com.np/blog/2018/09/01/when-wind-blows-through-window/</guid>
+      <description>Today the wind blows in my room through my window making sound with my curtains forced me to write something on itself.&#xA;चन्द्रको उज्यालोको सितलता बुझ्न सके&#xA;उढेर चन्द्रमा छुन किन पर्थ्यो र?&#xA;हावाको झोकाको इस्पर्स बुझ्न सके&#xA;बियोग को पिडामा तिमिलाइ सम्झी रातभर छटपत्याउन किन पर्थ्यो र?&#xA;गज्रिदै बगेको खोलाको चट्टानको र चत्याङ्ग पर्दा को पहाडको मौनता बुझ्न सके&#xA;शान्ति खोज्दै एकान्तमा बस्न किन पर्थ्यो र?</description>
+    </item>
+    <item>
+      <title>Recursive directory traverse and append .png file to list</title>
+      <link>https://sudeepacharya.com.np/blog/2017/12/04/recursive-directory-traverse-and-append-png-file-to-list/</link>
+      <pubDate>Mon, 04 Dec 2017 00:00:00 +0000</pubDate>
+      <guid>https://sudeepacharya.com.np/blog/2017/12/04/recursive-directory-traverse-and-append-png-file-to-list/</guid>
+      <description>Python Developer&amp;rsquo;s Meetup Nepal #13 Question Solution&#xA;Q: Write a python script that recursively walks all sub-directories and searches all files with extension *.png or *.PNG and append them to the list.&#xA;Solution:&#xA;import os # list variable to store the .png and .PNG file png_file_list = [] # Recursive function to traverse all the sub-dirctory and check for png files def traverse_directory(dir_path): for child in os.listdir(dir_path): path = os.path.join(dir_path, child) if os.</description>
+    </item>
+    <item>
+      <title>म, अद्यात्म र मेरो समाज</title>
+      <link>https://sudeepacharya.com.np/blog/2017/12/04/me-society-sprituality/</link>
+      <pubDate>Mon, 04 Dec 2017 00:00:00 +0000</pubDate>
+      <guid>https://sudeepacharya.com.np/blog/2017/12/04/me-society-sprituality/</guid>
+      <description>ब्याचलर भ्याएको लगभग १ वर्ष बितिसकेको थियो, म केहि काम परेर फेरी आफुले पढेको कलेज गएको थिए| म तेहा पुगेपछि आफुलाई पडाएको गुरु देखे र नमस्कार गरे| अनि उहाले के गर्दै छौ, के कस्तो छ भन्नु भयो| कुरा चल्दै गयो र पछि उहाले मलाई सोध्नुभयो बाबु तिम्लाई के को दुखः छ र? मैले उहालाई सोधे &amp;ldquo;किन र सर? तेस्तो त केहि छैन&amp;rdquo;|&#xA;यो प्रश्न मलाई चिन्तित देखेर अथवा कुनै कारण ले सोधिएको थिएन| म एस प्रश्नले खासै चकित पनि थिइन किनकि मैले अद्यात्म तिर लागेर फसेबूकमा ध्यान गरेको, तेस्तै कार्यक्रममा सहभागी भएको र अद्यात्म सम्बन्धित पोस्टहरु गरेको देखेर मलाई हिजो आज धेरै ले एस्तो खाल्को कुरा भन्नु हुन्न्छ, मलाई बडो अचम्म लाग्छ|</description>
+    </item>
+    <item>
+      <title>रत्न पार्कमा औठी बेच्न बसेका ति मानिस</title>
+      <link>https://sudeepacharya.com.np/blog/2017/11/27/man-who-ring-at-ratna-park/</link>
+      <pubDate>Mon, 27 Nov 2017 00:00:00 +0000</pubDate>
+      <guid>https://sudeepacharya.com.np/blog/2017/11/27/man-who-ring-at-ratna-park/</guid>
+      <description>(सेतोपाती मा प्रकाशित) प्रकाशित मिति: मङ्गलबार, मंसिर १२, २०७४ ०९:२१:१२&#xA;मंसिर महिनाको ८ गतेको दिन थियो, दिन भर ल्यापटपमा काम गरे पछि बेलुका ५ बजे तिर सरिर तन्काउन पर्यो भनेर म होस्टेल बाट निस्किए| म पुतलीसडक बाट बागबजार हुदै घण्टा घर भएर जादै थिए, बाटोमा माछापुछ्रे बैंकको ATM देखे | तेस पछि मैले होस्टेलमा तिर्ने पैसा निकाल्ने निर्णय गरे|&#xA;त्यो बेलामा होस्टेल मा महिनाको ११ हजार रुपैया तिर्नु पर्ने थियो| आम्दानी खासै न भएकोले गर्दा यो धेरै ठुलो रकम थियो, तेस माथिपनि आफैले दुख गरेर कमाएको पैसा ATM बाट स्वात्तै घटेको देख्दा मन चसक्क हुदो रहेछ|</description>
+    </item>
+    <item>
+      <title>Credit card Verification Haskell Code</title>
+      <link>https://sudeepacharya.com.np/blog/2017/11/25/credit-card-verification-haskell-code/</link>
+      <pubDate>Sat, 25 Nov 2017 00:00:00 +0000</pubDate>
+      <guid>https://sudeepacharya.com.np/blog/2017/11/25/credit-card-verification-haskell-code/</guid>
+      <description>{- Convert positive integer to list of digit -} {- Input : 12345 o/p : [1, 2, 3, 4, 5 -} toList :: Integer -&amp;gt; [Integer] toList 0 = [] toList x = toList (x `div` 10) ++ [x `mod` 10] {- Reverse the integer after converting it to list -} -- toDigitsRev :: Integer -&amp;gt; [Integer] toListReverse :: Integer -&amp;gt; [Integer] toListReverse xs = (reverse . toList) xs {- Double every second number -} doubleSecondEach :: [Integer] -&amp;gt; [Integer] doubleSecondEach [] = [] doubleSecondEach (x:[]) = [x] doubleSecondEach (x:y:xs) = x : (2*y) : doubleSecondEach xs {- Sum the digit in the number we are sure there is one digit number or two digit number -} sum&amp;#39; :: Integer -&amp;gt; Integer sum&amp;#39; x = (x `mod` 10) + (x `div` 10) {- sum all the element in list -} {- when a element is [13,5,6] we have to add like this: 1 + 3 + 5 + 6 -} sumDigits :: [Integer] -&amp;gt; Integer sumDigits [] = 0 sumDigits [x] = sum&amp;#39; x sumDigits (x:xs) = sum&amp;#39; x + sumDigits xs {- Validate the credit card number -} validate :: Integer -&amp;gt; Bool validate x = if (sumDigits $ doubleSecondEach $ toListReverse x ) `mod` 10 == 0 then True else False </description>
+    </item>
+    <item>
+      <title>It all requires one step, let us always take it</title>
+      <link>https://sudeepacharya.com.np/blog/2017/11/15/always-take-that-step/</link>
+      <pubDate>Wed, 15 Nov 2017 00:00:00 +0000</pubDate>
+      <guid>https://sudeepacharya.com.np/blog/2017/11/15/always-take-that-step/</guid>
+      <description>The time flows like a river, it is certain that it won&amp;rsquo;t wait and we can not travel back in time. The yesterday is history so we can not change it. In spite of not being able to change the history, we should analyze it and learn from it piece by piece. Today, me running at the age of 25 i feel that i have missed many opportunities because of not taking a simple step that would require for the great beginning.</description>
+    </item>
+    <item>
+      <title>Counting your breath to deal with Insomnia</title>
+      <link>https://sudeepacharya.com.np/blog/2017/11/14/counting-breath-to-deal-with-insomnia/</link>
+      <pubDate>Tue, 14 Nov 2017 00:00:00 +0000</pubDate>
+      <guid>https://sudeepacharya.com.np/blog/2017/11/14/counting-breath-to-deal-with-insomnia/</guid>
+      <description>It is certain that you usually do have trouble going into sleep after you lie down on bed. This is true for a lots of people these days, may he or she be student, housewife, lecturer, job holder and most of all software developer like me. These days i heard from a lots of people that they are having trouble sleeping even after they lie down in the bed for a long time, that is even couple of hour some times.</description>
+    </item>
+    <item>
+      <title>The importance of writing in my Life</title>
+      <link>https://sudeepacharya.com.np/blog/2017/11/09/importance-of-writing/</link>
+      <pubDate>Thu, 09 Nov 2017 00:00:00 +0000</pubDate>
+      <guid>https://sudeepacharya.com.np/blog/2017/11/09/importance-of-writing/</guid>
+      <description>I have always been passionate about writing and it is the only way by which i learn quickly. The time when i learn things by making a notes, i understand the matter sooner. In spite of this, my writing is not so good however, i always want to improve my writing.&#xA;I remember when i started learning by writing, it was some class of around 4th grade but i am not sure.</description>
+    </item>
+    <item>
+      <title>Fixing Google Play Games plugin and Unity integration error - Android</title>
+      <link>https://sudeepacharya.com.np/blog/2017/11/08/fixing-google-play-games-plugin-and-unity-integration-error-android/</link>
+      <pubDate>Wed, 08 Nov 2017 00:00:00 +0000</pubDate>
+      <guid>https://sudeepacharya.com.np/blog/2017/11/08/fixing-google-play-games-plugin-and-unity-integration-error-android/</guid>
+      <description>Recently i was having multiple issues with google play games plugin integration in Unity. It was not working at all. After spending the couple of hours in it, i was able to fix the issue. This is a note to myself as well for others who are having trouble with the integration.&#xA;I was using Admob plugin along with Google Play Games plugin. In the process of fixing the error i got different kinds of error.</description>
+    </item>
+    <item>
+      <title>Starting Animation from random time frame Unity</title>
+      <link>https://sudeepacharya.com.np/blog/2017/07/11/starting-animation-at-different-time-unity/</link>
+      <pubDate>Tue, 11 Jul 2017 00:00:00 +0000</pubDate>
+      <guid>https://sudeepacharya.com.np/blog/2017/07/11/starting-animation-at-different-time-unity/</guid>
+      <description>Code snippet to start the animation at different time. Useful when there are many same animation running on screen and you want to make them random.&#xA;Animator anim = GetComponent&amp;lt;Animator&amp;gt; (); AnimatorStateInfo state = anim.GetCurrentAnimatorStateInfo (0); anim.Play (state.fullPathHash, -1, Random.Range(0f,1f)); You can add this code in Start or Awake function and add to the GameObject with the Animator component.</description>
+    </item>
+    <item>
+      <title>C# code to shuffle Array</title>
+      <link>https://sudeepacharya.com.np/blog/2017/07/09/c-sharp-code-to-shuffle-array/</link>
+      <pubDate>Sun, 09 Jul 2017 00:00:00 +0000</pubDate>
+      <guid>https://sudeepacharya.com.np/blog/2017/07/09/c-sharp-code-to-shuffle-array/</guid>
+      <description>private T[] ShuffleArray&amp;lt;T&amp;gt;(T[] array) { System.Random r = new System.Random (); for(int i = array.Length; i &amp;gt; 0; i--) { int j = r.Next (i); T k = array [j]; array [j] = array [i - 1]; array [i - 1] = k; } return array; } Example:&#xA;Int Array int[] intArray = new int[] {1,2,3,4}; intArray = ShuffleArray(intArray); Float Array float[] floatArray = new float[] {1.0f,2.0f,3.0f,4.0f}; floatArray = ShuffleArray(floatArray); </description>
+    </item>
+    <item>
+      <title>How to find the game art for your Game Project</title>
+      <link>https://sudeepacharya.com.np/blog/2017/05/21/how-to-find-the-game-art-for-your-game-project/</link>
+      <pubDate>Sun, 21 May 2017 00:00:00 +0000</pubDate>
+      <guid>https://sudeepacharya.com.np/blog/2017/05/21/how-to-find-the-game-art-for-your-game-project/</guid>
+      <description>I am currently working on a game development, i do programming and in the game if i require graphics then i hire designer. I was curious about how other indie developers like me manage the game assets. I asked in a Facebook group about this topic. Hopefully i got reply from Dozens of people. In this post i will share how they manage the game assets being a Game Programmer.</description>
+    </item>
+    <item>
+      <title>Observer in Local Election Nepal 2074</title>
+      <link>https://sudeepacharya.com.np/blog/2017/05/15/local-election-nepal-2074/</link>
+      <pubDate>Mon, 15 May 2017 00:00:00 +0000</pubDate>
+      <guid>https://sudeepacharya.com.np/blog/2017/05/15/local-election-nepal-2074/</guid>
+      <description>I got a chance to Volunteer as a Observer in local election which was held in 31 Baisakh 2074 (14th of May 2017) from Forum for protection of Human Rights (FOPHUR/ मानब अधिकार संरक्षक मंच under Collective Campaign For Peace (COCAP).&#xA;I almost went for observation in 15 different Election Center in Pokhara Lekhnath Metropolitan, Kaski. The overall Election was peaceful in the places i observed.&#xA;In some of the Election center i got the permission for taking photographs.</description>
+    </item>
+    <item>
+      <title>10 days of Vipassana Meditation at Dhamma Pokhara - Before you go</title>
+      <link>https://sudeepacharya.com.np/blog/2017/04/20/vipassana-meditation-dhamma-pokhara/</link>
+      <pubDate>Sat, 22 Apr 2017 00:00:00 +0000</pubDate>
+      <guid>https://sudeepacharya.com.np/blog/2017/04/20/vipassana-meditation-dhamma-pokhara/</guid>
+      <description>So finally you are here because you&amp;rsquo;ve made a decision to take a Vipassana Meditation course at Dhamma Pokhara. That is great, you&amp;rsquo;ve made one of the best decision in your life. I have taken it from 1st of the April 2017 to 12th by A.T Khadga Karki and it was great, lifetime experience for me. In this post i will share more about Dhamma Pokhara so that it will be easier for you to plan before you go there.</description>
+    </item>
+    <item>
+      <title>Invisible Transparent Button in Unity3D</title>
+      <link>https://sudeepacharya.com.np/blog/2017/03/30/invisible-transparent-button-unity3d/</link>
+      <pubDate>Thu, 30 Mar 2017 00:00:00 +0000</pubDate>
+      <guid>https://sudeepacharya.com.np/blog/2017/03/30/invisible-transparent-button-unity3d/</guid>
+      <description>Today i was working on a project where i required to add the invisible button. I tried different methods like making button transparent, adding the image in the button. But then i came to know about this solution. I think that this is probably the best solution.&#xA;Steps to add invisible button in Unity3D 1. Add the Button. (UI -&amp;gt; Button)&#xA;2. Edit the height and width of the button according to your fit.</description>
+    </item>
+    <item>
+      <title>Finally Graduated, I am an Engineer now</title>
+      <link>https://sudeepacharya.com.np/blog/2017/03/01/finally-graduated-i-am-an-engineer-now/</link>
+      <pubDate>Wed, 01 Mar 2017 00:00:00 +0000</pubDate>
+      <guid>https://sudeepacharya.com.np/blog/2017/03/01/finally-graduated-i-am-an-engineer-now/</guid>
+      <description>Hello all,&#xA;I have completed the Bachelor of Engineering in Software Engineering from Pokhara University affiliated Gandaki College of Engineering and Science (GCES), Lamachaur, Pokhara.&#xA;Recently on February 25th 2017, I had the convocation ceremony. The summary of this event can be found on my next blog. &amp;ldquo;Convocation Ceremony - Pokhara University&amp;rdquo;.&#xA;I would like to thank everyone for helping me through out this journey. Especially my Father, Mother and my brother.</description>
+    </item>
+    <item>
+      <title>Convocation Ceremony - Pokhara University 2017</title>
+      <link>https://sudeepacharya.com.np/blog/2017/02/26/convocation-ceremony-pokhara-university-2017/</link>
+      <pubDate>Sun, 26 Feb 2017 00:00:00 +0000</pubDate>
+      <guid>https://sudeepacharya.com.np/blog/2017/02/26/convocation-ceremony-pokhara-university-2017/</guid>
+      <description>I am the graduated Student of Gandaki College of Engineering and Science of Batch 2012 and the faculty is Bachelor of Engineering in Software Engineering.&#xA;Last year in October, 2016, the final Semester examination was completed. And then the result arrived after about 3 months. The 14th convocation ceremony of Pokhara University was held in 20th of February 2017. The convocation was a great memory and experience for me since there was no such day in the past when i did my SLC and Plus two(High school).</description>
+    </item>
+    <item>
+      <title>Hiking to Pumdikot View Tower</title>
+      <link>https://sudeepacharya.com.np/blog/2017/03/23/hiking-to-pumdikot-view-tower/</link>
+      <pubDate>Sun, 26 Feb 2017 00:00:00 +0000</pubDate>
+      <guid>https://sudeepacharya.com.np/blog/2017/03/23/hiking-to-pumdikot-view-tower/</guid>
+      <description>Today [23 March 2017 12:00-18:00], Me and my friend Srawan K.C with this dog went to hiking to Pumdikot View Tower. I will cover about our hiking in this post.&#xA;Our route: Jarebar -&amp;gt; Damside -&amp;gt; World Peace Pagoda(Shanti Stupa) -&amp;gt; Pumdikot View Tower&#xA;Yesterday night i sent a message to Srawan to go for a hiking. He then replied me today at 11AM with a plan to hike to Pumdikot.</description>
+    </item>
+    <item>
+      <title>Hiking to Kaskikot Durbar/Palace</title>
+      <link>https://sudeepacharya.com.np/blog/2017/02/08/hiking-to-kaskikot-durbar/</link>
+      <pubDate>Wed, 08 Feb 2017 00:00:00 +0000</pubDate>
+      <guid>https://sudeepacharya.com.np/blog/2017/02/08/hiking-to-kaskikot-durbar/</guid>
+      <description>On February 5, 2017 me including my friends Sachin Giri and Prakash Ghimire went to hiking to the Kaskikot. The place is awesome.&#xA;Our route: Malepatan -&amp;gt; Lovely hill -&amp;gt; Sarangkot -&amp;gt; Kaskikot -&amp;gt; Kaskikot Palace&#xA;We were couple of friends who have recently completed our Bachelor. We realized that this is one of the golden age to travel and hike. Since we are from Pokhara, we decided to hike within or near the valley.</description>
+    </item>
+    <item>
+      <title>Convert the list of images to PDF file and add watermark using python</title>
+      <link>https://sudeepacharya.com.np/blog/2016/11/24/convert-images-to-pdf-add-watermark-python/</link>
+      <pubDate>Thu, 24 Nov 2016 00:00:00 +0000</pubDate>
+      <guid>https://sudeepacharya.com.np/blog/2016/11/24/convert-images-to-pdf-add-watermark-python/</guid>
+      <description>Converting list of images to PDF in Ubuntu Let&amp;rsquo;s use ImageMagick tool. Normally it is installed in Ubuntu. If you need to install it then run:&#xA;sudo apt-get install imagemagick Then you can convert it by using:&#xA;convert image_1.jpg image_2.jpg output.pdf You can specify any numbers of images but the last argument must be a name of your PDF file along with extension (.pdf).&#xA;Adding the watermark in the PDF file We use Python script for adding watermark to each page in the PDF file.</description>
+    </item>
+    <item>
+      <title>के रहेछ जीवन?</title>
+      <link>https://sudeepacharya.com.np/blog/2016/02/03/what-is-life/</link>
+      <pubDate>Wed, 03 Feb 2016 00:00:00 +0000</pubDate>
+      <guid>https://sudeepacharya.com.np/blog/2016/02/03/what-is-life/</guid>
+      <description>जीवन जुन सोचेको थिए त्यो रहेनछ | जीवन त&amp;hellip;&amp;hellip;.&#xA;यौटा ओरालोको यात्रा रहेछ, जहाँ नचाहिएको, काम लाग्छ कि लाग्दैन भन्ने था नभएको औता अति गरुङ्गो भारि बोकेर ओरालोको यात्रा लग्नु पर्ने |&#xA;बीचमा भारि बिसायो भने भारि अरुले लैजन्चाकी भन्नु पर्ने र एक ठाउमा पनि नबिसाई फेदी मा पुगेर भारि बिसाएर कल कल खोलाको पनि खाने आस मा हिड्नु पर्ने&#xA;बीच मा पुरै ओरालाई ओरालो उकालो भन्ने थाचैन ओरालोमा लौरी समाई झरौ भने पनि ओरि परि सिस्नोको रुख मात्र</description>
+    </item>
+    <item>
+      <title>तपाई कहाँ सम्म हो दाई ?</title>
+      <link>https://sudeepacharya.com.np/blog/2015/12/22/where-are-you-upto-brother/</link>
+      <pubDate>Tue, 22 Dec 2015 00:00:00 +0000</pubDate>
+      <guid>https://sudeepacharya.com.np/blog/2015/12/22/where-are-you-upto-brother/</guid>
+      <description>बेलुकी पख तेही साझाको ६ बजेको थियो, जाडोको समय तेही माथि झन् बर्सकै छोटो दिन को भोलि पल्ट | म आफ्नो काम सकाएर एकछिन बाहिर तिर डुल्न जाने सोच बनाए र घर बाट निस्किए | घर बाट केहि मीटर हिडे पछी आइसकिरिम पसल आयो र तेहा पुगे पछी सोचे कि &amp;ldquo;सचिन लाई नभेटेको धेरै दिन पो भयेछ&amp;rdquo;, अब आज तेतई जान पर्यो |&#xA;यो सोचेर म बिस्तारै तल तिर मोडिए, ३/४ ओटा दोकान तल आएपछि बिस्तारै यौटा चिनेको अनुहार बिस्तारै आँखामा पर्न थाल्यो, केहि बेरमै भान भयो कि तिनी राजु दाइ पो रैचन | &amp;ldquo;कता गएर आएका हौ दाइ&amp;rdquo; राजु दाइले पनि मलाई बाटोमा तेस्तो चिसो अवस्थामा भेटेकोमा अब हिजोको झैँ दबाउनु पर्छ भन्ने सोचेका रैचन, उनले भने &amp;ldquo;अन्द्रोइडको क्लास पढाएर आएको नि&amp;rdquo;|</description>
+    </item>
+    <item>
+      <title>नेपालीको आत्मनिर्भरता छेपाराको उखान</title>
+      <link>https://sudeepacharya.com.np/blog/2015/12/22/self-dependent-nepal/</link>
+      <pubDate>Tue, 22 Dec 2015 00:00:00 +0000</pubDate>
+      <guid>https://sudeepacharya.com.np/blog/2015/12/22/self-dependent-nepal/</guid>
+      <description>अहिले भारतले गरेको नाकाबन्दीको कारणले गर्दा धेरै कुराहरू भएका छन् | कतै देश भक्ति उम्लिएको छ भने कतै भारतलाई गाली गलैजाहरू गरेको पनि सुन्न पाइन्छ| अर्को यौटा धेरै सुनिएको कुरा भनेको अब आत्मनिर्भर बन्नुपर्छ भन्ने हो| यो आजकल धेरै सुनिन्छ| पौष माघको ठण्डीमा यौटा छेपाराले दिउसो घाम ताप्दा राति जाडो भएर थुर - थुर कामेको पनि बिर्सन्छ |&#xA;जब बेलुका हुदै जान्छ तब उसलाई जाडो हुदै जान्छ, राति उसलाई धेरै जाडो हुन्छ, उसले बेलुका ठुलो प्रण गर्छ कि भोलि बिहान हुने बित्तिकै बिहानैबाट दाउरा खोजेर भोलि त राती आगो बालेर ताप्छु | तर जब बिहान हुन्छ उ बिहानी पखको घाममा लिप्त हुन्छ अनि सबै बेलुकाको पीर बेथा भुली जान्छ | येसरी छेपाराको उखान हामी नेपालीले सानै देखि सुन्दै आएका हौ |</description>
+    </item>
+    <item>
+      <title>&#39;Constitution of Nepal&#39; Android App</title>
+      <link>https://sudeepacharya.com.np/blog/2015/09/28/constitution-of-nepal-android-app/</link>
+      <pubDate>Mon, 28 Sep 2015 00:00:00 +0000</pubDate>
+      <guid>https://sudeepacharya.com.np/blog/2015/09/28/constitution-of-nepal-android-app/</guid>
+      <description>It&amp;rsquo;s been so great to feel that the Constitution of Nepal has finally arrived. Congratulations to all the Nepalese. May this Constitution brings peace, prosperity and rapid development in the country is the wish of all the Nepalese.&#xA;On this occasion with the intention of easy distribution of Constitution and making available of Constitution in the hand of all the people, I have developed an Android app to read the Constitution.</description>
+    </item>
+    <item>
+      <title>Understanding Decorators in Python</title>
+      <link>https://sudeepacharya.com.np/blog/2015/04/29/decorators-in-python/</link>
+      <pubDate>Wed, 29 Apr 2015 00:00:00 +0000</pubDate>
+      <guid>https://sudeepacharya.com.np/blog/2015/04/29/decorators-in-python/</guid>
+      <description>While learning Python in the beginning, i skipped the portion of the chapters on Decorators. After i worked on Flask and Django, I was introduced with the Decorators.&#xA;Let us consider a simple flask app example:&#xA;@app.route(&amp;#34;/&amp;#34;) def hello(): return &amp;#34;Hello World!&amp;#34; In this code the line with @ symbol is decorators. Decorators is one of the important feature in Python that you must learn to master it. It is not that hard, so let us learn it.</description>
+    </item>
+    <item>
+      <title>How to delete the commit history in github</title>
+      <link>https://sudeepacharya.com.np/blog/2015/01/19/delete-all-commit-history-github/</link>
+      <pubDate>Mon, 19 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>https://sudeepacharya.com.np/blog/2015/01/19/delete-all-commit-history-github/</guid>
+      <description>Sometimes you may find deleting the commit history of your github project repository useful. You can easily delete the commit history by following the procedure below.&#xA;It is always useful to keep the backup of your repository in your computer before removing all the commit history.&#xA;Let us start by cloning a github project. I am cloning &amp;lsquo;myproject&amp;rsquo;, you clone yours.&#xA;git clone https://github.com/acsudeep/myproject.git Since all the commit history are in the &amp;ldquo;.</description>
+    </item>
+    <item>
+      <title>URL Shortener with Django (Part 5) - Working with Templates and finishing up</title>
+      <link>https://sudeepacharya.com.np/blog/2015/01/16/urlshortener-with-django-working-with-templates/</link>
+      <pubDate>Fri, 16 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>https://sudeepacharya.com.np/blog/2015/01/16/urlshortener-with-django-working-with-templates/</guid>
+      <description>Create folder &amp;rsquo;templates&amp;rsquo; inside &amp;lsquo;shortenersite&amp;rsquo; and then inside &amp;rsquo;templates&amp;rsquo; create folder &amp;lsquo;shortenersite&amp;rsquo;.&#xA;Inside &amp;ldquo;shortenersite/templates/shortenersite/&amp;rdquo; create &amp;lsquo;base.html&amp;rsquo; and &amp;lsquo;index.html&amp;rsquo;. So now paste the following to them.&#xA;[shortenersite/templates/shortenersite/base.html]&#xA;{% raw %} &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;title&amp;gt;{% block title %}Welcome to mysite{% endblock %}&amp;lt;/title&amp;gt; {% load staticfiles %} &amp;lt;link rel=&amp;#34;stylesheet&amp;#34; href=&amp;#34;https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css&amp;#34;&amp;gt; &amp;lt;link rel=&amp;#34;stylesheet&amp;#34; type=&amp;#34;text/css&amp;#34; href=&amp;#34;{% static &amp;#39;shortenersite/css/custom.css&amp;#39; %}&amp;#34; /&amp;gt; &amp;lt;script src=&amp;#34;//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;meta name=&amp;#34;viewport&amp;#34; content=&amp;#34;width=device-width, initial-scale=1&amp;#34;&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;script type=&amp;#34;text/javascript&amp;#34;&amp;gt; $(function() { $(&amp;#39;#submitButton&amp;#39;).click(function() { $.ajax({ type: &amp;#34;POST&amp;#34;, url: &amp;#34;/makeshort/&amp;#34;, data: { &amp;#39;url&amp;#39; : $(&amp;#39;#url&amp;#39;).</description>
+    </item>
+    <item>
+      <title>URL Shortener with Django (Part 4) - Working with Urls and views</title>
+      <link>https://sudeepacharya.com.np/blog/2015/01/15/urlshortener-with-django-urls-and-views/</link>
+      <pubDate>Thu, 15 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>https://sudeepacharya.com.np/blog/2015/01/15/urlshortener-with-django-urls-and-views/</guid>
+      <description>Now we will be working with our actual URLs and Views of our site.&#xA;Open up your &amp;ldquo;urlshortener/urls.py&amp;rdquo; and add the following code to it:&#xA;[urlshortener/urls.py]&#xA;from django.conf.urls import patterns, include, url from django.contrib import admin urlpatterns = patterns(&amp;#39;&amp;#39;, url(r&amp;#39;^admin/&amp;#39;, include(admin.site.urls)), # if the URL pattern match /admin/ then open up admin panel url(r&amp;#39;&amp;#39;, include(&amp;#39;shortenersite.urls&amp;#39;, namespace=&amp;#39;shortenersite&amp;#39;)), # if anything rather then /admin/ then it will look for shortenersite/urls ) Next, create a new file &amp;lsquo;urls.</description>
+    </item>
+    <item>
+      <title>URL Shortener with Django (Part 3) - Creating django app and model</title>
+      <link>https://sudeepacharya.com.np/blog/2015/01/14/urlshortener-with-django-creating-app-model/</link>
+      <pubDate>Wed, 14 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>https://sudeepacharya.com.np/blog/2015/01/14/urlshortener-with-django-creating-app-model/</guid>
+      <description>Now, Let us create a Django app. From your project&amp;rsquo;s root directory run this command&#xA;django-admin startapp shortenersite This will create a new folder &amp;lsquo;shortenersite&amp;rsquo; inside our root directory which is actually a Django app. You can see the following files and folder inside shortenersite:&#xA;migrations - Contains database migration file.&#xA;admin.py - We will use this file to configure Django Admin settings for this app.&#xA;models.py - Contains the model (generally model.</description>
+    </item>
+    <item>
+      <title>URL Shortener with Django (Part 2) - Creating a new django project</title>
+      <link>https://sudeepacharya.com.np/blog/2015/01/13/urlshortener-with-django-creating-new-django-project/</link>
+      <pubDate>Tue, 13 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>https://sudeepacharya.com.np/blog/2015/01/13/urlshortener-with-django-creating-new-django-project/</guid>
+      <description>Creating a Django project&#xA;django-admin startproject urlshortener Now you will see new directory &amp;ldquo;urlshortener&amp;rdquo;. Now our folder structure looks something like:&#xA;tutorial/ - py3env - urlshortener - urlshortener = __init__.py = settings.py = urls.py = wsgi.py = manage.py (Folder is denoted as - and file is denoted by =)&#xA;The folder &amp;ldquo;urlshortener&amp;rdquo; just inside &amp;ldquo;tutorial&amp;rdquo; is our root directory. And we will work inside this root directory from now on wards.</description>
+    </item>
+    <item>
+      <title>URL Shortener with Django (Part 1) - Creating virtual environment and installing Django</title>
+      <link>https://sudeepacharya.com.np/blog/2015/01/12/urlshortener-with-django-create-virtual-environment-install-django/</link>
+      <pubDate>Mon, 12 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>https://sudeepacharya.com.np/blog/2015/01/12/urlshortener-with-django-create-virtual-environment-install-django/</guid>
+      <description>I finally got the time to write a Django tutorial. In this tutorial we are building URL Shortener. If you are confused with what we are building then we are building something similar to (bit.ly) or (goo.gl).&#xA;We are building the app that will make a shorter URL of a longer URL. (Example) Normally the shorter URL will be localhost:8000/4hh5kr for www.facebook.com&#xA;I am using Django 1.7.1 with Python 3.3.2+. Don&amp;rsquo;t worry if you have different version of Django because we will set up our virtual environment and install latest version of Django.</description>
+    </item>
+    <item>
+      <title>Jhandi Munda (Langur Burja) - Mobile Game</title>
+      <link>https://sudeepacharya.com.np/blog/2014/09/28/jhandi-munda-langur-burja-mobile-game/</link>
+      <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
+      <guid>https://sudeepacharya.com.np/blog/2014/09/28/jhandi-munda-langur-burja-mobile-game/</guid>
+      <description>Jhandi Munda is a gambling game played mostly in South Asian countries including Nepal, India, Bangladesh and Myanmar. It is also known with a different name in different regions such as &amp;ldquo;Langur Burja&amp;rdquo;, &amp;ldquo;Jhanda Burja” and “Khor Khore” or “Khod khode”. I have developed a Mobile game based on this.&#xA;Jhandi Munda is mostly played during Hindu’s big festivals like Dussehra(Dashain) and Deepawali(Tihar). We have 6 dices with 6 faces in each die.</description>
+    </item>
+    <item>
+      <title>How to remove /public/ from URL in Laravel</title>
+      <link>https://sudeepacharya.com.np/blog/2014/05/17/how-to-remove-public-from-url-in-laravel/</link>
+      <pubDate>Sat, 17 May 2014 00:00:00 +0000</pubDate>
+      <guid>https://sudeepacharya.com.np/blog/2014/05/17/how-to-remove-public-from-url-in-laravel/</guid>
+      <description>By default in Laravel the URL to access your site is http://example.com/public/. It is not good to keep public in URL as it makes URL ugly and longer.&#xA;So, let&amp;rsquo;s talk about the solution to remove /public/ from the URL.&#xA;Method I : Using .htaccess Create a .htaccess file your Laravel root directory if it does not exists already. (Normally it is under your public_html folder)&#xA;And add the following code to it:</description>
+    </item>
+    <item>
+      <title>JavaScript code to display Multiplication table</title>
+      <link>https://sudeepacharya.com.np/blog/2014/02/02/javascript-code-multiplication-table/</link>
+      <pubDate>Sun, 02 Feb 2014 00:00:00 +0000</pubDate>
+      <guid>https://sudeepacharya.com.np/blog/2014/02/02/javascript-code-multiplication-table/</guid>
+      <description>Through JavaScript you can easily write the html code in html document using document.write(). Using document.write() and for loop it is easy to print the table of user input number.&#xA;First of all &amp;ldquo;prompt&amp;rdquo; box will appear and then this value will be parse to integer and the multiplication table is displayed.&#xA;The source code for JavaScript is as follows:&#xA;&amp;lt;script type=&amp;#39;text/javascript&amp;#39;&amp;gt; var num = prompt(&amp;#34;Enter Number&amp;#34;, &amp;#34;0&amp;#34;) //prompt user to enter the number var num = parseInt(num); //parse the num to number var i = 0; document.</description>
+    </item>
+    <item>
+      <title>Beautiful Social Widget - WordPress Plugin</title>
+      <link>https://sudeepacharya.com.np/blog/2014/01/16/beautiful-social-widget-wordpress-plugin/</link>
+      <pubDate>Thu, 16 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>https://sudeepacharya.com.np/blog/2014/01/16/beautiful-social-widget-wordpress-plugin/</guid>
+      <description>Beautiful Social Widget is WordPress plugins which is useful to link to your social media profiles. This plugins adds the widget in your blog. This plugin supports Facebook, Twitter, Google Plus, Linked In, Pinterest, YouTube, Instagram, Tumblr, Flickr, Rss and Email Me.&#xA;Download Beautiful Social Widget.&#xA;How to use this plugins ? Well this is very easy to use. First of all install this plugins and then activate it. Then navigate to your Widgets section which is in Appearance tab.</description>
+    </item>
+    <item>
+      <title>Clean Black WordPress Theme</title>
+      <link>https://sudeepacharya.com.np/blog/2014/01/16/clean-black-wordpress-theme/</link>
+      <pubDate>Thu, 16 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>https://sudeepacharya.com.np/blog/2014/01/16/clean-black-wordpress-theme/</guid>
+      <description>Clean Black is a free WordPress theme. It is black and responsive theme which is easy to customize.&#xA;Tags : Responsive, 2 column, Right sidebar, Black, Clean Design.&#xA;Download: Clean Black WordPress theme&#xA;Theme Update: (22, Jan 2014) From version 1.4 you can show either full post or summary in your Home page and Archive pages.&#xA;Customizing Theme Header You can show Blog title and description in the header also you can show the image in the header(size 960*150).</description>
+    </item>
+    <item>
+      <title>Recover deleted data from NTFS file system in Ubuntu</title>
+      <link>https://sudeepacharya.com.np/blog/2014/01/16/recover-deleted-files-from-ntfs-file-system-ubuntu/</link>
+      <pubDate>Thu, 16 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>https://sudeepacharya.com.np/blog/2014/01/16/recover-deleted-files-from-ntfs-file-system-ubuntu/</guid>
+      <description>I deleted the archive file which contains important images. And i thought it was gone forever, i did not had any backup too. But i was able to restore the deleted archive file using NtfsUndelete.&#xA;It was good that i had archived the photos so it was easy to restore. I was using Ubuntu and i deleted the files that was from another drive which is using Ntfs file system. So, i will explain how i was able to recover my files.</description>
+    </item>
+    <item>
+      <title>Sweet Tech WordPress Theme</title>
+      <link>https://sudeepacharya.com.np/blog/2014/01/16/sweet-tech-wordpress-theme/</link>
+      <pubDate>Thu, 16 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>https://sudeepacharya.com.np/blog/2014/01/16/sweet-tech-wordpress-theme/</guid>
+      <description>Sweet Tech is a free WordPress theme. It is clean, white, blue theme. It is extremely easy to customize and maintain your site.&#xA;Features: Two Column, Right Sidebar&#xA;Fully Responsive clean Design&#xA;Blue and white color theme&#xA;Fastest loading theme&#xA;Social Media Icons and Search box built-in&#xA;Download Sweet Tech WordPress theme.&#xA;Using Sweet Tech theme As mentioned earlier this theme is very easy to use and customize. Let&amp;rsquo;s discuss about customizing each part of the theme here.</description>
+    </item>
+    <item>
+      <title>Screen Brightness reset to maximum after each restart in Ubuntu</title>
+      <link>https://sudeepacharya.com.np/blog/2014/01/10/screen-brightness-ubuntu-fix/</link>
+      <pubDate>Fri, 10 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>https://sudeepacharya.com.np/blog/2014/01/10/screen-brightness-ubuntu-fix/</guid>
+      <description>I just installed Ubuntu 13.10 in my Dell Inspiron 3421. Previously there was no problem with the screen brightness.&#xA;But certainly i was having the problem with screen brightness. I normally work with low screen brightness.&#xA;But whenever i restart my Laptop the Screen Brightness was set to maximum. If you are also having this same problem then i have found the fix for this. Let&amp;rsquo;s see how i was able to fix the screen brightness issue.</description>
+    </item>
+    <item>
+      <title>C&#43;&#43; project – Encryption and Decryption</title>
+      <link>https://sudeepacharya.com.np/blog/2013/12/26/Cplus-project-Encryption-and-Decryption/</link>
+      <pubDate>Thu, 26 Dec 2013 00:00:00 +0000</pubDate>
+      <guid>https://sudeepacharya.com.np/blog/2013/12/26/Cplus-project-Encryption-and-Decryption/</guid>
+      <description>As a project in C++ during my College, i choose Encryption and Decryption as my project. I am implemented very simple technique for Encryption and Decryption.&#xA;The encryption and decryption is done on the basis of letter shifting method.&#xA;For example if the encryption key is 5 then for the word A the value of A after will be F.&#xA;If you are unclear about what i am talking then seeing my source code will make you understand what i am talking about.</description>
+    </item>
+    <item>
+      <title>Hello World!</title>
+      <link>https://sudeepacharya.com.np/blog/2013/12/13/hello-world/</link>
+      <pubDate>Fri, 13 Dec 2013 00:00:00 +0000</pubDate>
+      <guid>https://sudeepacharya.com.np/blog/2013/12/13/hello-world/</guid>
+      <description>This is just my first post here with no useful and interesting information for you. This post is just to make sure that i have started blogging in this blog.</description>
+    </item>
+  </channel>
+</rss>

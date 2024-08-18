@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>URL Shortener with Django (Part 5) - Working with Templates and finishing up - Sudeep&#39;s Blog</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/custom.css">
+
+	<link rel="shortcut icon" href="/favicon.ico">
+	
+		
+  
+
+
+	
+
+	
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-32671323-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-32671323-1');
+	</script>
+
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container header__container">
+		
+	<div class="logo logo--mixed">
+		<a class="logo__link" href="/" title="Sudeep&#39;s Blog" rel="home">
+			<div class="logo__item logo__imagebox">
+					<img class="logo__img" src="/favicon.ico">
+				</div><div class="logo__item logo__text">
+					<div class="logo__title">Sudeep&#39;s Blog</div>
+					
+				</div>
+		</a>
+	</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Menu</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="/contact/">
+				
+				<span class="menu__text">Contact</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/tags/Excel/">
+				
+				<span class="menu__text">Excel</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/categories/Networking/">
+				
+				<span class="menu__text">Networking</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/categories/Programming/">
+				
+				<span class="menu__text">Programming</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/categories/Windows-Tips-and-Tricks/">
+				
+				<span class="menu__text">Windows Tips and Tricks</span>
+				
+			</a>
+		</li>
+	</ul>
+</nav>
+
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">URL Shortener with Django (Part 5) - Working with Templates and finishing up</h1>
+			<div class="post__meta meta"><div class="meta__item-author meta__item">
+	<svg class="meta__icon icon icon-author" width="16" height="16" viewBox="0 0 16 16"><path d="M8 1c2 0 3.5 2 3.5 4.5S10 9 10 9c3 1 4 2 4 6H2c0-4 1-5 4-6 0 0-1.5-1-1.5-3.5S6 1 8 1"/></svg><span class="meta__text">Sudeep Acharya</span>
+</div>
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0a14 14 0 1 1 0 28 1 1 0 0 1 0-28m0 3a3 3 0 1 0 0 22 3 3 0 0 0 0-22m1 4h-2v8.4l6.8 4.4L22 18l-6-3.8z"/></svg><time class="meta__text" datetime="2015-01-16T00:00:00Z">16 January, 2015</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/Programming/" rel="category">Programming</a>
+	</span>
+</div></div>
+		</header>
+		<div class="content post__content clearfix">
+			<p>Create folder &rsquo;templates&rsquo; inside &lsquo;shortenersite&rsquo; and then inside &rsquo;templates&rsquo; create folder &lsquo;shortenersite&rsquo;.</p>
+<p>Inside &ldquo;shortenersite/templates/shortenersite/&rdquo; create &lsquo;base.html&rsquo; and &lsquo;index.html&rsquo;. So now paste the following to them.</p>
+<p>[shortenersite/templates/shortenersite/base.html]</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>{% raw %}
+</span></span><span style="display:flex;"><span><span style="color:#75715e">&lt;!DOCTYPE html&gt;</span>
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">html</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">head</span>&gt;
+</span></span><span style="display:flex;"><span> &lt;<span style="color:#f92672">title</span>&gt;{% block title %}Welcome to mysite{% endblock %}&lt;/<span style="color:#f92672">title</span>&gt;
+</span></span><span style="display:flex;"><span> {% load staticfiles %}
+</span></span><span style="display:flex;"><span> &lt;<span style="color:#f92672">link</span> <span style="color:#a6e22e">rel</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;stylesheet&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css&#34;</span>&gt;
+</span></span><span style="display:flex;"><span> &lt;<span style="color:#f92672">link</span> <span style="color:#a6e22e">rel</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;stylesheet&#34;</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text/css&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{% static &#39;shortenersite/css/custom.css&#39; %}&#34;</span> /&gt;
+</span></span><span style="display:flex;"><span> &lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js&#34;</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;
+</span></span><span style="display:flex;"><span> &lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;viewport&#34;</span> <span style="color:#a6e22e">content</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;width=device-width, initial-scale=1&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">head</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text/javascript&#34;</span>&gt;
+</span></span><span style="display:flex;"><span> <span style="color:#a6e22e">$</span>(<span style="color:#66d9ef">function</span>() {
+</span></span><span style="display:flex;"><span> <span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#39;#submitButton&#39;</span>).<span style="color:#a6e22e">click</span>(<span style="color:#66d9ef">function</span>() {
+</span></span><span style="display:flex;"><span> <span style="color:#a6e22e">$</span>.<span style="color:#a6e22e">ajax</span>({
+</span></span><span style="display:flex;"><span> <span style="color:#a6e22e">type</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;POST&#34;</span>,
+</span></span><span style="display:flex;"><span> <span style="color:#a6e22e">url</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;/makeshort/&#34;</span>,
+</span></span><span style="display:flex;"><span> <span style="color:#a6e22e">data</span><span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span> <span style="color:#e6db74">&#39;url&#39;</span> <span style="color:#f92672">:</span> <span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#39;#url&#39;</span>).<span style="color:#a6e22e">val</span>(),
+</span></span><span style="display:flex;"><span> <span style="color:#e6db74">&#39;csrfmiddlewaretoken&#39;</span> <span style="color:#f92672">:</span> <span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#34;input[name=csrfmiddlewaretoken]&#34;</span>).<span style="color:#a6e22e">val</span>()
+</span></span><span style="display:flex;"><span> },
+</span></span><span style="display:flex;"><span> <span style="color:#a6e22e">success</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">returnSuccess</span>,
+</span></span><span style="display:flex;"><span> <span style="color:#a6e22e">dataType</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;json&#39;</span>
+</span></span><span style="display:flex;"><span> });
+</span></span><span style="display:flex;"><span> });
+</span></span><span style="display:flex;"><span>});
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">returnSuccess</span>(<span style="color:#a6e22e">data</span>, <span style="color:#a6e22e">textStatus</span>, <span style="color:#a6e22e">jqXHR</span>) {
+</span></span><span style="display:flex;"><span> <span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">data</span>.<span style="color:#a6e22e">url</span>) {
+</span></span><span style="display:flex;"><span> <span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#39;#url-result&#39;</span>).<span style="color:#a6e22e">text</span>(<span style="color:#a6e22e">data</span>.<span style="color:#a6e22e">url</span>);
+</span></span><span style="display:flex;"><span> <span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#39;#url&#39;</span>).<span style="color:#a6e22e">val</span>(<span style="color:#e6db74">&#34;&#34;</span>);
+</span></span><span style="display:flex;"><span> } <span style="color:#66d9ef">else</span> {
+</span></span><span style="display:flex;"><span> <span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#39;#url-result&#39;</span>).<span style="color:#a6e22e">text</span>(<span style="color:#e6db74">&#34;Do not submit blank.&#34;</span>);
+</span></span><span style="display:flex;"><span> }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">script</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">body</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;wrap&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">header</span>&gt;
+</span></span><span style="display:flex;"><span> &lt;<span style="color:#f92672">h1</span>&gt;&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{% url &#39;shortenersite:home&#39; %}&#34;</span>&gt;URL Shortner&lt;/<span style="color:#f92672">a</span>&gt;&lt;<span style="color:#f92672">small</span>&gt;Shorten the URL&lt;/<span style="color:#f92672">small</span>&gt;&lt;/<span style="color:#f92672">h1</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">header</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;content&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>{% block content %}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>{% endblock %}
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">div</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">div</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">body</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">html</span>&gt;
+</span></span><span style="display:flex;"><span>{% endraw %}
+</span></span></code></pre></div><p>We are using twitter bootstrap for making our site beautiful and jQuery for making POST request.</p>
+<p>[shortenersite/templates/shortenersite/index.html]</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>{% raw %}
+</span></span><span style="display:flex;"><span>{% extends &#34;shortenersite/base.html&#34; %}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>{% block title %}URL Shortner - Make your URL shorter!{% endblock %}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>{% block content %}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;panel panel-default&#34;</span>&gt;
+</span></span><span style="display:flex;"><span> &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;panel-body&#34;</span>&gt;
+</span></span><span style="display:flex;"><span> &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;col-sm-9&#34;</span>&gt;
+</span></span><span style="display:flex;"><span> &lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text&#34;</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;url&#34;</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;url&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;form-control input-sm&#34;</span> <span style="color:#a6e22e">placeholder</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;http://www.facebook.com&#34;</span> /&gt;
+</span></span><span style="display:flex;"><span> &lt;/<span style="color:#f92672">div</span>&gt;
+</span></span><span style="display:flex;"><span> &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;col-sm-3&#34;</span>&gt;
+</span></span><span style="display:flex;"><span> {% csrf_token %}
+</span></span><span style="display:flex;"><span> &lt;<span style="color:#f92672">button</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;submitButton&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;btn btn-primary&#34;</span>&gt;Submit&lt;/<span style="color:#f92672">button</span>&gt;&lt;/<span style="color:#f92672">p</span>&gt;
+</span></span><span style="display:flex;"><span> &lt;/<span style="color:#f92672">div</span>&gt;
+</span></span><span style="display:flex;"><span> &lt;/<span style="color:#f92672">div</span>&gt;
+</span></span><span style="display:flex;"><span> &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;panel-footer&#34;</span>&gt;&lt;<span style="color:#f92672">span</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;url-result&#34;</span>&gt;Enter the URL above and click submit!&lt;/<span style="color:#f92672">span</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">div</span>&gt;
+</span></span><span style="display:flex;"><span>{% endblock %}
+</span></span><span style="display:flex;"><span>{% endraw %}
+</span></span></code></pre></div><p>Now let us add static files. Similarly as above create &lsquo;static&rsquo; folder inside &lsquo;shortenersite&rsquo; and inside &lsquo;static&rsquo; create &lsquo;shortenersite&rsquo; and inside it create folder &lsquo;css&rsquo;. Now create &lsquo;custom.css&rsquo; inside &lsquo;static/shortenersite/css/&rsquo; and add the following code to it:</p>
+<p>[shortenersite/static/shortenersite/css/custom.css]</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span>#content {
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">margin-top</span>: <span style="color:#ae81ff">20</span><span style="color:#66d9ef">px</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">margin-bottom</span>: <span style="color:#ae81ff">60</span><span style="color:#66d9ef">px</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">a</span>:<span style="color:#a6e22e">hover</span>{
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">text-decoration</span>: <span style="color:#66d9ef">none</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">header</span> {
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">border-bottom</span>: <span style="color:#ae81ff">1</span><span style="color:#66d9ef">px</span> <span style="color:#66d9ef">solid</span> <span style="color:#ae81ff">#eeeeee</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">margin-bottom</span>: <span style="color:#ae81ff">30</span><span style="color:#66d9ef">px</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">padding-bottom</span>: <span style="color:#ae81ff">10</span><span style="color:#66d9ef">px</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">clear</span>: <span style="color:#66d9ef">both</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>#wrap {
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">max-width</span>: <span style="color:#ae81ff">700</span><span style="color:#66d9ef">px</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">margin</span>: <span style="color:#ae81ff">5</span><span style="color:#66d9ef">px</span> <span style="color:#ae81ff">10</span><span style="color:#66d9ef">px</span> <span style="color:#ae81ff">10</span><span style="color:#66d9ef">px</span> <span style="color:#ae81ff">10</span><span style="color:#66d9ef">px</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">padding</span>: <span style="color:#ae81ff">10</span><span style="color:#66d9ef">px</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">text-align</span>: <span style="color:#66d9ef">left</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>#url-result {
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">color</span>: <span style="color:#ae81ff">#00e000</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">display</span>: <span style="color:#66d9ef">hidden</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>So now we are done creating our URL Shortener with django. Run the django app and visit localhost:8000/ in browser then the final result will look something like this:</p>
+<p><img src="/assets/post-images/2015/final-url-shortener.png" alt="final url shortener built with django"></p>
+<p>Now you can enter some URLs and click submit and then it should return the short URL. You can visit the short URL and it will redirect to your original URL. Go and see the admin panel, select the URLss and you will see the URLs are added there and also the count will increase if you visit the short URL.</p>
+<p>That&rsquo;s all for this tutorial. Hope everything works fine here.</p>
+<p>Post Series:</p>
+<p>Part 1: <a href="https://sudeepacharya.com.np/blog/2015/01/12/urlshortener-with-django-create-virtual-environment-install-django/">Create a virtual environment and install Django</a></p>
+<p>Part 2: <a href="https://sudeepacharya.com.np/blog/2015/01/13/urlshortener-with-django-creating-new-django-project/">Create a new project and make sure it works</a></p>
+<p>Part 3: <a href="https://sudeepacharya.com.np/blog/2015/01/14/urlshortener-with-django-creating-app-model/">Create Django App, Model for our App and work with Django Admin</a></p>
+<p>Part 4: <a href="https://sudeepacharya.com.np/blog/2015/01/15/urlshortener-with-django-urls-and-views/">Working with URLs and Views</a></p>
+<p>Part 5: <a href="https://sudeepacharya.com.np/blog/2015/01/16/urlshortener-with-django-working-with-templates/">Working on Templates, Static files and finishing up</a></p>
+
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M4 0h8s2 0 4 2l15 15s2 2 0 4L21 31s-2 2-4 0L2 16s-2-2-2-4V3s0-3 4-3m3 10a3 3 0 0 0 0-6 3 3 0 0 0 0 6"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/Python/" rel="tag">Python</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/Django/" rel="tag">Django</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/Tutorial/" rel="tag">Tutorial</a>
+		</li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
+
+
+<nav class="pager flex">
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="/blog/2015/01/15/urlshortener-with-django-urls-and-views/" rel="prev">
+			<span class="pager__subtitle">«&thinsp;Previous</span>
+			<p class="pager__title">URL Shortener with Django (Part 4) - Working with Urls and views</p>
+		</a>
+	</div>
+	<div class="pager__item pager__item--next">
+		<a class="pager__link" href="/blog/2015/01/19/delete-all-commit-history-github/" rel="next">
+			<span class="pager__subtitle">Next&thinsp;»</span>
+			<p class="pager__title">How to delete the commit history in github</p>
+		</a>
+	</div>
+</nav>
+
+
+			</div>
+			<aside class="sidebar"><div class="widget-search widget">
+	<form class="widget-search__form" role="search" method="get" action="https://google.com/search">
+		<input class="widget-search__field" type="search" placeholder="Search…" value="" name="q" aria-label="Search…">
+		<input class="widget-search__submit" type="submit" value="Search">
+		<input type="hidden" name="sitesearch" value="https://sudeepacharya.com.np/">
+	</form>
+</div><div class="widget-recent widget">
+	<h4 class="widget__title">Popular Posts</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="http://sudeepacharya.com.np/blog/2024/07/20/useful-excel-formulas-and-tricks/">Useful Excel formulas and tricks</a></li>
+			<li class="widget__item"><a class="widget__link" href="http://sudeepacharya.com.np/blog/2023/02/12/recover-hijacked-gmail-account/">How i RECOVERED my hijacked GOOGLE account [in 6 days]</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://sudeepacharya.com.np/blog/2017/11/08/fixing-google-play-games-plugin-and-unity-integration-error-android/">Fixing Google Play Games plugin and Unity integration error - Android</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://sudeepacharya.com.np/blog/2017/04/20/vipassana-meditation-dhamma-pokhara/">10 days of Vipassana Meditation at Dhamma Pokhara - Before you go</a></li>
+		</ul>
+	</div>
+</div>
+<div class="widget-recent widget">
+	<h4 class="widget__title">Recent Posts</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/blog/2024/08/14/pte-vocabulary-meaning-nepali/">PTE vocabulary with meaning in Nepali - Most Common</a></li>
+			<li class="widget__item"><a class="widget__link" href="/blog/2024/08/05/useful-run-win-r-commands/">Useful Run (win &#43; R) commands in Windows</a></li>
+			<li class="widget__item"><a class="widget__link" href="/blog/2024/07/20/useful-excel-formulas-and-tricks/">Useful Excel formulas and tricks</a></li>
+			<li class="widget__item"><a class="widget__link" href="/blog/2023/02/12/recover-hijacked-gmail-account/">How i RECOVERED my hijacked GOOGLE account [in 6 days]</a></li>
+			<li class="widget__item"><a class="widget__link" href="/blog/2020/05/23/cisco-1841-router-architecture-modes/">Architecture and Modes of Cisco 1841 Router</a></li>
+		</ul>
+	</div>
+</div>
+<div class="widget-taglist widget">
+	<h4 class="widget__title">Tags</h4>
+	<div class="widget__content">
+
+		<ul class="cloud" role="navigation" aria-label="Webdev word cloud">
+		<li><a data-weight="2" href="/tags/Android/" title="Android">Android</a></li>
+		<li><a data-weight="15" href="/tags/Blog/" title="Blog">Blog</a></li>
+		<li><a data-weight="1" href="/tags/C&#43;&#43;/" title="C&#43;&#43;">C&#43;&#43;</a></li>
+		<li><a data-weight="1" href="/tags/Commands/" title="Commands">Commands</a></li>
+		<li><a data-weight="2" href="/tags/CSharp/" title="CSharp">CSharp</a></li>
+		<li><a data-weight="1" href="/tags/DataBackup/" title="DataBackup">DataBackup</a></li>
+		<li><a data-weight="5" href="/tags/Django/" title="Django">Django</a></li>
+		<li><a data-weight="1" href="/tags/Excel/" title="Excel">Excel</a></li>
+		<li><a data-weight="2" href="/tags/ExploreNepal/" title="ExploreNepal">ExploreNepal</a></li>
+		<li><a data-weight="2" href="/tags/FreeStuff/" title="FreeStuff">FreeStuff</a></li>
+		<li><a data-weight="1" href="/tags/Git/" title="Git">Git</a></li>
+		<li><a data-weight="1" href="/tags/Hacking/" title="Hacking">Hacking</a></li>
+		<li><a data-weight="1" href="/tags/Haskell/" title="Haskell">Haskell</a></li>
+		<li><a data-weight="2" href="/tags/Hiking/" title="Hiking">Hiking</a></li>
+		<li><a data-weight="1" href="/tags/JavaScript/" title="JavaScript">JavaScript</a></li>
+		<li><a data-weight="1" href="/tags/Jekyll/" title="Jekyll">Jekyll</a></li>
+		<li><a data-weight="5" href="/tags/Kotlin/" title="Kotlin">Kotlin</a></li>
+		<li><a data-weight="2" href="/tags/Life/" title="Life">Life</a></li>
+		<li><a data-weight="2" href="/tags/Linux/" title="Linux">Linux</a></li>
+		<li><a data-weight="2" href="/tags/Meditation/" title="Meditation">Meditation</a></li>
+		<li><a data-weight="3" href="/tags/MobileGame/" title="MobileGame">MobileGame</a></li>
+		<li><a data-weight="7" href="/tags/PHP/" title="PHP">PHP</a></li>
+		<li><a data-weight="1" href="/tags/Programming/" title="Programming">Programming</a></li>
+		<li><a data-weight="1" href="/tags/PTE/" title="PTE">PTE</a></li>
+		<li><a data-weight="8" href="/tags/Python/" title="Python">Python</a></li>
+		<li><a data-weight="3" href="/tags/Sprituality/" title="Sprituality">Sprituality</a></li>
+		<li><a data-weight="2" href="/tags/Travel/" title="Travel">Travel</a></li>
+		<li><a data-weight="12" href="/tags/Tutorial/" title="Tutorial">Tutorial</a></li>
+		<li><a data-weight="2" href="/tags/Ubuntu/" title="Ubuntu">Ubuntu</a></li>
+		<li><a data-weight="1" href="/tags/Uncategorized/" title="Uncategorized">Uncategorized</a></li>
+		<li><a data-weight="4" href="/tags/Unity3D/" title="Unity3D">Unity3D</a></li>
+		<li><a data-weight="1" href="/tags/Windows10/" title="Windows10">Windows10</a></li>
+		<li><a data-weight="1" href="/tags/Windows11/" title="Windows11">Windows11</a></li>
+		<li><a data-weight="3" href="/tags/WordPress/" title="WordPress">WordPress</a></li>
+	</ul>
+	</div>
+</div>
+<div class="widget-categories widget">
+	<h4 class="widget__title">Categories</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/Google/">Google</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/Life/">Life</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/Linux-Tips-and-Tricks/">Linux Tips and Tricks</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/Microsoft/">Microsoft</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/My-Projects/">My Projects</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/Nepal/">Nepal</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/Networking/">Networking</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/Programming/">Programming</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/Random/">Random</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/Uncategorized/">Uncategorized</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/Windows-Tips-and-Tricks/">Windows Tips and Tricks</a></li>
+		</ul>
+	</div>
+</div>
+</aside>
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2024 Sudeep&#39;s Blog.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+</body>
+</html>
