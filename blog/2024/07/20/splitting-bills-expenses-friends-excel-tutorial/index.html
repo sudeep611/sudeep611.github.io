@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Jekyll - Sudeep&#39;s Blog</title>
+	<title>Excel tutorial for Splitting bills and sharing expenses among friends - Sudeep&#39;s Blog</title>
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,7 +13,6 @@
 
 	<link rel="stylesheet" href="/css/style.css">
 	<link rel="stylesheet" href="/css/custom.css">
-	<link rel="alternate" type="application/rss+xml" href="/tags/Jekyll/index.xml" title="Sudeep's Blog">
 
 	<link rel="shortcut icon" href="/favicon.ico">
 	
@@ -98,39 +97,72 @@
 		<div class="wrapper flex">
 			<div class="primary">
 			
-<main class="main list" role="main">
-	<header class="main__header">
-		<h1 class="main__title">Jekyll</h1>
-	</header><article class="list__item post">
-	
-	<header class="list__header">
-		<h2 class="list__title post__title">
-			<a href="/blog/2020/05/02/moving-wordpress.com-blog-jekyll-github/" rel="bookmark">
-			Moving to Github Pages using Jekyll  from WordPress.com
-			</a>
-		</h2>
-		<div class="list__meta meta"><div class="meta__item-author meta__item">
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">Excel tutorial for Splitting bills and sharing expenses among friends</h1>
+			<div class="post__meta meta"><div class="meta__item-author meta__item">
 	<svg class="meta__icon icon icon-author" width="16" height="16" viewBox="0 0 16 16"><path d="M8 1c2 0 3.5 2 3.5 4.5S10 9 10 9c3 1 4 2 4 6H2c0-4 1-5 4-6 0 0-1.5-1-1.5-3.5S6 1 8 1"/></svg><span class="meta__text">Sudeep Acharya</span>
 </div>
 <div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0a14 14 0 1 1 0 28 1 1 0 0 1 0-28m0 3a3 3 0 1 0 0 22 3 3 0 0 0 0-22m1 4h-2v8.4l6.8 4.4L22 18l-6-3.8z"/></svg><time class="meta__text" datetime="2020-05-02T00:00:00Z">2 May, 2020</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/Programming/" rel="category">Programming</a>
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0a14 14 0 1 1 0 28 1 1 0 0 1 0-28m0 3a3 3 0 1 0 0 22 3 3 0 0 0 0-22m1 4h-2v8.4l6.8 4.4L22 18l-6-3.8z"/></svg><time class="meta__text" datetime="2024-08-24T00:00:00Z">24 August, 2024</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/Microsoft/" rel="category">Microsoft</a>
 	</span>
 </div></div>
-	</header>
-	<div class="content list__excerpt post__content clearfix">
-		I started my blog &ldquo;hellocoding.wordpress.com&rdquo; in 2013. WordPress.com provides the basic functionality of posting the post for free. It does not give the way to embed JavaScript and does not offer much control over your blog.
-After a few years of blogging in WordPress.com, I realised that I want more control over my site so that I can improve my SEO, make a page redirection and make my site how I want in every possible way.
-	</div>
-	<div class="list__footer clearfix">
-		<a class="list__footer-readmore btn" href="/blog/2020/05/02/moving-wordpress.com-blog-jekyll-github/">Read more…</a>
-	</div>
-</article>
+		</header>
+		<div class="content post__content clearfix">
+			<p>In this post, i will share an Excel tutorial where you can create tables and calculate the total amount spent by each person and find out who owes or need to give to whom.</p>
+<p>At the end of this post you will be able to make something similar to the following table below.</p>
+<p><img src="/assets/post-images/2024/splitting-bills-excel-tutorial.png" alt="Action Required Google Account"></p>
+<p>Table1 = List of expenses including name and amount as well as the grand total spent by all.</p>
+<p>Table2 = Amount spent by each person.</p>
+<p>Table3 = Amount that each should spend to make expense equal among all.</p>
+<p>Table4 = Calculates the settlement amount, people with negative amount should pay to the people with positive value.</p>
+<p>In the table above, Shristi should give $107.48 in total to Sudeep ($62) and Kapil(45.48).</p>
+<p>Let&rsquo;s break down to the individual steps to create sheet for splitting bills in Excel.</p>
+<h3 id="step-1-create-expense-table">Step 1: Create expense table</h3>
+<p>Create expense table similar to the Table1 above. You can include other information such as date, amount and items spent on. But the most important ones are Name and Amount.</p>
+<h3 id="step-2-create-table-with-name-and-amount-spent-by-each">Step 2: Create table with name and amount spent by each</h3>
+<p>Create the Table2 and use the following formula to calculate the amount spent by each.</p>
+<pre tabindex="0"><code>=SUMIF(Table1[Name], [@Person], Table1[Amount])
+</code></pre><p>This fomula (used in Table2, cell B16, B17 and B18) will calculate the total amount spent by a person from Table1 by matching Name. [@Person] is the reference to the name of person in Table2 itself.</p>
+<h3 id="step-3-calculate-the-amount-that-was-expected-to-spend-by-each">Step 3: Calculate the amount that was expected to spend by each</h3>
+<p>To calculate this just divide the grand total in the cell C11 by total number of people i.e 3 in the above case.</p>
+<pre tabindex="0"><code>=Table1[[#Totals],[Amount]]/COUNTA(Table2[Person])
+</code></pre><p>Here, the formula (used in cell B22) &ldquo;COUNTA(Table2[Person]&rdquo; will return total number of people entered in Table2. The value that it returns in the above case is 3 since there are three people.</p>
+<h3 id="step-4-calculate-the-settlement-amount">Step 4: Calculate the settlement amount</h3>
+<p>Create a table and write the name of each person for calculating the settlement amount. The settlement amount for each can be obtained by subtracting the amount that each should spend from the amount that they actually spent.</p>
+<p>For example: to calculate for Sudeep, subtract B22 from B16.</p>
+<p>If this amount is positive then they should receive that much amount and if it is negative then they should give that amount to the person with positive value.</p>
+<p>I hope this tutorial is helpful.</p>
+
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M4 0h8s2 0 4 2l15 15s2 2 0 4L21 31s-2 2-4 0L2 16s-2-2-2-4V3s0-3 4-3m3 10a3 3 0 0 0 0-6 3 3 0 0 0 0 6"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/Excel/" rel="tag">Excel</a>
+		</li>
+	</ul>
+</div>
+		</footer>
+	</article>
 </main>
 
 
+<nav class="pager flex">
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="/blog/2024/08/14/pte-vocabulary-meaning-nepali/" rel="prev">
+			<span class="pager__subtitle">«&thinsp;Previous</span>
+			<p class="pager__title">PTE vocabulary with meaning in Nepali - Most Common</p>
+		</a>
+	</div>
+</nav>
+
+
 			</div>
-			
-<aside class="sidebar"><div class="widget-search widget">
+			<aside class="sidebar"><div class="widget-search widget">
 	<form class="widget-search__form" role="search" method="get" action="https://google.com/search">
 		<input class="widget-search__field" type="search" placeholder="Search…" value="" name="q" aria-label="Search…">
 		<input class="widget-search__submit" type="submit" value="Search">
