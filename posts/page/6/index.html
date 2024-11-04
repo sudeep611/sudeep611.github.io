@@ -105,6 +105,31 @@
 	
 	<header class="list__header">
 		<h2 class="list__title post__title">
+			<a href="/blog/2015/01/15/urlshortener-with-django-urls-and-views/" rel="bookmark">
+			URL Shortener with Django (Part 4) - Working with Urls and views
+			</a>
+		</h2>
+		<div class="list__meta meta"><div class="meta__item-author meta__item">
+	<svg class="meta__icon icon icon-author" width="16" height="16" viewBox="0 0 16 16"><path d="M8 1c2 0 3.5 2 3.5 4.5S10 9 10 9c3 1 4 2 4 6H2c0-4 1-5 4-6 0 0-1.5-1-1.5-3.5S6 1 8 1"/></svg><span class="meta__text">Sudeep Acharya</span>
+</div>
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0a14 14 0 1 1 0 28 1 1 0 0 1 0-28m0 3a3 3 0 1 0 0 22 3 3 0 0 0 0-22m1 4h-2v8.4l6.8 4.4L22 18l-6-3.8z"/></svg><time class="meta__text" datetime="2015-01-15T00:00:00Z">15 January, 2015</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/Programming/" rel="category">Programming</a>
+	</span>
+</div></div>
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		Now we will be working with our actual URLs and Views of our site.
+Open up your &ldquo;urlshortener/urls.py&rdquo; and add the following code to it:
+[urlshortener/urls.py]
+from django.conf.urls import patterns, include, url from django.contrib import admin urlpatterns = patterns(&#39;&#39;, url(r&#39;^admin/&#39;, include(admin.site.urls)), # if the URL pattern match /admin/ then open up admin panel url(r&#39;&#39;, include(&#39;shortenersite.urls&#39;, namespace=&#39;shortenersite&#39;)), # if anything rather then /admin/ then it will look for shortenersite/urls ) Next, create a new file &lsquo;urls.
+	</div>
+	<div class="list__footer clearfix">
+		<a class="list__footer-readmore btn" href="/blog/2015/01/15/urlshortener-with-django-urls-and-views/">Read more…</a>
+	</div>
+</article><article class="list__item post">
+	
+	<header class="list__header">
+		<h2 class="list__title post__title">
 			<a href="/blog/2015/01/14/urlshortener-with-django-creating-app-model/" rel="bookmark">
 			URL Shortener with Django (Part 3) - Creating django app and model
 			</a>
@@ -322,35 +347,6 @@ It was good that i had archived the photos so it was easy to restore. I was usin
 	<div class="list__footer clearfix">
 		<a class="list__footer-readmore btn" href="/blog/2014/01/16/recover-deleted-files-from-ntfs-file-system-ubuntu/">Read more…</a>
 	</div>
-</article><article class="list__item post">
-	
-	<header class="list__header">
-		<h2 class="list__title post__title">
-			<a href="/blog/2014/01/16/sweet-tech-wordpress-theme/" rel="bookmark">
-			Sweet Tech WordPress Theme
-			</a>
-		</h2>
-		<div class="list__meta meta"><div class="meta__item-author meta__item">
-	<svg class="meta__icon icon icon-author" width="16" height="16" viewBox="0 0 16 16"><path d="M8 1c2 0 3.5 2 3.5 4.5S10 9 10 9c3 1 4 2 4 6H2c0-4 1-5 4-6 0 0-1.5-1-1.5-3.5S6 1 8 1"/></svg><span class="meta__text">Sudeep Acharya</span>
-</div>
-<div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0a14 14 0 1 1 0 28 1 1 0 0 1 0-28m0 3a3 3 0 1 0 0 22 3 3 0 0 0 0-22m1 4h-2v8.4l6.8 4.4L22 18l-6-3.8z"/></svg><time class="meta__text" datetime="2014-01-16T00:00:00Z">16 January, 2014</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/My-Projects/" rel="category">My Projects</a>
-	</span>
-</div></div>
-	</header>
-	<div class="content list__excerpt post__content clearfix">
-		Sweet Tech is a free WordPress theme. It is clean, white, blue theme. It is extremely easy to customize and maintain your site.
-Features: Two Column, Right Sidebar
-Fully Responsive clean Design
-Blue and white color theme
-Fastest loading theme
-Social Media Icons and Search box built-in
-Download Sweet Tech WordPress theme.
-Using Sweet Tech theme As mentioned earlier this theme is very easy to use and customize. Let&rsquo;s discuss about customizing each part of the theme here.
-	</div>
-	<div class="list__footer clearfix">
-		<a class="list__footer-readmore btn" href="/blog/2014/01/16/sweet-tech-wordpress-theme/">Read more…</a>
-	</div>
 </article>
 </main>
 
@@ -383,11 +379,11 @@ Using Sweet Tech theme As mentioned earlier this theme is very easy to use and c
 	<h4 class="widget__title">Recent Posts</h4>
 	<div class="widget__content">
 		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/blog/2024/11/04/learning-davinci-resolve/">Learning DaVinci Resolve</a></li>
 			<li class="widget__item"><a class="widget__link" href="/blog/2024/07/20/splitting-bills-expenses-friends-excel-tutorial/">Excel tutorial for Splitting bills and sharing expenses among friends</a></li>
 			<li class="widget__item"><a class="widget__link" href="/blog/2024/08/14/pte-vocabulary-meaning-nepali/">PTE vocabulary with meaning in Nepali - Most Common</a></li>
 			<li class="widget__item"><a class="widget__link" href="/blog/2024/08/05/useful-run-win-r-commands/">Useful Run (win &#43; R) commands in Windows</a></li>
 			<li class="widget__item"><a class="widget__link" href="/blog/2024/07/20/useful-excel-formulas-and-tricks/">Useful Excel formulas and tricks</a></li>
-			<li class="widget__item"><a class="widget__link" href="/blog/2023/02/12/recover-hijacked-gmail-account/">How i RECOVERED my hijacked GOOGLE account [in 6 days]</a></li>
 		</ul>
 	</div>
 </div>
@@ -402,6 +398,7 @@ Using Sweet Tech theme As mentioned earlier this theme is very easy to use and c
 		<li><a data-weight="1" href="/tags/Commands/" title="Commands">Commands</a></li>
 		<li><a data-weight="2" href="/tags/CSharp/" title="CSharp">CSharp</a></li>
 		<li><a data-weight="1" href="/tags/DataBackup/" title="DataBackup">DataBackup</a></li>
+		<li><a data-weight="1" href="/tags/DaVinci-Resolve/" title="DaVinci-Resolve">DaVinci-Resolve</a></li>
 		<li><a data-weight="5" href="/tags/Django/" title="Django">Django</a></li>
 		<li><a data-weight="2" href="/tags/Excel/" title="Excel">Excel</a></li>
 		<li><a data-weight="2" href="/tags/ExploreNepal/" title="ExploreNepal">ExploreNepal</a></li>
@@ -457,6 +454,8 @@ Using Sweet Tech theme As mentioned earlier this theme is very easy to use and c
 				<a class="widget__link" href="/categories/Random/">Random</a></li>
 			<li class="widget__item">
 				<a class="widget__link" href="/categories/Uncategorized/">Uncategorized</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/Video-Editing/">Video Editing</a></li>
 			<li class="widget__item">
 				<a class="widget__link" href="/categories/Windows-Tips-and-Tricks/">Windows Tips and Tricks</a></li>
 		</ul>
