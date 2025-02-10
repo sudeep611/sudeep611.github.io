@@ -121,11 +121,11 @@
 <h3 id="find-cost-in-table-2-by-matching-serial-number-in-table-1">Find cost in Table 2 by matching Serial Number in Table 1</h3>
 <p>If you have to find the corresponding value of some data in a table from another table then you can combine the INDEX and MATCH as follows:</p>
 <pre tabindex="0"><code>=INDEX(Table1[Cost],MATCH([@[Serial Number]],Table1[Serial Number],0),0)
-</code></pre><p><img src="/assets/post-images/2024/value-from-table-using-match-and-index.png" alt="Action Required Google Account"></p>
+</code></pre><p><img src="/assets/post-images/2024/value-from-table-using-match-and-index.png" alt="value from table using match and index"></p>
 <h3 id="check-if-serial-number-in-table-b-exists-in-table-a">Check if serial number in Table B exists in Table A</h3>
 <p>Using combination of ISNA and VLOOKUP to check if the serial number in table b exists in table A.</p>
 <pre tabindex="0"><code>=IF(ISNA(VLOOKUP([@[Serial Number]],TableA[Serial Number],1, FALSE)), &#34;No&#34;,&#34;Yes&#34;)
-</code></pre><p><img src="/assets/post-images/2024/checking-if-serialnumber-in-tableb-exists-in-tablea.png" alt="Action Required Google Account"></p>
+</code></pre><p><img src="/assets/post-images/2024/checking-if-serialnumber-in-tableb-exists-in-tablea.png" alt="checking if serialnumber in tableb exists in tablea"></p>
 
 		</div>
 		<footer class="post__footer">
@@ -166,7 +166,7 @@
 	<div class="container footer__container flex">
 		
 		<div class="footer__copyright">
-			&copy; 2024 Sudeep&#39;s Blog.
+			&copy; 2025 Sudeep&#39;s Blog.
 			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
 		</div>
 	</div>
