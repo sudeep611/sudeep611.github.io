@@ -11,8 +11,9 @@ h1,h2,h3,h4,h5,h6 {
   text-align: left;	
 }
 h2,h3,h4 {
-	border-bottom: 0.1px solid #a52020;
+	border-bottom: 0.1px solid #008000;
 	padding-bottom: 5px;
+  display: inline-block;
 }
 h2.post__title {
 	border-bottom: none;

@@ -24,9 +24,6 @@
 	<link rel="shortcut icon" href="/favicon.ico">
 	
 		
-  
-
-
 	
 
 	
@@ -122,17 +119,17 @@
 			Starting Animation from random time frame Unity
 			</a>
 		</h2>
-		<div class="list__meta meta"><div class="meta__item-author meta__item">
-	<svg class="meta__icon icon icon-author" width="16" height="16" viewBox="0 0 16 16"><path d="M8 1c2 0 3.5 2 3.5 4.5S10 9 10 9c3 1 4 2 4 6H2c0-4 1-5 4-6 0 0-1.5-1-1.5-3.5S6 1 8 1"/></svg><span class="meta__text">Sudeep Acharya</span>
-</div>
+		<div class="list__meta meta">
 <div class="meta__item-datetime meta__item">
 	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0a14 14 0 1 1 0 28 1 1 0 0 1 0-28m0 3a3 3 0 1 0 0 22 3 3 0 0 0 0-22m1 4h-2v8.4l6.8 4.4L22 18l-6-3.8z"/></svg><time class="meta__text" datetime="2017-07-11T00:00:00Z">11 July, 2017</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/Programming/" rel="category">Programming</a>
 	</span>
 </div></div>
 	</header>
 	<div class="content list__excerpt post__content clearfix">
-		Code snippet to start the animation at different time. Useful when there are many same animation running on screen and you want to make them random.
-Animator anim = GetComponent&lt;Animator&gt; (); AnimatorStateInfo state = anim.GetCurrentAnimatorStateInfo (0); anim.Play (state.fullPathHash, -1, Random.Range(0f,1f)); You can add this code in Start or Awake function and add to the GameObject with the Animator component.
+		<p>Code snippet to start the animation at different time. Useful when there are many same animation running on screen and you want to make them random.</p>
+	</div>
+	<div class="list__footer clearfix">
+		<a class="list__footer-readmore btn" href="/blog/2017/07/11/starting-animation-at-different-time-unity/">Read more…</a>
 	</div>
 </article><article class="list__item post">
 	
@@ -142,17 +139,28 @@ Animator anim = GetComponent&lt;Animator&gt; (); AnimatorStateInfo state = anim.
 			C# code to shuffle Array
 			</a>
 		</h2>
-		<div class="list__meta meta"><div class="meta__item-author meta__item">
-	<svg class="meta__icon icon icon-author" width="16" height="16" viewBox="0 0 16 16"><path d="M8 1c2 0 3.5 2 3.5 4.5S10 9 10 9c3 1 4 2 4 6H2c0-4 1-5 4-6 0 0-1.5-1-1.5-3.5S6 1 8 1"/></svg><span class="meta__text">Sudeep Acharya</span>
-</div>
+		<div class="list__meta meta">
 <div class="meta__item-datetime meta__item">
 	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0a14 14 0 1 1 0 28 1 1 0 0 1 0-28m0 3a3 3 0 1 0 0 22 3 3 0 0 0 0-22m1 4h-2v8.4l6.8 4.4L22 18l-6-3.8z"/></svg><time class="meta__text" datetime="2017-07-09T00:00:00Z">9 July, 2017</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/Programming/" rel="category">Programming</a>
 	</span>
 </div></div>
 	</header>
 	<div class="content list__excerpt post__content clearfix">
-		private T[] ShuffleArray&lt;T&gt;(T[] array) { System.Random r = new System.Random (); for(int i = array.Length; i &gt; 0; i--) { int j = r.Next (i); T k = array [j]; array [j] = array [i - 1]; array [i - 1] = k; } return array; } Example:
-Int Array int[] intArray = new int[] {1,2,3,4}; intArray = ShuffleArray(intArray); Float Array float[] floatArray = new float[] {1.0f,2.0f,3.0f,4.0f}; floatArray = ShuffleArray(floatArray); 
+		<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#66d9ef">private</span> T[] ShuffleArray&lt;T&gt;(T[] array) {
+</span></span><span style="display:flex;"><span>    System.Random r = <span style="color:#66d9ef">new</span> System.Random ();
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">int</span> i = array.Length; i &gt; <span style="color:#ae81ff">0</span>; i--) {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">int</span> j = r.Next (i);
+</span></span><span style="display:flex;"><span>        T k = array [j];
+</span></span><span style="display:flex;"><span>        array [j] = array [i - <span style="color:#ae81ff">1</span>];
+</span></span><span style="display:flex;"><span>        array [i - <span style="color:#ae81ff">1</span>] = k;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> array;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div>
+	</div>
+	<div class="list__footer clearfix">
+		<a class="list__footer-readmore btn" href="/blog/2017/07/09/c-sharp-code-to-shuffle-array/">Read more…</a>
 	</div>
 </article>
 </main>
@@ -181,11 +189,11 @@ Int Array int[] intArray = new int[] {1,2,3,4}; intArray = ShuffleArray(intArray
 	<h4 class="widget__title">Recent Posts</h4>
 	<div class="widget__content">
 		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/blog/adjust-different-size-pdf-pages-equal/">Make PDF Pages equal size using Adobe Acrobat Pro</a></li>
 			<li class="widget__item"><a class="widget__link" href="/blog/2025/02/10/Count-total-Year-Month-Days-between-two-dates-Excel/">Count total Years, Months and Days between two dates in Excel</a></li>
 			<li class="widget__item"><a class="widget__link" href="/blog/2024/11/04/learning-adobe-lightroom/">Adobe Lightroom - Tutorials Collection</a></li>
 			<li class="widget__item"><a class="widget__link" href="/blog/2024/11/04/learning-davinci-resolve/">Learning DaVinci Resolve - Tutorials</a></li>
 			<li class="widget__item"><a class="widget__link" href="/blog/2024/07/20/splitting-bills-expenses-friends-excel-tutorial/">Excel tutorial for Splitting bills and sharing expenses among friends</a></li>
-			<li class="widget__item"><a class="widget__link" href="/blog/2024/08/14/pte-vocabulary-meaning-nepali/">PTE vocabulary with meaning in Nepali - Most Common</a></li>
 		</ul>
 	</div>
 </div>
@@ -194,6 +202,7 @@ Int Array int[] intArray = new int[] {1,2,3,4}; intArray = ShuffleArray(intArray
 	<div class="widget__content">
 
 		<ul class="cloud" role="navigation" aria-label="Webdev word cloud">
+		<li><a data-weight="1" href="/tags/Acrobat-PRO/" title="Acrobat-PRO">Acrobat-PRO</a></li>
 		<li><a data-weight="1" href="/tags/Adobe-Lightroom/" title="Adobe-Lightroom">Adobe-Lightroom</a></li>
 		<li><a data-weight="2" href="/tags/Android/" title="Android">Android</a></li>
 		<li><a data-weight="15" href="/tags/Blog/" title="Blog">Blog</a></li>
@@ -252,6 +261,8 @@ Int Array int[] intArray = new int[] {1,2,3,4}; intArray = ShuffleArray(intArray
 				<a class="widget__link" href="/categories/Nepal/">Nepal</a></li>
 			<li class="widget__item">
 				<a class="widget__link" href="/categories/Networking/">Networking</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/PDF/">PDF</a></li>
 			<li class="widget__item">
 				<a class="widget__link" href="/categories/Photo-Editing/">Photo Editing</a></li>
 			<li class="widget__item">

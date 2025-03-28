@@ -2,8 +2,26 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://sudeepacharya.com.np/tags/Acrobat-PRO/</loc>
+    <lastmod>2025-03-26T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://sudeepacharya.com.np/categories/</loc>
-    <lastmod>2025-02-10T00:00:00+00:00</lastmod>
+    <lastmod>2025-03-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sudeepacharya.com.np/blog/adjust-different-size-pdf-pages-equal/</loc>
+    <lastmod>2025-03-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sudeepacharya.com.np/categories/PDF/</loc>
+    <lastmod>2025-03-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sudeepacharya.com.np/posts/</loc>
+    <lastmod>2025-03-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sudeepacharya.com.np/</loc>
+    <lastmod>2025-03-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sudeepacharya.com.np/tags/</loc>
+    <lastmod>2025-03-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://sudeepacharya.com.np/blog/2025/02/10/Count-total-Year-Month-Days-between-two-dates-Excel/</loc>
     <lastmod>2025-02-10T00:00:00+00:00</lastmod>
@@ -12,15 +30,6 @@
     <lastmod>2025-02-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://sudeepacharya.com.np/categories/Microsoft/</loc>
-    <lastmod>2025-02-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://sudeepacharya.com.np/posts/</loc>
-    <lastmod>2025-02-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://sudeepacharya.com.np/</loc>
-    <lastmod>2025-02-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://sudeepacharya.com.np/tags/</loc>
     <lastmod>2025-02-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://sudeepacharya.com.np/blog/2024/11/04/learning-adobe-lightroom/</loc>
@@ -359,10 +368,10 @@
     <loc>https://sudeepacharya.com.np/blog/2013/12/13/hello-world/</loc>
     <lastmod>2013-12-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sudeepacharya.com.np/tags/Uncategorized/</loc>
+    <loc>https://sudeepacharya.com.np/categories/Uncategorized/</loc>
     <lastmod>2013-12-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sudeepacharya.com.np/categories/Uncategorized/</loc>
+    <loc>https://sudeepacharya.com.np/tags/Uncategorized/</loc>
     <lastmod>2013-12-13T00:00:00+00:00</lastmod>
   </url>
 </urlset>

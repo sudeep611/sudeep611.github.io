@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Acrobat-PRO on Sudeep&#39;s Blog</title>
+    <link>https://sudeepacharya.com.np/tags/Acrobat-PRO/</link>
+    <description>Recent content in Acrobat-PRO on Sudeep&#39;s Blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 26 Mar 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://sudeepacharya.com.np/tags/Acrobat-PRO/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Make PDF Pages equal size using Adobe Acrobat Pro</title>
+      <link>https://sudeepacharya.com.np/blog/adjust-different-size-pdf-pages-equal/</link>
+      <pubDate>Wed, 26 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>https://sudeepacharya.com.np/blog/adjust-different-size-pdf-pages-equal/</guid>
+      <description>&lt;p&gt;Have you ever combined different pages in PDF and found out that each page has different size?&lt;/p&gt;&#xA;&lt;p&gt;In this post we will see how we can use Adobe Acrobat PRO to make the pages of same size.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

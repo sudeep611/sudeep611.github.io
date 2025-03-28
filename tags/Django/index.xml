@@ -13,35 +13,35 @@
       <link>https://sudeepacharya.com.np/blog/2015/01/16/urlshortener-with-django-working-with-templates/</link>
       <pubDate>Fri, 16 Jan 2015 00:00:00 +0000</pubDate>
       <guid>https://sudeepacharya.com.np/blog/2015/01/16/urlshortener-with-django-working-with-templates/</guid>
-      <description>Create folder &amp;rsquo;templates&amp;rsquo; inside &amp;lsquo;shortenersite&amp;rsquo; and then inside &amp;rsquo;templates&amp;rsquo; create folder &amp;lsquo;shortenersite&amp;rsquo;.&#xA;Inside &amp;ldquo;shortenersite/templates/shortenersite/&amp;rdquo; create &amp;lsquo;base.html&amp;rsquo; and &amp;lsquo;index.html&amp;rsquo;. So now paste the following to them.&#xA;[shortenersite/templates/shortenersite/base.html]&#xA;{% raw %} &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;title&amp;gt;{% block title %}Welcome to mysite{% endblock %}&amp;lt;/title&amp;gt; {% load staticfiles %} &amp;lt;link rel=&amp;#34;stylesheet&amp;#34; href=&amp;#34;https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css&amp;#34;&amp;gt; &amp;lt;link rel=&amp;#34;stylesheet&amp;#34; type=&amp;#34;text/css&amp;#34; href=&amp;#34;{% static &amp;#39;shortenersite/css/custom.css&amp;#39; %}&amp;#34; /&amp;gt; &amp;lt;script src=&amp;#34;//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;meta name=&amp;#34;viewport&amp;#34; content=&amp;#34;width=device-width, initial-scale=1&amp;#34;&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;script type=&amp;#34;text/javascript&amp;#34;&amp;gt; $(function() { $(&amp;#39;#submitButton&amp;#39;).click(function() { $.ajax({ type: &amp;#34;POST&amp;#34;, url: &amp;#34;/makeshort/&amp;#34;, data: { &amp;#39;url&amp;#39; : $(&amp;#39;#url&amp;#39;).</description>
+      <description>&lt;p&gt;Create folder &amp;rsquo;templates&amp;rsquo; inside &amp;lsquo;shortenersite&amp;rsquo; and then inside &amp;rsquo;templates&amp;rsquo; create folder &amp;lsquo;shortenersite&amp;rsquo;.&lt;/p&gt;&#xA;&lt;p&gt;Inside &amp;ldquo;shortenersite/templates/shortenersite/&amp;rdquo; create &amp;lsquo;base.html&amp;rsquo; and &amp;lsquo;index.html&amp;rsquo;. So now paste the following to them.&lt;/p&gt;</description>
     </item>
     <item>
       <title>URL Shortener with Django (Part 4) - Working with Urls and views</title>
       <link>https://sudeepacharya.com.np/blog/2015/01/15/urlshortener-with-django-urls-and-views/</link>
       <pubDate>Thu, 15 Jan 2015 00:00:00 +0000</pubDate>
       <guid>https://sudeepacharya.com.np/blog/2015/01/15/urlshortener-with-django-urls-and-views/</guid>
-      <description>Now we will be working with our actual URLs and Views of our site.&#xA;Open up your &amp;ldquo;urlshortener/urls.py&amp;rdquo; and add the following code to it:&#xA;[urlshortener/urls.py]&#xA;from django.conf.urls import patterns, include, url from django.contrib import admin urlpatterns = patterns(&amp;#39;&amp;#39;, url(r&amp;#39;^admin/&amp;#39;, include(admin.site.urls)), # if the URL pattern match /admin/ then open up admin panel url(r&amp;#39;&amp;#39;, include(&amp;#39;shortenersite.urls&amp;#39;, namespace=&amp;#39;shortenersite&amp;#39;)), # if anything rather then /admin/ then it will look for shortenersite/urls ) Next, create a new file &amp;lsquo;urls.</description>
+      <description>&lt;p&gt;Now we will be working with our actual URLs and Views of our site.&lt;/p&gt;&#xA;&lt;p&gt;Open up your &amp;ldquo;urlshortener/urls.py&amp;rdquo; and add the following code to it:&lt;/p&gt;&#xA;&lt;p&gt;[urlshortener/urls.py]&lt;/p&gt;</description>
     </item>
     <item>
       <title>URL Shortener with Django (Part 3) - Creating django app and model</title>
       <link>https://sudeepacharya.com.np/blog/2015/01/14/urlshortener-with-django-creating-app-model/</link>
       <pubDate>Wed, 14 Jan 2015 00:00:00 +0000</pubDate>
       <guid>https://sudeepacharya.com.np/blog/2015/01/14/urlshortener-with-django-creating-app-model/</guid>
-      <description>Now, Let us create a Django app. From your project&amp;rsquo;s root directory run this command&#xA;django-admin startapp shortenersite This will create a new folder &amp;lsquo;shortenersite&amp;rsquo; inside our root directory which is actually a Django app. You can see the following files and folder inside shortenersite:&#xA;migrations - Contains database migration file.&#xA;admin.py - We will use this file to configure Django Admin settings for this app.&#xA;models.py - Contains the model (generally model.</description>
+      <description>&lt;p&gt;Now, Let us create a Django app. From your project&amp;rsquo;s root directory run this command&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;django-admin startapp shortenersite&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
     <item>
       <title>URL Shortener with Django (Part 2) - Creating a new django project</title>
       <link>https://sudeepacharya.com.np/blog/2015/01/13/urlshortener-with-django-creating-new-django-project/</link>
       <pubDate>Tue, 13 Jan 2015 00:00:00 +0000</pubDate>
       <guid>https://sudeepacharya.com.np/blog/2015/01/13/urlshortener-with-django-creating-new-django-project/</guid>
-      <description>Creating a Django project&#xA;django-admin startproject urlshortener Now you will see new directory &amp;ldquo;urlshortener&amp;rdquo;. Now our folder structure looks something like:&#xA;tutorial/ - py3env - urlshortener - urlshortener = __init__.py = settings.py = urls.py = wsgi.py = manage.py (Folder is denoted as - and file is denoted by =)&#xA;The folder &amp;ldquo;urlshortener&amp;rdquo; just inside &amp;ldquo;tutorial&amp;rdquo; is our root directory. And we will work inside this root directory from now on wards.</description>
+      <description>&lt;p&gt;Creating a Django project&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;django-admin startproject urlshortener&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Now you will see new directory &amp;ldquo;urlshortener&amp;rdquo;. Now our folder structure looks something like:&lt;/p&gt;</description>
     </item>
     <item>
       <title>URL Shortener with Django (Part 1) - Creating virtual environment and installing Django</title>
       <link>https://sudeepacharya.com.np/blog/2015/01/12/urlshortener-with-django-create-virtual-environment-install-django/</link>
       <pubDate>Mon, 12 Jan 2015 00:00:00 +0000</pubDate>
       <guid>https://sudeepacharya.com.np/blog/2015/01/12/urlshortener-with-django-create-virtual-environment-install-django/</guid>
-      <description>I finally got the time to write a Django tutorial. In this tutorial we are building URL Shortener. If you are confused with what we are building then we are building something similar to (bit.ly) or (goo.gl).&#xA;We are building the app that will make a shorter URL of a longer URL. (Example) Normally the shorter URL will be localhost:8000/4hh5kr for www.facebook.com&#xA;I am using Django 1.7.1 with Python 3.3.2+. Don&amp;rsquo;t worry if you have different version of Django because we will set up our virtual environment and install latest version of Django.</description>
+      <description>&lt;p&gt;I finally got the time to write a Django tutorial. In this tutorial we are building URL Shortener. If you are confused with what we are building then we are building something similar to (&lt;a href=&#34;http://bit.ly&#34;&gt;bit.ly&lt;/a&gt;) or (&lt;a href=&#34;http://goo.gl&#34;&gt;goo.gl&lt;/a&gt;).&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

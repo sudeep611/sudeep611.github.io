@@ -13,21 +13,21 @@
       <link>https://sudeepacharya.com.np/blog/2025/02/10/Count-total-Year-Month-Days-between-two-dates-Excel/</link>
       <pubDate>Mon, 10 Feb 2025 00:00:00 +0000</pubDate>
       <guid>https://sudeepacharya.com.np/blog/2025/02/10/Count-total-Year-Month-Days-between-two-dates-Excel/</guid>
-      <description>In this post we will see how we can calculate total number of years, months and days between two dates.&#xA;For example: If the start date is 2 October 2021 and end date is 3 November 2022 then we should get 1year 1month 1day.&#xA;DATEDIF - Formula DATEDIF(start_date, end_date,&amp;ldquo;Y&amp;rdquo;) =&amp;gt; Provides total number of years between starts and end date. In above example, the total number of yeats between the dates is one year.</description>
+      <description>&lt;p&gt;In this post we will see how we can calculate total number of years, months and days between two dates.&lt;/p&gt;&#xA;&lt;p&gt;For example: If the start date is 2 October 2021 and end date is 3 November 2022 then we should get 1year 1month 1day.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Excel tutorial for Splitting bills and sharing expenses among friends</title>
       <link>https://sudeepacharya.com.np/blog/2024/07/20/splitting-bills-expenses-friends-excel-tutorial/</link>
       <pubDate>Sat, 24 Aug 2024 00:00:00 +0000</pubDate>
       <guid>https://sudeepacharya.com.np/blog/2024/07/20/splitting-bills-expenses-friends-excel-tutorial/</guid>
-      <description>In this post, i will share an Excel tutorial where you can create tables and calculate the total amount spent by each person and find out who owes or need to give to whom.&#xA;At the end of this post you will be able to make something similar to the following table below.&#xA;Table1 = List of expenses including name and amount as well as the grand total spent by all.</description>
+      <description>&lt;p&gt;In this post, i will share an Excel tutorial where you can create tables and calculate the total amount spent by each person and find out who owes or need to give to whom.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Useful Excel formulas and tricks</title>
       <link>https://sudeepacharya.com.np/blog/2024/07/20/useful-excel-formulas-and-tricks/</link>
       <pubDate>Sat, 20 Jul 2024 00:00:00 +0000</pubDate>
       <guid>https://sudeepacharya.com.np/blog/2024/07/20/useful-excel-formulas-and-tricks/</guid>
-      <description>In this post, i will be sharing some commonly used excel formulas to make your life easier while creating report.&#xA;Find cost in Table 2 by matching Serial Number in Table 1 If you have to find the corresponding value of some data in a table from another table then you can combine the INDEX and MATCH as follows:&#xA;=INDEX(Table1[Cost],MATCH([@[Serial Number]],Table1[Serial Number],0),0) Check if serial number in Table B exists in Table A Using combination of ISNA and VLOOKUP to check if the serial number in table b exists in table A.</description>
+      <description>&lt;p&gt;In this post, i will be sharing some commonly used excel formulas to make your life easier while creating report.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

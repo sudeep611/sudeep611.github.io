@@ -13,7 +13,7 @@
       <link>https://sudeepacharya.com.np/blog/2014/02/02/javascript-code-multiplication-table/</link>
       <pubDate>Sun, 02 Feb 2014 00:00:00 +0000</pubDate>
       <guid>https://sudeepacharya.com.np/blog/2014/02/02/javascript-code-multiplication-table/</guid>
-      <description>Through JavaScript you can easily write the html code in html document using document.write(). Using document.write() and for loop it is easy to print the table of user input number.&#xA;First of all &amp;ldquo;prompt&amp;rdquo; box will appear and then this value will be parse to integer and the multiplication table is displayed.&#xA;The source code for JavaScript is as follows:&#xA;&amp;lt;script type=&amp;#39;text/javascript&amp;#39;&amp;gt; var num = prompt(&amp;#34;Enter Number&amp;#34;, &amp;#34;0&amp;#34;) //prompt user to enter the number var num = parseInt(num); //parse the num to number var i = 0; document.</description>
+      <description>&lt;p&gt;Through JavaScript you can easily write the html code in html document using document.write(). Using document.write() and for loop it is easy to print the table of user input number.&lt;/p&gt;&#xA;&lt;p&gt;First of all &amp;ldquo;prompt&amp;rdquo; box will appear and then this value will be parse to integer and the multiplication table is displayed.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

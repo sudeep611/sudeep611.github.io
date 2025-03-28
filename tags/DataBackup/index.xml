@@ -13,7 +13,7 @@
       <link>https://sudeepacharya.com.np/blog/2014/01/16/recover-deleted-files-from-ntfs-file-system-ubuntu/</link>
       <pubDate>Thu, 16 Jan 2014 00:00:00 +0000</pubDate>
       <guid>https://sudeepacharya.com.np/blog/2014/01/16/recover-deleted-files-from-ntfs-file-system-ubuntu/</guid>
-      <description>I deleted the archive file which contains important images. And i thought it was gone forever, i did not had any backup too. But i was able to restore the deleted archive file using NtfsUndelete.&#xA;It was good that i had archived the photos so it was easy to restore. I was using Ubuntu and i deleted the files that was from another drive which is using Ntfs file system. So, i will explain how i was able to recover my files.</description>
+      <description>&lt;p&gt;I deleted the archive file which contains important images. And i thought it was gone forever, i did not had any backup too. But i was able to restore the deleted archive file using NtfsUndelete.&lt;/p&gt;&#xA;&lt;p&gt;It was good that i had archived the photos so it was easy to restore. I was using Ubuntu and i deleted the files that was from another drive which is using Ntfs file system. So, i will explain how i was able to recover my files.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
